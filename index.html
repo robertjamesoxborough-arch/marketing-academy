@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Marketing Academy — Master Online Marketing For Free</title>
+    <meta name="description" content="The world's best free online marketing academy. Structured learning paths from beginner to expert. Master SEO, Paid Ads, Content Marketing, Analytics & Growth.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" onclick="showPage('home')">
+                <span class="logo-icon">M</span>
+                <span class="logo-text">The Marketing Academy</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#" onclick="showPage('home')" class="nav-link active" data-page="home">Home</a>
+                <a href="#" onclick="showPage('start-here')" class="nav-link" data-page="start-here">Start Here</a>
+                <a href="#" onclick="showPage('learning-paths')" class="nav-link" data-page="learning-paths">Learning Paths</a>
+                <a href="#" onclick="showPage('resources')" class="nav-link" data-page="resources">Resource Library</a>
+                <a href="#" onclick="showPage('progress')" class="nav-link" data-page="progress">My Progress</a>
+            </div>
+            <div class="nav-right">
+                <span class="xp-badge" id="xpBadge">0 XP</span>
+                <span class="streak-badge" id="streakBadge">0 day streak</span>
+                <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ad Banner Top -->
+    <div class="ad-slot ad-slot-top" id="adTop">
+        <div class="ad-placeholder">Advertisement</div>
+    </div>
+
+    <!-- ==================== HOME PAGE ==================== -->
+    <div id="page-home" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <div class="hero-badge">100% Free — Learn at your own pace</div>
+                <h1>Master Online Marketing.<br><span class="gradient-text">From Zero to Expert.</span></h1>
+                <p class="hero-subtitle">The world's most structured free marketing education. Follow a clear path from complete beginner to advanced growth marketer — no guesswork, no overwhelm.</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-lg" onclick="showPage('start-here')">Start Your Journey</button>
+                    <button class="btn btn-outline btn-lg" onclick="showPage('learning-paths')">Browse Learning Paths</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-number">12</span><span class="stat-label">Core Skills</span></div>
+                    <div class="stat"><span class="stat-number">6</span><span class="stat-label">Learning Paths</span></div>
+                    <div class="stat"><span class="stat-number">120+</span><span class="stat-label">Lessons</span></div>
+                    <div class="stat"><span class="stat-number">30+</span><span class="stat-label">Quizzes</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="section section-light">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">No random blog posts. No confusion about where to start. Just a clear, structured journey.</p>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Take the Assessment</h3>
+                        <p>Answer a few questions so we place you at the right level — Beginner, Intermediate, or Advanced.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Follow Your Path</h3>
+                        <p>Each learning path is a structured sequence of lessons, not a random collection. Complete them in order.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Learn By Doing</h3>
+                        <p>Every lesson has interactive quizzes, real-world exercises, and mini-projects to lock in the knowledge.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>Level Up</h3>
+                        <p>Earn XP, track your progress, unlock advanced content, and build a portfolio of real marketing skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Paths Preview -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Structured Learning Paths</h2>
+                <p class="section-subtitle">Each path takes you from fundamentals to mastery in a specific marketing discipline.</p>
+                <div class="paths-grid">
+                    <div class="path-card" onclick="showPath('seo')">
+                        <div class="path-icon path-icon-seo">S</div>
+                        <h3>Search Engine Optimisation</h3>
+                        <p>How search engines work, keyword research, on-page & off-page SEO, technical SEO, and link building.</p>
+                        <div class="path-meta">
+                            <span class="path-lessons">18 lessons</span>
+                            <span class="path-time">~12 hours</span>
+                        </div>
+                        <div class="path-level">Beginner → Advanced</div>
+                    </div>
+                    <div class="path-card" onclick="showPath('paid-search')">
+                        <div class="path-icon path-icon-paid">P</div>
+                        <h3>Paid Search Advertising</h3>
+                        <p>Google Ads, Microsoft Ads, campaign structure, bidding strategies, quality score, and optimisation.</p>
+                        <div class="path-meta">
+                            <span class="path-lessons">16 lessons</span>
+                            <span class="path-time">~10 hours</span>
+                        </div>
+                        <div class="path-level">Beginner → Advanced</div>
+                    </div>
+                    <div class="path-card" onclick="showPath('social-ads')">
+                        <div class="path-icon path-icon-social">A</div>
+                        <h3>Social Media Advertising</h3>
+                        <p>Meta Ads, LinkedIn Ads, TikTok Ads, audience targeting, creative strategy, and measurement.</p>
+                        <div class="path-meta">
+                            <span class="path-lessons">20 lessons</span>
+                            <span class="path-time">~14 hours</span>
+                        </div>
+                        <div class="path-level">Beginner → Advanced</div>
+                    </div>
+                    <div class="path-card" onclick="showPath('content')">
+                        <div class="path-icon path-icon-content">C</div>
+                        <h3>Content & Inbound Marketing</h3>
+                        <p>Content strategy, blogging, email marketing, lead magnets, funnels, and inbound methodology.</p>
+                        <div class="path-meta">
+                            <span class="path-lessons">22 lessons</span>
+                            <span class="path-time">~15 hours</span>
+                        </div>
+                        <div class="path-level">Beginner → Advanced</div>
+                    </div>
+                    <div class="path-card" onclick="showPath('analytics')">
+                        <div class="path-icon path-icon-analytics">D</div>
+                        <h3>Data & Analytics</h3>
+                        <p>Google Analytics, attribution models, conversion tracking, data visualisation, and reporting.</p>
+                        <div class="path-meta">
+                            <span class="path-lessons">15 lessons</span>
+                            <span class="path-time">~10 hours</span>
+                        </div>
+                        <div class="path-level">Beginner → Advanced</div>
+                    </div>
+                    <div class="path-card" onclick="showPath('growth')">
+                        <div class="path-icon path-icon-growth">G</div>
+                        <h3>Growth & Experimentation</h3>
+                        <p>Growth loops, A/B testing, conversion rate optimisation, funnel analysis, and scaling strategies.</p>
+                        <div class="path-meta">
+                            <span class="path-lessons">14 lessons</span>
+                            <span class="path-time">~10 hours</span>
+                        </div>
+                        <div class="path-level">Intermediate → Expert</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted Sources -->
+        <section class="section section-dark">
+            <div class="container">
+                <h2 class="section-title">Knowledge From The Best Sources</h2>
+                <p class="section-subtitle">Our curriculum is built by studying and synthesising knowledge from the world's most trusted marketing education providers.</p>
+                <div class="sources-grid">
+                    <div class="source-badge">Google Skillshop</div>
+                    <div class="source-badge">Meta Blueprint</div>
+                    <div class="source-badge">HubSpot Academy</div>
+                    <div class="source-badge">Ahrefs Academy</div>
+                    <div class="source-badge">Semrush Academy</div>
+                    <div class="source-badge">LinkedIn Marketing Labs</div>
+                    <div class="source-badge">CXL Institute</div>
+                    <div class="source-badge">TikTok Academy</div>
+                    <div class="source-badge">Think with Google</div>
+                    <div class="source-badge">Moz Academy</div>
+                    <div class="source-badge">Shopify Learn</div>
+                    <div class="source-badge">Google Analytics</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta-section">
+            <div class="container cta-content">
+                <h2>Ready to become a skilled marketer?</h2>
+                <p>Start with our placement quiz to find your level, then follow the structured path. No sign-up required.</p>
+                <button class="btn btn-primary btn-lg" onclick="showPage('start-here')">Start Here — It's Free</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==================== START HERE PAGE ==================== -->
+    <div id="page-start-here" class="page">
+        <section class="section page-header">
+            <div class="container">
+                <h1>Start Here</h1>
+                <p class="section-subtitle">Welcome. Let's figure out where you are, then get you on the right path.</p>
+            </div>
+        </section>
+
+        <!-- Placement Quiz -->
+        <section class="section">
+            <div class="container">
+                <div class="quiz-container" id="placementQuiz">
+                    <div class="quiz-header">
+                        <h2>Placement Assessment</h2>
+                        <p>Answer these questions honestly — it helps us recommend the right starting point for you.</p>
+                        <div class="quiz-progress">
+                            <div class="quiz-progress-bar" id="quizProgressBar" style="width: 0%"></div>
+                        </div>
+                        <span class="quiz-progress-text" id="quizProgressText">Question 1 of 8</span>
+                    </div>
+                    <div class="quiz-body" id="quizBody">
+                        <!-- Questions injected by JS -->
+                    </div>
+                    <div class="quiz-footer">
+                        <button class="btn btn-outline" id="quizPrev" onclick="prevQuestion()" style="display:none">Previous</button>
+                        <button class="btn btn-primary" id="quizNext" onclick="nextQuestion()">Next</button>
+                    </div>
+                </div>
+
+                <!-- Quiz Result -->
+                <div class="quiz-result" id="quizResult" style="display:none">
+                    <div class="result-card">
+                        <div class="result-level" id="resultLevel"></div>
+                        <h2 id="resultTitle"></h2>
+                        <p id="resultDescription"></p>
+                        <div class="result-paths" id="resultPaths"></div>
+                        <button class="btn btn-primary btn-lg" onclick="showPage('learning-paths')">View Your Recommended Paths</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Journey Map -->
+        <section class="section section-light">
+            <div class="container">
+                <h2 class="section-title">The Complete Marketing Journey</h2>
+                <p class="section-subtitle">Every marketer follows this progression. Here's the full map — you'll be placed on it based on your assessment.</p>
+                <div class="journey-map">
+                    <div class="journey-stage">
+                        <div class="journey-marker journey-beginner"></div>
+                        <div class="journey-content">
+                            <h3>Stage 1 — Foundations</h3>
+                            <span class="journey-badge badge-beginner">Beginner</span>
+                            <ul>
+                                <li>How online marketing works (the ecosystem)</li>
+                                <li>Understanding the customer journey</li>
+                                <li>Marketing channels overview</li>
+                                <li>Basic marketing psychology</li>
+                                <li>Setting up analytics</li>
+                                <li>Your first campaigns</li>
+                            </ul>
+                            <div class="journey-sources">Sources: Google Digital Garage, HubSpot Academy, Think with Google</div>
+                        </div>
+                    </div>
+                    <div class="journey-connector"></div>
+                    <div class="journey-stage">
+                        <div class="journey-marker journey-intermediate"></div>
+                        <div class="journey-content">
+                            <h3>Stage 2 — Channel Mastery</h3>
+                            <span class="journey-badge badge-intermediate">Intermediate</span>
+                            <ul>
+                                <li>SEO strategy & execution</li>
+                                <li>Paid search campaign management</li>
+                                <li>Social media advertising</li>
+                                <li>Content marketing systems</li>
+                                <li>Email marketing & automation</li>
+                                <li>Marketing analytics & measurement</li>
+                            </ul>
+                            <div class="journey-sources">Sources: Google Skillshop, Meta Blueprint, Ahrefs, Semrush, LinkedIn Marketing Labs</div>
+                        </div>
+                    </div>
+                    <div class="journey-connector"></div>
+                    <div class="journey-stage">
+                        <div class="journey-marker journey-advanced"></div>
+                        <div class="journey-content">
+                            <h3>Stage 3 — Advanced Strategy</h3>
+                            <span class="journey-badge badge-advanced">Advanced</span>
+                            <ul>
+                                <li>Multi-channel campaign strategy</li>
+                                <li>Attribution modelling</li>
+                                <li>Advanced audience segmentation</li>
+                                <li>Conversion rate optimisation</li>
+                                <li>Marketing automation</li>
+                                <li>Budget allocation & forecasting</li>
+                            </ul>
+                            <div class="journey-sources">Sources: CXL Institute, Google Analytics, Meta Blueprint Advanced</div>
+                        </div>
+                    </div>
+                    <div class="journey-connector"></div>
+                    <div class="journey-stage">
+                        <div class="journey-marker journey-expert"></div>
+                        <div class="journey-content">
+                            <h3>Stage 4 — Growth & Leadership</h3>
+                            <span class="journey-badge badge-expert">Expert</span>
+                            <ul>
+                                <li>Growth loops & flywheels</li>
+                                <li>Experimentation frameworks</li>
+                                <li>Scaling marketing teams</li>
+                                <li>Marketing & product alignment</li>
+                                <li>Building marketing systems</li>
+                                <li>Emerging channels & innovation</li>
+                            </ul>
+                            <div class="journey-sources">Sources: Reforge, CXL, Demand Curve</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==================== LEARNING PATHS PAGE ==================== -->
+    <div id="page-learning-paths" class="page">
+        <section class="section page-header">
+            <div class="container">
+                <h1>Learning Paths</h1>
+                <p class="section-subtitle">Choose a discipline and follow the structured curriculum from start to finish.</p>
+                <div class="filter-bar">
+                    <button class="filter-btn active" onclick="filterPaths('all')">All Paths</button>
+                    <button class="filter-btn" onclick="filterPaths('beginner')">Beginner Friendly</button>
+                    <button class="filter-btn" onclick="filterPaths('intermediate')">Intermediate</button>
+                    <button class="filter-btn" onclick="filterPaths('advanced')">Advanced</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <!-- Ad slot -->
+                <div class="ad-slot ad-slot-inline">
+                    <div class="ad-placeholder">Advertisement</div>
+                </div>
+
+                <div id="pathsContainer">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==================== LESSON VIEW ==================== -->
+    <div id="page-lesson" class="page">
+        <section class="section">
+            <div class="container">
+                <div class="lesson-layout">
+                    <!-- Sidebar -->
+                    <aside class="lesson-sidebar" id="lessonSidebar">
+                        <!-- Populated by JS -->
+                    </aside>
+
+                    <!-- Main content -->
+                    <main class="lesson-main" id="lessonMain">
+                        <!-- Populated by JS -->
+                    </main>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==================== RESOURCES PAGE ==================== -->
+    <div id="page-resources" class="page">
+        <section class="section page-header">
+            <div class="container">
+                <h1>Resource Library</h1>
+                <p class="section-subtitle">The master collection of gold-standard marketing resources, organised by discipline.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="resource-filters">
+                    <button class="filter-btn active" onclick="filterResources('all')">All</button>
+                    <button class="filter-btn" onclick="filterResources('platform')">Ad Platforms</button>
+                    <button class="filter-btn" onclick="filterResources('academy')">Academies</button>
+                    <button class="filter-btn" onclick="filterResources('research')">Research</button>
+                    <button class="filter-btn" onclick="filterResources('advanced')">Advanced</button>
+                </div>
+
+                <div class="resources-grid" id="resourcesGrid">
+                    <!-- Platform Academies -->
+                    <div class="resource-card" data-category="platform">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-platform">Ad Platform</span>
+                            <h3>Google Skillshop</h3>
+                        </div>
+                        <p>Official Google training for Ads, Analytics, YouTube Ads, and measurement. The primary source for Google advertising knowledge.</p>
+                        <div class="resource-meta">
+                            <span>Certifications available</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>Google Ads</span><span>Analytics</span><span>YouTube Ads</span><span>Measurement</span>
+                        </div>
+                        <a href="https://skillshop.withgoogle.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="platform">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-platform">Ad Platform</span>
+                            <h3>Meta Blueprint</h3>
+                        </div>
+                        <p>Official Meta training for Facebook and Instagram advertising. Covers campaign creation, audience targeting, creative strategy, and measurement.</p>
+                        <div class="resource-meta">
+                            <span>Certifications available</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>Facebook Ads</span><span>Instagram Ads</span><span>Audience Targeting</span>
+                        </div>
+                        <a href="https://www.facebookblueprint.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="platform">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-platform">Ad Platform</span>
+                            <h3>LinkedIn Marketing Labs</h3>
+                        </div>
+                        <p>Official LinkedIn advertising training. Specialises in B2B marketing, demand generation, and professional audience targeting.</p>
+                        <div class="resource-meta">
+                            <span>Certifications available</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>B2B Marketing</span><span>LinkedIn Ads</span><span>Demand Gen</span>
+                        </div>
+                        <a href="https://training.marketing.linkedin.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="platform">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-platform">Ad Platform</span>
+                            <h3>TikTok Academy</h3>
+                        </div>
+                        <p>Official TikTok advertising training covering creative strategy, ad formats, audience targeting, and campaign optimisation for short-form video.</p>
+                        <div class="resource-meta">
+                            <span>Courses</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>TikTok Ads</span><span>Video Creative</span><span>Short-Form Content</span>
+                        </div>
+                        <a href="https://ads.tiktok.com/business/en/academy" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="platform">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-platform">Ad Platform</span>
+                            <h3>Amazon Ads Academy</h3>
+                        </div>
+                        <p>Training for Amazon's advertising ecosystem. Essential for ecommerce marketers working with retail media and marketplace advertising.</p>
+                        <div class="resource-meta">
+                            <span>Certifications available</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>Retail Media</span><span>Amazon Ads</span><span>Ecommerce</span>
+                        </div>
+                        <a href="https://advertising.amazon.com/academy" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="platform">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-platform">Ad Platform</span>
+                            <h3>Snapchat Focus</h3>
+                        </div>
+                        <p>Snapchat's official advertiser training. Covers Snap Ads, AR lenses, story ads, and reaching younger demographics effectively.</p>
+                        <div class="resource-meta">
+                            <span>Courses</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>Snapchat Ads</span><span>AR Marketing</span><span>Gen Z Targeting</span>
+                        </div>
+                        <a href="https://focus.snapchat.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="platform">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-platform">Ad Platform</span>
+                            <h3>Microsoft Advertising Learning Lab</h3>
+                        </div>
+                        <p>Official Microsoft (Bing) Ads training. Often overlooked but covers a significant share of search advertising inventory.</p>
+                        <div class="resource-meta">
+                            <span>Courses</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>Bing Ads</span><span>Search Ads</span><span>Microsoft Audience Network</span>
+                        </div>
+                        <a href="https://about.ads.microsoft.com/en-us/resources/training" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <!-- Practitioner Academies -->
+                    <div class="resource-card" data-category="academy">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-academy">Academy</span>
+                            <h3>HubSpot Academy</h3>
+                        </div>
+                        <p>Industry-leading education in inbound marketing, content strategy, email marketing, and CRM. Widely respected certifications.</p>
+                        <div class="resource-meta">
+                            <span>Certifications available</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>Inbound Marketing</span><span>Content Strategy</span><span>Email</span><span>CRM</span>
+                        </div>
+                        <a href="https://academy.hubspot.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="academy">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-academy">Academy</span>
+                            <h3>Ahrefs Academy</h3>
+                        </div>
+                        <p>One of the best SEO education platforms. Teaches modern SEO strategy, keyword research, link building, and content-driven organic growth.</p>
+                        <div class="resource-meta">
+                            <span>Video courses</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>SEO</span><span>Keyword Research</span><span>Link Building</span><span>Content SEO</span>
+                        </div>
+                        <a href="https://ahrefs.com/academy" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="academy">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-academy">Academy</span>
+                            <h3>Semrush Academy</h3>
+                        </div>
+                        <p>Comprehensive marketing education covering SEO, PPC, content marketing, and competitive analysis. Strong certification programme.</p>
+                        <div class="resource-meta">
+                            <span>Certifications available</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>SEO</span><span>PPC</span><span>Competitive Analysis</span><span>Content</span>
+                        </div>
+                        <a href="https://www.semrush.com/academy" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="academy">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-academy">Academy</span>
+                            <h3>Moz Academy</h3>
+                        </div>
+                        <p>Technical SEO training from one of the original SEO companies. Strong on domain authority, page optimisation, and search fundamentals.</p>
+                        <div class="resource-meta">
+                            <span>Courses</span>
+                            <span>Free / Paid</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>Technical SEO</span><span>Domain Authority</span><span>On-Page SEO</span>
+                        </div>
+                        <a href="https://academy.moz.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="academy">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-academy">Academy</span>
+                            <h3>Shopify Learn</h3>
+                        </div>
+                        <p>Ecommerce marketing education covering store growth, product marketing, conversion optimisation, and online retail strategy.</p>
+                        <div class="resource-meta">
+                            <span>Courses</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>Ecommerce</span><span>Product Marketing</span><span>Store Growth</span>
+                        </div>
+                        <a href="https://www.shopify.com/learn" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="academy">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-academy">Academy</span>
+                            <h3>Hootsuite Academy</h3>
+                        </div>
+                        <p>Social media marketing education covering strategy, scheduling, community management, and social analytics.</p>
+                        <div class="resource-meta">
+                            <span>Certifications available</span>
+                            <span>Free / Paid</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>Social Media</span><span>Community Management</span><span>Social Analytics</span>
+                        </div>
+                        <a href="https://education.hootsuite.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <!-- Research Hubs -->
+                    <div class="resource-card" data-category="research">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-research">Research</span>
+                            <h3>Think with Google</h3>
+                        </div>
+                        <p>Google's premier marketing research hub. Consumer behaviour studies, industry benchmarks, and data-driven marketing insights.</p>
+                        <div class="resource-meta">
+                            <span>Articles & Data</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>Consumer Research</span><span>Benchmarks</span><span>Trends</span>
+                        </div>
+                        <a href="https://www.thinkwithgoogle.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="research">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-research">Research</span>
+                            <h3>Content Marketing Institute</h3>
+                        </div>
+                        <p>Leading research and education hub for content marketing strategy, measurement, and best practices.</p>
+                        <div class="resource-meta">
+                            <span>Articles & Reports</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>Content Strategy</span><span>Content Research</span>
+                        </div>
+                        <a href="https://contentmarketinginstitute.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="research">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-research">Research</span>
+                            <h3>Google Search Central</h3>
+                        </div>
+                        <p>Official documentation on how Google Search works. The authoritative source for understanding ranking, crawling, and indexing.</p>
+                        <div class="resource-meta">
+                            <span>Documentation</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>Search Ranking</span><span>Technical SEO</span><span>Core Web Vitals</span>
+                        </div>
+                        <a href="https://developers.google.com/search" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="research">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-research">Research</span>
+                            <h3>HubSpot Marketing Blog</h3>
+                        </div>
+                        <p>One of the most comprehensive marketing blogs. Publishes data-backed frameworks, templates, and strategy guides.</p>
+                        <div class="resource-meta">
+                            <span>Blog</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>Marketing Strategy</span><span>Frameworks</span><span>Templates</span>
+                        </div>
+                        <a href="https://blog.hubspot.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="research">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-research">Research</span>
+                            <h3>Ahrefs Blog</h3>
+                        </div>
+                        <p>Known for publishing detailed SEO experiments, ranking studies, and data-driven content marketing research.</p>
+                        <div class="resource-meta">
+                            <span>Blog</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>SEO Research</span><span>Ranking Studies</span><span>Experiments</span>
+                        </div>
+                        <a href="https://ahrefs.com/blog" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <!-- Advanced -->
+                    <div class="resource-card" data-category="advanced">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-advanced">Advanced</span>
+                            <h3>CXL Institute</h3>
+                        </div>
+                        <p>Elite-level growth marketing education. Deep training in CRO, experimentation, growth strategy, and analytics. Used by top growth teams.</p>
+                        <div class="resource-meta">
+                            <span>Courses & Certifications</span>
+                            <span>Paid</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>CRO</span><span>Growth</span><span>Experimentation</span><span>Analytics</span>
+                        </div>
+                        <a href="https://cxl.com/institute" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="advanced">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-advanced">Advanced</span>
+                            <h3>Reforge</h3>
+                        </div>
+                        <p>Advanced growth strategy programmes used by marketers at top tech companies. Focuses on growth loops, retention, and product-led growth.</p>
+                        <div class="resource-meta">
+                            <span>Programmes</span>
+                            <span>Paid</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>Growth Loops</span><span>Retention</span><span>Product-Led Growth</span>
+                        </div>
+                        <a href="https://www.reforge.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+
+                    <div class="resource-card" data-category="advanced">
+                        <div class="resource-header">
+                            <span class="resource-tag tag-advanced">Advanced</span>
+                            <h3>Demand Curve</h3>
+                        </div>
+                        <p>Startup growth marketing education. Covers acquisition channels, funnel optimisation, onboarding, and scaling strategies for startups.</p>
+                        <div class="resource-meta">
+                            <span>Courses & Newsletter</span>
+                            <span>Free / Paid</span>
+                        </div>
+                        <div class="resource-skills">
+                            <span>Startup Growth</span><span>Acquisition</span><span>Funnels</span>
+                        </div>
+                        <a href="https://www.demandcurve.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Resource</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==================== PROGRESS PAGE ==================== -->
+    <div id="page-progress" class="page">
+        <section class="section page-header">
+            <div class="container">
+                <h1>My Progress</h1>
+                <p class="section-subtitle">Track your learning journey across all paths and lessons.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="progress-dashboard">
+                    <div class="progress-stats-grid">
+                        <div class="progress-stat-card">
+                            <div class="progress-stat-number" id="totalXP">0</div>
+                            <div class="progress-stat-label">Total XP Earned</div>
+                        </div>
+                        <div class="progress-stat-card">
+                            <div class="progress-stat-number" id="lessonsCompleted">0</div>
+                            <div class="progress-stat-label">Lessons Completed</div>
+                        </div>
+                        <div class="progress-stat-card">
+                            <div class="progress-stat-number" id="quizzesCompleted">0</div>
+                            <div class="progress-stat-label">Quizzes Passed</div>
+                        </div>
+                        <div class="progress-stat-card">
+                            <div class="progress-stat-number" id="currentStreak">0</div>
+                            <div class="progress-stat-label">Day Streak</div>
+                        </div>
+                    </div>
+
+                    <h3 class="progress-section-title">Path Progress</h3>
+                    <div class="path-progress-list" id="pathProgressList">
+                        <!-- Populated by JS -->
+                    </div>
+
+                    <h3 class="progress-section-title">Recent Activity</h3>
+                    <div class="activity-list" id="activityList">
+                        <p class="empty-state">Complete lessons and quizzes to see your activity here.</p>
+                    </div>
+
+                    <div class="progress-actions">
+                        <button class="btn btn-outline" onclick="resetProgress()">Reset All Progress</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==================== PATH DETAIL VIEW ==================== -->
+    <div id="page-path-detail" class="page">
+        <section class="section">
+            <div class="container">
+                <button class="btn btn-outline btn-sm back-btn" onclick="showPage('learning-paths')">Back to Learning Paths</button>
+                <div id="pathDetailContent">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Ad Banner Bottom -->
+    <div class="ad-slot ad-slot-bottom">
+        <div class="ad-placeholder">Advertisement</div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>The Marketing Academy</h4>
+                    <p>The world's most structured free online marketing education. Built by studying the best sources and teaching them better.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Learning</h4>
+                    <a href="#" onclick="showPage('start-here')">Start Here</a>
+                    <a href="#" onclick="showPage('learning-paths')">Learning Paths</a>
+                    <a href="#" onclick="showPage('resources')">Resource Library</a>
+                    <a href="#" onclick="showPage('progress')">My Progress</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Paths</h4>
+                    <a href="#" onclick="showPath('seo')">SEO</a>
+                    <a href="#" onclick="showPath('paid-search')">Paid Search</a>
+                    <a href="#" onclick="showPath('social-ads')">Social Ads</a>
+                    <a href="#" onclick="showPath('content')">Content Marketing</a>
+                    <a href="#" onclick="showPath('analytics')">Analytics</a>
+                    <a href="#" onclick="showPath('growth')">Growth</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <p class="footer-legal">All content on this site is original educational material. We study publicly available marketing knowledge and teach it in our own words and structure. We are not affiliated with any of the platforms listed in our resource library.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>The Marketing Academy. Free marketing education for everyone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
