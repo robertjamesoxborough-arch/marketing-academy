@@ -1525,6 +1525,208 @@ ul { list-style: none; }
     }
 }
 
+/* ==================== LESSON TABS ==================== */
+.lesson-tabs {
+    display: flex;
+    gap: 4px;
+    border-bottom: 2px solid var(--border);
+    margin: 24px 0 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.lesson-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.lesson-tab {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-light);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    white-space: nowrap;
+    transition: color 0.15s, border-color 0.15s;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+}
+
+.lesson-tab:hover {
+    color: var(--primary);
+    background: var(--primary-bg);
+}
+
+.lesson-tab.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+    background: var(--primary-bg);
+}
+
+.tab-content {
+    display: none;
+    padding-top: 24px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-coming-soon {
+    color: var(--text-lighter);
+    font-style: italic;
+    padding: 24px 0;
+}
+
+/* ==================== SETUP GUIDE ==================== */
+.setup-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.setup-step {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.setup-step-number {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.setup-step-content {
+    flex: 1;
+}
+
+.setup-step-title {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--secondary);
+    margin-bottom: 4px;
+}
+
+.setup-step-desc {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* ==================== TASKS TAB ==================== */
+.task-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.task-item label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.task-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.task-item input[type="checkbox"]:checked + span {
+    color: var(--text-lighter);
+    text-decoration: line-through;
+}
+
+.reflection-box {
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reflection-label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--secondary);
+}
+
+.reflection-textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: var(--text);
+    resize: vertical;
+    transition: border-color 0.15s;
+    box-sizing: border-box;
+}
+
+.reflection-textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* ==================== MODULE PROJECT CARD ==================== */
+.module-project-card {
+    margin-top: 32px;
+    padding: 24px;
+    border: 2px solid var(--primary);
+    border-radius: var(--radius);
+    background: var(--primary-bg);
+}
+
+.module-project-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.module-project-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--secondary);
+    margin-bottom: 8px;
+}
+
+.module-project-desc {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.module-project-btn {
+    min-width: 180px;
+}
+
 /* ==================== NEXT LESSON PANEL ==================== */
 .next-lesson-panel {
     position: fixed;
