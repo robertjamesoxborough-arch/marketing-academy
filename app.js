@@ -16,6 +16,8 @@ const learningPaths = {
                 title: 'How Search Engines Work',
                 badge: 'Beginner',
                 badgeClass: 'badge-beginner',
+                projectTitle: 'SEO Foundation Audit',
+                projectDescription: 'Apply what you have learnt in this module by conducting a baseline SEO audit of your own website, or any site you have access to. Check how many pages Google has indexed using a site: search, confirm Search Console is set up and showing data, identify the search intent behind your homepage, and document three keyword opportunities. Save your findings — you will build on this audit throughout the path.',
                 lessons: [
                     { id: 'seo-1-1', title: 'What is SEO and Why It Matters', duration: '20 min', xp: 50 },
                     { id: 'seo-1-2', title: 'How Google Crawls, Indexes, and Ranks Pages', duration: '30 min', xp: 75 },
@@ -414,7 +416,22 @@ const lessonContent = {
             ],
             correct: 1,
             explanation: 'Unlike paid ads (which stop generating traffic when you stop paying), a page that ranks well in organic search can continue to attract visitors for a long time, making it a compounding investment.'
-        }
+        },
+        setupGuide: [
+            { step: 1, title: 'Create a Google Search Console account', description: 'Go to search.google.com/search-console and sign in with your Google account. Search Console is the primary free tool for seeing how Google views your site — index coverage, search queries, and crawl issues all live here.' },
+            { step: 2, title: 'Add and verify your website', description: 'Click "Add property" and enter your site URL. Verify ownership using the HTML tag method (paste a small meta tag into your site header) or the DNS record method via your domain registrar. Google walks you through both options.' },
+            { step: 3, title: 'Submit your XML sitemap', description: 'Once verified, go to Sitemaps in the left menu and enter your sitemap URL — typically yourdomain.com/sitemap.xml. Submitting a sitemap ensures Google can discover all your pages, not just those it finds through links.' },
+            { step: 4, title: 'Review the Index Coverage report', description: 'Open the Index Coverage report (under Indexing) to see which pages Google has indexed and which have issues. Note any pages marked as Error or Excluded — these are pages Google cannot or will not show in search results.' },
+            { step: 5, title: 'Run a site: search in Google', description: 'Open Google and search site:yourdomain.com with no space after the colon. The number of results is an estimate of your indexed pages. Compare this to the actual number of pages on your site to spot indexing gaps.' },
+        ],
+        tasks: [
+            'Run a site:yourdomain.com search in Google and count how many pages are indexed',
+            'Set up Google Search Console and verify ownership of your site',
+            'Check the Index Coverage report and note any errors or excluded pages',
+            'Find a competitor ranking on Google for a term you want to target — note their page title and meta description',
+            'Write down three questions your ideal customer types into Google before finding a business like yours',
+        ],
+        reflection: 'After running the site: search and reviewing Search Console, what did you discover about your current visibility in Google? Were there any surprises?',
     },
     'seo-1-2': {
         title: 'How Google Crawls, Indexes, and Ranks Pages',
@@ -1442,6 +1459,74 @@ function renderPathDetail(path) {
 }
 
 // ==================== LESSON VIEW ====================
+function renderSetupGuideTab(setupGuide) {
+    if (!setupGuide || !setupGuide.length) {
+        return '<p class="tab-coming-soon">Setup guide coming soon.</p>';
+    }
+    return '<div class="setup-steps">' + setupGuide.map(function (item) {
+        return '<div class="setup-step"><div class="setup-step-number">' + item.step + '</div><div class="setup-step-content"><div class="setup-step-title">' + item.title + '</div><div class="setup-step-desc">' + item.description + '</div></div></div>';
+    }).join('') + '</div>';
+}
+
+function renderTasksTab(lessonId, tasks, reflection) {
+    if (!tasks || !tasks.length) {
+        return '<p class="tab-coming-soon">Tasks coming soon.</p>';
+    }
+    var saved = JSON.parse(localStorage.getItem('tasks_' + lessonId) || '[]');
+    var savedReflection = localStorage.getItem('reflection_' + lessonId) || '';
+    var html = '<div class="task-checklist">';
+    tasks.forEach(function (task, i) {
+        var checked = saved[i] ? 'checked' : '';
+        html += '<div class="task-item"><label><input type="checkbox" ' + checked + ' onchange="saveTaskState(\'' + lessonId + '\', ' + i + ', this.checked)"><span>' + task + '</span></label></div>';
+    });
+    html += '</div>';
+    if (reflection) {
+        html += '<div class="reflection-box"><label class="reflection-label">' + reflection + '</label><textarea class="reflection-textarea" id="reflectionText_' + lessonId + '" placeholder="Write your thoughts here...">' + savedReflection + '</textarea><button class="btn btn-outline btn-sm" id="saveReflectionBtn_' + lessonId + '" onclick="saveReflection(\'' + lessonId + '\')">Save reflection</button></div>';
+    }
+    return html;
+}
+
+function switchLessonTab(tabName, lessonId) {
+    document.querySelectorAll('.lesson-tab').forEach(function (t) {
+        t.classList.toggle('active', t.dataset.tab === tabName);
+    });
+    ['learn', 'setup', 'tasks'].forEach(function (name) {
+        var el = document.getElementById('tab-' + name + '-' + lessonId);
+        if (el) el.classList.toggle('active', name === tabName);
+    });
+}
+
+function saveTaskState(lessonId, taskIndex, checked) {
+    var key = 'tasks_' + lessonId;
+    var saved = JSON.parse(localStorage.getItem(key) || '[]');
+    saved[taskIndex] = checked;
+    localStorage.setItem(key, JSON.stringify(saved));
+}
+
+function saveReflection(lessonId) {
+    var textarea = document.getElementById('reflectionText_' + lessonId);
+    var btn = document.getElementById('saveReflectionBtn_' + lessonId);
+    if (!textarea || !btn) return;
+    localStorage.setItem('reflection_' + lessonId, textarea.value);
+    btn.textContent = 'Saved!';
+    btn.disabled = true;
+    setTimeout(function () {
+        btn.textContent = 'Save reflection';
+        btn.disabled = false;
+    }, 2000);
+}
+
+function completeModuleProject(pathId, moduleIndex) {
+    var key = 'moduleProject_' + pathId + '_' + moduleIndex;
+    localStorage.setItem(key, 'true');
+    var btn = document.getElementById('moduleProjectBtn_' + pathId + '_' + moduleIndex);
+    if (btn) {
+        btn.textContent = 'Completed ✓';
+        btn.className = 'btn btn-success module-project-btn';
+        btn.disabled = true;
+    }
+}
+
 function openLesson(pathId, lessonId) {
     hideNextLessonPanel();
     const path = learningPaths[pathId];
@@ -1500,6 +1585,17 @@ function openLesson(pathId, lessonId) {
         `;
     }
 
+    // Build module project card if this is the last lesson in a module that has a project
+    var moduleProjectHtml = '';
+    path.modules.forEach(function (mod, modIdx) {
+        var lastLesson = mod.lessons[mod.lessons.length - 1];
+        if (lastLesson && lastLesson.id === lessonId && mod.projectTitle) {
+            var projectKey = 'moduleProject_' + pathId + '_' + modIdx;
+            var isDone = localStorage.getItem(projectKey) === 'true';
+            moduleProjectHtml = '<div class="module-project-card"><div class="module-project-label">MODULE PROJECT</div><div class="module-project-title">' + mod.projectTitle + '</div><p class="module-project-desc">' + mod.projectDescription + '</p><button class="btn ' + (isDone ? 'btn-success' : 'btn-outline') + ' module-project-btn" id="moduleProjectBtn_' + pathId + '_' + modIdx + '" onclick="completeModuleProject(\'' + pathId + '\', ' + modIdx + ')" ' + (isDone ? 'disabled' : '') + '>' + (isDone ? 'Completed ✓' : 'I\'ve completed this ✓') + '</button></div>';
+        }
+    });
+
     main.innerHTML = `
         <div class="lesson-breadcrumb">${path.title} <span>→</span> ${lesson.title}</div>
         <h1>${lesson.title}</h1>
@@ -1508,9 +1604,23 @@ function openLesson(pathId, lessonId) {
             <span>+${lesson.xp} XP</span>
             ${isCompleted ? '<span style="color:var(--success);font-weight:600">Completed</span>' : ''}
         </div>
-        <div class="lesson-body">
-            ${bodyContent}
+        <div class="lesson-tabs">
+            <button class="lesson-tab active" data-tab="learn" onclick="switchLessonTab('learn', '${lessonId}')">Learn</button>
+            <button class="lesson-tab" data-tab="setup" onclick="switchLessonTab('setup', '${lessonId}')">Setup Guide</button>
+            <button class="lesson-tab" data-tab="tasks" onclick="switchLessonTab('tasks', '${lessonId}')">Tasks</button>
         </div>
+        <div class="tab-content active" id="tab-learn-${lessonId}">
+            <div class="lesson-body">
+                ${bodyContent}
+            </div>
+        </div>
+        <div class="tab-content" id="tab-setup-${lessonId}">
+            ${renderSetupGuideTab(content ? content.setupGuide : null)}
+        </div>
+        <div class="tab-content" id="tab-tasks-${lessonId}">
+            ${renderTasksTab(lessonId, content ? content.tasks : null, content ? content.reflection : null)}
+        </div>
+        ${moduleProjectHtml}
         <div class="lesson-complete-btn">
             ${!isCompleted ? `<button class="btn btn-success btn-lg" onclick="completeLesson('${pathId}', '${lessonId}', ${lesson.xp})">Mark as Complete — Earn ${lesson.xp} XP</button>` : '<button class="btn btn-outline btn-lg" disabled>Lesson Completed</button>'}
         </div>
