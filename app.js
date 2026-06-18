@@ -28,6 +28,8 @@ const learningPaths = {
                 title: 'Keyword Research',
                 badge: 'Beginner',
                 badgeClass: 'badge-beginner',
+                projectTitle: 'Target Keyword List',
+                projectDescription: 'Using the tools and methods from this module, build a keyword list of at least 20 target keywords for your site or a client site. For each keyword, record the estimated search volume, difficulty score, and intent type. Group them into topic clusters and highlight your top five priority keywords — the ones you will create or optimise content around first.',
                 lessons: [
                     { id: 'seo-2-1', title: 'How to Find Keywords People Actually Search For', duration: '30 min', xp: 75 },
                     { id: 'seo-2-2', title: 'Keyword Difficulty and Search Volume', duration: '25 min', xp: 60 },
@@ -38,6 +40,8 @@ const learningPaths = {
                 title: 'On-Page SEO',
                 badge: 'Intermediate',
                 badgeClass: 'badge-intermediate',
+                projectTitle: 'On-Page SEO Audit and Rewrite',
+                projectDescription: 'Pick three pages on your website and conduct a full on-page SEO audit of each. Rewrite the title tags, meta descriptions, and H1s using your target keywords. Check internal linking and image alt text. Document what you changed and why, and note which improvements you expect to have the most impact on rankings and click-through rate.',
                 lessons: [
                     { id: 'seo-3-1', title: 'Title Tags, Meta Descriptions, and Headers', duration: '25 min', xp: 60 },
                     { id: 'seo-3-2', title: 'Content Optimisation for Search', duration: '35 min', xp: 80 },
@@ -49,6 +53,8 @@ const learningPaths = {
                 title: 'Technical SEO',
                 badge: 'Intermediate',
                 badgeClass: 'badge-intermediate',
+                projectTitle: 'Technical SEO Fixes List',
+                projectDescription: 'Run your site through Google PageSpeed Insights and the Mobile-Friendly Test. Check your robots.txt and sitemap.xml for issues. Audit for structured data opportunities. Produce a prioritised list of at least five technical issues you found, how you would fix each one, and an estimate of the SEO impact. Aim to actually fix at least two of them before moving to the next module.',
                 lessons: [
                     { id: 'seo-4-1', title: 'Site Speed and Core Web Vitals', duration: '30 min', xp: 75 },
                     { id: 'seo-4-2', title: 'Mobile-First Indexing', duration: '20 min', xp: 50 },
@@ -60,6 +66,8 @@ const learningPaths = {
                 title: 'Link Building and Authority',
                 badge: 'Advanced',
                 badgeClass: 'badge-advanced',
+                projectTitle: 'Link Building Outreach Plan',
+                projectDescription: 'Research ten websites in your niche that would be realistic targets for a backlink. For each one, document the site URL, domain authority score, the type of content they link to, and your proposed outreach angle (guest post, resource page inclusion, digital PR, broken link replacement, etc.). Write one outreach email template you could send to at least five of these targets immediately.',
                 lessons: [
                     { id: 'seo-5-1', title: 'How Backlinks Work and Why They Matter', duration: '25 min', xp: 60 },
                     { id: 'seo-5-2', title: 'Link Building Strategies That Actually Work', duration: '40 min', xp: 100 },
@@ -357,54 +365,50 @@ const lessonContent = {
         title: 'What is SEO and Why It Matters',
         body: `
             <h2>What is Search Engine Optimisation?</h2>
-            <p>Search Engine Optimisation (SEO) is the practice of improving your website so it appears higher in search engine results when people search for topics related to your business. The goal is simple: get more of the right people to find your website through organic (non-paid) search.</p>
-
-            <p>When someone types a query into Google, the search engine evaluates hundreds of pages and decides which ones best answer that query. SEO is the process of making sure your pages are among those top results.</p>
+            <p>Search Engine Optimisation (SEO) is the practice of improving your website so it appears prominently in search results when people look for topics relevant to your business. Done well, it brings a steady flow of high-intent visitors without paying for every click.</p>
+            <p>In 2026, that definition comes with an important addendum: SEO is not just about ranking on page one. Google now serves many queries through AI Overviews — AI-generated summaries at the top of results — and through AI Mode, a conversational interface that synthesises answers from multiple sources. Strong SEO means earning a place in those AI-generated results too.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>SEO is not about tricking search engines. It's about genuinely being the best result for a given search query — and making sure search engines can understand that.</p>
+                <p>SEO is not about gaming algorithms. It is about genuinely being the best resource for a given search query — and making sure Google can recognise that. The two goals have always been the same; only the tactics for achieving them evolve.</p>
             </div>
 
             <h2>Why SEO Matters for Marketers</h2>
-            <p>Organic search is consistently one of the largest sources of website traffic for most businesses. Here's why it matters:</p>
+            <p>Organic search remains one of the highest-value traffic sources available to any business:</p>
             <ul>
-                <li><strong>Free traffic</strong> — Unlike paid ads, you don't pay per click. Once you rank, the traffic comes without ongoing ad spend.</li>
-                <li><strong>High intent</strong> — People searching on Google are actively looking for information, products, or services. This makes search traffic highly valuable.</li>
-                <li><strong>Compounding returns</strong> — A well-optimised page can generate traffic for months or years. Paid ads stop the moment you stop paying.</li>
-                <li><strong>Trust and credibility</strong> — Users tend to trust organic results more than ads.</li>
+                <li><strong>Compounding returns</strong> — A page that earns strong rankings can generate traffic for months or years without ongoing ad spend. Paid campaigns stop the moment you pause them.</li>
+                <li><strong>High intent</strong> — People searching on Google are actively looking for answers, products, or services. Intent-matched traffic converts better than most other channels.</li>
+                <li><strong>Trust and credibility</strong> — Organic results carry an implicit endorsement that paid slots do not. Users know the difference.</li>
+                <li><strong>AI Overviews visibility</strong> — Sites cited in AI-generated answers gain visibility even when a user does not click through to a result. Building the authority to be cited is now part of the SEO brief.</li>
             </ul>
 
             <h2>The Three Pillars of SEO</h2>
-            <p>All SEO work falls into three main categories:</p>
+            <p>All SEO activity falls into three interdependent areas:</p>
             <ol>
-                <li><strong>Technical SEO</strong> — Making sure search engines can crawl and index your site properly. This includes site speed, mobile friendliness, and site structure.</li>
-                <li><strong>On-Page SEO</strong> — Optimising the content and HTML of individual pages. This includes title tags, headers, content quality, and keyword usage.</li>
-                <li><strong>Off-Page SEO</strong> — Building your site's authority through external signals, primarily backlinks from other websites.</li>
+                <li><strong>Technical SEO</strong> — Ensuring search engines can crawl, index, and render your site correctly. This covers site speed, Core Web Vitals, mobile-first structure, and clean site architecture.</li>
+                <li><strong>On-Page SEO</strong> — Optimising individual pages through content quality, E-E-A-T signals, keyword relevance, and structured heading hierarchies.</li>
+                <li><strong>Off-Page SEO</strong> — Building your site's authority through genuine editorial backlinks, digital PR, and the credibility signals that come with being cited as a trusted source.</li>
             </ol>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>New to SEO? Don't try to master everything at once. Start with on-page SEO (writing great content for your audience), then layer in technical and off-page work as you grow.</p>
+                <p>If you are new to SEO, start with on-page fundamentals: write genuinely useful content for real people, structure it clearly, and demonstrate relevant expertise. Technical and off-page work compound on top of a strong content foundation — not the other way around.</p>
             </div>
 
-            <h2>SEO vs Paid Search</h2>
-            <p>Many marketers wonder whether to invest in SEO or paid search (Google Ads). The short answer: both have their place.</p>
+            <h2>E-E-A-T: The Standard Google Judges Content By</h2>
+            <p>Google evaluates content quality through a framework called <strong>E-E-A-T</strong>: Experience, Expertise, Authoritativeness, and Trustworthiness. These signals inform the quality rating guidelines used by Google's human evaluators, which in turn shape how algorithms are tuned.</p>
             <ul>
-                <li><strong>SEO</strong> is a long-term investment. It takes time to build but delivers compounding value.</li>
-                <li><strong>Paid search</strong> delivers immediate visibility but costs money for every click.</li>
-                <li>The best marketers use both — paid search for immediate results and testing, SEO for sustainable growth.</li>
+                <li><strong>Experience</strong> — Has the author actually done what they are writing about?</li>
+                <li><strong>Expertise</strong> — Do they have the knowledge and skill to be a credible source?</li>
+                <li><strong>Authoritativeness</strong> — Is the site recognised as a go-to source in its field?</li>
+                <li><strong>Trustworthiness</strong> — Is the site honest, accurate, and safe to use?</li>
             </ul>
+            <p>Google's March and May 2026 Core Updates confirmed the direction of travel: original, expert-attributed, people-first content is gaining visibility. Thin, assembled, or generic content continues to lose it.</p>
 
-            <h2>What You'll Learn in This Path</h2>
-            <p>By the end of this learning path, you'll understand:</p>
-            <ul>
-                <li>How search engines discover and rank content</li>
-                <li>How to research keywords your audience is actually searching for</li>
-                <li>How to optimise your pages to rank higher</li>
-                <li>How to build your site's authority through link building</li>
-                <li>How to measure and report on SEO performance</li>
-            </ul>
+            <div class="callout callout-info">
+                <div class="callout-title">Key Concept: GEO — Generative Engine Optimisation</div>
+                <p><strong>Generative Engine Optimisation (GEO)</strong> is the emerging practice of optimising content to be cited in AI-generated answers — Google's AI Overviews, AI Mode, and similar features. The principles overlap strongly with good SEO: be authoritative, be specific, answer questions directly. GEO adds a practical layer: structure your content so AI systems can extract a clear, accurate answer and attribute it to your source. Think concise definitions, direct answers near headings, and verifiable claims backed by data.</p>
+            </div>
         `,
         quiz: {
             question: 'Which of the following best describes why SEO delivers "compounding returns"?',
@@ -437,54 +441,44 @@ const lessonContent = {
         title: 'How Google Crawls, Indexes, and Ranks Pages',
         body: `
             <h2>The Three Stages of Search</h2>
-            <p>Before a page appears in search results, it goes through three stages: crawling, indexing, and ranking. Understanding this process is fundamental to doing SEO well.</p>
+            <p>Every page that appears in Google results has been through three stages: crawling, indexing, and ranking. Understanding this pipeline tells you exactly where to focus your SEO attention at any given time.</p>
 
             <h2>Stage 1: Crawling</h2>
-            <p>Google uses automated programs called "crawlers" (or "spiders") to discover web pages. The main crawler is called Googlebot.</p>
-            <p>Googlebot finds pages by:</p>
+            <p>Google uses automated software called Googlebot to discover web pages. Googlebot moves across the web by following links, reading XML sitemaps, and drawing on signals from other Google services. It visits pages and downloads their content to be processed.</p>
+            <p>Googlebot cannot crawl a page if:</p>
             <ul>
-                <li>Following links from pages it already knows about</li>
-                <li>Reading XML sitemaps submitted by website owners</li>
-                <li>Using data from various Google services</li>
+                <li>No links point to it — it is an orphan page with no discoverable path</li>
+                <li>It is blocked by your robots.txt file</li>
+                <li>The server is too slow or returns errors when Googlebot visits</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>If a page has no links pointing to it and isn't in a sitemap, Google may never discover it. This is why internal linking and sitemaps matter.</p>
+                <p>Crawling is the prerequisite to everything else. A page that is not crawled cannot be indexed; a page that is not indexed cannot rank. Technical SEO problems at the crawl stage prevent all downstream SEO work from having any effect.</p>
             </div>
 
             <h2>Stage 2: Indexing</h2>
-            <p>After crawling a page, Google tries to understand what it's about. This is called indexing. During indexing, Google:</p>
-            <ul>
-                <li>Analyses the text content, images, and videos on the page</li>
-                <li>Stores information about the page in its massive database (the "index")</li>
-                <li>Notes signals like the page title, headings, and key phrases</li>
-            </ul>
-            <p>Not all pages get indexed. Google may skip pages that are low quality, duplicate, or blocked by the site owner.</p>
+            <p>Once crawled, Google analyses the page and decides whether to add it to its index — the massive database of pages eligible to appear in search results. During indexing, Google reads the text, processes images and video, and notes structural signals like the title tag, headings, and schema markup.</p>
+            <p>Pages may be crawled but not indexed if Google judges them to be low quality, near-duplicates of other pages, or if the page includes a noindex directive. The Index Coverage report in Google Search Console shows which of your pages are indexed and which are excluded, along with the reason.</p>
 
             <h2>Stage 3: Ranking</h2>
-            <p>When someone searches, Google looks through its index to find the most relevant and useful pages. It then ranks them using hundreds of factors (called "ranking signals").</p>
-            <p>Key ranking factors include:</p>
+            <p>When a user runs a search, Google queries its index in real time and ranks pages using hundreds of signals. By 2026, the signals that carry most weight cluster around a few clear themes:</p>
             <ul>
-                <li><strong>Relevance</strong> — How well the page matches the search query</li>
-                <li><strong>Quality</strong> — The depth, accuracy, and usefulness of the content</li>
-                <li><strong>Authority</strong> — How many high-quality websites link to this page</li>
-                <li><strong>User experience</strong> — Page speed, mobile friendliness, and ease of use</li>
-                <li><strong>Freshness</strong> — How recently the content was updated (for time-sensitive topics)</li>
+                <li><strong>Relevance</strong> — How precisely does the page address the specific query and intent behind it?</li>
+                <li><strong>E-E-A-T</strong> — Does the content reflect real Experience, genuine Expertise, recognised Authoritativeness, and strong Trustworthiness? These signals have grown in influence through every major update since 2022.</li>
+                <li><strong>Information Gain</strong> — Does this page add something new to the existing body of content on this topic? Pages that simply restate what every other page already says earn less ranking reward than pages that contribute an original angle, data point, or perspective.</li>
+                <li><strong>Authority</strong> — How many high-quality, relevant sites link to this page and this domain overall?</li>
+                <li><strong>Page Experience</strong> — Core Web Vitals (LCP, INP, CLS), mobile usability, and safe browsing all factor in. INP — which measures how quickly the page responds to user interactions — replaced the older FID metric and is now a firm ranking consideration.</li>
+                <li><strong>Freshness</strong> — For time-sensitive topics, content that has been recently reviewed and updated holds an advantage.</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>You can check if your pages are indexed by searching <code>site:yourdomain.com</code> in Google. This shows all indexed pages from your site.</p>
+                <p>Search <code>site:yourdomain.com</code> in Google to see all indexed pages from your site. If the count is significantly lower than the number of pages you have published, you have an indexing problem worth investigating in Search Console.</p>
             </div>
 
-            <h2>What This Means for Your SEO Strategy</h2>
-            <p>Understanding this three-stage process tells you exactly what to focus on:</p>
-            <ol>
-                <li><strong>Make your site crawlable</strong> — Use clear navigation, internal links, and submit a sitemap</li>
-                <li><strong>Make your content indexable</strong> — Write unique, high-quality content that's easy for Google to understand</li>
-                <li><strong>Earn rankings</strong> — Create the most useful content for your target keywords and build authority through backlinks</li>
-            </ol>
+            <h2>How AI Overviews Fit In</h2>
+            <p>Since 2024, Google has placed AI-generated summaries — called AI Overviews — above the traditional organic results for many queries. The sources cited inside those summaries are drawn from Google's index. This means ranking well is still the foundation of appearing in AI Overviews: Google does not cite pages it has not indexed and does not trust. Strong E-E-A-T, clear structure, and authoritative content are the same signals that determine both organic rankings and AI Overview inclusion.</p>
         `,
         quiz: {
             question: 'What is the correct order of how Google processes a web page?',
@@ -496,72 +490,91 @@ const lessonContent = {
             ],
             correct: 2,
             explanation: 'Google first discovers (crawls) a page, then processes and stores it (indexes), and finally determines where it should appear in search results (ranks).'
-        }
+        },
+        setupGuide: [
+            { step: 1, title: 'Check your robots.txt file', description: 'Go to yourdomain.com/robots.txt in your browser. This file tells crawlers which pages and directories to skip. Look for any Disallow rules that could be blocking important pages from being crawled.' },
+            { step: 2, title: 'Use the URL Inspection tool in Search Console', description: 'Open Google Search Console, click URL Inspection in the left menu, and enter your homepage URL. Click "Request indexing" if the page is not indexed. The tool shows you exactly how Googlebot sees that page and when it was last crawled.' },
+            { step: 3, title: 'Check your sitemap status in Search Console', description: 'Go to Index > Sitemaps in Search Console. You should see your sitemap URL listed with a status of "Success" and a count of submitted versus indexed URLs. A large gap between submitted and indexed pages signals a problem.' },
+            { step: 4, title: 'Review the Coverage report', description: 'Go to Index > Coverage in Search Console. Review the Error, Valid with warnings, and Excluded categories. Click into each issue type to see which pages are affected and read the recommended fix.' },
+            { step: 5, title: 'Check for noindex tags on important pages', description: 'On any key page (homepage, a product page, a blog post), right-click and select View Page Source. Press Ctrl+F and search for "noindex". If you find a noindex meta tag on a page you want indexed, that is the cause of your indexing issue.' },
+        ],
+        tasks: [
+            'Open yourdomain.com/robots.txt and note whether any important directories or pages are being blocked',
+            'Use Search Console URL Inspection to check the crawl status and last crawl date for your homepage',
+            'Identify one page on your site that you expect to be indexed but which may not appear in a site: search',
+            'Open the Coverage report in Search Console and record how many pages are in each status category',
+            'Check three key pages for noindex meta tags by viewing the page source',
+        ],
+        reflection: 'After checking your robots.txt and the Coverage report, what crawl or indexing issues did you find — and which one would have the biggest impact to fix?',
     },
     'seo-1-3': {
         title: 'Understanding Search Intent',
         body: `
             <h2>What is Search Intent?</h2>
-            <p>Search intent (also called "user intent") is the reason behind a search query — what the person actually wants when they type something into Google.</p>
-            <p>Understanding search intent is one of the most important skills in SEO. If your content doesn't match what the searcher wants, it won't rank — no matter how well it's optimised.</p>
+            <p>Search intent — sometimes called user intent — is the underlying reason a person runs a particular search. The words in a query are a surface signal; the intent behind them is what Google is really trying to satisfy. Matching your content to intent is one of the most decisive factors in whether a page ranks or not.</p>
+            <p>If Google's results for a query are all blog posts and you have built a product page, you will not rank — regardless of how well optimised the page is in every other respect. Intent alignment is the prerequisite that makes everything else work.</p>
 
             <h2>The Four Types of Search Intent</h2>
 
             <h3>1. Informational Intent</h3>
-            <p>The user wants to learn something.</p>
+            <p>The searcher wants to learn or understand something.</p>
             <ul>
-                <li>"what is SEO"</li>
-                <li>"how to bake sourdough bread"</li>
-                <li>"marketing funnel stages"</li>
+                <li>"what is a pillar page"</li>
+                <li>"how to set up Google Search Console"</li>
+                <li>"what does INP measure"</li>
             </ul>
-            <p><strong>Best content format:</strong> Blog posts, guides, tutorials, videos</p>
+            <p><strong>Best content format:</strong> In-depth guides, tutorials, explainer articles, how-to posts</p>
 
             <h3>2. Navigational Intent</h3>
-            <p>The user wants to reach a specific website or page.</p>
+            <p>The searcher wants to reach a specific website or page they already know about.</p>
             <ul>
-                <li>"HubSpot login"</li>
-                <li>"Google Analytics"</li>
-                <li>"Ahrefs blog"</li>
+                <li>"Ahrefs login"</li>
+                <li>"Google Search Console"</li>
+                <li>"Semrush keyword tool"</li>
             </ul>
-            <p><strong>Best content format:</strong> Your homepage or key landing pages</p>
+            <p><strong>Best content format:</strong> Your own brand pages — homepage, login page, key landing pages</p>
 
             <h3>3. Commercial Investigation</h3>
-            <p>The user is researching before making a decision.</p>
+            <p>The searcher is evaluating options before making a decision.</p>
             <ul>
-                <li>"best SEO tools"</li>
-                <li>"Semrush vs Ahrefs"</li>
-                <li>"email marketing platform reviews"</li>
+                <li>"best SEO audit tools"</li>
+                <li>"Ahrefs vs Semrush 2026"</li>
+                <li>"keyword research tool reviews"</li>
             </ul>
-            <p><strong>Best content format:</strong> Comparison guides, reviews, "best of" lists</p>
+            <p><strong>Best content format:</strong> Comparison guides, curated lists, product reviews, tool round-ups</p>
 
             <h3>4. Transactional Intent</h3>
-            <p>The user is ready to take action (buy, sign up, download).</p>
+            <p>The searcher is ready to take an action — buy, sign up, download, book.</p>
             <ul>
-                <li>"buy running shoes online"</li>
-                <li>"Ahrefs pricing"</li>
-                <li>"free SEO audit tool"</li>
+                <li>"buy Ahrefs subscription"</li>
+                <li>"free keyword rank tracker"</li>
+                <li>"SEO agency London"</li>
             </ul>
-            <p><strong>Best content format:</strong> Product pages, pricing pages, landing pages</p>
+            <p><strong>Best content format:</strong> Product pages, pricing pages, category pages, free trial landing pages</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Many marketers try to rank a product page for an informational query. For example, targeting "what is email marketing" with a pricing page. This rarely works because the intent doesn't match.</p>
+                <p>Pointing a product page at an informational query — or a blog post at a transactional one — is one of the most common and costly SEO errors. If your content format does not match what Google already ranks for a query, you are competing against the intent signal itself. Always check the SERP before writing a single word of content.</p>
             </div>
 
+            <h2>How AI Overviews Are Changing the SERP</h2>
+            <p>Since 2024, Google's AI Overviews have changed what the search results page looks like for many informational queries. An AI-generated summary now sits above organic listings, synthesising answers from multiple sources. For some queries, this pushes traditional blue links further down the page.</p>
+            <p>This does not change how intent alignment works — but it does affect strategy for informational content. Pages that are cited in AI Overviews tend to be authoritative, structured clearly, and written with direct answers near relevant headings. Informational content that earns AI Overview citations can generate brand visibility even without a direct click.</p>
+
             <h2>How to Determine Search Intent</h2>
-            <p>The simplest method: search the keyword yourself and look at what Google already ranks.</p>
+            <p>The simplest method — and the most reliable — is to search the keyword yourself in an incognito window and read what Google returns:</p>
             <ol>
-                <li>Search your target keyword in Google</li>
-                <li>Look at the top 5 results</li>
-                <li>Note the content type (blog, product page, video?)</li>
-                <li>Note the content format (guide, listicle, comparison?)</li>
-                <li>Note the angle (beginner-focused, budget-focused, specific year?)</li>
+                <li>Search your target keyword</li>
+                <li>Note whether an AI Overview appears and, if so, what it says</li>
+                <li>Look at the top five organic results — content type, format, and angle</li>
+                <li>Read the People Also Ask questions to surface sub-intents</li>
+                <li>Check the Related Searches section at the bottom of the page</li>
             </ol>
-            <p>The results Google already shows are your strongest signal. Google has tested what satisfies users for that query — match it.</p>
+            <p>The results Google shows are the result of testing at scale. If every top result is a how-to guide, a how-to guide is what users are asking for. Match it — then ask what more you can add that none of those results currently offer.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Always check search intent before writing content. Spending hours creating a detailed guide is wasted if Google shows product pages for that keyword.</p>
+                <p>Intent changes over time. A query that once showed product pages may now trigger an AI Overview or an informational result after a Google update. Re-check the SERP for your target keywords every six months — your content format may need to evolve with it.</p>
             </div>
         `,
         quiz: {
@@ -574,7 +587,22 @@ const lessonContent = {
             ],
             correct: 2,
             explanation: '"Best [product] [year]" queries are classic commercial investigation intent. The searcher is comparing options and hasn\'t decided yet. The best content format would be a comparison or "best of" list.'
-        }
+        },
+        setupGuide: [
+            { step: 1, title: 'Pick one target keyword and search it in Google', description: 'Choose a keyword you want your site to rank for. Open an incognito browser window (to avoid personalisation) and search for it. Note the types of content on the first page — are they blog posts, product pages, how-to guides, or comparison articles?' },
+            { step: 2, title: 'Analyse the top 5 results in detail', description: 'Open each of the top 5 results and note the content type (article, landing page, video), content format (listicle, guide, definition, comparison), and content angle (beginner-focused, local, review-based, date-specific). This tells you what Google has decided satisfies this intent.' },
+            { step: 3, title: 'Expand the People Also Ask section', description: 'Back on the search results page, click each People Also Ask question to expand it. These questions reveal the sub-intents and follow-up questions searchers have around your keyword. They are also excellent content ideas and FAQ material.' },
+            { step: 4, title: 'Scroll to Related Searches at the bottom of the page', description: 'The Related Searches section at the bottom of Google results shows semantically related queries people search after your keyword. These reveal intent variations — some may be more specific (transactional) and some more general (informational).' },
+            { step: 5, title: 'Map your existing page against the dominant intent', description: 'Open the page you currently have (or plan to create) for this keyword. Compare its format and angle to what Google is ranking on page one. If you have a product page but Google shows blog posts, you have an intent mismatch that will prevent ranking.' },
+        ],
+        tasks: [
+            'Pick 5 keywords you want to rank for and classify each as informational, navigational, commercial investigation, or transactional',
+            'Search each keyword in an incognito window and note the dominant content type Google returns for each',
+            'Identify one page on your site where the content format does not match the search intent of its target keyword',
+            'Find two People Also Ask questions from your niche that you could create content specifically to answer',
+            'Review one top-ranking competitor page for your main keyword — list three intent signals it includes that your current page lacks',
+        ],
+        reflection: 'Which of your existing pages has the biggest mismatch between its content format and the likely search intent of the people finding it — and what would you change?',
     },
 
     // ==================== PAID SEARCH LESSONS ====================
@@ -582,49 +610,48 @@ const lessonContent = {
         title: 'How Paid Search Works (The Auction Model)',
         body: `
             <h2>What is Paid Search?</h2>
-            <p>Paid search advertising (also called PPC — Pay-Per-Click) lets you place ads at the top of search engine results pages. When someone searches for a keyword you're targeting, your ad can appear above the organic results.</p>
-            <p>The two major paid search platforms are <strong>Google Ads</strong> (dominant globally) and <strong>Microsoft Advertising</strong> (Bing, Yahoo, and partner sites).</p>
+            <p>Paid search advertising — also known as PPC (Pay-Per-Click) — lets you place ads at the top of search engine results pages when people search for terms relevant to your business. The two major platforms are <strong>Google Ads</strong> and <strong>Microsoft Advertising</strong>, which together cover the vast majority of search volume in most English-speaking markets.</p>
+            <p>In 2026, paid search has expanded well beyond traditional keyword-triggered text ads. Google's fastest-growing product — <strong>AI Max for Search</strong> — uses AI to extend query matching beyond the keywords you explicitly bid on and to dynamically personalise ad assets for each searcher. The advertiser's job has shifted: from managing individual keywords to providing high-quality signals — strong conversion data, compelling creative assets, and clear business goals.</p>
 
             <h2>The Auction Model</h2>
-            <p>Every time someone searches, an instant auction happens behind the scenes. Here's how it works:</p>
+            <p>Every time someone runs a search, an instant auction happens behind the scenes. Here is how it works:</p>
             <ol>
-                <li><strong>You choose keywords</strong> — The search terms you want your ads to show for</li>
-                <li><strong>You set a bid</strong> — The maximum you're willing to pay per click</li>
-                <li><strong>Someone searches</strong> — Google checks which advertisers are targeting that keyword</li>
-                <li><strong>The auction runs</strong> — Google evaluates all eligible ads and decides which to show, and in what order</li>
+                <li><strong>You set targeting and goals</strong> — The keywords or topics you want to reach, and the conversions you want to drive</li>
+                <li><strong>You set bids or a bid strategy</strong> — Either manually or through Smart Bidding, which uses machine learning to bid at auction time</li>
+                <li><strong>A user searches</strong> — Google checks which advertisers are eligible for that query</li>
+                <li><strong>The auction runs</strong> — Google calculates Ad Rank for all eligible advertisers and determines which ads to show and in what order</li>
                 <li><strong>Ads appear</strong> — Winning ads are displayed, and you only pay when someone clicks</li>
             </ol>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>The highest bidder doesn't always win. Google uses <strong>Ad Rank</strong> — a combination of your bid, ad quality, expected click-through rate, and landing page experience. A lower bid with a better ad can beat a higher bid with a poor ad.</p>
+                <p>The highest bidder does not always win. Google uses <strong>Ad Rank</strong> — a combination of your bid, Quality Score (ad relevance, expected CTR, and landing page experience), and the expected impact of your ad assets. A well-crafted ad with a lower bid can outrank a poorly crafted ad with a higher one.</p>
             </div>
 
             <h2>The Ad Rank Formula</h2>
-            <p>Ad Rank determines your ad position. It's calculated as:</p>
-            <p><strong>Ad Rank = Bid × Quality Score × Expected Impact of Extensions</strong></p>
+            <p>Ad Rank determines your ad position:</p>
+            <p><strong>Ad Rank = Bid × Quality Score × Expected Impact of Assets</strong></p>
             <p>This means you can improve your position by:</p>
             <ul>
                 <li>Increasing your bid (costs more money)</li>
                 <li>Improving your Quality Score (free and sustainable)</li>
-                <li>Adding useful ad extensions (free)</li>
+                <li>Adding high-quality, relevant ad assets (free and impactful)</li>
             </ul>
 
             <h2>How You Pay</h2>
-            <p>You don't actually pay your maximum bid. You pay just enough to beat the advertiser below you — this is called <strong>second-price auction</strong> (though Google's system is more complex now).</p>
-            <p>For example: if your max bid is £5 and the next advertiser's Ad Rank requires you to pay £3.20 to stay above them, you pay £3.20 per click.</p>
+            <p>You do not pay your maximum bid — you pay just enough to beat the Ad Rank of the advertiser below you. This generalised second-price mechanism means efficiency matters enormously: a higher-quality ad pays less per click for the same position than a lower-quality one.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Focus on Quality Score first. Improving your ad relevance, click-through rate, and landing page experience can dramatically lower your cost-per-click while maintaining or improving your ad position.</p>
+                <p>Focus on Quality Score first. Improving your ad relevance, expected click-through rate, and landing page experience consistently lowers your cost-per-click while maintaining or improving your position. Better quality means the same budget delivers more clicks.</p>
             </div>
 
-            <h2>Why Paid Search is Powerful</h2>
+            <h2>Why Paid Search Remains Powerful</h2>
             <ul>
-                <li><strong>Intent-based</strong> — People are actively searching for what you offer</li>
-                <li><strong>Measurable</strong> — You can track every click, conversion, and pound spent</li>
-                <li><strong>Fast</strong> — Unlike SEO, you can appear at the top of results within hours</li>
-                <li><strong>Controllable</strong> — You set budgets, targeting, and schedules precisely</li>
+                <li><strong>Intent-based</strong> — People are actively searching for what you offer; this is the highest-intent advertising format available</li>
+                <li><strong>Measurable</strong> — You can track every click, conversion, and pound spent down to the keyword or query</li>
+                <li><strong>Fast</strong> — Unlike SEO, you can appear at the top of results within hours of setting up a campaign</li>
+                <li><strong>AI-accelerated</strong> — Tools like AI Max for Search and Smart Bidding now handle optimisation work that previously required constant manual management</li>
             </ul>
         `,
         quiz: {
@@ -642,53 +669,50 @@ const lessonContent = {
     'ps-1-2': {
         title: 'Account Structure: Campaigns, Ad Groups, Keywords',
         body: `
-            <h2>Why Structure Matters</h2>
-            <p>Good account structure is the foundation of every successful paid search campaign. A well-organised account gives you better control, clearer reporting, and typically lower costs.</p>
+            <h2>Why Account Structure Matters</h2>
+            <p>A well-structured Google Ads account is not just about organisation — it is about providing the clearest possible signals to Google's machine learning systems. Modern paid search is driven by Smart Bidding and AI optimisation. The better you structure your account to feed those systems clean data, specific goals, and relevant creative assets, the better they perform. Think of your job as a signal provider, not a manual controller.</p>
 
             <h2>The Three Levels</h2>
-            <p>Google Ads accounts are organised in a hierarchy:</p>
+            <p>Google Ads accounts follow a hierarchy:</p>
 
             <h3>1. Account Level</h3>
-            <p>Your top-level container. One account per business is typical. Here you set billing, user access, and account-wide settings.</p>
+            <p>Your top-level container. Account-level settings include billing, user access, conversion goals, and audience lists shared across all campaigns.</p>
 
             <h3>2. Campaign Level</h3>
             <p>Campaigns are your major organisational units. Each campaign has its own:</p>
             <ul>
                 <li><strong>Budget</strong> — Daily or monthly spend limit</li>
-                <li><strong>Targeting</strong> — Geographic locations, languages, devices</li>
-                <li><strong>Bidding strategy</strong> — How you want to optimise (clicks, conversions, etc.)</li>
-                <li><strong>Network</strong> — Search, Display, Shopping, etc.</li>
+                <li><strong>Bid strategy</strong> — Smart Bidding goal (Target CPA, Target ROAS, Maximise Conversions) or manual bidding</li>
+                <li><strong>Targeting</strong> — Geographic locations, languages, devices, and network settings</li>
+                <li><strong>Campaign type</strong> — Search, Performance Max, Shopping, Display, Video, or Demand Gen</li>
+                <li><strong>Negative keywords</strong> — Now applicable at campaign level for Performance Max campaigns as well as Search</li>
+            </ul>
+
+            <h3>3. Ad Group Level</h3>
+            <p>Ad groups sit inside campaigns and contain closely related keywords and the ads that serve them. Each ad group should focus on one tight theme, with keywords and ad copy that closely match each other.</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">Key Concept</div>
+                <p>Modern account structure serves Smart Bidding, not manual control. Rather than creating dozens of granular ad groups to control bids, create logical groupings that help Google understand your goals and give its bidding algorithms clean, sufficient conversion data to optimise against.</p>
+            </div>
+
+            <h2>A Practical Structure Example</h2>
+            <p>For a software business:</p>
+            <ul>
+                <li><strong>Campaign:</strong> Brand — Target ROAS, protecting branded search terms</li>
+                <li><strong>Campaign:</strong> Core Product — Maximise Conversions, targeting high-intent product keywords</li>
+                <li><strong>Campaign:</strong> Competitor — Separate budget and messaging, monitored closely</li>
+                <li><strong>Campaign:</strong> Performance Max — asset groups and conversion signals for Google to find incremental reach across all channels</li>
             </ul>
 
             <div class="callout callout-tip">
-                <div class="callout-title">Best Practice</div>
-                <p>Organise campaigns by theme, product line, or marketing objective. For example: "Brand Terms", "Competitor Terms", "Product A — Search", "Product B — Search".</p>
+                <div class="callout-title">Pro Tip</div>
+                <p>Consolidate where possible. Fewer campaigns with more data each perform better than many small campaigns starved of conversion signals. If a campaign is generating fewer than 30 conversions per month, consider merging it with another to give Smart Bidding enough data to function effectively.</p>
             </div>
-
-            <h3>3. Ad Group Level</h3>
-            <p>Inside each campaign, ad groups contain closely related keywords and the ads that target them. Think of ad groups as "topic clusters."</p>
-            <ul>
-                <li>Each ad group should focus on one tight theme</li>
-                <li>Keywords in the same ad group should be closely related</li>
-                <li>Ads in the group should be directly relevant to those keywords</li>
-            </ul>
-
-            <h2>The Golden Rule of Structure</h2>
-            <p><strong>Keep your ad groups tightly themed.</strong> When keywords and ads are closely matched, your Quality Score improves, your costs decrease, and your ads become more relevant to searchers.</p>
-
-            <h2>Example Structure</h2>
-            <p>For a shoe retailer:</p>
-            <ul>
-                <li><strong>Campaign:</strong> Running Shoes</li>
-                <li><strong>Ad Group 1:</strong> Men's Running Shoes (keywords: "men's running shoes", "running shoes for men")</li>
-                <li><strong>Ad Group 2:</strong> Women's Running Shoes (keywords: "women's running shoes", "ladies running shoes")</li>
-                <li><strong>Ad Group 3:</strong> Trail Running Shoes (keywords: "trail running shoes", "off-road running shoes")</li>
-            </ul>
-            <p>Each ad group gets ads written specifically for that theme, making them more relevant and improving performance.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Dumping all keywords into one ad group. This makes your ads generic and kills your Quality Score. Take the time to group related keywords together.</p>
+                <p>Over-fragmenting campaigns and ad groups in pursuit of manual control. Splitting into hundreds of tiny ad groups made sense in the era of manual CPC bidding. With Smart Bidding, fragmentation starves the algorithm of data and hurts performance. Simplify your structure and let the system optimise within broader, data-rich campaigns.</p>
             </div>
         `,
         quiz: {
@@ -707,54 +731,52 @@ const lessonContent = {
         title: 'Match Types and Negative Keywords',
         body: `
             <h2>What Are Match Types?</h2>
-            <p>When you add keywords to your campaigns, you need to tell Google how closely a search query must match your keyword before your ad can appear. This is done through <strong>match types</strong>.</p>
+            <p>Match types tell Google how closely a user's search query must relate to your keyword before your ad is eligible to appear. In 2026, all three match types have broadened significantly from their original definitions — understanding what each actually does today is essential for managing where your budget goes.</p>
 
             <h2>The Three Match Types</h2>
 
             <h3>1. Broad Match</h3>
-            <p>The widest reach. Your ad may show for searches that are related to your keyword, including synonyms, related topics, and variations.</p>
+            <p>Broad match is now the widest and most AI-driven match type. Rather than matching on literal word variations, Google's systems match on <strong>semantic intent</strong> — the meaning behind the search, not the specific words used. Combined with Smart Bidding, broad match uses your conversion data to bid aggressively on searches likely to convert and conservatively on those that are not.</p>
             <ul>
-                <li>Keyword: <code>running shoes</code></li>
-                <li>Could match: "best trainers for jogging", "athletic footwear", "marathon shoe reviews"</li>
+                <li>Keyword: <code>project management software</code></li>
+                <li>May match: "team task tracking app," "best tools for coordinating remote teams," "how to manage projects effectively"</li>
             </ul>
-            <p><strong>When to use:</strong> When you want maximum reach, especially with Smart Bidding which can optimise within broad match.</p>
+            <p>Broad match works best when paired with Smart Bidding and a healthy conversion history. Without Smart Bidding, it can waste budget on semantically adjacent but commercially irrelevant queries.</p>
 
             <h3>2. Phrase Match</h3>
-            <p>Your ad shows for searches that include the meaning of your keyword. The query must contain your keyword concept in the right order.</p>
+            <p>Phrase match covers searches that include the meaning of your keyword phrase in roughly the same conceptual order. The query must preserve the core intent but can include additional words before or after.</p>
             <ul>
-                <li>Keyword: <code>"running shoes"</code></li>
-                <li>Could match: "best running shoes for flat feet", "buy running shoes online"</li>
-                <li>Won't match: "shoes for running errands" (different meaning)</li>
+                <li>Keyword: <code>"project management software"</code></li>
+                <li>May match: "best project management software for small teams," "project management software free trial"</li>
+                <li>Less likely to match: "how to manage projects" (too different in intent)</li>
             </ul>
-            <p><strong>When to use:</strong> When you want a balance of reach and control.</p>
 
             <h3>3. Exact Match</h3>
-            <p>The tightest control. Your ad shows only for searches that have the same meaning as your keyword.</p>
+            <p>Exact match delivers the tightest control. Your ad shows for searches with the same meaning as your keyword — close variants and rewordings of the same intent are included, but searches with clearly different intent are not.</p>
             <ul>
-                <li>Keyword: <code>[running shoes]</code></li>
-                <li>Could match: "running shoes", "shoes for running"</li>
-                <li>Won't match: "best running shoes 2026" or "running shoe reviews"</li>
+                <li>Keyword: <code>[project management software]</code></li>
+                <li>May match: "project management tool," "software for project management"</li>
+                <li>Will not match: "free project management software" (different modifier changes the intent)</li>
             </ul>
-            <p><strong>When to use:</strong> When you want precise targeting and tight budget control.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Over the years, Google has made all match types broader. Even "exact match" now matches close variants. This makes negative keywords even more important.</p>
+                <p>Broad match in 2026 operates on <strong>semantic intent</strong>, not literal text. Google's systems understand that "team coordination app" and "project management software" serve similar intents. This makes broad match far more powerful than it once was — but also more reliant on high-quality conversion data to bid wisely. Without clean conversion signals, broad match wastes budget indiscriminately.</p>
             </div>
 
-            <h2>Negative Keywords: Your Defence System</h2>
-            <p>Negative keywords prevent your ads from showing for irrelevant searches. They're just as important as the keywords you target.</p>
-            <p>For example, if you sell premium running shoes, you might add these negatives:</p>
+            <h2>Negative Keywords: Your Essential Control Layer</h2>
+            <p>Negative keywords remain one of the most impactful levers in paid search, particularly as match types have broadened and AI Max for Search expands query coverage further. They prevent your ads appearing for searches that, despite matching your keyword's intent, are not commercially relevant to your business.</p>
+            <p>For a premium project management tool, useful negatives might include:</p>
             <ul>
-                <li><code>-free</code> (don't want people looking for free shoes)</li>
-                <li><code>-cheap</code> (wrong audience for premium products)</li>
-                <li><code>-repair</code> (not looking to buy)</li>
-                <li><code>-used</code> (you sell new products)</li>
+                <li><code>-free</code> — users looking for no-cost tools</li>
+                <li><code>-template</code> — users wanting templates, not software</li>
+                <li><code>-tutorial</code> — learning, not buying intent</li>
+                <li><code>-Excel</code> — users looking for spreadsheet solutions</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Review your Search Terms Report weekly. It shows exactly what people searched before clicking your ad. Add any irrelevant terms as negatives. This is one of the highest-impact optimisation tasks in paid search.</p>
+                <p>Review your Search Terms Report at least weekly. Sort by cost (highest first) to find the most expensive irrelevant queries first. Build shared negative keyword lists by theme — "free/cheap," "jobs/careers," "DIY/how-to" — and apply them across all relevant campaigns simultaneously.</p>
             </div>
         `,
         quiz: {
@@ -772,54 +794,46 @@ const lessonContent = {
     'ps-1-4': {
         title: 'Writing Effective Search Ads',
         body: `
-            <h2>The Anatomy of a Search Ad</h2>
-            <p>Google search ads (Responsive Search Ads) have several components:</p>
+            <h2>The Anatomy of a Search Ad in 2026</h2>
+            <p>Google Search ads are built using <strong>Responsive Search Ads (RSAs)</strong> — the default and only standard Search ad format. You supply multiple creative components and Google's AI assembles and tests the best combinations for each search context. With AI Max for Search, Google can also dynamically adapt these assets based on the query and the user's context, making asset quality more important than ever.</p>
+            <p>The components of an RSA:</p>
             <ul>
-                <li><strong>Headlines</strong> — Up to 15 headlines (30 characters each). Google tests combinations and shows up to 3 at once.</li>
+                <li><strong>Headlines</strong> — Up to 15 headlines (30 characters each). Google shows up to 3 at once.</li>
                 <li><strong>Descriptions</strong> — Up to 4 descriptions (90 characters each). Google shows up to 2 at once.</li>
-                <li><strong>Display URL path</strong> — Short text that appears in the URL (e.g., /running-shoes)</li>
-                <li><strong>Extensions</strong> — Additional information like sitelinks, callouts, phone numbers</li>
+                <li><strong>Display URL paths</strong> — Two short text fields that appear in the ad URL (e.g., /project-management/free-trial)</li>
+                <li><strong>Ad assets</strong> — Additional components like sitelinks, callouts, image assets, call assets, and lead form assets that expand your ad and improve Ad Rank</li>
             </ul>
 
             <h2>Principles of Effective Ad Copy</h2>
 
-            <h3>1. Match the Search Intent</h3>
-            <p>Your ad should directly address what the searcher is looking for. If someone searches "buy running shoes online", your headline should include those concepts.</p>
+            <h3>Match the Search Intent</h3>
+            <p>Your ad should directly address what the searcher is looking for. If someone searches "project management software for remote teams," your headlines should speak to remote work, team coordination, and the specific value you offer — not just generic product claims.</p>
 
-            <h3>2. Include the Keyword</h3>
-            <p>Having the search term (or close variation) in your headline improves relevance and Quality Score. It also appears <strong>bold</strong> in the search results, catching the eye.</p>
+            <h3>Include the Keyword</h3>
+            <p>Having the search term or a close variation in your headline improves relevance and Quality Score. Google also bolds matching terms in search results, which draws the eye and improves click-through rate.</p>
 
-            <h3>3. Highlight Your Unique Value</h3>
-            <p>What makes you different from every other advertiser? Include:</p>
+            <h3>Highlight Your Unique Value</h3>
+            <p>Specific claims consistently outperform vague ones:</p>
             <ul>
-                <li>Specific offers ("20% Off This Week")</li>
-                <li>Social proof ("Rated 4.8/5 by 10,000+ Customers")</li>
-                <li>Unique benefits ("Free Next-Day Delivery")</li>
-                <li>Urgency ("Limited Stock Available")</li>
+                <li>"Save 6 Hours Per Project" beats "Save Time"</li>
+                <li>"Rated 4.8/5 by 12,000 Teams" beats "Highly Rated"</li>
+                <li>"Free 30-Day Trial, No Card Required" beats "Try Free"</li>
             </ul>
 
-            <h3>4. Include a Clear Call to Action</h3>
-            <p>Tell people what to do: "Shop Now", "Get a Free Quote", "Book Your Demo", "Download the Guide".</p>
-
-            <h3>5. Use Numbers and Specifics</h3>
-            <p>"Save 30%" is more compelling than "Big Savings". "500+ 5-Star Reviews" beats "Highly Rated".</p>
+            <h3>Include a Clear Call to Action</h3>
+            <p>Tell people exactly what to do next: "Start Free Trial," "Get a Custom Quote," "Book a 15-Minute Demo," "Download the Guide." A specific CTA consistently outperforms a vague one.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Write at least 8-10 varied headlines and 3-4 descriptions. Google's machine learning will test combinations and find the best-performing mix. Pin your most important headline to position 1 if it must always show.</p>
+                <p>Write at least 10 varied headlines and 3–4 descriptions to give Google meaningful options to test. Cover different themes: benefits, social proof, offers, CTAs, and keyword-rich headlines. Pin your most critical headline (such as your brand name or core offer) to position 1 to ensure it always appears — but leave the rest unpinned so the algorithm can find the best-performing combinations.</p>
             </div>
 
-            <h2>Common Ad Copy Mistakes</h2>
-            <ul>
-                <li><strong>Too generic</strong> — "We're the best" tells the searcher nothing specific</li>
-                <li><strong>No differentiation</strong> — If your ad looks like everyone else's, there's no reason to click yours</li>
-                <li><strong>Missing CTA</strong> — Always tell the user what action to take</li>
-                <li><strong>Ignoring the landing page</strong> — Your ad promise must match what the user finds when they click</li>
-            </ul>
+            <h2>Asset Diversity Matters More Than Ever</h2>
+            <p>With AI Max for Search dynamically adapting how assets are assembled and served, providing diverse, high-quality assets is no longer optional — it is the primary creative lever available to advertisers. Thin or repetitive assets limit what the system can do. Treat each headline and description as a distinct, standalone message rather than a variation of the same sentence.</p>
 
             <div class="callout callout-warning">
-                <div class="callout-title">Important</div>
-                <p>Google now uses Responsive Search Ads (RSAs) as the default format. You provide multiple headlines and descriptions, and Google's AI assembles the best combination for each search. Provide variety in your assets so Google has meaningful options to test.</p>
+                <div class="callout-title">Common Mistake</div>
+                <p>Pinning too many headlines overrides Google's ability to test and optimise combinations. Pin only what genuinely must appear in every combination — typically your core offer or brand name in position 1. Leave the rest unpinned so the algorithm can find what actually performs best with real users.</p>
             </div>
         `,
         quiz: {
@@ -840,64 +854,53 @@ const lessonContent = {
         title: 'The Social Advertising Landscape',
         body: `
             <h2>Why Social Media Advertising Matters</h2>
-            <p>Social media advertising is one of the fastest-growing areas of digital marketing. Unlike search advertising (where you target people based on what they're searching), social advertising targets people based on <strong>who they are</strong> — their demographics, interests, behaviours, and connections.</p>
+            <p>Social media advertising targets people based on <strong>who they are</strong> — their professional identity, interests, life stage, and behaviour — rather than what they happen to be searching for right now. This makes it the primary tool for demand generation: reaching people who do not yet know they need your product and building the awareness that makes future search and conversion campaigns work.</p>
 
             <h2>The Major Platforms</h2>
 
-            <h3>Meta (Facebook & Instagram)</h3>
-            <p>The largest social advertising platform. Nearly 3 billion monthly active users across Facebook and Instagram. Best for:</p>
+            <h3>Meta (Facebook, Instagram, and Threads)</h3>
+            <p>The largest social advertising ecosystem, with billions of monthly active users across Facebook, Instagram, and — now accessible through Ads Manager — <strong>Threads</strong>. Meta's AI-driven <strong>Advantage+</strong> campaign structure has become the primary way advertisers operate on the platform, shifting budget allocation and placement decisions to the algorithm. Best for:</p>
             <ul>
                 <li>B2C businesses of all sizes</li>
                 <li>Ecommerce and direct-to-consumer brands</li>
-                <li>Local businesses</li>
-                <li>Lead generation</li>
+                <li>Lead generation at scale</li>
+                <li>Retargeting across a broad inventory of placements</li>
             </ul>
 
             <h3>LinkedIn</h3>
-            <p>The professional network with 900+ million members. Best for:</p>
+            <p>The professional network with over 1 billion members. Unique in offering targeting by job title, seniority, company size, and industry — and now with native CRM integration that lets advertisers measure pipeline and revenue impact directly within Campaign Manager. Best for:</p>
             <ul>
                 <li>B2B marketing and lead generation</li>
-                <li>Recruiting and employer branding</li>
-                <li>Professional services marketing</li>
-                <li>Targeting by job title, company, and industry</li>
+                <li>Employer branding and professional services</li>
+                <li>Account-based marketing at scale</li>
+                <li>Thought leadership and executive brand building</li>
             </ul>
 
             <h3>TikTok</h3>
-            <p>The fastest-growing platform with over 1 billion monthly users. Best for:</p>
+            <p>A platform built around short-form video and creator-led content, with over 1 billion monthly users. Following the resolution of TikTok's US structural uncertainty in January 2026, it is now operating as a stable advertising channel. <strong>Smart+</strong> is TikTok's unified AI campaign type, offering module-level automation control across targeting, creative, budget, and placements. Best for:</p>
             <ul>
-                <li>Reaching younger demographics (18-34)</li>
-                <li>Brand awareness through creative content</li>
-                <li>Ecommerce (especially with TikTok Shop)</li>
-                <li>Viral and trend-driven campaigns</li>
+                <li>Reaching 18–34 demographics with entertainment-first content</li>
+                <li>Ecommerce through TikTok Shop</li>
+                <li>Creator-led and UGC-style campaigns that generate authentic engagement</li>
             </ul>
 
             <h3>Snapchat</h3>
-            <p>Strong with younger audiences, especially 13-24 year olds. Best for:</p>
-            <ul>
-                <li>Reaching Gen Z</li>
-                <li>AR (augmented reality) experiences</li>
-                <li>Local and event-based marketing</li>
-            </ul>
+            <p>Strong with younger audiences (primarily 13–34), with unique AR advertising capabilities. Best for brands targeting Gen Z with immersive, interactive experiences and local campaigns.</p>
 
             <h3>Pinterest</h3>
-            <p>A visual discovery platform where users actively plan purchases. Best for:</p>
-            <ul>
-                <li>Home decor, fashion, food, and lifestyle brands</li>
-                <li>Products with strong visual appeal</li>
-                <li>Reaching users in "planning mode"</li>
-            </ul>
+            <p>A visual discovery and planning platform. Users come with purchase intent — actively searching for ideas and products. Best for home, fashion, food, and lifestyle brands where purchase decisions begin with visual inspiration.</p>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Insight</div>
-                <p>Each platform has a different user mindset. Facebook users are socialising. LinkedIn users are in professional mode. TikTok users want entertainment. Pinterest users are planning. Your creative and messaging must match the platform mindset.</p>
+                <div class="callout-title">Key Concept</div>
+                <p>Each platform has a distinct user mindset. Facebook and Instagram users are socialising and scrolling. LinkedIn users are in professional mode. TikTok users want to be entertained. Pinterest users are planning future purchases. Your creative must match the mindset of the moment, not just the demographic of the user.</p>
             </div>
 
             <h2>Social Ads vs Search Ads</h2>
             <ul>
-                <li><strong>Search ads</strong> = demand capture (people are already searching for solutions)</li>
-                <li><strong>Social ads</strong> = demand generation (you're reaching people who might not be actively looking)</li>
+                <li><strong>Search ads</strong> — Demand capture: targeting people who are already searching for solutions</li>
+                <li><strong>Social ads</strong> — Demand generation: reaching people before they search, building the intent that search campaigns then capture</li>
             </ul>
-            <p>The best marketing strategies use both: social to create awareness and interest, search to capture people when they're ready to act.</p>
+            <p>The most effective strategies use both in sequence: social advertising builds awareness and consideration, search captures the demand it creates.</p>
         `,
         quiz: {
             question: 'What is the fundamental difference between social advertising and search advertising?',
@@ -917,56 +920,35 @@ const lessonContent = {
         title: 'What is Content Marketing and Why It Works',
         body: `
             <h2>Defining Content Marketing</h2>
-            <p>Content marketing is the practice of creating and distributing valuable, relevant content to attract and retain a clearly defined audience — and ultimately drive profitable customer action.</p>
-            <p>Instead of directly pitching your product, you provide genuinely useful information that helps your audience solve problems. In return, they trust you, remember you, and eventually buy from you.</p>
+            <p>Content marketing is the practice of creating and distributing valuable, relevant content to attract and retain a clearly defined audience — and ultimately drive profitable customer action. Instead of interrupting people with promotional messages, you earn their attention by being genuinely useful. In return, they trust you, return to you, and eventually buy from you.</p>
 
-            <h2>Why Content Marketing Works</h2>
-            <p>Content marketing works because it aligns with how modern consumers make decisions:</p>
+            <h2>Why Content Marketing Works in 2026</h2>
+            <p>Content marketing aligns with how buyers actually make decisions — and those decisions now increasingly start with AI tools, not search engines:</p>
             <ol>
-                <li><strong>People research before buying</strong> — Most buyers consume 3-5 pieces of content before talking to sales</li>
-                <li><strong>Trust is earned, not demanded</strong> — Helpful content builds trust over time</li>
-                <li><strong>It compounds</strong> — A good blog post can drive traffic for years (unlike an ad that stops when you stop paying)</li>
-                <li><strong>It supports every channel</strong> — Content fuels SEO, social media, email, and paid campaigns</li>
+                <li><strong>Research happens before the first visit</strong> — Buyers research via ChatGPT, Perplexity, and Google's AI Overviews before they ever reach your website. Your content needs to be present in those answers, not just search results.</li>
+                <li><strong>60% of searches end without a click</strong> — AI-generated summaries answer questions directly in the search results. Content must be structured to be cited, not just ranked.</li>
+                <li><strong>Trust is earned through consistency</strong> — Helpful, original content builds credibility over time in a way that advertising cannot replicate.</li>
+                <li><strong>It compounds</strong> — A strong video, guide, or tool continues attracting attention long after it is published, unlike an ad that stops the moment you stop paying for it.</li>
+                <li><strong>It fuels every other channel</strong> — Good content powers SEO, email, social, paid, and sales enablement simultaneously.</li>
             </ol>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Content marketing is not about creating content for its own sake. It's about creating the right content for the right audience at the right stage of their journey.</p>
+                <p>Content marketing is not about creating content for its own sake. It is about creating the right content, in the right format, for the right audience, at the right stage of their journey — and structuring it so it can be found by both people and AI platforms alike.</p>
             </div>
 
             <h2>Content Marketing vs Traditional Advertising</h2>
             <ul>
-                <li><strong>Traditional advertising</strong> interrupts people and says "buy this"</li>
-                <li><strong>Content marketing</strong> attracts people by being genuinely helpful</li>
-            </ul>
-            <p>Think about it: would you rather read a helpful guide on "how to choose running shoes" or see a banner ad saying "Buy our shoes"? The guide builds trust. The ad just asks for money.</p>
-
-            <h2>Types of Content Marketing</h2>
-            <ul>
-                <li><strong>Blog posts and articles</strong> — The backbone of most content strategies</li>
-                <li><strong>Videos</strong> — Tutorials, explainers, behind-the-scenes</li>
-                <li><strong>Podcasts</strong> — Audio content for commuters and multitaskers</li>
-                <li><strong>Email newsletters</strong> — Direct relationship with your audience</li>
-                <li><strong>Social media content</strong> — Short-form content for engagement</li>
-                <li><strong>Ebooks and guides</strong> — In-depth content often used for lead generation</li>
-                <li><strong>Case studies</strong> — Proof that your approach works</li>
-                <li><strong>Infographics</strong> — Visual data and concepts</li>
+                <li><strong>Traditional advertising</strong> interrupts and says "buy this" — you pay for attention and it disappears when the budget stops</li>
+                <li><strong>Content marketing</strong> attracts by being genuinely useful — you invest in assets that grow in value over time</li>
             </ul>
 
-            <h2>The Content Marketing Flywheel</h2>
-            <p>The best content marketing creates a virtuous cycle:</p>
-            <ol>
-                <li>Create helpful content</li>
-                <li>People find it through search and social</li>
-                <li>They trust you and subscribe/follow</li>
-                <li>You nurture them with more relevant content</li>
-                <li>They become customers and advocates</li>
-                <li>Advocates share your content, bringing more people in</li>
-            </ol>
+            <h2>The Format Landscape Has Changed</h2>
+            <p>Short-form video is now the highest-ROI content format, not the blog post. This does not make blogging obsolete — written content remains essential for SEO depth and AI citations — but the starting point for audience building and engagement in 2026 is video. The most effective content systems treat one strong insight as raw material that becomes a short video, a blog post, an email, and a series of social posts simultaneously.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Start with one content format you can do consistently (usually blogging). Quality and consistency beat volume. One excellent post per week outperforms five mediocre ones.</p>
+                <p>Do not think in content types. Think in ideas. One insight from a customer conversation, a failed experiment, or an industry trend becomes a short-form video, a written article, an email, and three social posts. The system multiplies your effort — but the insight has to be genuinely yours, not recycled from what everyone else is saying.</p>
             </div>
         `,
         quiz: {
@@ -987,60 +969,45 @@ const lessonContent = {
         title: 'Why Marketing Analytics Matters',
         body: `
             <h2>The Role of Analytics in Marketing</h2>
-            <p>Marketing analytics is the practice of measuring, managing, and analysing marketing performance data to maximise effectiveness and optimise return on investment.</p>
-            <p>Without analytics, you're guessing. With analytics, you're making decisions based on evidence.</p>
+            <p>Marketing analytics is the practice of measuring, managing, and analysing marketing performance data so that you can make better decisions. The word "decisions" matters here. Analytics is not a reporting function — it is a decision-support function. Every dashboard, every report, and every data point should ultimately connect to a choice: where to spend budget, which campaigns to scale, which audiences to prioritise, and where to stop wasting money.</p>
 
             <h2>What Analytics Answers</h2>
-            <p>Good marketing analytics answers critical questions:</p>
+            <p>Good marketing analytics answers practical business questions:</p>
             <ul>
-                <li><strong>Where is our traffic coming from?</strong> — Which channels drive visitors</li>
-                <li><strong>What are visitors doing on our site?</strong> — Which pages they visit, how long they stay</li>
-                <li><strong>What's converting?</strong> — Which campaigns and pages generate leads or sales</li>
-                <li><strong>What's our ROI?</strong> — Are we making more than we're spending</li>
-                <li><strong>Where are we losing people?</strong> — Where visitors drop off in the journey</li>
+                <li><strong>Which channels are genuinely driving revenue?</strong> — Not just clicks or traffic, but actual business outcomes</li>
+                <li><strong>Where in the journey are we losing people?</strong> — Where visitors drop off and why</li>
+                <li><strong>Is our marketing spend working?</strong> — Are we making more than we spend, and which channels deliver the best returns</li>
+                <li><strong>What should we do differently?</strong> — The question every piece of analysis should end with</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>"Half the money I spend on advertising is wasted; the trouble is I don't know which half." — John Wanamaker (1838-1922). Analytics exists to solve this exact problem.</p>
+                <p>The three-tier measurement framework is now standard thinking for professional marketers. Tier 1: GA4 for cross-channel analysis and full-funnel visibility. Tier 2: Platform self-reported data (Meta Ads Manager, Google Ads, LinkedIn Campaign Manager) for in-platform optimisation. Tier 3: CRM and revenue data for true ROI, connecting ad spend to actual customer value. These three sources tell different stories — understanding how they relate is what separates good analysts from data collectors.</p>
             </div>
 
             <h2>The Core Marketing Metrics</h2>
-            <p>Every marketer should understand these foundational metrics:</p>
-
-            <h3>Traffic Metrics</h3>
+            <p>Every marketer should understand these foundational metrics across traffic, engagement, and conversion:</p>
             <ul>
-                <li><strong>Sessions</strong> — Number of visits to your website</li>
-                <li><strong>Users</strong> — Number of unique visitors</li>
-                <li><strong>Traffic source</strong> — Where visitors come from (organic, paid, social, direct, referral)</li>
-            </ul>
-
-            <h3>Engagement Metrics</h3>
-            <ul>
-                <li><strong>Bounce rate</strong> — Percentage of visitors who leave after viewing one page</li>
-                <li><strong>Pages per session</strong> — How many pages visitors view on average</li>
-                <li><strong>Average session duration</strong> — How long visitors spend on your site</li>
-            </ul>
-
-            <h3>Conversion Metrics</h3>
-            <ul>
-                <li><strong>Conversion rate</strong> — Percentage of visitors who complete a desired action</li>
-                <li><strong>Cost per acquisition (CPA)</strong> — How much you spend to acquire one customer</li>
-                <li><strong>Return on ad spend (ROAS)</strong> — Revenue generated per pound spent on ads</li>
+                <li><strong>Sessions and users</strong> — Visits and unique visitors; GA4 distinguishes total users from active users (those with an engaged session)</li>
+                <li><strong>Engagement rate</strong> — The percentage of sessions lasting 10+ seconds, with 2+ page views, or including a conversion. More meaningful than bounce rate, which GA4 has replaced.</li>
+                <li><strong>Conversion rate</strong> — The percentage of sessions that complete a desired action. The metric that connects traffic to business value.</li>
+                <li><strong>Cost per acquisition (CPA)</strong> — Total marketing spend divided by conversions. The efficiency measure for any paid activity.</li>
+                <li><strong>Return on ad spend (ROAS)</strong> — Revenue generated per pound spent. Always cross-reference against CRM data for accuracy.</li>
+                <li><strong>Customer lifetime value (LTV)</strong> — Total revenue per customer over their lifetime. The metric that tells you how much you can afford to spend acquiring each one.</li>
             </ul>
 
             <h2>The Analytics Mindset</h2>
-            <p>Good analysts don't just report numbers. They:</p>
+            <p>Good analysts do not just report numbers — they make numbers mean something. That requires:</p>
             <ol>
-                <li><strong>Ask the right questions</strong> — Start with "what do we need to know?" not "what data do we have?"</li>
-                <li><strong>Look for patterns</strong> — Trends over time matter more than individual data points</li>
-                <li><strong>Connect data to decisions</strong> — Every insight should lead to an action</li>
-                <li><strong>Test assumptions</strong> — Use data to validate or disprove hypotheses</li>
+                <li><strong>Starting with the question, not the data</strong> — "What do we need to decide?" should come before opening any dashboard</li>
+                <li><strong>Looking for patterns across time</strong> — Trends matter more than individual data points</li>
+                <li><strong>Connecting data to decisions</strong> — Every piece of analysis should end with a recommendation</li>
+                <li><strong>Using all three measurement tiers</strong> — No single data source tells the full story</li>
             </ol>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Don't track everything — track what matters. Start with 3-5 key metrics that directly relate to your business goals. You can always add more later. Clarity beats comprehensiveness.</p>
+                <p>Do not track everything — track what connects to decisions. Start with the five metrics that most directly relate to your current business goals and build from there. A dashboard with three actionable metrics drives better decisions than one with thirty data points and no clear purpose.</p>
             </div>
         `,
         quiz: {
@@ -1061,60 +1028,35 @@ const lessonContent = {
         title: 'What is Growth Marketing?',
         body: `
             <h2>Growth Marketing Defined</h2>
-            <p>Growth marketing is a data-driven, experiment-led approach to marketing that focuses on the entire customer lifecycle — not just acquisition. While traditional marketing often focuses on getting people through the door, growth marketing optimises every stage: acquisition, activation, retention, revenue, and referral.</p>
+            <p>Growth marketing is a data-driven, experiment-led approach that optimises the entire customer lifecycle — not just acquisition. Rather than focusing on driving awareness and hoping the rest follows, growth marketing treats every stage of the customer journey as a lever: getting people in, giving them a great first experience, keeping them, generating revenue, and turning them into advocates. The defining characteristic is that every decision is grounded in evidence, and every assumption is a candidate for a test.</p>
 
-            <h2>Growth Marketing vs Traditional Marketing</h2>
-            <ul>
-                <li><strong>Traditional marketing</strong> focuses primarily on awareness and acquisition</li>
-                <li><strong>Growth marketing</strong> optimises the full funnel from first touch to loyal customer</li>
-                <li><strong>Traditional marketing</strong> relies on best practices and intuition</li>
-                <li><strong>Growth marketing</strong> relies on experiments and data</li>
-            </ul>
+            <h2>The North Star Metric</h2>
+            <p>Every effective growth team organises around a <strong>North Star Metric</strong> — the single measure that best captures the core value the product delivers to customers. Examples: Airbnb's North Star is nights booked; Slack's is messages sent; Spotify's is time spent listening. The North Star Metric matters because it prevents teams from optimising vanity metrics — things that look like growth (sign-ups, traffic, app downloads) without actually being growth (genuine customer value delivered). Every experiment and every resource allocation decision should connect back to moving the North Star.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Growth marketing was pioneered by companies like Dropbox, Airbnb, and Facebook, who couldn't afford massive ad budgets. Instead, they built growth into their products and used systematic experimentation to find scalable channels.</p>
+                <p>Three things are often conflated in growth and should be kept distinct. <strong>Growth experiments</strong> test genuinely unproven territory — they carry real risk and potential for outsized reward. <strong>Optimisation</strong> refines what already works based on clear signals — lower risk, more predictable outcomes. <strong>A/B testing</strong> is a tool used by both. Conflating them leads to invalid conclusions: calling something an optimisation when the baseline is unclear inflates confidence in weak results; running an experiment on a channel you barely understand produces noise, not insight.</p>
             </div>
 
-            <h2>The AARRR Framework (Pirate Metrics)</h2>
-            <p>Growth marketers typically think about the customer lifecycle using this framework:</p>
+            <h2>Retention Is the Foundation</h2>
+            <p>The most important principle in growth that is most frequently ignored: <strong>retention is the foundation of all sustainable growth</strong>. Improving retention compounds faster than improving acquisition. A business losing 30% of users every month cannot be fixed by acquiring 30% more — it must fix retention first. Every growth initiative should begin with the question: do we retain the users we already have? If the answer is no, acquisition investment is being poured into a leaky bucket.</p>
+
+            <h2>The AARRR Framework as a Diagnostic Tool</h2>
+            <p>Growth marketers use the AARRR framework — Acquisition, Activation, Retention, Revenue, Referral — as a <strong>diagnostic tool</strong>, not a sequential campaign plan. The purpose is to identify the leakiest stage in your funnel, then direct resources toward fixing it. Map each stage with real conversion rates; the stage with the biggest drop-off is where to focus first.</p>
             <ol>
-                <li><strong>Acquisition</strong> — How do people find you? (SEO, ads, social, referrals)</li>
+                <li><strong>Acquisition</strong> — How do people find you? (SEO, paid, social, referrals)</li>
                 <li><strong>Activation</strong> — Do they have a great first experience? (onboarding, first value moment)</li>
-                <li><strong>Retention</strong> — Do they come back? (email, product, community)</li>
-                <li><strong>Revenue</strong> — Do they pay you? (pricing, upsells, expansion)</li>
-                <li><strong>Referral</strong> — Do they tell others? (referral programmes, word of mouth)</li>
+                <li><strong>Retention</strong> — Do they come back? (product engagement, email, community)</li>
+                <li><strong>Revenue</strong> — Do they pay or expand? (pricing, upsells, conversion)</li>
+                <li><strong>Referral</strong> — Do they bring others? (referral programmes, word of mouth)</li>
             </ol>
 
-            <h2>The Experimentation Mindset</h2>
-            <p>At its core, growth marketing is about running experiments. The process looks like this:</p>
-            <ol>
-                <li><strong>Observe</strong> — Look at your data and identify opportunities</li>
-                <li><strong>Hypothesise</strong> — "If we change X, we expect Y to happen because Z"</li>
-                <li><strong>Test</strong> — Run a controlled experiment</li>
-                <li><strong>Measure</strong> — Did the hypothesis hold true?</li>
-                <li><strong>Learn</strong> — Document the insight whether the test won or lost</li>
-                <li><strong>Iterate</strong> — Apply what you learned and test the next idea</li>
-            </ol>
-
-            <div class="callout callout-warning">
-                <div class="callout-title">Important</div>
-                <p>Growth marketing is not about "hacks" or shortcuts. It's a disciplined, systematic approach to finding what works and scaling it. The companies that grow fastest are the ones that run the most experiments per unit of time.</p>
-            </div>
-
-            <h2>Skills of a Growth Marketer</h2>
-            <ul>
-                <li>Data analysis and analytics</li>
-                <li>A/B testing and experimentation</li>
-                <li>Channel expertise (SEO, paid, email, etc.)</li>
-                <li>Copywriting and conversion optimisation</li>
-                <li>Basic understanding of product and engineering</li>
-                <li>Comfort with ambiguity and failure (most experiments fail)</li>
-            </ul>
+            <h2>Growth Is Cross-Functional</h2>
+            <p>Growth experiments require collaboration across marketing, product, data, and UX — they do not sit exclusively in any one department. A test requiring a product change needs engineering; one needing new creative needs design; one requiring data interpretation needs analysis. Growth teams that operate only within marketing are structurally limited in what they can test and what they can ship.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Before learning advanced growth tactics, master the fundamentals: analytics, one acquisition channel, and copywriting. Growth marketing amplifies good fundamentals — it can't fix broken basics.</p>
+                <p>Before running any growth experiment, ask two questions: Does this connect to our North Star Metric? And do we already retain the users we are trying to get more of? If the answer to either is no, the experiment is pointed in the wrong direction or will compound a retention problem rather than solve it. Growth that ignores retention is expensive churn.</p>
             </div>
         `,
         quiz: {
