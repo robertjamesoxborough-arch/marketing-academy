@@ -762,32 +762,32 @@ Object.assign(lessonContent, {
     'ps-2-1': {
         title: 'Bidding Strategies Explained',
         body: `
-            <h2>Understanding Bid Strategies</h2>
-            <p>Your <strong>bid strategy</strong> tells Google Ads how to bid in each ad auction. Choosing the right strategy is one of the most impactful decisions you'll make — it directly controls how your budget is spent and what results you get.</p>
+            <h2>Choosing a Bid Strategy</h2>
+            <p>Your bid strategy tells Google Ads how to allocate bids across individual auctions. In 2026, Smart Bidding — Google's automated bidding using machine learning — has become the standard for most campaigns. The question is no longer whether to use automation, but how to give it the best possible inputs. The quality of your first-party conversion data is now the most important factor in how well any bid strategy performs.</p>
 
-            <h2>Manual Bidding</h2>
+            <h2>Manual Bidding Options</h2>
             <ul>
-                <li><strong>Manual CPC</strong> — You set the maximum cost-per-click for each keyword. Gives you full control but requires constant monitoring and adjustment. Best for: small accounts, learning the platform, or when you need precise control.</li>
-                <li><strong>Enhanced CPC (ECPC)</strong> — You set bids manually, but Google can adjust them up or down based on the likelihood of conversion. A middle ground between manual and automated.</li>
+                <li><strong>Manual CPC</strong> — You set the maximum cost-per-click for each keyword. Full control, but requires constant monitoring. Appropriate for very small accounts, brand campaigns with limited conversion volume, or when actively learning a new market.</li>
+                <li><strong>Enhanced CPC (ECPC)</strong> — Manual bidding with Google adjusting bids slightly based on conversion likelihood signals. A transitional option as you build conversion history.</li>
             </ul>
 
-            <h2>Automated (Smart) Bidding</h2>
-            <p>Google's machine learning sets bids automatically based on your chosen goal:</p>
+            <h2>Smart Bidding Strategies</h2>
+            <p>Smart Bidding uses auction-time signals — device, location, time of day, audience membership, search query, and more — to set the optimal bid for every individual auction:</p>
             <ul>
-                <li><strong>Maximise Clicks</strong> — Gets as many clicks as possible within your budget. Good for driving traffic when you're not focused on conversions.</li>
-                <li><strong>Maximise Conversions</strong> — Spends your budget to get the most conversions possible. Requires conversion tracking to be set up.</li>
-                <li><strong>Target CPA</strong> — Aims to get conversions at a specific cost-per-acquisition you set. Best when you know your target acquisition cost.</li>
-                <li><strong>Target ROAS</strong> — Optimises for a specific return on ad spend. Best for e-commerce with varying product values.</li>
+                <li><strong>Maximise Clicks</strong> — Gets as many clicks as possible within budget. Use only when traffic volume is the goal and conversion data is unavailable.</li>
+                <li><strong>Maximise Conversions</strong> — Spends your budget to generate as many conversions as possible. The correct starting point when building conversion history before moving to a target-based strategy.</li>
+                <li><strong>Target CPA</strong> — Aims to generate conversions at a specified cost-per-acquisition. Requires sufficient conversion data to work effectively.</li>
+                <li><strong>Target ROAS</strong> — Optimises for a specified return on ad spend. Best for e-commerce with varying product values and a strong conversion history.</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>Smart Bidding uses auction-time signals — device, location, time of day, browser, search query, and more — to adjust bids for each individual auction. This level of optimisation is impossible to replicate manually.</p>
+                <div class="callout-title">Key Concept: First-Party Data Is the Engine</div>
+                <p>Smart Bidding is only as good as the conversion data it learns from. <strong>Customer Match lists</strong> (your customer email and phone data uploaded to Google Ads), <strong>Enhanced Conversions</strong> (hashed first-party data sent alongside conversion tags to improve attribution accuracy), and <strong>offline conversion imports</strong> (CRM data mapped to Google Ads clicks) are the inputs that make Target CPA and Target ROAS genuinely effective. Without them, the AI is optimising on incomplete signals — and its output reflects that.</p>
             </div>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Switching to Smart Bidding too early — before you have enough conversion data — leads to poor performance. Google recommends at least 30 conversions in the past 30 days before using Target CPA, and 50+ for Target ROAS. Start with Maximise Conversions to build data, then transition.</p>
+                <p>Switching to Target CPA or Target ROAS before the account has enough accurate conversion data. Google recommends at least 30 conversions in the past 30 days for Target CPA (50+ for Target ROAS) — but more importantly, those conversions need to be measured accurately. Enhanced Conversions and proper conversion tagging are prerequisites, not afterthoughts.</p>
             </div>
         `,
         quiz: {
@@ -807,35 +807,31 @@ Object.assign(lessonContent, {
         title: 'Quality Score and Ad Rank',
         body: `
             <h2>What Is Quality Score?</h2>
-            <p><strong>Quality Score</strong> is Google's rating of the quality and relevance of your keywords and ads, scored from 1 to 10. It's one of the most important metrics in Google Ads because it directly affects how much you pay per click and where your ads appear.</p>
+            <p><strong>Quality Score</strong> is Google's diagnostic rating of the quality and relevance of your keywords, ads, and landing pages, scored from 1 to 10 per keyword. It is not a real-time signal used in every individual auction — it is an aggregated indicator that helps you understand how your ad relevance compares to competitors targeting the same keywords. A high Quality Score means you are paying less for the same position; a low score means you are overpaying.</p>
 
             <h2>The Three Components</h2>
             <ul>
-                <li><strong>Expected Click-Through Rate (CTR)</strong> — How likely your ad is to be clicked when shown. Based on your ad's historical CTR compared to other ads in the same position.</li>
-                <li><strong>Ad Relevance</strong> — How closely your ad copy matches the intent behind the keyword. Your ad should directly address what the searcher is looking for.</li>
-                <li><strong>Landing Page Experience</strong> — How relevant, useful, and easy to navigate your landing page is. The page should deliver on the promise made in your ad.</li>
+                <li><strong>Expected Click-Through Rate (CTR)</strong> — How likely your ad is to be clicked when shown at a given position, compared to other ads targeting the same keyword. Driven by ad copy quality, keyword inclusion in headlines, and historical performance.</li>
+                <li><strong>Ad Relevance</strong> — How closely your ad copy matches the intent behind the keyword. Your ad should directly address what someone searching that term wants to find or do.</li>
+                <li><strong>Landing Page Experience</strong> — How relevant, useful, and navigable your landing page is. The page must deliver what the ad promises, load quickly on mobile, and make it straightforward for the user to take the next step.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Each component is rated as Below Average, Average, or Above Average. A Quality Score of 7+ is generally good. Below 5 means you're paying significantly more per click than necessary.</p>
+                <p>Each component is rated as Below Average, Average, or Above Average. A Quality Score of 7 or above is generally healthy. Below 5 means you are paying significantly more per click than a competitor with the same bid and a better score. Improving Quality Score from 5 to 7 can reduce cost-per-click by up to 28%.</p>
             </div>
 
-            <h2>How Ad Rank Is Calculated</h2>
-            <p>Your <strong>Ad Rank</strong> determines your ad position and whether your ad shows at all. The formula:</p>
-            <p><strong>Ad Rank = Bid × Quality Score × Expected Impact of Extensions</strong></p>
-            <p>This means a higher Quality Score lets you achieve the same ad position at a lower cost. An advertiser with a Quality Score of 8 bidding £2 can outrank an advertiser with a Quality Score of 4 bidding £3.</p>
+            <h2>Ad Rank and What It Means in Practice</h2>
+            <p>Quality Score feeds into <strong>Ad Rank</strong> — the formula Google uses to determine your ad's position and whether it shows at all:</p>
+            <p><strong>Ad Rank = Bid × Quality Score × Expected Impact of Assets</strong></p>
+            <p>A competitor bidding £3 with a Quality Score of 4 can be outranked by you bidding £2 with a Quality Score of 8. This is the competitive advantage that quality-focused advertisers build over time.</p>
 
-            <h2>How to Improve Each Component</h2>
-            <ul>
-                <li><strong>Expected CTR</strong> — Write more compelling ad copy, include the keyword in headlines, use strong calls to action</li>
-                <li><strong>Ad Relevance</strong> — Tightly theme your ad groups so ads closely match keywords. Use the keyword in your headline.</li>
-                <li><strong>Landing Page</strong> — Ensure fast load times, mobile friendliness, relevant content that matches the ad, and clear calls to action</li>
-            </ul>
+            <h2>Optimisation Score</h2>
+            <p>Separate from Quality Score, Google surfaces an <strong>Optimisation Score</strong> (0–100%) at the campaign and account level. This score estimates how well your account is set to perform relative to available opportunities, based on Google's recommendations — adding assets, enabling Smart Bidding, addressing missing conversion actions, and more. It is a useful prompt for identifying what to review, though not every recommendation should be applied uncritically.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Improving Quality Score from 5 to 7 can reduce your cost-per-click by up to 28%. Focus on landing page experience first — it's the component most advertisers neglect and often the easiest to improve.</p>
+                <p>Prioritise landing page experience above all other Quality Score components. Most advertisers spend time writing better headlines but neglect the page users land on. Page speed, mobile usability, and the alignment between ad promise and page content are where the biggest Quality Score gains are typically found.</p>
             </div>
         `,
         quiz: {
@@ -854,34 +850,35 @@ Object.assign(lessonContent, {
     'ps-2-3': {
         title: 'Conversion Tracking and Goals',
         body: `
-            <h2>Why Conversion Tracking Is Essential</h2>
-            <p>Without conversion tracking, you're flying blind. You might know how many clicks your ads get, but not whether those clicks lead to any valuable actions. <strong>Conversion tracking</strong> measures what happens after someone clicks your ad — do they buy, sign up, call, or fill out a form?</p>
+            <h2>Why Conversion Tracking Is Non-Negotiable</h2>
+            <p>Without accurate conversion tracking, Smart Bidding has no reliable data to learn from — it is optimising on incomplete or wrong signals. In 2026, conversion tracking is not just a measurement tool; it is the primary input that determines how well your entire account performs. Getting it right before spending significant budget is one of the most impactful things you can do in paid search.</p>
 
             <h2>What Counts as a Conversion?</h2>
-            <p>A conversion is any valuable action you define. Common conversion types:</p>
+            <p>A conversion is any valuable action you define. Common types:</p>
             <ul>
-                <li><strong>Purchases</strong> — E-commerce transactions with revenue values</li>
-                <li><strong>Form submissions</strong> — Lead gen forms, contact requests, quote requests</li>
-                <li><strong>Phone calls</strong> — Calls from ads, calls from your website, calls of a minimum duration</li>
-                <li><strong>Sign-ups</strong> — Newsletter subscriptions, account creations, free trial starts</li>
-                <li><strong>App installs or in-app actions</strong></li>
+                <li><strong>Purchases</strong> — E-commerce transactions, ideally with revenue values passed to Google Ads so Smart Bidding can optimise for value, not just volume</li>
+                <li><strong>Form submissions</strong> — Lead gen forms, contact requests, quote requests, demo bookings</li>
+                <li><strong>Phone calls</strong> — Via call assets in your ads, or from your website (set a minimum call duration to filter out wrong numbers)</li>
+                <li><strong>Sign-ups</strong> — Trial starts, newsletter subscriptions, account creations</li>
+                <li><strong>Offline conversions</strong> — Sales that close in your CRM after a Google Ads click, imported back to the platform</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>Set up both <strong>primary</strong> and <strong>secondary</strong> conversions. Primary conversions (purchases, qualified leads) drive your bidding strategy. Secondary conversions (add-to-cart, PDF downloads) provide supporting data without influencing automated bidding.</p>
+                <div class="callout-title">Key Concept: Enhanced Conversions</div>
+                <p><strong>Enhanced Conversions</strong> improve measurement accuracy by securely sending hashed first-party data (email addresses, phone numbers) alongside your standard conversion tags. When a user converts on your site, Google matches that data to signed-in Google accounts — recovering conversions that would otherwise be lost due to cookie restrictions, ad blockers, or iOS privacy changes. Enhanced Conversions are now considered the baseline standard for accurate conversion measurement, not an optional extra.</p>
             </div>
 
-            <h2>Setting Up Google Ads Conversion Tracking</h2>
-            <p>The standard setup involves placing a <strong>conversion tracking tag</strong> on the page users see after completing a conversion (like a "thank you" page). You can implement this directly with the Google Ads tag or through <strong>Google Tag Manager</strong> (GTM), which is more flexible and doesn't require editing your site's code for each new tag.</p>
-
-            <h2>Attribution Windows</h2>
-            <p>The <strong>attribution window</strong> defines how long after a click (or view) a conversion can be credited to your ad. The default is 30 days for click-through conversions and 1 day for view-through. This means if someone clicks your ad today and converts 15 days later, it still counts as a conversion from that ad.</p>
+            <h2>Attribution: Moving Past Last-Click</h2>
+            <p>Attribution determines which ad interactions get credit for a conversion. Last-click attribution — which assigns 100% of credit to the final click before conversion — significantly undervalues upper-funnel touchpoints and leads to poor bidding decisions for any keyword that is not the last touchpoint in a journey.</p>
+            <p>The current standard is <strong>Data-Driven Attribution (DDA)</strong>. DDA uses machine learning to distribute conversion credit across all touchpoints based on their actual contribution, and is now the default in Google Ads. It provides a more accurate picture of which keywords and ads are genuinely driving results — which is especially important when using Smart Bidding, which uses attribution data to calibrate its bids.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Setting up conversion tracking but not testing it properly. Always verify conversions are firing correctly using Google Tag Assistant or GTM's preview mode before going live. Incorrect tracking leads to bad optimisation decisions.</p>
+                <p>Setting up conversion tracking but not verifying it works. Always test that conversion tags are firing correctly using Google Tag Assistant or the diagnostics in Google Ads before scaling campaigns. A broken conversion tag means your Smart Bidding is learning from zero data — and making progressively worse decisions as a result.</p>
             </div>
+
+            <h2>Offline Conversion Imports</h2>
+            <p>For businesses where the sale happens offline — after a phone call, a sales team follow-up, or a meeting — importing offline conversions from your CRM into Google Ads closes the loop between ad clicks and actual revenue. It gives Smart Bidding the signal it needs to find the leads most likely to become customers, not just the leads most likely to fill in a form.</p>
         `,
         quiz: {
             question: 'What is the default click-through attribution window in Google Ads?',
@@ -899,40 +896,40 @@ Object.assign(lessonContent, {
     'ps-2-4': {
         title: 'Display Network vs Search Network',
         body: `
-            <h2>Two Different Networks</h2>
-            <p>Google Ads operates across two main networks that reach users in fundamentally different ways:</p>
+            <h2>Two Different Networks, Two Different Mindsets</h2>
+            <p>Google Ads operates across two fundamentally different networks that reach users at very different stages of intent:</p>
             <ul>
-                <li><strong>Search Network</strong> — Text ads shown on Google search results pages when users actively search for keywords. Users have high intent — they're looking for something specific.</li>
-                <li><strong>Display Network</strong> — Visual banner and responsive ads shown across over 2 million websites, apps, and YouTube. Users are browsing passively — they're not actively searching for your product.</li>
+                <li><strong>Search Network</strong> — Text ads shown on Google search results pages when users actively type queries. Users have explicit, declared intent — they are searching for something specific.</li>
+                <li><strong>Display Network</strong> — Visual banner and responsive ads shown across over 3 million websites, apps, and YouTube. Users are browsing passively — they are not actively searching for your product.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Search captures existing demand (people searching for what you offer). Display creates new demand (putting your brand in front of people who aren't searching yet). Both have a role, but they require very different strategies.</p>
+                <p>Search captures existing demand (people searching for what you offer). Display and video create new demand (putting your brand in front of people who are not yet searching). Both have a role in a full-funnel strategy, but they require completely different bidding approaches, creative formats, and success metrics.</p>
             </div>
 
             <h2>When to Use Each Network</h2>
             <ul>
-                <li><strong>Search is best for</strong> — Direct response, lead generation, e-commerce, capturing high-intent traffic, when you know what people search for</li>
-                <li><strong>Display is best for</strong> — Brand awareness, remarketing (showing ads to past visitors), reaching broad audiences, visual products, top-of-funnel campaigns</li>
+                <li><strong>Search is best for</strong> — Direct response, lead generation, e-commerce, bottom-of-funnel conversion campaigns, capturing high-intent traffic</li>
+                <li><strong>Display is best for</strong> — Brand awareness, remarketing to past visitors, nurturing audiences who have shown interest but not yet converted, and visual products that benefit from imagery</li>
             </ul>
 
             <h2>Display Network Targeting Options</h2>
-            <p>Since Display users aren't searching, targeting is based on who they are and what they're interested in:</p>
+            <p>Since Display users are not searching, targeting relies on who they are and what signals they have shown:</p>
             <ul>
-                <li><strong>Audience segments</strong> — In-market (actively researching a purchase), affinity (long-term interests), custom segments</li>
-                <li><strong>Contextual targeting</strong> — Show ads on pages about specific topics or containing certain keywords</li>
-                <li><strong>Placements</strong> — Choose specific websites where you want your ads to appear</li>
-                <li><strong>Demographics</strong> — Target by age, gender, household income, parental status</li>
+                <li><strong>Audience segments</strong> — In-market (actively researching a category), affinity (long-term interests), custom segments built around search terms or competitor URLs</li>
+                <li><strong>Contextual targeting</strong> — Ads shown on pages about specific topics or containing relevant keywords</li>
+                <li><strong>Placements</strong> — Specific websites or apps where you want your ads to appear</li>
+                <li><strong>Remarketing</strong> — Showing ads specifically to people who have already visited your website</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Running Search and Display in the same campaign. Google's default is to opt you into the Display Network on Search campaigns. Always uncheck "Display Network" in Search campaign settings — the two networks need completely different strategies, bids, and creative.</p>
+                <p>Running Search and Display in the same campaign. Google's default is to opt Search campaigns into the Display Network — always check and uncheck this in your campaign settings. The two networks need different budgets, bids, creative assets, and measurement approaches. Combining them makes it impossible to optimise either properly.</p>
             </div>
 
-            <h2>Responsive Display Ads</h2>
-            <p><strong>Responsive display ads</strong> are Google's default Display format. You provide headlines, descriptions, images, and logos, and Google automatically assembles them into ads that fit any available ad space. Provide multiple high-quality creative assets to give Google more combinations to test.</p>
+            <h2>Performance Max: The Unified Alternative</h2>
+            <p>For advertisers who want to reach users across Search, Display, YouTube, Gmail, and Maps from a single campaign, <strong>Performance Max</strong> is Google's current recommendation. Rather than managing separate network campaigns, PMax uses asset groups and conversion goals to let Google's AI place ads wherever they are most likely to convert. It complements — rather than replaces — a well-structured Search campaign targeting your highest-intent keywords.</p>
         `,
         quiz: {
             question: 'Why should you avoid combining Search and Display networks in the same campaign?',
@@ -953,31 +950,38 @@ Object.assign(lessonContent, {
         title: 'Search Query Reports and Refinement',
         body: `
             <h2>Search Terms vs Keywords</h2>
-            <p>There's a crucial difference between <strong>keywords</strong> (what you bid on) and <strong>search terms</strong> (what users actually type). If you bid on the broad match keyword "running shoes," your ad might show for "cheap running shoes near me," "best running shoes 2024," or even "shoe repair running." The Search Terms Report reveals these actual queries.</p>
+            <p>There is a crucial distinction between <strong>keywords</strong> (the terms you bid on) and <strong>search terms</strong> (what users actually type). With broad match now operating on semantic intent, phrase match covering a wide range of conceptual variations, and AI Max for Search expanding query coverage further, the gap between what you bid on and what triggers your ads has widened considerably. The Search Terms Report is your primary window into this gap — and reviewing it regularly is more important than ever.</p>
 
             <h2>Mining the Search Terms Report</h2>
-            <p>The Search Terms Report in Google Ads shows you exactly what people searched before clicking your ad. Review it at least weekly to:</p>
+            <p>The Search Terms Report in Google Ads shows the actual queries that triggered your ads. Review it at least weekly to:</p>
             <ul>
-                <li><strong>Find irrelevant queries</strong> — Searches that triggered your ads but aren't relevant to your business. These waste budget.</li>
-                <li><strong>Discover new keyword opportunities</strong> — High-performing search terms you haven't added as keywords yet.</li>
-                <li><strong>Understand user language</strong> — How real people phrase their searches, which can improve your ad copy.</li>
+                <li><strong>Find irrelevant queries</strong> — Searches that triggered your ads but are not relevant to your business or conversion goals</li>
+                <li><strong>Identify new keyword opportunities</strong> — High-performing search terms you have not explicitly targeted and could add as exact or phrase match keywords</li>
+                <li><strong>Understand user language</strong> — The specific words and phrases real users choose, which often differ from internal terminology and can sharpen your ad copy</li>
+                <li><strong>Monitor AI Max expansion</strong> — If you are running AI Max for Search, the report shows how far beyond your keyword list Google is reaching and whether that expansion is serving your conversion goals</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Sort search terms by cost (highest first) to find the most expensive irrelevant queries. Adding these as negative keywords immediately reduces wasted spend. A single negative keyword can sometimes save hundreds of pounds per month.</p>
+                <p>Sort search terms by cost (highest first) to surface the most expensive irrelevant queries first. A single poorly matched term spending £50 per week that generates no conversions is worth finding immediately. One negative keyword can save thousands over a campaign's lifetime.</p>
             </div>
 
-            <h2>Adding Negative Keywords</h2>
-            <p>When you find irrelevant search terms, add them as <strong>negative keywords</strong> to prevent your ads from showing for those queries again. Build negative keyword lists by theme (e.g., "jobs/careers," "free/cheap," "DIY") and apply them across campaigns.</p>
+            <h2>Adding Negative Keywords Systematically</h2>
+            <p>Build negative keyword lists by theme rather than adding terms one at a time. Common themes:</p>
+            <ul>
+                <li><strong>Intent negatives</strong> — "free," "cheap," "DIY," "how to" (for commercial campaigns)</li>
+                <li><strong>Jobs/careers</strong> — "jobs," "careers," "salary," "vacancies"</li>
+                <li><strong>Educational</strong> — "tutorial," "course," "training," "certificate"</li>
+            </ul>
+            <p>Apply shared negative lists across multiple campaigns simultaneously so you do not have to add the same terms repeatedly to each campaign.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Negative keywords are as important as your regular keywords. A well-maintained negative keyword list can reduce wasted spend by 20–30% and significantly improve your conversion rate and ROAS.</p>
+                <p>A well-maintained negative keyword list is one of the highest-return optimisation actions in paid search. Reducing wasted impressions improves your CTR, which improves your Quality Score, which lowers your CPC. The efficiency gains compound over time.</p>
             </div>
 
             <h2>Query Sculpting</h2>
-            <p><strong>Query sculpting</strong> is the practice of using negative keywords to direct specific search terms to the most relevant ad group. If you have separate ad groups for "running shoes" and "trail running shoes," add "trail" as a negative in the general running shoes group. This ensures each query triggers the most relevant ad.</p>
+            <p><strong>Query sculpting</strong> uses negative keywords to direct specific search terms to the most relevant ad group or campaign. If you have separate campaigns for standard and enterprise products, adding negatives in each ensures the right queries reach the right campaign — and the right ad copy and landing page. This becomes especially important when broad match and AI Max are expanding your reach across a wider query set.</p>
         `,
         quiz: {
             question: 'What is the primary purpose of reviewing the Search Terms Report?',
@@ -995,30 +999,30 @@ Object.assign(lessonContent, {
     'ps-3-2': {
         title: 'Ad Extensions and Assets',
         body: `
-            <h2>What Are Ad Extensions (Assets)?</h2>
-            <p>Google now calls them <strong>assets</strong>, but many marketers still use the term "extensions." These are additional pieces of information that expand your ad beyond the basic headline and description, giving users more reasons to click and taking up more visual space in search results.</p>
+            <h2>Assets: Google's Preferred Term</h2>
+            <p>Google formally renamed "extensions" to <strong>assets</strong> — a shift that reflects their broader role in how ads are built and served. Assets are additional pieces of information that expand your RSA beyond the core headline and description: extra links, callouts, images, prices, and more. Google's AI selects which assets to show for each auction based on what is most likely to drive the outcome you have set as your campaign goal.</p>
 
-            <h2>Key Extension Types</h2>
+            <h2>Key Asset Types</h2>
             <ul>
-                <li><strong>Sitelink extensions</strong> — Additional links below your main ad pointing to specific pages (pricing, features, contact). Add at least 4 per campaign.</li>
-                <li><strong>Callout extensions</strong> — Short text highlights like "Free Shipping," "24/7 Support," "No Contract." Use them for key selling points.</li>
+                <li><strong>Sitelink assets</strong> — Additional links below your main ad pointing to specific pages (pricing, features, contact). Add at least four per campaign to give Google meaningful choices.</li>
+                <li><strong>Callout assets</strong> — Short text highlights such as "Free Delivery," "No Long Contracts," or "UK-Based Support." Use these for key selling points that do not fit in headlines.</li>
                 <li><strong>Structured snippets</strong> — Lists of specific offerings under a header (e.g., "Services: SEO, PPC, Content Marketing, Web Design").</li>
-                <li><strong>Call extensions</strong> — Display a phone number. Users on mobile can tap to call directly. Essential for businesses that take phone leads.</li>
-                <li><strong>Price extensions</strong> — Show pricing for products or services. Great for setting expectations before the click.</li>
-                <li><strong>Image extensions</strong> — Add a visual image alongside your text ad. Can significantly boost CTR.</li>
+                <li><strong>Call assets</strong> — Display a phone number alongside your ad. On mobile, users can tap to call directly. This replaces the former "call-only ad" format, which has been deprecated. For businesses relying on phone leads, call assets within RSAs are now the correct approach.</li>
+                <li><strong>Price assets</strong> — Surface pricing for products or services directly in the ad, setting expectations before the click.</li>
+                <li><strong>Image assets</strong> — Add a visual image to your text ad. Where shown, they increase CTR by making the ad more prominent and distinct in the results page.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Extensions don't always show — Google decides when to display them based on ad position, relevance, and expected performance. But having them set up gives Google more options and generally improves Ad Rank, which can lower your CPC.</p>
+                <p>Assets do not always appear — Google decides when to show each one based on ad position, relevance, and predicted performance impact. Their <em>expected impact</em> is factored directly into your Ad Rank calculation, meaning a well-populated asset setup can improve your position without raising your bid.</p>
             </div>
 
             <h2>Impact on Performance</h2>
-            <p>Extensions typically improve CTR by 10–15% because they make your ad larger and more informative. They also directly factor into your Ad Rank calculation, meaning they can help you win higher positions without increasing your bids.</p>
+            <p>A complete asset setup generally lifts CTR significantly — more ad real estate, more reasons to click, and more relevance signals for the AI to work with. Assets also contribute to the "expected impact of assets" component in your Ad Rank, which means they are not cosmetic: they affect competitive positioning.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Set up every extension type that's relevant to your business. Even if Google doesn't always show them, having them available improves your Ad Rank. Review extension performance monthly and replace underperformers with new variations.</p>
+                <p>Set up every asset type relevant to your business, even if you are unsure they will always show. Review asset performance monthly in the Assets report — low-performing variants are worth replacing. For call assets specifically, use call reporting to track which campaigns are driving phone conversions alongside click-based ones.</p>
             </div>
         `,
         quiz: {
@@ -1038,32 +1042,32 @@ Object.assign(lessonContent, {
         title: 'Audience Targeting in Search',
         body: `
             <h2>Adding Audiences to Search Campaigns</h2>
-            <p>While Search campaigns primarily target keywords, you can layer audience targeting on top to bid differently for specific user segments or restrict your ads to only show to certain audiences.</p>
+            <p>Search campaigns target by keyword, but audiences let you layer an additional dimension of intent onto that targeting. You can adjust bids for specific user segments, restrict your ads to high-value groups, or use audience data as input signals to Smart Bidding — making your campaigns more precise without limiting reach unnecessarily.</p>
 
             <h2>Audience Types Available for Search</h2>
             <ul>
-                <li><strong>In-market audiences</strong> — People actively researching or comparing products in a specific category (e.g., "in-market for CRM software"). Google identifies these users based on their recent search and browsing behaviour.</li>
-                <li><strong>Affinity audiences</strong> — People with long-term interests in specific topics (e.g., "technology enthusiasts," "foodies"). These are broader and better for awareness.</li>
-                <li><strong>Customer Match</strong> — Upload your customer email list and target those users (or similar users) when they search. Powerful for upselling and retention campaigns.</li>
-                <li><strong>Remarketing lists (RLSA)</strong> — Target people who have previously visited your website. This is one of the most powerful audience types for Search.</li>
+                <li><strong>In-market audiences</strong> — People actively researching or comparing products in a specific category, identified by Google based on recent search and browsing behaviour. Apply these in Observation to see how in-market users convert versus your general traffic.</li>
+                <li><strong>Affinity audiences</strong> — People with long-term interests in specific topics. Broader than in-market, and better suited to awareness-stage bidding adjustments.</li>
+                <li><strong>Customer Match</strong> — Upload your customer email list and target (or exclude) those users when they search. This is first-party data working at its most direct: you are reaching people you already have a relationship with. Customer Match lists also serve as audience signals for Smart Bidding, improving its ability to find similar high-value users.</li>
+                <li><strong>Remarketing lists (RLSA)</strong> — Target people who have previously visited your website. Combining RLSA with Smart Bidding and Customer Match creates a layered first-party data strategy that significantly improves conversion efficiency.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept: Observation vs Targeting</div>
-                <p><strong>Observation mode</strong> shows your ads to everyone but lets you see performance data and adjust bids for specific audiences. <strong>Targeting mode</strong> restricts your ads to ONLY show to people in the selected audiences. Start with Observation to learn, then switch to Targeting for proven segments.</p>
+                <p><strong>Observation mode</strong> shows your ads to everyone searching your keywords, but records performance data broken down by audience — you can then adjust bids up or down for each segment. <strong>Targeting mode</strong> restricts your ads to only show to people in the selected audiences. Start with Observation to build data, then move high-value segments into Targeting mode once you have evidence.</p>
             </div>
 
             <h2>RLSA: Remarketing Lists for Search Ads</h2>
-            <p>RLSA lets you customise your search campaigns for people who've previously visited your site. Use cases:</p>
+            <p>RLSA lets you tailor campaigns for users who have already visited your site. Practical applications:</p>
             <ul>
-                <li>Bid higher for past visitors searching your keywords (they're more likely to convert)</li>
-                <li>Show different ad copy to returning visitors ("Welcome back — complete your order")</li>
-                <li>Bid on broader keywords you normally wouldn't — knowing the searcher already knows your brand reduces the risk</li>
+                <li>Bid higher for past visitors searching your keywords — they already know your brand and are more likely to convert</li>
+                <li>Serve different ad copy to returning visitors, acknowledging the existing relationship rather than running a generic acquisition message</li>
+                <li>Expand keyword coverage for known visitors — broader match types are less risky when the user already has brand familiarity</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Create a "converters" audience list and exclude them from acquisition campaigns to avoid paying for clicks from existing customers. Then create a separate campaign targeting converters with upsell or repeat purchase messaging.</p>
+                <p>Build a "converters" audience and exclude it from acquisition campaigns — this stops you paying acquisition CPCs for people who are already customers. Route that audience to a separate retention or upsell campaign with messaging matched to their purchase history. Feed both lists as Customer Match signals into Smart Bidding so the model learns to value users who behave like your best customers.</p>
             </div>
         `,
         quiz: {
@@ -1082,35 +1086,42 @@ Object.assign(lessonContent, {
     'ps-3-4': {
         title: 'Smart Bidding and Automation',
         body: `
-            <h2>How Machine Learning Bidding Works</h2>
-            <p>Smart Bidding uses Google's machine learning to set bid amounts for each individual auction in real time. Unlike manual bidding where you set a single bid per keyword, Smart Bidding evaluates hundreds of signals per auction to determine the optimal bid.</p>
+            <h2>How Smart Bidding Works</h2>
+            <p>Smart Bidding uses Google's machine learning to set bids in real time for every individual auction. Rather than a single bid per keyword, it evaluates hundreds of signals simultaneously to determine the optimal amount to bid given the likelihood of conversion at that moment, for that specific user.</p>
 
             <h2>Auction-Time Signals</h2>
-            <p>Smart Bidding considers signals that you could never manually account for:</p>
+            <p>Smart Bidding considers signals no human bidder could process at auction speed:</p>
             <ul>
                 <li><strong>Device</strong> — Mobile, desktop, or tablet</li>
-                <li><strong>Location</strong> — Physical location and location intent</li>
+                <li><strong>Location</strong> — Physical location and inferred location intent from the query</li>
                 <li><strong>Time of day and day of week</strong></li>
-                <li><strong>Browser and operating system</strong></li>
                 <li><strong>Search query</strong> — The actual terms typed, not just the matched keyword</li>
-                <li><strong>Remarketing list membership</strong> — Whether the user has visited your site before</li>
-                <li><strong>Ad creative</strong> — Which ad variant is shown</li>
+                <li><strong>Remarketing list membership</strong> — Whether the user has previously visited your site</li>
+                <li><strong>Ad creative</strong> — Which RSA variant is predicted to perform best for this user</li>
+                <li><strong>First-party audience signals</strong> — Customer Match lists, Enhanced Conversions data, and offline conversion imports all inform the model's understanding of what a high-value user looks like</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>Smart Bidding processes billions of signal combinations per auction — something no human team could replicate. Its advantage grows with more conversion data. This is why it's critical to have accurate conversion tracking before enabling Smart Bidding.</p>
+                <div class="callout-title">Key Concept: First-Party Data Feeds Smart Bidding</div>
+                <p>Smart Bidding is only as good as the conversion data it learns from. <strong>Customer Match lists</strong> tell the model who your best customers are. <strong>Enhanced Conversions</strong> improve measurement accuracy by securely matching hashed first-party data to Google sign-ins. <strong>Offline conversion imports</strong> bring CRM outcomes back into the model. Together, these inputs are what separate a high-performing Smart Bidding account from an average one.</p>
             </div>
 
-            <h2>Performance Max Campaigns</h2>
-            <p><strong>Performance Max (PMax)</strong> is Google's most automated campaign type. It runs across all Google channels (Search, Display, YouTube, Gmail, Maps, Discover) from a single campaign. You provide creative assets and conversion goals, and Google's AI handles targeting, bidding, and placement.</p>
+            <h2>Performance Max: Meaningful Controls in 2026</h2>
+            <p><strong>Performance Max (PMax)</strong> runs across all Google channels — Search, Display, YouTube, Gmail, Maps, and Discover — from a single campaign. It has historically been criticised for limited transparency, but Google has since introduced meaningful controls that change how to evaluate it:</p>
+            <ul>
+                <li><strong>Campaign-level negative keywords</strong> — You can now block specific queries from triggering PMax across all channels</li>
+                <li><strong>Asset group-level reporting by channel</strong> — See which placements (Search, YouTube, Display, etc.) are driving results within each asset group</li>
+                <li><strong>Placement exclusion controls</strong> — Exclude specific websites and apps from receiving your ads</li>
+                <li><strong>Brand exclusions in the UI</strong> — Prevent your PMax campaigns from targeting your own brand terms and competing with your branded search campaigns</li>
+            </ul>
+            <p>These controls mean PMax is no longer a pure black box — it is a high-automation campaign type with enough levers for strategic management. The question is not whether to use it but whether your account has sufficient conversion data for it to learn effectively.</p>
 
-            <h2>Responsive Search Ads</h2>
-            <p>Responsive Search Ads (RSAs) are now the default Search ad format. You provide up to 15 headlines and 4 descriptions, and Google tests combinations to find the best-performing variations. Provide diverse headlines covering different selling points, benefits, and calls to action.</p>
+            <h2>AI Max for Search</h2>
+            <p><strong>AI Max for Search</strong> is a campaign-level feature — not a campaign type — that extends the reach of standard Search campaigns using AI. It expands query matching beyond your keyword list using semantic understanding and can dynamically personalise landing page URLs and ad copy based on the search query. Enable it in campaigns where you have strong conversion tracking and want to test AI-driven query expansion with more control than full PMax.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Blindly accepting Google's auto-applied recommendations. While some recommendations are genuinely helpful, others — like expanding to broad match or adding Display network — often increase spend without proportional returns. Review each recommendation critically before applying.</p>
+                <p>Accepting Google's auto-applied recommendations without review. Some are genuinely useful, but others — such as shifting budgets between campaigns or expanding match types — should be evaluated against your specific account goals before applying. Review each recommendation manually and check its projected impact against your Target CPA or ROAS.</p>
             </div>
         `,
         quiz: {
@@ -1130,38 +1141,40 @@ Object.assign(lessonContent, {
         title: 'Shopping Ads and Performance Max',
         body: `
             <h2>How Shopping Ads Work</h2>
-            <p><strong>Shopping ads</strong> display product images, prices, and store names directly in search results. Unlike Search ads where you bid on keywords, Shopping ads are triggered by your <strong>product feed</strong> — a structured data file containing all your product information. Google matches products from your feed to relevant search queries.</p>
+            <p><strong>Shopping ads</strong> display product images, prices, and retailer names directly in search results and on the Shopping tab. Unlike Search ads, Shopping ads are not triggered by the keywords you bid on — they are triggered by your <strong>product feed</strong>, a structured data file that Google matches to relevant queries. The quality of your feed is therefore the primary lever for Shopping performance, not bid strategy alone.</p>
 
             <h2>Google Merchant Center</h2>
-            <p>The <strong>Google Merchant Center</strong> is where you upload and manage your product feed. Your feed must include required attributes for each product:</p>
+            <p>The <strong>Google Merchant Center</strong> is where you upload and manage your product feed. Required attributes for each product include:</p>
             <ul>
-                <li><strong>Title</strong> — Descriptive product name (include key attributes like brand, colour, size)</li>
-                <li><strong>Description</strong> — Detailed product description</li>
-                <li><strong>Price</strong> — Must match the price on your landing page exactly</li>
-                <li><strong>Image</strong> — High-quality product photo on a clean background</li>
+                <li><strong>Title</strong> — Descriptive product name, including brand, colour, size, and other attributes searchers use</li>
+                <li><strong>Description</strong> — Detailed product information that Google uses to understand relevance</li>
+                <li><strong>Price</strong> — Must match the price shown on your landing page exactly, or Google will disapprove the product</li>
+                <li><strong>Image</strong> — High-quality product photo against a clean background</li>
                 <li><strong>Availability</strong> — In stock, out of stock, or preorder</li>
-                <li><strong>GTIN/MPN</strong> — Unique product identifiers</li>
+                <li><strong>GTIN / MPN</strong> — Unique product identifiers that help Google categorise your products accurately</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Your product title is the single most important feed attribute. Front-load it with the most searched terms: Brand + Product Type + Key Attributes. "Nike Air Max 90 Men's Running Shoes White Size 10" outperforms "White Shoes" massively.</p>
+                <p>Your product title is the single highest-impact feed attribute. Front-load it with terms people actually search for — Brand + Product Type + Key Attributes. "Nike Air Max 90 Men's White Running Shoes Size 10" will outperform "White Shoes" across every metric. Treat title optimisation with the same rigour you would apply to SEO title tags.</p>
             </div>
 
-            <h2>Standard Shopping vs Performance Max</h2>
-            <p>Google has been pushing advertisers toward Performance Max for Shopping. Key differences:</p>
+            <h2>Standard Shopping vs Performance Max for Shopping</h2>
+            <p>Google has been moving e-commerce advertisers towards Performance Max for Shopping, but the framing of PMax as a control-free "black box" has shifted considerably:</p>
             <ul>
-                <li><strong>Standard Shopping</strong> — You control product groups, bidding, and targeting. More transparent reporting. Being phased out for some features.</li>
-                <li><strong>Performance Max</strong> — AI-driven across all channels. Less granular control but potentially wider reach. Google's preferred campaign type for e-commerce.</li>
+                <li><strong>Standard Shopping</strong> — You control product groups, bidding, and Search Network targeting. Reporting at the product and product group level is transparent. Retains a place for accounts that need granular management of large catalogues.</li>
+                <li><strong>Performance Max</strong> — AI-driven across all Google channels simultaneously. Now includes campaign-level negative keywords, asset group-level channel reporting, placement exclusion controls, and brand exclusions in the UI. The "less granular control" criticism is less valid than it was — but you still need strong conversion data for PMax to learn effectively. Without it, the AI optimises on incomplete signals.</li>
             </ul>
+
+            <div class="callout callout-info">
+                <div class="callout-title">Key Concept</div>
+                <p>For Shopping specifically, PMax works best when your Merchant Center feed is in excellent shape and you have consistent daily conversion volume. A high-quality feed is still the foundation — no amount of AI will compensate for disapproved products, inaccurate titles, or stale availability data.</p>
+            </div>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Neglecting feed optimisation. Many advertisers focus on bids and budgets but use poor product titles and low-quality images. Since Google uses your feed to match queries, a poorly optimised feed means your products simply won't show for relevant searches.</p>
+                <p>Neglecting feed optimisation in favour of bid and budget adjustments. Since Google uses feed data to match your products to queries, a poorly optimised feed means your products simply will not appear for the most relevant searches — regardless of how high you bid.</p>
             </div>
-
-            <h2>Feed Optimisation Essentials</h2>
-            <p>Optimise your feed like you'd optimise SEO: use keyword-rich titles, detailed descriptions, high-quality images, accurate pricing, and proper categorisation. Update your feed at least daily to keep availability and prices accurate.</p>
         `,
         quiz: {
             question: 'What determines which searches trigger your Shopping ads?',
@@ -1184,30 +1197,31 @@ Object.assign(lessonContent, {
             <ul>
                 <li><strong>Cost Per Click (CPC)</strong> — What you pay on average for each click</li>
                 <li><strong>Click-Through Rate (CTR)</strong> — Percentage of impressions that result in clicks. Benchmark: 3–5% for Search.</li>
-                <li><strong>Conversion Rate</strong> — Percentage of clicks that result in a conversion. Benchmark: 2–5% across industries.</li>
-                <li><strong>Cost Per Acquisition (CPA)</strong> — Total cost divided by number of conversions</li>
+                <li><strong>Conversion Rate</strong> — Percentage of clicks that result in a conversion. Benchmark: 2–5% across industries, though this varies widely.</li>
+                <li><strong>Cost Per Acquisition (CPA)</strong> — Total spend divided by number of conversions</li>
                 <li><strong>Return on Ad Spend (ROAS)</strong> — Revenue generated divided by ad spend</li>
             </ul>
 
             <h2>Calculating and Understanding ROAS</h2>
             <p><strong>ROAS = Revenue from Ads ÷ Cost of Ads</strong></p>
-            <p>A ROAS of 4:1 means you earn £4 for every £1 spent. But "good" ROAS depends entirely on your margins. A business with 80% gross margins can be profitable at 2:1 ROAS, while a business with 20% margins needs at least 5:1.</p>
+            <p>A ROAS of 4:1 means you earn £4 for every £1 spent. But a "good" ROAS depends entirely on your margins and business model. A business with 80% gross margins can be profitable at 2:1 ROAS, while a business with 20% margins needs at least 5:1 to break even on that channel.</p>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>ROAS alone doesn't tell you profitability. You need to factor in cost of goods, overhead, and customer lifetime value. A campaign with 3:1 ROAS might be highly profitable if those customers return to buy again.</p>
+                <div class="callout-title">Key Concept: Attribution Affects Every Number</div>
+                <p>How you attribute conversions changes every metric in your reports. <strong>Last-click attribution</strong> — still a default in some setups — credits only the final ad interaction before conversion, systematically undercounting the contribution of upper-funnel campaigns. <strong>Data-Driven Attribution (DDA)</strong> is the current standard in Google Ads: it uses machine learning to distribute credit across all touchpoints in the conversion path based on their actual contribution. For most accounts, switching to DDA produces a more accurate picture of which campaigns, ad groups, and keywords are genuinely driving value.</p>
             </div>
 
-            <h2>Impression Share and Wasted Spend</h2>
-            <p><strong>Impression share</strong> is the percentage of eligible impressions your ads actually received. Lost impression share (due to budget or rank) tells you how much opportunity you're missing. <strong>Wasted spend</strong> is money spent on clicks that don't convert — typically from irrelevant search queries or poorly performing keywords.</p>
+            <h2>Enhanced Conversions: Improving Measurement Accuracy</h2>
+            <p>As third-party cookies continue to be phased out and privacy changes affect tracking, conversion data becomes increasingly incomplete without first-party supplementation. <strong>Enhanced Conversions</strong> address this by securely sending hashed first-party data (email addresses, phone numbers) collected at the point of conversion to Google, which matches it to signed-in users and recovers conversions that standard tag-based tracking would miss. This improves the accuracy of every conversion metric in your reports and gives Smart Bidding better signal to optimise from.</p>
+
+            <h2>Impression Share and Optimisation Score</h2>
+            <p><strong>Impression share</strong> shows the percentage of eligible impressions your ads actually received. Lost impression share (due to budget or Ad Rank) tells you how much opportunity you are leaving on the table and whether the constraint is budget or quality.</p>
+            <p>Separately, Google surfaces an <strong>Optimisation Score</strong> (0–100%) at campaign and account level. This estimates how well your account is set to perform relative to available opportunities. It is not a direct performance metric — it is an indicator of how many of Google's recommendations you have applied. Review the recommendations driving the score critically: some are sound, others will not suit your account strategy.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Build a weekly reporting dashboard with: total spend, conversions, CPA, ROAS, impression share, and top/bottom performing keywords. Monthly, add trend charts showing these metrics over time. Quarterly, benchmark against industry averages.</p>
+                <p>Build a weekly reporting dashboard covering: total spend, conversions, CPA, ROAS, impression share, and DDA-attributed performance by campaign. Monthly, layer in trends and compare against your target CPA or ROAS thresholds. The goal is not to report on numbers — it is to identify where the budget is working hardest and where it is not.</p>
             </div>
-
-            <h2>Building Actionable PPC Reports</h2>
-            <p>Good PPC reports don't just show numbers — they drive decisions. Structure reports around questions: Where are we spending the most? What's converting? Where are we wasting money? What should we test next? Every metric should lead to an action.</p>
         `,
         quiz: {
             question: 'If a campaign generates £8,000 in revenue from £2,000 in ad spend, what is the ROAS?',
@@ -1225,36 +1239,39 @@ Object.assign(lessonContent, {
     'ps-3-7': {
         title: 'Microsoft Ads: Key Differences and Opportunities',
         body: `
-            <h2>Why Consider Microsoft Ads?</h2>
-            <p><strong>Microsoft Ads</strong> (formerly Bing Ads) runs ads on Bing, Yahoo, and partner sites. While Bing has a much smaller market share than Google, it reaches a valuable audience that many advertisers overlook — meaning less competition and lower CPCs.</p>
+            <h2>Why Microsoft Ads Deserves a Place in Your Media Plan</h2>
+            <p><strong>Microsoft Advertising</strong> (formerly Bing Ads) now runs across Bing, Yahoo, DuckDuckGo, and the broader Microsoft Search Network. In 2026, it has also become the advertising platform for <strong>Copilot</strong> — Microsoft's AI assistant integrated into Windows, Edge, and Microsoft 365 — representing a genuinely new placement type that most advertisers are still underutilising.</p>
 
-            <h2>The Bing Audience</h2>
-            <p>Bing users tend to skew older, have higher household incomes, and are more likely to be in professional roles. Key demographics:</p>
+            <h2>The Microsoft Search Audience</h2>
+            <p>Microsoft's search user base skews older, more professional, and more desktop-heavy than Google's, partly because Bing is the default search engine in Microsoft Edge and on Windows devices — including the corporate laptops common in enterprise environments. Key characteristics:</p>
             <ul>
-                <li><strong>Age</strong> — Higher proportion of 35–65+ users compared to Google</li>
-                <li><strong>Income</strong> — Bing users tend to have above-average household income</li>
-                <li><strong>Desktop heavy</strong> — Bing has a larger desktop share partly because it's the default search engine in Microsoft Edge and Windows</li>
-                <li><strong>B2B potential</strong> — Many corporate computers use Bing as default, making it valuable for B2B advertisers</li>
+                <li><strong>Age</strong> — Higher proportion of 35–65+ users than Google</li>
+                <li><strong>Income</strong> — Above-average household income relative to the general population</li>
+                <li><strong>Desktop share</strong> — Larger desktop proportion, making it valuable for products and services where desktop conversion rates are higher</li>
+                <li><strong>B2B reach</strong> — Corporate devices default to Bing, making Microsoft Advertising particularly effective for B2B advertisers trying to reach professionals in large organisations</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>Microsoft Ads typically delivers 20–40% lower CPCs than Google Ads for the same keywords, with comparable conversion rates. For many advertisers, this means better ROAS even with lower volume.</p>
+                <div class="callout-title">Key Concept: Copilot Placements</div>
+                <p>Microsoft Advertising now serves ads within <strong>Copilot</strong> — the AI assistant embedded in Windows, Edge, and Microsoft 365. These placements appear alongside AI-generated responses to search queries and conversational questions. This is a meaningful expansion of where your ads can appear, distinct from traditional search results, and one of the fastest-growing placement categories on the Microsoft network.</p>
             </div>
 
-            <h2>Importing From Google Ads</h2>
-            <p>The easiest way to get started is importing your Google Ads campaigns directly into Microsoft Ads. The import tool copies your campaign structure, keywords, ads, and settings. You can then adjust bids and budgets for the Bing marketplace.</p>
-
-            <h2>Unique Microsoft Ads Features</h2>
+            <h2>LinkedIn Professional Targeting: Microsoft's Genuine Differentiator</h2>
+            <p>Microsoft's ownership of LinkedIn gives it a targeting capability Google cannot replicate. Within Microsoft Advertising, you can layer LinkedIn profile data onto your search campaigns to target by:</p>
             <ul>
-                <li><strong>LinkedIn Profile Targeting</strong> — Target users by company, industry, and job function using LinkedIn data. This is exclusive to Microsoft Ads and extremely valuable for B2B.</li>
-                <li><strong>Multimedia Ads</strong> — Rich visual ad formats unique to Microsoft</li>
-                <li><strong>Microsoft Audience Network</strong> — Native ads across MSN, Outlook, and partner sites</li>
+                <li><strong>Job title</strong> — Reach specific roles such as "Marketing Director" or "Head of Procurement"</li>
+                <li><strong>Seniority level</strong> — Target decision-makers (Director, VP, C-suite) rather than general employees</li>
+                <li><strong>Company name</strong> — Reach users employed at specific organisations, useful for account-based marketing</li>
+                <li><strong>Industry</strong> — Filter by sector (e.g., Financial Services, Technology, Healthcare)</li>
             </ul>
+            <p>This combination of search intent and professional identity is exclusive to Microsoft Advertising. For B2B advertisers, it is a significant advantage — you are reaching someone searching for your solution who is also in the job title you are trying to reach.</p>
+
+            <h2>AI Max for Microsoft and Importing From Google</h2>
+            <p>Microsoft Advertising now offers its own version of AI-driven campaign expansion, branded as <strong>AI Max for Microsoft</strong>. Like Google's equivalent, it extends query matching using AI and dynamically personalises ad experiences. The easiest way to launch on Microsoft is importing your Google Ads campaigns directly — the import tool copies campaign structure, keywords, ads, and settings — then adjusting bids for the Microsoft marketplace, where CPCs are typically 20–40% lower than equivalent Google positions.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Don't just mirror your Google Ads bids. Bing is less competitive, so start with 20–30% lower bids and adjust based on performance. Monitor the auction differently — position 1 on Bing is often achievable at a fraction of the Google cost.</p>
+                <p>Do not simply mirror your Google Ads bids on Microsoft. The auction is less competitive, so start 20–30% lower and calibrate from performance data. Monitor Copilot placement performance separately from traditional search placements — the click intent and conversion behaviour can differ meaningfully.</p>
             </div>
         `,
         quiz: {
@@ -1274,31 +1291,30 @@ Object.assign(lessonContent, {
         title: 'Scaling Campaigns Profitably',
         body: `
             <h2>The Scaling Challenge</h2>
-            <p>Scaling paid search means increasing spend while maintaining (or not significantly reducing) your ROAS. The challenge is that increasing budget often leads to diminishing returns — you've already captured the most efficient clicks, and additional spend reaches less qualified audiences at higher costs.</p>
+            <p>Scaling paid search means increasing spend while holding your ROAS or CPA within acceptable bounds. The challenge is real: the most efficient clicks come first, and as you scale, you are reaching progressively less qualified users at progressively higher costs. The goal is to push that efficiency frontier outward — through better signals, better creative, and better automation — rather than simply pouring budget in.</p>
 
-            <h2>Scaling Strategies</h2>
+            <h2>Scaling Strategies That Work in 2026</h2>
             <ul>
-                <li><strong>Increase budgets gradually</strong> — Raise budgets by 15–20% at a time, not 100%. Sudden large increases can disrupt Smart Bidding algorithms and waste budget while the system re-learns.</li>
-                <li><strong>Expand keyword coverage</strong> — Find new keyword opportunities through search term reports, competitor analysis, and broader match types. More keywords mean more qualified auctions to participate in.</li>
-                <li><strong>Geographic expansion</strong> — If you're targeting one city, test expanding to the surrounding region. If you're in one country, test new markets.</li>
-                <li><strong>Dayparting refinement</strong> — Analyse conversion rates by hour and day. Increase bids during high-converting hours and reduce them during low-performing periods.</li>
+                <li><strong>Increase budgets incrementally</strong> — Raise budgets by 15–20% at a time. Sudden large jumps disrupt Smart Bidding's learning period, causing it to bid erratically while it adjusts to new volume levels. Give it time to recalibrate between increases.</li>
+                <li><strong>Improve first-party data inputs</strong> — Richer signals drive better scaling. Uploading higher-quality Customer Match lists, enabling Enhanced Conversions, and importing offline conversion data all give Smart Bidding a clearer picture of what a valuable conversion looks like — allowing it to find more of them efficiently as budgets grow.</li>
+                <li><strong>Use AI Max for Search as a controlled expansion lever</strong> — Rather than moving to fully broad match across all campaigns, AI Max lets you expand query coverage with AI-driven matching while keeping standard search campaign structure intact. Test it in campaigns with strong conversion data before scaling spend.</li>
+                <li><strong>Geographic expansion</strong> — If campaigns are performing at target CPA in one region, test expansion to adjacent regions with similar demographic profiles before moving to wholly new markets.</li>
+                <li><strong>Performance Max for new inventory</strong> — If your current Search campaigns are approaching saturation, PMax can access YouTube, Display, Gmail, Maps, and Discover inventory simultaneously. With campaign-level negatives, placement exclusions, and asset group reporting now available, it is a more manageable scaling vehicle than it once was.</li>
+                <li><strong>Dayparting and device analysis</strong> — Identify where conversion rate is highest by hour, day, and device. Concentrate budget there before pushing into lower-performing windows.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>There's an efficiency frontier for every campaign — a point where additional spend delivers diminishing returns. The goal of scaling isn't to eliminate this frontier but to push it outward through better targeting, creative, and landing pages.</p>
+                <p>There is an efficiency frontier for every campaign — a point where additional spend delivers diminishing returns. You do not eliminate this frontier through more budget alone. You push it outward by improving the quality of signals you feed the system (first-party data), the quality of assets you give it to work with (RSA headlines, images, landing pages), and the breadth of inventory you give it to find conversions across (AI Max, PMax).</p>
             </div>
 
             <h2>Seasonal Adjustments</h2>
-            <p>Most businesses have seasonal demand patterns. Plan budget increases around high-demand periods (Black Friday, back-to-school, tax season) and pull back during natural lulls. Use Google Ads' seasonality adjustments to tell Smart Bidding about expected short-term changes in conversion rates.</p>
+            <p>Most businesses have seasonal demand patterns. Plan budget increases ahead of high-demand periods — Black Friday, January sales, tax season — not after demand has already peaked. Use Google Ads' seasonality adjustment tool to inform Smart Bidding of expected short-term changes in conversion rate, so the algorithm does not misinterpret a seasonal spike as a signal to change its underlying bidding model.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Scaling spend without improving creative and landing pages. If your conversion rate drops as you scale, the solution isn't just more budget — it's better ads and landing experiences. Always improve the funnel alongside spend increases.</p>
+                <p>Scaling spend without improving what the budget hits. If your conversion rate is declining as volume grows, the solution is not more budget — it is better ad copy, better landing pages, and higher-quality audience signals. Spend and quality must scale together; scaling spend onto a weak funnel just magnifies the waste.</p>
             </div>
-
-            <h2>Knowing When to Stop Scaling</h2>
-            <p>Track your marginal CPA and ROAS as you scale. When the marginal CPA of the next pound spent exceeds your profitability threshold, you've reached your efficient scaling limit for that channel. At that point, diversify to new channels rather than forcing more spend into a saturated one.</p>
         `,
         quiz: {
             question: 'By how much should you typically increase campaign budgets when scaling?',

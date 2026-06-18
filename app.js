@@ -610,49 +610,48 @@ const lessonContent = {
         title: 'How Paid Search Works (The Auction Model)',
         body: `
             <h2>What is Paid Search?</h2>
-            <p>Paid search advertising (also called PPC — Pay-Per-Click) lets you place ads at the top of search engine results pages. When someone searches for a keyword you're targeting, your ad can appear above the organic results.</p>
-            <p>The two major paid search platforms are <strong>Google Ads</strong> (dominant globally) and <strong>Microsoft Advertising</strong> (Bing, Yahoo, and partner sites).</p>
+            <p>Paid search advertising — also known as PPC (Pay-Per-Click) — lets you place ads at the top of search engine results pages when people search for terms relevant to your business. The two major platforms are <strong>Google Ads</strong> and <strong>Microsoft Advertising</strong>, which together cover the vast majority of search volume in most English-speaking markets.</p>
+            <p>In 2026, paid search has expanded well beyond traditional keyword-triggered text ads. Google's fastest-growing product — <strong>AI Max for Search</strong> — uses AI to extend query matching beyond the keywords you explicitly bid on and to dynamically personalise ad assets for each searcher. The advertiser's job has shifted: from managing individual keywords to providing high-quality signals — strong conversion data, compelling creative assets, and clear business goals.</p>
 
             <h2>The Auction Model</h2>
-            <p>Every time someone searches, an instant auction happens behind the scenes. Here's how it works:</p>
+            <p>Every time someone runs a search, an instant auction happens behind the scenes. Here is how it works:</p>
             <ol>
-                <li><strong>You choose keywords</strong> — The search terms you want your ads to show for</li>
-                <li><strong>You set a bid</strong> — The maximum you're willing to pay per click</li>
-                <li><strong>Someone searches</strong> — Google checks which advertisers are targeting that keyword</li>
-                <li><strong>The auction runs</strong> — Google evaluates all eligible ads and decides which to show, and in what order</li>
+                <li><strong>You set targeting and goals</strong> — The keywords or topics you want to reach, and the conversions you want to drive</li>
+                <li><strong>You set bids or a bid strategy</strong> — Either manually or through Smart Bidding, which uses machine learning to bid at auction time</li>
+                <li><strong>A user searches</strong> — Google checks which advertisers are eligible for that query</li>
+                <li><strong>The auction runs</strong> — Google calculates Ad Rank for all eligible advertisers and determines which ads to show and in what order</li>
                 <li><strong>Ads appear</strong> — Winning ads are displayed, and you only pay when someone clicks</li>
             </ol>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>The highest bidder doesn't always win. Google uses <strong>Ad Rank</strong> — a combination of your bid, ad quality, expected click-through rate, and landing page experience. A lower bid with a better ad can beat a higher bid with a poor ad.</p>
+                <p>The highest bidder does not always win. Google uses <strong>Ad Rank</strong> — a combination of your bid, Quality Score (ad relevance, expected CTR, and landing page experience), and the expected impact of your ad assets. A well-crafted ad with a lower bid can outrank a poorly crafted ad with a higher one.</p>
             </div>
 
             <h2>The Ad Rank Formula</h2>
-            <p>Ad Rank determines your ad position. It's calculated as:</p>
-            <p><strong>Ad Rank = Bid × Quality Score × Expected Impact of Extensions</strong></p>
+            <p>Ad Rank determines your ad position:</p>
+            <p><strong>Ad Rank = Bid × Quality Score × Expected Impact of Assets</strong></p>
             <p>This means you can improve your position by:</p>
             <ul>
                 <li>Increasing your bid (costs more money)</li>
                 <li>Improving your Quality Score (free and sustainable)</li>
-                <li>Adding useful ad extensions (free)</li>
+                <li>Adding high-quality, relevant ad assets (free and impactful)</li>
             </ul>
 
             <h2>How You Pay</h2>
-            <p>You don't actually pay your maximum bid. You pay just enough to beat the advertiser below you — this is called <strong>second-price auction</strong> (though Google's system is more complex now).</p>
-            <p>For example: if your max bid is £5 and the next advertiser's Ad Rank requires you to pay £3.20 to stay above them, you pay £3.20 per click.</p>
+            <p>You do not pay your maximum bid — you pay just enough to beat the Ad Rank of the advertiser below you. This generalised second-price mechanism means efficiency matters enormously: a higher-quality ad pays less per click for the same position than a lower-quality one.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Focus on Quality Score first. Improving your ad relevance, click-through rate, and landing page experience can dramatically lower your cost-per-click while maintaining or improving your ad position.</p>
+                <p>Focus on Quality Score first. Improving your ad relevance, expected click-through rate, and landing page experience consistently lowers your cost-per-click while maintaining or improving your position. Better quality means the same budget delivers more clicks.</p>
             </div>
 
-            <h2>Why Paid Search is Powerful</h2>
+            <h2>Why Paid Search Remains Powerful</h2>
             <ul>
-                <li><strong>Intent-based</strong> — People are actively searching for what you offer</li>
-                <li><strong>Measurable</strong> — You can track every click, conversion, and pound spent</li>
-                <li><strong>Fast</strong> — Unlike SEO, you can appear at the top of results within hours</li>
-                <li><strong>Controllable</strong> — You set budgets, targeting, and schedules precisely</li>
+                <li><strong>Intent-based</strong> — People are actively searching for what you offer; this is the highest-intent advertising format available</li>
+                <li><strong>Measurable</strong> — You can track every click, conversion, and pound spent down to the keyword or query</li>
+                <li><strong>Fast</strong> — Unlike SEO, you can appear at the top of results within hours of setting up a campaign</li>
+                <li><strong>AI-accelerated</strong> — Tools like AI Max for Search and Smart Bidding now handle optimisation work that previously required constant manual management</li>
             </ul>
         `,
         quiz: {
@@ -670,53 +669,50 @@ const lessonContent = {
     'ps-1-2': {
         title: 'Account Structure: Campaigns, Ad Groups, Keywords',
         body: `
-            <h2>Why Structure Matters</h2>
-            <p>Good account structure is the foundation of every successful paid search campaign. A well-organised account gives you better control, clearer reporting, and typically lower costs.</p>
+            <h2>Why Account Structure Matters</h2>
+            <p>A well-structured Google Ads account is not just about organisation — it is about providing the clearest possible signals to Google's machine learning systems. Modern paid search is driven by Smart Bidding and AI optimisation. The better you structure your account to feed those systems clean data, specific goals, and relevant creative assets, the better they perform. Think of your job as a signal provider, not a manual controller.</p>
 
             <h2>The Three Levels</h2>
-            <p>Google Ads accounts are organised in a hierarchy:</p>
+            <p>Google Ads accounts follow a hierarchy:</p>
 
             <h3>1. Account Level</h3>
-            <p>Your top-level container. One account per business is typical. Here you set billing, user access, and account-wide settings.</p>
+            <p>Your top-level container. Account-level settings include billing, user access, conversion goals, and audience lists shared across all campaigns.</p>
 
             <h3>2. Campaign Level</h3>
             <p>Campaigns are your major organisational units. Each campaign has its own:</p>
             <ul>
                 <li><strong>Budget</strong> — Daily or monthly spend limit</li>
-                <li><strong>Targeting</strong> — Geographic locations, languages, devices</li>
-                <li><strong>Bidding strategy</strong> — How you want to optimise (clicks, conversions, etc.)</li>
-                <li><strong>Network</strong> — Search, Display, Shopping, etc.</li>
+                <li><strong>Bid strategy</strong> — Smart Bidding goal (Target CPA, Target ROAS, Maximise Conversions) or manual bidding</li>
+                <li><strong>Targeting</strong> — Geographic locations, languages, devices, and network settings</li>
+                <li><strong>Campaign type</strong> — Search, Performance Max, Shopping, Display, Video, or Demand Gen</li>
+                <li><strong>Negative keywords</strong> — Now applicable at campaign level for Performance Max campaigns as well as Search</li>
+            </ul>
+
+            <h3>3. Ad Group Level</h3>
+            <p>Ad groups sit inside campaigns and contain closely related keywords and the ads that serve them. Each ad group should focus on one tight theme, with keywords and ad copy that closely match each other.</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">Key Concept</div>
+                <p>Modern account structure serves Smart Bidding, not manual control. Rather than creating dozens of granular ad groups to control bids, create logical groupings that help Google understand your goals and give its bidding algorithms clean, sufficient conversion data to optimise against.</p>
+            </div>
+
+            <h2>A Practical Structure Example</h2>
+            <p>For a software business:</p>
+            <ul>
+                <li><strong>Campaign:</strong> Brand — Target ROAS, protecting branded search terms</li>
+                <li><strong>Campaign:</strong> Core Product — Maximise Conversions, targeting high-intent product keywords</li>
+                <li><strong>Campaign:</strong> Competitor — Separate budget and messaging, monitored closely</li>
+                <li><strong>Campaign:</strong> Performance Max — asset groups and conversion signals for Google to find incremental reach across all channels</li>
             </ul>
 
             <div class="callout callout-tip">
-                <div class="callout-title">Best Practice</div>
-                <p>Organise campaigns by theme, product line, or marketing objective. For example: "Brand Terms", "Competitor Terms", "Product A — Search", "Product B — Search".</p>
+                <div class="callout-title">Pro Tip</div>
+                <p>Consolidate where possible. Fewer campaigns with more data each perform better than many small campaigns starved of conversion signals. If a campaign is generating fewer than 30 conversions per month, consider merging it with another to give Smart Bidding enough data to function effectively.</p>
             </div>
-
-            <h3>3. Ad Group Level</h3>
-            <p>Inside each campaign, ad groups contain closely related keywords and the ads that target them. Think of ad groups as "topic clusters."</p>
-            <ul>
-                <li>Each ad group should focus on one tight theme</li>
-                <li>Keywords in the same ad group should be closely related</li>
-                <li>Ads in the group should be directly relevant to those keywords</li>
-            </ul>
-
-            <h2>The Golden Rule of Structure</h2>
-            <p><strong>Keep your ad groups tightly themed.</strong> When keywords and ads are closely matched, your Quality Score improves, your costs decrease, and your ads become more relevant to searchers.</p>
-
-            <h2>Example Structure</h2>
-            <p>For a shoe retailer:</p>
-            <ul>
-                <li><strong>Campaign:</strong> Running Shoes</li>
-                <li><strong>Ad Group 1:</strong> Men's Running Shoes (keywords: "men's running shoes", "running shoes for men")</li>
-                <li><strong>Ad Group 2:</strong> Women's Running Shoes (keywords: "women's running shoes", "ladies running shoes")</li>
-                <li><strong>Ad Group 3:</strong> Trail Running Shoes (keywords: "trail running shoes", "off-road running shoes")</li>
-            </ul>
-            <p>Each ad group gets ads written specifically for that theme, making them more relevant and improving performance.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Dumping all keywords into one ad group. This makes your ads generic and kills your Quality Score. Take the time to group related keywords together.</p>
+                <p>Over-fragmenting campaigns and ad groups in pursuit of manual control. Splitting into hundreds of tiny ad groups made sense in the era of manual CPC bidding. With Smart Bidding, fragmentation starves the algorithm of data and hurts performance. Simplify your structure and let the system optimise within broader, data-rich campaigns.</p>
             </div>
         `,
         quiz: {
@@ -735,54 +731,52 @@ const lessonContent = {
         title: 'Match Types and Negative Keywords',
         body: `
             <h2>What Are Match Types?</h2>
-            <p>When you add keywords to your campaigns, you need to tell Google how closely a search query must match your keyword before your ad can appear. This is done through <strong>match types</strong>.</p>
+            <p>Match types tell Google how closely a user's search query must relate to your keyword before your ad is eligible to appear. In 2026, all three match types have broadened significantly from their original definitions — understanding what each actually does today is essential for managing where your budget goes.</p>
 
             <h2>The Three Match Types</h2>
 
             <h3>1. Broad Match</h3>
-            <p>The widest reach. Your ad may show for searches that are related to your keyword, including synonyms, related topics, and variations.</p>
+            <p>Broad match is now the widest and most AI-driven match type. Rather than matching on literal word variations, Google's systems match on <strong>semantic intent</strong> — the meaning behind the search, not the specific words used. Combined with Smart Bidding, broad match uses your conversion data to bid aggressively on searches likely to convert and conservatively on those that are not.</p>
             <ul>
-                <li>Keyword: <code>running shoes</code></li>
-                <li>Could match: "best trainers for jogging", "athletic footwear", "marathon shoe reviews"</li>
+                <li>Keyword: <code>project management software</code></li>
+                <li>May match: "team task tracking app," "best tools for coordinating remote teams," "how to manage projects effectively"</li>
             </ul>
-            <p><strong>When to use:</strong> When you want maximum reach, especially with Smart Bidding which can optimise within broad match.</p>
+            <p>Broad match works best when paired with Smart Bidding and a healthy conversion history. Without Smart Bidding, it can waste budget on semantically adjacent but commercially irrelevant queries.</p>
 
             <h3>2. Phrase Match</h3>
-            <p>Your ad shows for searches that include the meaning of your keyword. The query must contain your keyword concept in the right order.</p>
+            <p>Phrase match covers searches that include the meaning of your keyword phrase in roughly the same conceptual order. The query must preserve the core intent but can include additional words before or after.</p>
             <ul>
-                <li>Keyword: <code>"running shoes"</code></li>
-                <li>Could match: "best running shoes for flat feet", "buy running shoes online"</li>
-                <li>Won't match: "shoes for running errands" (different meaning)</li>
+                <li>Keyword: <code>"project management software"</code></li>
+                <li>May match: "best project management software for small teams," "project management software free trial"</li>
+                <li>Less likely to match: "how to manage projects" (too different in intent)</li>
             </ul>
-            <p><strong>When to use:</strong> When you want a balance of reach and control.</p>
 
             <h3>3. Exact Match</h3>
-            <p>The tightest control. Your ad shows only for searches that have the same meaning as your keyword.</p>
+            <p>Exact match delivers the tightest control. Your ad shows for searches with the same meaning as your keyword — close variants and rewordings of the same intent are included, but searches with clearly different intent are not.</p>
             <ul>
-                <li>Keyword: <code>[running shoes]</code></li>
-                <li>Could match: "running shoes", "shoes for running"</li>
-                <li>Won't match: "best running shoes 2026" or "running shoe reviews"</li>
+                <li>Keyword: <code>[project management software]</code></li>
+                <li>May match: "project management tool," "software for project management"</li>
+                <li>Will not match: "free project management software" (different modifier changes the intent)</li>
             </ul>
-            <p><strong>When to use:</strong> When you want precise targeting and tight budget control.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Over the years, Google has made all match types broader. Even "exact match" now matches close variants. This makes negative keywords even more important.</p>
+                <p>Broad match in 2026 operates on <strong>semantic intent</strong>, not literal text. Google's systems understand that "team coordination app" and "project management software" serve similar intents. This makes broad match far more powerful than it once was — but also more reliant on high-quality conversion data to bid wisely. Without clean conversion signals, broad match wastes budget indiscriminately.</p>
             </div>
 
-            <h2>Negative Keywords: Your Defence System</h2>
-            <p>Negative keywords prevent your ads from showing for irrelevant searches. They're just as important as the keywords you target.</p>
-            <p>For example, if you sell premium running shoes, you might add these negatives:</p>
+            <h2>Negative Keywords: Your Essential Control Layer</h2>
+            <p>Negative keywords remain one of the most impactful levers in paid search, particularly as match types have broadened and AI Max for Search expands query coverage further. They prevent your ads appearing for searches that, despite matching your keyword's intent, are not commercially relevant to your business.</p>
+            <p>For a premium project management tool, useful negatives might include:</p>
             <ul>
-                <li><code>-free</code> (don't want people looking for free shoes)</li>
-                <li><code>-cheap</code> (wrong audience for premium products)</li>
-                <li><code>-repair</code> (not looking to buy)</li>
-                <li><code>-used</code> (you sell new products)</li>
+                <li><code>-free</code> — users looking for no-cost tools</li>
+                <li><code>-template</code> — users wanting templates, not software</li>
+                <li><code>-tutorial</code> — learning, not buying intent</li>
+                <li><code>-Excel</code> — users looking for spreadsheet solutions</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Review your Search Terms Report weekly. It shows exactly what people searched before clicking your ad. Add any irrelevant terms as negatives. This is one of the highest-impact optimisation tasks in paid search.</p>
+                <p>Review your Search Terms Report at least weekly. Sort by cost (highest first) to find the most expensive irrelevant queries first. Build shared negative keyword lists by theme — "free/cheap," "jobs/careers," "DIY/how-to" — and apply them across all relevant campaigns simultaneously.</p>
             </div>
         `,
         quiz: {
@@ -800,54 +794,46 @@ const lessonContent = {
     'ps-1-4': {
         title: 'Writing Effective Search Ads',
         body: `
-            <h2>The Anatomy of a Search Ad</h2>
-            <p>Google search ads (Responsive Search Ads) have several components:</p>
+            <h2>The Anatomy of a Search Ad in 2026</h2>
+            <p>Google Search ads are built using <strong>Responsive Search Ads (RSAs)</strong> — the default and only standard Search ad format. You supply multiple creative components and Google's AI assembles and tests the best combinations for each search context. With AI Max for Search, Google can also dynamically adapt these assets based on the query and the user's context, making asset quality more important than ever.</p>
+            <p>The components of an RSA:</p>
             <ul>
-                <li><strong>Headlines</strong> — Up to 15 headlines (30 characters each). Google tests combinations and shows up to 3 at once.</li>
+                <li><strong>Headlines</strong> — Up to 15 headlines (30 characters each). Google shows up to 3 at once.</li>
                 <li><strong>Descriptions</strong> — Up to 4 descriptions (90 characters each). Google shows up to 2 at once.</li>
-                <li><strong>Display URL path</strong> — Short text that appears in the URL (e.g., /running-shoes)</li>
-                <li><strong>Extensions</strong> — Additional information like sitelinks, callouts, phone numbers</li>
+                <li><strong>Display URL paths</strong> — Two short text fields that appear in the ad URL (e.g., /project-management/free-trial)</li>
+                <li><strong>Ad assets</strong> — Additional components like sitelinks, callouts, image assets, call assets, and lead form assets that expand your ad and improve Ad Rank</li>
             </ul>
 
             <h2>Principles of Effective Ad Copy</h2>
 
-            <h3>1. Match the Search Intent</h3>
-            <p>Your ad should directly address what the searcher is looking for. If someone searches "buy running shoes online", your headline should include those concepts.</p>
+            <h3>Match the Search Intent</h3>
+            <p>Your ad should directly address what the searcher is looking for. If someone searches "project management software for remote teams," your headlines should speak to remote work, team coordination, and the specific value you offer — not just generic product claims.</p>
 
-            <h3>2. Include the Keyword</h3>
-            <p>Having the search term (or close variation) in your headline improves relevance and Quality Score. It also appears <strong>bold</strong> in the search results, catching the eye.</p>
+            <h3>Include the Keyword</h3>
+            <p>Having the search term or a close variation in your headline improves relevance and Quality Score. Google also bolds matching terms in search results, which draws the eye and improves click-through rate.</p>
 
-            <h3>3. Highlight Your Unique Value</h3>
-            <p>What makes you different from every other advertiser? Include:</p>
+            <h3>Highlight Your Unique Value</h3>
+            <p>Specific claims consistently outperform vague ones:</p>
             <ul>
-                <li>Specific offers ("20% Off This Week")</li>
-                <li>Social proof ("Rated 4.8/5 by 10,000+ Customers")</li>
-                <li>Unique benefits ("Free Next-Day Delivery")</li>
-                <li>Urgency ("Limited Stock Available")</li>
+                <li>"Save 6 Hours Per Project" beats "Save Time"</li>
+                <li>"Rated 4.8/5 by 12,000 Teams" beats "Highly Rated"</li>
+                <li>"Free 30-Day Trial, No Card Required" beats "Try Free"</li>
             </ul>
 
-            <h3>4. Include a Clear Call to Action</h3>
-            <p>Tell people what to do: "Shop Now", "Get a Free Quote", "Book Your Demo", "Download the Guide".</p>
-
-            <h3>5. Use Numbers and Specifics</h3>
-            <p>"Save 30%" is more compelling than "Big Savings". "500+ 5-Star Reviews" beats "Highly Rated".</p>
+            <h3>Include a Clear Call to Action</h3>
+            <p>Tell people exactly what to do next: "Start Free Trial," "Get a Custom Quote," "Book a 15-Minute Demo," "Download the Guide." A specific CTA consistently outperforms a vague one.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Write at least 8-10 varied headlines and 3-4 descriptions. Google's machine learning will test combinations and find the best-performing mix. Pin your most important headline to position 1 if it must always show.</p>
+                <p>Write at least 10 varied headlines and 3–4 descriptions to give Google meaningful options to test. Cover different themes: benefits, social proof, offers, CTAs, and keyword-rich headlines. Pin your most critical headline (such as your brand name or core offer) to position 1 to ensure it always appears — but leave the rest unpinned so the algorithm can find the best-performing combinations.</p>
             </div>
 
-            <h2>Common Ad Copy Mistakes</h2>
-            <ul>
-                <li><strong>Too generic</strong> — "We're the best" tells the searcher nothing specific</li>
-                <li><strong>No differentiation</strong> — If your ad looks like everyone else's, there's no reason to click yours</li>
-                <li><strong>Missing CTA</strong> — Always tell the user what action to take</li>
-                <li><strong>Ignoring the landing page</strong> — Your ad promise must match what the user finds when they click</li>
-            </ul>
+            <h2>Asset Diversity Matters More Than Ever</h2>
+            <p>With AI Max for Search dynamically adapting how assets are assembled and served, providing diverse, high-quality assets is no longer optional — it is the primary creative lever available to advertisers. Thin or repetitive assets limit what the system can do. Treat each headline and description as a distinct, standalone message rather than a variation of the same sentence.</p>
 
             <div class="callout callout-warning">
-                <div class="callout-title">Important</div>
-                <p>Google now uses Responsive Search Ads (RSAs) as the default format. You provide multiple headlines and descriptions, and Google's AI assembles the best combination for each search. Provide variety in your assets so Google has meaningful options to test.</p>
+                <div class="callout-title">Common Mistake</div>
+                <p>Pinning too many headlines overrides Google's ability to test and optimise combinations. Pin only what genuinely must appear in every combination — typically your core offer or brand name in position 1. Leave the rest unpinned so the algorithm can find what actually performs best with real users.</p>
             </div>
         `,
         quiz: {
