@@ -1534,7 +1534,7 @@ function openLesson(pathId, lessonId) {
         if (lastLesson && lastLesson.id === lessonId && mod.projectTitle) {
             var projectKey = 'moduleProject_' + pathId + '_' + modIdx;
             var isDone = localStorage.getItem(projectKey) === 'true';
-            moduleProjectHtml = '<div class="module-project-card"><div class="module-project-label">MODULE PROJECT</div><div class="module-project-title">' + mod.projectTitle + '</div><p class="module-project-desc">' + mod.projectDescription + '</p><button class="btn ' + (isDone ? 'btn-success' : 'btn-outline') + ' module-project-btn" id="moduleProjectBtn_' + pathId + '_' + modIdx + '" onclick="completeModuleProject(\'' + pathId + '\', ' + modIdx + ')" ' + (isDone ? 'disabled' : '') + '>' + (isDone ? 'Completed ✓' : 'I\'ve completed this ✓') + '</button></div>';
+            moduleProjectHtml = '<div class="module-project-card"><div class="module-project-card-inner"><div class="module-project-label">MODULE PROJECT</div><div class="module-project-title">' + mod.projectTitle + '</div><p class="module-project-desc">' + mod.projectDescription + '</p><button class="btn ' + (isDone ? 'btn-success' : 'btn-outline') + ' module-project-btn" id="moduleProjectBtn_' + pathId + '_' + modIdx + '" onclick="completeModuleProject(\'' + pathId + '\', ' + modIdx + ')" ' + (isDone ? 'disabled' : '') + '>' + (isDone ? 'Completed ✓' : 'I\'ve completed this ✓') + '</button></div></div>';
         }
     });
 
