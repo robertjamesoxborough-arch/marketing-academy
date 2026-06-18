@@ -7,38 +7,40 @@ Object.assign(lessonContent, {
         title: 'How to Find Keywords People Actually Search For',
         body: `
             <h2>Starting With Seed Keywords</h2>
-            <p>Keyword research is the foundation of every SEO strategy. It tells you what your audience is searching for so you can create content that meets their needs. The process starts with <strong>seed keywords</strong> — broad terms that describe your product, service, or topic.</p>
-            <p>To brainstorm seed keywords, think about:</p>
+            <p>Keyword research is the process of discovering what your audience actually types into Google — not what you assume they search, but the real words and phrases they use. It starts with <strong>seed keywords</strong>: broad terms that describe your core topic, product, or service.</p>
+            <p>To generate seed keywords, think about:</p>
             <ul>
-                <li><strong>What you sell or offer</strong> — List your products, services, and core topics</li>
-                <li><strong>How customers describe their problems</strong> — Use their language, not your internal jargon</li>
-                <li><strong>What competitors rank for</strong> — Check their top pages for keyword ideas</li>
+                <li><strong>What you offer</strong> — Products, services, and the problems they solve</li>
+                <li><strong>The language your customers use</strong> — Talk to your sales team, read review sites, and listen to customer language rather than internal jargon</li>
+                <li><strong>Adjacent topics</strong> — Questions your audience asks before and after they find you</li>
             </ul>
+            <p>In 2026, keyword research goes beyond finding terms to target in isolation. The goal is to identify <strong>topic clusters</strong> — groups of semantically related queries that map to a connected body of content. Individual keyword targeting has given way to topical authority building. Keep that framing in mind as you gather your initial list.</p>
 
             <h2>Free Keyword Discovery Methods</h2>
-            <p>You don't need expensive tools to start finding keywords. Google itself is your best free resource:</p>
+            <p>Google itself is your most valuable free research tool:</p>
             <ul>
-                <li><strong>Google Autocomplete</strong> — Start typing a query and note what Google suggests. These are real searches people make.</li>
-                <li><strong>People Also Ask</strong> — The expandable question boxes in search results reveal related queries and subtopics.</li>
-                <li><strong>Related Searches</strong> — Scroll to the bottom of any search results page for more keyword variations.</li>
-                <li><strong>Google Keyword Planner</strong> — Free inside Google Ads, it shows estimated search volumes and keyword ideas based on your seed terms.</li>
+                <li><strong>Google Autocomplete</strong> — Start typing a query and note what Google suggests. These are drawn from actual search data, making them reliable signals of real demand.</li>
+                <li><strong>People Also Ask</strong> — The expandable question boxes in search results reveal the sub-questions and follow-up queries around your topic. These are especially useful for informational content — and increasingly important for AI Overviews, which frequently draw from PAA-style questions.</li>
+                <li><strong>Related Searches</strong> — The section at the bottom of any results page shows semantically connected queries. These reveal intent variations and long-tail opportunities.</li>
+                <li><strong>Google Keyword Planner</strong> — Free inside Google Ads. Enter seed terms and it returns search volume estimates and related keyword ideas.</li>
+                <li><strong>Google Search Console</strong> — Your own data. The Performance report shows exactly which queries are already triggering impressions for your site, including ones you may not have intentionally targeted.</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Type an underscore _ in the middle of a Google search (e.g., "best _ for beginners") and autocomplete will fill in the blank with popular searches. This reveals keyword patterns you might never think of.</p>
+                <p>Type an asterisk * or underscore _ in the middle of a Google search (e.g., "best * for beginners") and Autocomplete will fill in the blank with popular searches. It reveals keyword patterns that direct brainstorming rarely surfaces.</p>
             </div>
 
             <h2>Competitor Keyword Analysis</h2>
-            <p>One of the fastest ways to find keywords is to look at what your competitors already rank for. Tools like Ahrefs, SEMrush, or Ubersuggest let you enter a competitor's domain and see their top-ranking keywords. Focus on keywords where competitors rank on page one but not in the top three — these represent realistic opportunities.</p>
+            <p>Competitor analysis is one of the fastest routes to a well-structured keyword list. Tools like Ahrefs, Semrush, or Ubersuggest let you enter a competitor's domain and see their top-ranking pages and the keywords driving their organic traffic. Focus on pages ranking in positions four to ten — established enough to be real opportunities, but not so dominant that you cannot overtake them. Also look for topics they cover that you do not — those are gaps in your content map.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>The best keyword research combines multiple methods: brainstorming, Google's free tools, and competitor analysis. No single method gives you the full picture.</p>
+                <p>Good keyword research is not a one-time exercise. The best SEO teams review their keyword data quarterly — as Google updates change what ranks, as AI Overviews reshape the SERP, and as new topics emerge in their industry. Build a process, not just a spreadsheet.</p>
             </div>
 
-            <h2>Organising Your Keywords</h2>
-            <p>Once you have a list, group keywords by topic and intent. A spreadsheet with columns for keyword, search volume, difficulty, and intent type (informational, commercial, transactional) keeps everything manageable. This grouped list becomes the backbone of your content plan.</p>
+            <h2>Organising Your Keywords Into Topics</h2>
+            <p>Once you have a list, group keywords by theme rather than treating each as a standalone target. A topic group might have one primary keyword (for your pillar page) and ten to twenty related queries (for cluster pages). This grouping exercise is the bridge between keyword research and content strategy — and it is where most of the value gets created.</p>
         `,
         quiz: {
             question: 'Which of these is the BEST free method to discover what people actually search for?',
@@ -57,37 +59,38 @@ Object.assign(lessonContent, {
         title: 'Keyword Difficulty and Search Volume',
         body: `
             <h2>What Search Volume Tells You</h2>
-            <p><strong>Search volume</strong> is an estimate of how many times a keyword is searched per month. Higher volume means more potential traffic, but it also usually means more competition. Search volume is typically shown as a monthly average and can vary by country or region.</p>
-            <p>Important caveats about search volume:</p>
+            <p><strong>Search volume</strong> is an estimate of how many times a keyword is searched per month, usually expressed as a monthly average. Higher volume means more potential traffic — but also more competition. Understanding what volume numbers actually tell you (and what they do not) is the difference between smart prioritisation and chasing numbers that never deliver.</p>
+            <p>Important caveats:</p>
             <ul>
-                <li><strong>It's an estimate</strong> — Tools use different data sources, so numbers vary between platforms</li>
-                <li><strong>Seasonality matters</strong> — "Christmas gifts" spikes in November, not July</li>
-                <li><strong>Zero volume doesn't mean zero searches</strong> — Many valuable long-tail terms show as zero but still drive traffic</li>
+                <li><strong>All volume figures are estimates</strong> — Different tools use different data sources, so numbers vary between platforms. Treat volume as directional, not precise.</li>
+                <li><strong>Seasonality matters</strong> — "Christmas gift ideas" peaks in November, not July. Always look at the trend, not just the average.</li>
+                <li><strong>Zero-volume keywords still drive traffic</strong> — Many valuable long-tail queries appear as zero in tools because they lack enough historical data. They still get searched — and convert well when they do.</li>
+                <li><strong>AI Overviews affect click distribution</strong> — For informational queries where AI Overviews appear, more searches may be answered without a click. Volume no longer translates to traffic at the same rate it once did for these query types.</li>
             </ul>
 
             <h2>Understanding Keyword Difficulty</h2>
-            <p>Keyword difficulty (KD) scores estimate how hard it will be to rank on page one for a given term. Most tools score this from 0 to 100. The score is primarily based on the strength and number of backlinks pointing to the pages that currently rank in the top results.</p>
+            <p>Keyword difficulty (KD) scores estimate how competitive it will be to rank on page one for a given term. Most tools score this from 0 to 100, basing the score primarily on the strength of backlinks pointing to the pages currently in the top results.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Keyword difficulty is relative to your site's authority. A KD of 40 might be easy for a large established site but nearly impossible for a brand-new blog. Always assess difficulty in context.</p>
+                <p>Keyword difficulty is always relative to your own domain's authority. A KD of 40 might be straightforward for a well-established site but effectively out of reach for a new domain. Use difficulty scores for directional comparisons within your own context — not as absolute verdicts.</p>
             </div>
 
-            <h2>Finding the Sweet Spot</h2>
-            <p>The ideal keywords sit in the overlap between decent search volume and achievable difficulty. This is sometimes called the "keyword sweet spot." For newer sites, prioritise:</p>
+            <h2>Finding the Right Opportunities</h2>
+            <p>The most productive keywords are not the biggest ones — they are the ones where you can realistically rank and where ranking delivers genuine business value. For most sites, that means prioritising:</p>
             <ul>
-                <li><strong>Low difficulty (KD 0–30)</strong> with moderate volume (100–1,000 searches/month)</li>
-                <li><strong>High commercial intent</strong> — A keyword with 200 monthly searches that leads to sales is better than one with 10,000 searches from casual browsers</li>
-                <li><strong>Topic authority</strong> — Keywords closely related to topics you already cover, where you can build clusters of supporting content</li>
+                <li><strong>Lower difficulty, moderate volume</strong> — A KD of 20 with 500 monthly searches will deliver more traffic than a KD of 80 with 5,000 searches you will never rank for.</li>
+                <li><strong>High commercial intent</strong> — A keyword with 300 monthly searches that leads to enquiries is more valuable than one with 10,000 searches that attracts casual browsers with no buying intent.</li>
+                <li><strong>Topical fit</strong> — Keywords closely related to topics you already cover are easier to rank for, because they build on authority you already have. Pursuing isolated, unrelated keywords instead of filling out existing topic clusters is one of the most common strategic errors in SEO.</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Chasing only high-volume keywords is one of the biggest SEO mistakes. New sites should build authority with easier keywords first, then gradually target more competitive terms as domain strength grows.</p>
+                <p>Targeting high-volume keywords before you have the authority to compete for them is a waste of content investment. Build topical depth first — a cluster of ten well-ranking cluster pages creates more total authority than one ambitious pillar page that never breaks page two.</p>
             </div>
 
-            <h2>Putting It Together</h2>
-            <p>Create a prioritised keyword list by scoring each keyword on volume, difficulty, and relevance to your business. A simple priority formula: <strong>Priority = (Volume × Relevance) ÷ Difficulty</strong>. This helps you focus your content efforts where they'll have the greatest impact.</p>
+            <h2>Creating a Prioritised Keyword List</h2>
+            <p>Score each keyword candidate against three dimensions: search volume (potential), difficulty (effort required), and business relevance (commercial value). A simple priority score of <strong>(Volume × Relevance) ÷ Difficulty</strong> gives you a workable starting hierarchy. Review and re-prioritise every quarter as your rankings shift and new opportunities emerge.</p>
         `,
         quiz: {
             question: 'A new website should typically target keywords with which characteristics?',
@@ -106,36 +109,38 @@ Object.assign(lessonContent, {
         title: 'Long-Tail Keywords and Topic Clusters',
         body: `
             <h2>What Are Long-Tail Keywords?</h2>
-            <p><strong>Long-tail keywords</strong> are longer, more specific search phrases — typically three or more words. While each individual long-tail keyword gets fewer searches, collectively they make up the majority of all search queries. More importantly, they tend to convert better because the searcher knows exactly what they want.</p>
-            <p>Examples:</p>
+            <p><strong>Long-tail keywords</strong> are longer, more specific search phrases — typically three or more words. Individually, each long-tail keyword attracts fewer searches than a broad head term. Collectively, they account for the majority of all searches made. More importantly for SEO, they convert far better — a searcher who types "best running shoes for flat feet under £100" knows exactly what they want and is close to a decision.</p>
+            <p>For comparison:</p>
             <ul>
-                <li><strong>Head term:</strong> "running shoes" (high volume, high competition)</li>
-                <li><strong>Long-tail:</strong> "best running shoes for flat feet under £100" (lower volume, much less competition, higher purchase intent)</li>
+                <li><strong>Head term:</strong> "running shoes" — high volume, fierce competition, broad intent</li>
+                <li><strong>Long-tail:</strong> "best running shoes for flat feet women UK" — lower volume, far less competition, clear transactional intent</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Long-tail keywords convert 2–3x better than head terms on average because they capture people further along in their decision-making process. Someone searching "buy Nike Pegasus 40 size 10" is much closer to purchasing than someone searching "running shoes."</p>
+                <p>Long-tail keywords convert better because they capture people further along in their decision-making. The more specific the query, the closer the searcher is to taking action — and the easier it is to create content that precisely satisfies their intent.</p>
             </div>
 
             <h2>The Topic Cluster Model</h2>
-            <p>Modern SEO rewards topical authority — showing search engines that you comprehensively cover a subject. The <strong>topic cluster model</strong> is a content architecture that organises your pages into interconnected groups:</p>
+            <p>Individual keyword targeting has been superseded by <strong>topical authority</strong> as the dominant SEO strategy. Google has become sophisticated enough to evaluate not just individual pages but whether a site comprehensively covers a subject area. The topic cluster model is the content architecture that builds that authority deliberately.</p>
+            <p>The structure has three components:</p>
             <ul>
-                <li><strong>Pillar page</strong> — A comprehensive, long-form page covering a broad topic (e.g., "The Complete Guide to Running Shoes")</li>
-                <li><strong>Cluster pages</strong> — Individual pages that cover specific subtopics in depth (e.g., "Best Running Shoes for Flat Feet," "How to Choose Running Shoe Size")</li>
-                <li><strong>Internal links</strong> — Every cluster page links to the pillar page and vice versa, creating a hub-and-spoke structure</li>
+                <li><strong>Pillar page</strong> — A comprehensive, long-form page covering a broad topic from all angles (for example, "The Complete Guide to Running Shoes"). This is the hub of the cluster.</li>
+                <li><strong>Cluster pages</strong> — Individual pages that go deep on specific subtopics (for example, "Running Shoes for Flat Feet," "How to Choose Running Shoe Width"). Each targets a distinct long-tail keyword.</li>
+                <li><strong>Internal links</strong> — Every cluster page links to the pillar page and vice versa, and cluster pages link to each other where relevant. This creates a dense network that signals topical depth.</li>
             </ul>
 
-            <h2>Why Topic Clusters Work</h2>
-            <p>Search engines understand topical relationships. When you have a pillar page linked to 10–15 cluster pages all covering related subtopics, Google recognises your site as an authority on that topic. This lifts rankings across the entire cluster, not just individual pages.</p>
+            <h2>Why Topical Authority Matters in 2026</h2>
+            <p>Google's March and May 2026 Core Updates continued a clear trajectory: sites with genuine, comprehensive coverage of a subject earn better rankings across their entire topic area — not just for individual optimised pages. A site that covers running shoes across 20 connected, useful pages outranks one that has a single well-optimised page and nothing around it.</p>
+            <p>Topic clusters also have a compounding effect. As cluster pages gain rankings and links, they pass authority to the pillar page. As the pillar page gains authority, it lifts the cluster pages in return. The whole network rises together.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Start by mapping your core topics (5–7 pillars), then brainstorm 10–20 subtopic keywords for each. Use keyword research to validate which subtopics have search demand. Build the pillar page first, then create cluster content over time.</p>
+                <p>Start by mapping your three to five strongest topic areas. For each, identify eight to fifteen subtopic keywords with real search demand. Build the pillar page first as a broad overview, then publish cluster pages steadily over time. Link everything together from the start, even if some cluster pages are still planned.</p>
             </div>
 
             <h2>Building Your First Topic Cluster</h2>
-            <p>Pick your strongest topic area. Write the pillar page as a broad overview (2,000+ words), then identify the most valuable long-tail subtopics. Create one cluster page per subtopic, each targeting a specific long-tail keyword. Link everything together and watch your topical authority grow.</p>
+            <p>Choose the topic area where you have the most existing content, expertise, or competitive advantage. Write the pillar page as an authoritative overview (2,000 words or more is typical, though length should be determined by the topic, not a target number). Then identify the five most-searched subtopics and write dedicated cluster pages for each. Internal-link all of them to the pillar and to each other, and watch Google begin to recognise your site as a genuine authority on that subject.</p>
         `,
         quiz: {
             question: 'In a topic cluster model, what is the role of the pillar page?',
@@ -156,41 +161,41 @@ Object.assign(lessonContent, {
         title: 'Title Tags, Meta Descriptions, and Headers',
         body: `
             <h2>Title Tags: Your Most Important On-Page Element</h2>
-            <p>The <strong>title tag</strong> is the clickable headline that appears in search results. It is the single most important on-page SEO element because it directly tells search engines and users what your page is about.</p>
-            <p>Best practices for title tags:</p>
+            <p>The <strong>title tag</strong> is the clickable headline that appears in search results. It is the single most important on-page SEO element because it tells search engines and users — at a glance — what a page is about. It is also Google's most commonly used source for the blue link text in the SERP, though Google reserves the right to rewrite it when it believes a different text better matches the query.</p>
+            <p>Title tag best practices:</p>
             <ul>
-                <li><strong>Keep it under 60 characters</strong> — Longer titles get truncated in search results</li>
-                <li><strong>Put the primary keyword near the front</strong> — Front-loaded keywords carry more weight</li>
-                <li><strong>Make it compelling</strong> — Your title competes with nine other results for the click</li>
-                <li><strong>Each page needs a unique title</strong> — Duplicate titles confuse search engines</li>
+                <li><strong>Stay under 60 characters</strong> — Anything longer risks being truncated in the results</li>
+                <li><strong>Place the primary keyword near the front</strong> — Front-loaded keywords carry more semantic weight</li>
+                <li><strong>Make it genuinely compelling</strong> — Your title competes with nine others for the click; write to earn it</li>
+                <li><strong>Each page must have a unique title</strong> — Duplicate titles dilute signals and confuse crawlers</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Add power words like "Complete," "Ultimate," "Step-by-Step," or the current year to boost click-through rate. Compare: "SEO Guide" vs "The Complete SEO Guide (2024)" — the second gets more clicks.</p>
+                <p>Adding the current year or a strong qualifier (Complete, Step-by-Step, Beginner's Guide) to a title tag consistently improves click-through rate — but only use it if it accurately describes the content. False promises in titles increase bounce rates and signal low quality to Google.</p>
             </div>
 
             <h2>Meta Descriptions</h2>
-            <p>The <strong>meta description</strong> is the summary text below the title in search results. While it doesn't directly affect rankings, it heavily influences click-through rate (CTR), which indirectly impacts your SEO performance.</p>
+            <p>The <strong>meta description</strong> is the summary text shown below the title in search results. It has no direct effect on rankings, but it significantly influences whether users click on your result. A well-written meta description acts as a 155-character advertisement for your page.</p>
             <ul>
                 <li><strong>Keep it under 155 characters</strong> — Google truncates longer descriptions</li>
-                <li><strong>Include a call to action</strong> — "Learn how," "Discover," "Find out" encourage clicks</li>
-                <li><strong>Include your target keyword</strong> — Google bolds matching words, making your result stand out</li>
+                <li><strong>Include a natural call to action</strong> — "Learn how to," "Discover," "Find out" prompt clicks</li>
+                <li><strong>Include your target keyword</strong> — Google bolds query-matching words in the snippet, drawing the eye</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Google often rewrites meta descriptions if it thinks its own snippet better matches the query. This is normal and happens to roughly 60–70% of pages. Still write good descriptions — they're used when they're relevant.</p>
+                <p>Google rewrites meta descriptions roughly 60–70% of the time, replacing them with a passage it judges more relevant to the specific query. This is expected behaviour — it does not mean you should skip writing descriptions. When Google uses yours, it matters enormously for CTR. Write them for the cases where they are used, not the cases where they are overridden.</p>
             </div>
 
             <h2>Header Hierarchy (H1–H6)</h2>
-            <p>Headers structure your content for both readers and search engines. Think of them as an outline:</p>
+            <p>Headers give your content a logical, scannable structure for both readers and search engines. They function as an outline of your page's content and help Google identify the topics and subtopics covered.</p>
             <ul>
-                <li><strong>H1</strong> — One per page, typically matches or closely resembles the title tag. This is your main heading.</li>
-                <li><strong>H2</strong> — Major sections within the page. Use these to break content into logical chunks.</li>
-                <li><strong>H3–H6</strong> — Subsections within H2 blocks. Use them for detailed breakdowns.</li>
+                <li><strong>H1</strong> — One per page, ideally matching or closely echoing the title tag. This is your primary heading.</li>
+                <li><strong>H2</strong> — Major sections within the page. Each should represent a distinct, meaningful subtopic.</li>
+                <li><strong>H3–H6</strong> — Subsections within H2 blocks, used for detailed breakdowns and supporting points.</li>
             </ul>
-            <p>Include relevant keywords in your headers naturally. Headers help Google understand your content structure and can directly generate featured snippet results.</p>
+            <p>Include relevant keywords in headings naturally, but write primarily for the reader. Well-structured headers also improve your chances of appearing as a featured snippet and of being cited in AI Overviews, which often pull direct passages from clearly headed sections.</p>
         `,
         quiz: {
             question: 'What is the recommended maximum length for a title tag?',
@@ -208,38 +213,46 @@ Object.assign(lessonContent, {
     'seo-3-2': {
         title: 'Content Optimisation for Search',
         body: `
-            <h2>Writing Content That Search Engines Love</h2>
-            <p>Content optimisation means creating pages that satisfy both search engines and human readers. The goal isn't keyword stuffing — it's creating genuinely useful content structured in a way that search engines can easily understand and rank.</p>
+            <h2>Content That Earns Rankings in 2026</h2>
+            <p>Content optimisation has shifted significantly over the past two years. Keyword placement still matters — but it is now table stakes rather than a differentiator. What separates ranking content from invisible content in 2026 is whether a page genuinely earns its place: whether it demonstrates real experience, adds something new to the conversation, and is written for people rather than for bots.</p>
+            <p>Google's March and May 2026 Core Updates were explicit on this point. Sites producing original, expert-attributed, people-first content gained visibility. Sites producing assembled, derivative, or AI-generated-without-review content lost it.</p>
 
-            <h2>Keyword Placement</h2>
-            <p>Where you place your target keyword matters more than how often you use it:</p>
+            <h2>E-E-A-T: The Standard You Are Writing To</h2>
+            <p>Every piece of content you publish should be evaluated against Google's E-E-A-T framework:</p>
             <ul>
-                <li><strong>Title tag and H1</strong> — Essential for signalling the page's main topic</li>
-                <li><strong>First 100 words</strong> — Mention your keyword early in the content</li>
-                <li><strong>Subheadings (H2/H3)</strong> — Use keyword variations naturally in section headers</li>
-                <li><strong>Throughout the body</strong> — Use the keyword and related terms naturally. Aim for a natural reading experience, not a specific keyword density.</li>
-                <li><strong>URL slug</strong> — Keep it short and include the primary keyword</li>
+                <li><strong>Experience</strong> — Has the author actually done or used what they are writing about? First-hand experience is a visible signal — show it through specificity, real examples, and personal insight rather than generalised statements.</li>
+                <li><strong>Expertise</strong> — Do the author and site demonstrate command of the subject? Credentials, bylines, author bios, and the depth of the writing all signal expertise.</li>
+                <li><strong>Authoritativeness</strong> — Is your site recognised as a credible source in your field? This is influenced by who links to you, who cites you, and whether your brand is mentioned in trusted contexts.</li>
+                <li><strong>Trustworthiness</strong> — Is your site transparent, accurate, and safe? Clear authorship, up-to-date content, accurate factual claims, and a professional site experience all contribute.</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept: E-E-A-T</div>
-                <p>Google evaluates content on <strong>Experience, Expertise, Authoritativeness, and Trustworthiness</strong> (E-E-A-T). Show real experience with your topic, cite credible sources, display author credentials, and ensure your site looks trustworthy. This is especially critical for health, finance, and legal content.</p>
+                <div class="callout-title">Key Concept: Information Gain</div>
+                <p><strong>Information Gain</strong> is Google's measure of how much new, useful content a page adds beyond what is already available on the topic. Pages that simply restate what competitors already say earn diminishing ranking rewards. Pages that contribute original data, a unique angle, genuine first-hand experience, or a perspective not available elsewhere score higher. Before writing, ask: what does this page offer that no existing result does?</p>
             </div>
 
-            <h2>Content Length and Depth</h2>
-            <p>There's no magic word count. The right length is whatever it takes to comprehensively answer the searcher's question. However, studies consistently show that longer, more thorough content tends to rank higher because it better satisfies user intent. Check what currently ranks for your target keyword and aim to be at least as thorough.</p>
-
-            <h2>Formatting for Featured Snippets</h2>
-            <p>Featured snippets appear at the top of search results in a box. To optimise for them:</p>
+            <h2>Keyword Placement</h2>
+            <p>Where your target keyword appears still matters, though natural usage matters more than frequency:</p>
             <ul>
-                <li>Answer the question directly in 40–60 words right after a relevant heading</li>
-                <li>Use numbered or bulleted lists for step-by-step or list-based queries</li>
-                <li>Use tables for comparison data</li>
+                <li><strong>Title tag and H1</strong> — Essential for signalling the page's core topic</li>
+                <li><strong>First 100 words</strong> — Establish relevance early in the content</li>
+                <li><strong>Subheadings (H2/H3)</strong> — Use keyword variations naturally where they fit the heading's purpose</li>
+                <li><strong>URL slug</strong> — Short, keyword-informed, and human-readable</li>
+                <li><strong>Throughout the body</strong> — Use your primary keyword and semantically related terms where they read naturally; do not force frequency</li>
+            </ul>
+
+            <h2>Optimising for AI Overviews</h2>
+            <p>For informational content, Google's AI Overviews are now the first result many users see. Pages cited in AI Overviews gain visibility even without a direct click. To give your content the best chance of being cited:</p>
+            <ul>
+                <li>Answer the core question directly and concisely in the first paragraph after a relevant heading</li>
+                <li>Use clear, factual language — AI systems prefer attributable, verifiable statements</li>
+                <li>Structure content with distinct H2 sections that each address a specific sub-question</li>
+                <li>Back claims with data, sources, or first-hand experience rather than vague assertions</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Update your content regularly. Google favours fresh content, especially for topics that change over time. Add a "Last updated" date and review your top pages quarterly to keep them current and competitive.</p>
+                <p>Audit your highest-traffic pages every quarter. Add a "last reviewed" date when you update them — it signals freshness to users and to Google. Content that shows visible signs of maintenance consistently outperforms stale content in the same position over time.</p>
             </div>
         `,
         quiz: {
@@ -259,33 +272,36 @@ Object.assign(lessonContent, {
         title: 'Internal Linking Strategy',
         body: `
             <h2>Why Internal Links Matter</h2>
-            <p><strong>Internal links</strong> are hyperlinks that point from one page on your site to another page on the same site. They serve three critical functions: they help users navigate your content, they help search engines discover and crawl your pages, and they distribute ranking authority (link equity) throughout your site.</p>
+            <p><strong>Internal links</strong> are hyperlinks from one page on your site to another. They serve three essential functions: they guide users to related content, they help Googlebot discover and crawl your pages efficiently, and they distribute ranking authority — sometimes called link equity — across your site. Of all on-page SEO levers, internal linking is one of the few entirely within your control and yet consistently underused.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Internal links are one of the few SEO levers entirely within your control. Unlike backlinks, you don't need anyone else's permission. A well-planned internal linking structure can significantly boost underperforming pages.</p>
+                <p>Internal links transfer authority between pages on the same domain. A well-linked internal page can rank significantly above an equally well-written but poorly linked page. Strategically pointing links at the pages most important to your business is one of the highest-return SEO actions available without building a single backlink.</p>
             </div>
 
             <h2>Types of Internal Links</h2>
             <ul>
-                <li><strong>Navigational links</strong> — Your main menu, footer links, and breadcrumbs. These define your site's architecture.</li>
-                <li><strong>Contextual links</strong> — Links within your content body that point to related pages. These carry the most SEO weight because they're editorially placed and relevant.</li>
-                <li><strong>Related content links</strong> — "You might also like" or "Related articles" sections at the bottom of pages.</li>
+                <li><strong>Navigational links</strong> — Your main menu, footer, and breadcrumbs. These define your site's architecture and flow significant authority to the pages they point to. Choose these links carefully.</li>
+                <li><strong>Contextual links</strong> — Links placed within the body of your content, pointing to related pages. These carry the most SEO value because they are editorially placed and contextually relevant.</li>
+                <li><strong>Related content links</strong> — "Related articles" or "You may also find useful" sections at the end of pages. These extend session depth and create additional authority paths.</li>
             </ul>
 
             <h2>Anchor Text Best Practices</h2>
-            <p>The clickable text of a link (anchor text) tells search engines what the target page is about. Use descriptive, keyword-rich anchor text rather than generic phrases like "click here." For example, link using "keyword research guide" instead of "read more about it here."</p>
+            <p>The clickable text of a link (its anchor text) signals to search engines what the destination page is about. Descriptive, relevant anchor text — such as "keyword research guide" rather than "click here" — improves both usability and the semantic signal Google receives about the linked page.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Don't use identical anchor text for every internal link pointing to the same page. Vary your anchor text naturally. Over-optimised anchor text can look manipulative to search engines.</p>
+                <p>Using identical keyword-rich anchor text for every internal link to the same page looks manipulative and can trigger algorithmic suspicion. Vary your anchor text naturally across different pages — some exact-match, some partial-match, some descriptive phrases. Variety signals editorial intent.</p>
             </div>
 
-            <h2>Fixing Orphan Pages</h2>
-            <p>An <strong>orphan page</strong> is a page with no internal links pointing to it. Search engines struggle to find and rank orphan pages because there's no path to crawl to them. Audit your site regularly to identify orphan pages and add relevant internal links to them from existing content.</p>
+            <h2>Internal Linking and Topic Clusters</h2>
+            <p>The topic cluster model — pillar pages surrounded by interlinked cluster pages — is built on internal linking. Every cluster page should link to its pillar page. The pillar page should link to each cluster page. Cluster pages should link to each other where topics are adjacent. This dense internal network is how Google understands the topical architecture of your site and rewards it with authority across the whole cluster, not just for individual pages.</p>
 
-            <h2>Practical Internal Linking Process</h2>
-            <p>Each time you publish new content, find 3–5 existing pages that naturally relate and add contextual links from those pages to the new one. Also add 2–3 links from the new page back to relevant existing content. This creates a web of interconnected content that strengthens your entire site.</p>
+            <h2>Fixing Orphan Pages</h2>
+            <p>An <strong>orphan page</strong> is a page with no internal links pointing to it. With no path for Googlebot to follow, it may never be crawled or indexed — and even if it is, it will accumulate no internal authority. Audit your site periodically to identify orphan pages using your CMS's link report or a crawl tool like Screaming Frog. For each one, find the most relevant existing content and add a contextual link.</p>
+
+            <h2>Building Links Into Your Publishing Process</h2>
+            <p>Internal linking should be part of every publication, not a retrospective exercise. Each time you publish a new page, identify three to five existing pages that relate to it and add links from those pages to the new one. Add two to three links from the new page back to relevant existing content. Do this consistently and your site's internal linking will grow into a genuine authority network over time.</p>
         `,
         quiz: {
             question: 'What is an orphan page?',
@@ -304,38 +320,39 @@ Object.assign(lessonContent, {
         title: 'Image Optimisation and Alt Text',
         body: `
             <h2>Why Image Optimisation Matters</h2>
-            <p>Images often account for the largest portion of a page's total file size. Unoptimised images slow down page load times, which hurts both user experience and search rankings. Google has explicitly stated that page speed is a ranking factor, and images are usually the biggest opportunity to improve it.</p>
+            <p>Images are typically the largest single contributor to a page's total download weight. Unoptimised images slow page loads, which directly damages Core Web Vitals — particularly Largest Contentful Paint (LCP), which measures how long before the largest visible element on the page renders. Poor LCP is both a user experience failure and a ranking signal. Images are also an indexable content type: optimised images with accurate alt text can surface in Google Image search and contribute to E-E-A-T signals through contextually relevant visuals.</p>
 
             <h2>Choosing the Right File Format</h2>
             <ul>
-                <li><strong>WebP</strong> — The current standard for web images. Offers 25–35% smaller files than JPEG/PNG with comparable quality. Supported by all modern browsers.</li>
-                <li><strong>AVIF</strong> — Next-generation format with even better compression than WebP. Browser support is growing but not yet universal.</li>
-                <li><strong>JPEG</strong> — Good fallback for photographs. Use quality settings of 75–85% for a good balance of quality and file size.</li>
-                <li><strong>PNG</strong> — Use only when you need transparency. File sizes are larger than JPEG/WebP.</li>
-                <li><strong>SVG</strong> — Ideal for logos, icons, and illustrations. Scales to any size without quality loss.</li>
+                <li><strong>WebP</strong> — The current web standard for photographs and complex images. Delivers 25–35% smaller files than JPEG at comparable quality, with universal modern browser support. Use it as your primary format.</li>
+                <li><strong>AVIF</strong> — Next-generation format with significantly better compression than WebP. Browser support is now broad enough for production use with a WebP fallback for older browsers.</li>
+                <li><strong>JPEG</strong> — Reliable fallback for photographs where WebP is not served. A quality setting of 75–85% balances visual quality and file size effectively.</li>
+                <li><strong>PNG</strong> — Use only when true transparency is required. File sizes are substantially larger than WebP or JPEG.</li>
+                <li><strong>SVG</strong> — The correct choice for logos, icons, and line illustrations. Scales infinitely without quality loss and typically has tiny file sizes.</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Use the HTML <code>&lt;picture&gt;</code> element to serve WebP to supporting browsers and JPEG as a fallback. This gives you the best compression with universal compatibility.</p>
+                <p>Use the HTML <code>&lt;picture&gt;</code> element to serve AVIF to supporting browsers, WebP as a second option, and JPEG as a universal fallback. This single implementation gives you the best available compression on every browser without compromising compatibility.</p>
             </div>
 
             <h2>Writing Effective Alt Text</h2>
-            <p><strong>Alt text</strong> (alternative text) describes an image for screen readers and search engines. It's critical for accessibility and helps your images appear in Google Image search results.</p>
+            <p><strong>Alt text</strong> is the written description assigned to an image in HTML. It is read aloud by screen readers for visually impaired users, displayed when an image fails to load, and used by search engines to understand what an image shows. It is both an accessibility requirement and an SEO opportunity.</p>
             <ul>
-                <li><strong>Be descriptive and specific</strong> — "Golden retriever playing fetch on a beach" not "dog"</li>
-                <li><strong>Include keywords naturally</strong> — Only when they genuinely describe the image</li>
+                <li><strong>Be specific and descriptive</strong> — "Marketing team reviewing a campaign dashboard on a laptop" not "team meeting"</li>
+                <li><strong>Include relevant keywords naturally</strong> — Only where they genuinely describe the image; never force them</li>
                 <li><strong>Keep it under 125 characters</strong> — Screen readers may cut off longer text</li>
-                <li><strong>Don't start with "image of" or "picture of"</strong> — Screen readers already announce it as an image</li>
+                <li><strong>Do not start with "Image of" or "Picture of"</strong> — Screen readers already prefix with the image type; repeating it is redundant</li>
+                <li><strong>Leave alt text empty for decorative images</strong> — Purely decorative images should use <code>alt=""</code> so screen readers skip them</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Keyword-stuffing alt text hurts both accessibility and SEO. Writing "SEO SEO guide SEO tips SEO tutorial" as alt text for a screenshot looks spammy. Describe what the image actually shows.</p>
+                <p>Stuffing keywords into alt text defeats both its accessibility purpose and its SEO value. Alt text that reads "SEO SEO guide SEO checklist digital marketing" is meaningless to a screen reader and signals keyword manipulation to Google. Describe what the image actually shows.</p>
             </div>
 
-            <h2>Lazy Loading and Image Sitemaps</h2>
-            <p>Use <strong>lazy loading</strong> (the <code>loading="lazy"</code> attribute) on images below the fold so they only load as users scroll to them. This dramatically improves initial page load speed. For image-heavy sites, submit an <strong>image sitemap</strong> to help Google discover and index your images faster.</p>
+            <h2>Lazy Loading, Dimensions, and Sitemaps</h2>
+            <p>Add the <code>loading="lazy"</code> attribute to any image below the fold — it defers loading until the image is about to enter the viewport, reducing initial page weight considerably. Always set explicit <code>width</code> and <code>height</code> attributes on images to prevent layout shifts as they load, which directly improves your CLS score. For image-heavy sites, submit an image sitemap to Google Search Console to accelerate discovery and indexing of your visual content.</p>
         `,
         quiz: {
             question: 'Which image format generally offers the best compression for photographs on the web?',
@@ -355,42 +372,40 @@ Object.assign(lessonContent, {
     'seo-4-1': {
         title: 'Site Speed and Core Web Vitals',
         body: `
-            <h2>Why Site Speed Matters for SEO</h2>
-            <p>Google has confirmed that page speed is a ranking factor for both desktop and mobile searches. Slow pages also have higher bounce rates — studies show that 53% of mobile users abandon a site that takes longer than 3 seconds to load. Speed isn't just about SEO; it directly impacts conversions and revenue.</p>
+            <h2>Why Site Speed Is an SEO Ranking Factor</h2>
+            <p>Google has confirmed page speed as a ranking signal for both desktop and mobile search. The relationship between speed and performance extends beyond rankings: slow pages drive users away before they have had a chance to engage with your content. Research consistently shows that 53% of mobile users abandon a page that takes more than three seconds to load, and every additional second of delay reduces conversion rates further. Speed is simultaneously a ranking factor, a user experience metric, and a revenue lever.</p>
 
-            <h2>Core Web Vitals Explained</h2>
-            <p>Core Web Vitals are Google's specific metrics for measuring user experience on a page:</p>
+            <h2>Core Web Vitals: The Metrics That Matter</h2>
+            <p>Google measures page experience through three Core Web Vitals, each targeting a distinct dimension of how a page feels to use:</p>
             <ul>
-                <li><strong>Largest Contentful Paint (LCP)</strong> — Measures loading performance. How long until the largest visible element (hero image, heading block) fully renders. Target: under 2.5 seconds.</li>
-                <li><strong>Interaction to Next Paint (INP)</strong> — Measures interactivity. How quickly the page responds when a user clicks, taps, or types. Target: under 200 milliseconds.</li>
-                <li><strong>Cumulative Layout Shift (CLS)</strong> — Measures visual stability. How much the page layout shifts unexpectedly as it loads. Target: under 0.1.</li>
+                <li><strong>Largest Contentful Paint (LCP)</strong> — Measures loading performance: how long until the largest visible content element (typically a hero image, a main heading block, or a large paragraph) is fully rendered on screen. Target: under 2.5 seconds. This is the Core Web Vital most directly connected to how quickly a page feels "ready."</li>
+                <li><strong>Interaction to Next Paint (INP)</strong> — Measures responsiveness: how quickly the page reacts after a user clicks a button, taps a link, or types into a field. INP replaced the older First Input Delay (FID) metric in March 2024 and is now the established interactivity measure. Target: under 200 milliseconds. Poor INP is most commonly caused by heavy JavaScript blocking the main thread.</li>
+                <li><strong>Cumulative Layout Shift (CLS)</strong> — Measures visual stability: how much the page layout shifts unexpectedly while loading. A page that jumps around as ads load or fonts swap creates a poor experience and scores badly. Target: under 0.1. Always set explicit dimensions on images and embeds to prevent layout shifts.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Core Web Vitals are measured from real user data (field data), not just lab tests. Google uses the Chrome User Experience Report (CrUX) data from actual visitors to assess your site's performance.</p>
+                <p>Core Web Vitals are measured from real user data collected by Google through the Chrome User Experience Report (CrUX). Lab tests in tools like Lighthouse give useful diagnostic information, but your actual Core Web Vitals scores are based on what real visitors experience on your site — not on a simulated test environment.</p>
             </div>
 
-            <h2>How to Measure Performance</h2>
-            <p>Use these tools to audit your site speed:</p>
+            <h2>How to Measure and Diagnose Performance</h2>
             <ul>
-                <li><strong>PageSpeed Insights</strong> — Google's tool showing both lab and field data with specific recommendations</li>
-                <li><strong>Google Search Console</strong> — The Core Web Vitals report shows site-wide performance trends</li>
-                <li><strong>Lighthouse</strong> — Built into Chrome DevTools for detailed page-level audits</li>
+                <li><strong>PageSpeed Insights</strong> — Google's tool showing both real-world (field) data and lab test data for any URL, with specific recommendations for improvement.</li>
+                <li><strong>Google Search Console</strong> — The Core Web Vitals report shows site-wide performance trends across real user sessions, grouped by Good, Needs Improvement, and Poor.</li>
+                <li><strong>Lighthouse</strong> — Built into Chrome DevTools. Runs a lab audit that diagnoses specific rendering, scripting, and resource issues on any page.</li>
             </ul>
 
-            <h2>Common Speed Issues and Fixes</h2>
+            <h2>Common Issues and Their Fixes</h2>
             <ul>
-                <li><strong>Large images</strong> — Compress and serve in WebP format</li>
-                <li><strong>Render-blocking resources</strong> — Defer non-critical CSS and JavaScript</li>
-                <li><strong>No caching</strong> — Set proper browser cache headers for static assets</li>
-                <li><strong>Layout shifts</strong> — Always specify width and height on images and embeds</li>
-                <li><strong>Slow server response</strong> — Consider a CDN or upgrade hosting</li>
+                <li><strong>Slow LCP</strong> — Large uncompressed images; serve in WebP/AVIF and use <code>fetchpriority="high"</code> on hero images to load them first</li>
+                <li><strong>Poor INP</strong> — JavaScript tasks blocking the main thread; defer non-critical scripts, break up long tasks, and minimise third-party script load</li>
+                <li><strong>High CLS</strong> — Images or embeds without explicit dimensions; always set <code>width</code> and <code>height</code> attributes</li>
+                <li><strong>Slow server response</strong> — Use a CDN for static assets and consider upgrading hosting if Time to First Byte (TTFB) exceeds 800ms</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Focus on LCP first — it's usually the most impactful and easiest to improve. Compressing your hero image and preloading it can often cut LCP by over a second.</p>
+                <p>Prioritise LCP first — it is the most impactful metric for most sites and often the most straightforward to improve. Compressing and preloading your hero image alone can reduce LCP by a second or more.</p>
             </div>
         `,
         quiz: {
@@ -409,39 +424,40 @@ Object.assign(lessonContent, {
     'seo-4-2': {
         title: 'Mobile-First Indexing',
         body: `
-            <h2>What Is Mobile-First Indexing?</h2>
-            <p>Since 2019, Google predominantly uses the <strong>mobile version</strong> of your website for indexing and ranking — even for desktop search results. This means if content exists on your desktop site but not your mobile site, Google may not index it at all. Mobile-first indexing isn't a separate index; it means Google's crawler behaves as a mobile device.</p>
+            <h2>What Mobile-First Indexing Means</h2>
+            <p>Since 2019, Google has indexed and ranked the web primarily from the perspective of a mobile device. When Googlebot crawls your site, it does so using a mobile user agent — it sees what a smartphone user sees. Your desktop site is largely irrelevant to how Google indexes and ranks your content. If something exists only on your desktop site and not your mobile site, Google may never see it.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Mobile-first indexing means your mobile site IS your site in Google's eyes. Every piece of content, structured data, and metadata you want indexed must be present and accessible on the mobile version.</p>
+                <p>Mobile-first indexing does not mean Google has a separate mobile index. It means the mobile version of your content is what Google uses to build its one unified index. Every piece of content, structured data, and metadata that matters for rankings must be present and accessible on the mobile version of your pages.</p>
             </div>
 
-            <h2>Responsive Design Is the Standard</h2>
-            <p><strong>Responsive design</strong> — where the same HTML adapts to different screen sizes using CSS — is Google's recommended approach. It means:</p>
+            <h2>Responsive Design: The Right Approach</h2>
+            <p><strong>Responsive design</strong> — a single HTML codebase that adapts its layout to different screen sizes via CSS — is Google's recommended implementation. It avoids the complexity and risk of maintaining separate mobile and desktop sites, and it ensures Google always sees the same content regardless of which user agent it sends.</p>
+            <p>Key properties of a responsively designed site:</p>
             <ul>
-                <li>One URL for both mobile and desktop (no separate m.example.com)</li>
-                <li>The same content is served to all devices</li>
-                <li>CSS media queries adjust the layout for different screen widths</li>
-                <li>No risk of content discrepancies between mobile and desktop versions</li>
+                <li>One URL serves both mobile and desktop users</li>
+                <li>All content is present on all screen sizes — nothing hidden on mobile that appears on desktop</li>
+                <li>CSS media queries control layout, not content visibility</li>
+                <li>No risk of mobile and desktop content diverging over time</li>
             </ul>
 
             <h2>Common Mobile Usability Issues</h2>
-            <p>Google Search Console flags these mobile usability problems that can hurt your rankings:</p>
+            <p>Google Search Console's Mobile Usability report flags problems that affect crawlability and user experience on mobile. Common issues to fix:</p>
             <ul>
-                <li><strong>Text too small to read</strong> — Body text should be at least 16px</li>
-                <li><strong>Clickable elements too close together</strong> — Buttons and links need adequate spacing for touch targets (at least 48px)</li>
-                <li><strong>Content wider than screen</strong> — Horizontal scrolling frustrates users and signals poor mobile optimisation</li>
-                <li><strong>Intrusive interstitials</strong> — Full-screen pop-ups that block content on mobile can result in ranking penalties</li>
+                <li><strong>Text too small to read</strong> — Body text should be at least 16px; anything smaller is illegible without zooming and signals poor mobile experience</li>
+                <li><strong>Touch targets too close together</strong> — Buttons and links need a minimum tap target of 48px to be reliably tappable. Crowded links frustrate users and inflate bounce rates.</li>
+                <li><strong>Content wider than the screen</strong> — Horizontal scrolling is a reliable signal that a site has not been properly designed for mobile</li>
+                <li><strong>Intrusive interstitials</strong> — Full-screen pop-ups that cover content on mobile are subject to a ranking penalty. Use smaller, dismissable banners instead for any consent or subscription prompts.</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Hiding content behind tabs or accordions on mobile used to be penalised, but Google now treats hidden content normally in mobile-first indexing. However, content behind "click to expand" should still load with the initial page HTML, not via additional JavaScript calls.</p>
+                <p>Hiding content behind "show more" toggles or accordion elements on mobile is sometimes used to keep pages visually clean on small screens. Google now treats this content normally — it is indexed and considered for ranking even if it is not visible by default. The key requirement is that the content is present in the initial HTML, not loaded by a secondary JavaScript call triggered by the toggle.</p>
             </div>
 
-            <h2>Testing Mobile Friendliness</h2>
-            <p>Use Chrome DevTools' device toolbar to simulate mobile views during development. Check Google Search Console's Mobile Usability report for site-wide issues. Test your key pages on actual mobile devices — simulators don't catch every issue.</p>
+            <h2>Testing Your Mobile Experience</h2>
+            <p>Use Chrome DevTools' device toolbar to preview your pages at common mobile dimensions during development. Check the Mobile Usability report in Google Search Console for site-wide issues affecting real indexed pages. Most importantly, test key pages on physical mobile devices — emulators do not replicate the performance characteristics or touch behaviour of real hardware, and the differences matter for diagnosing poor Core Web Vitals and usability issues.</p>
         `,
         quiz: {
             question: 'What does mobile-first indexing mean?',
@@ -460,33 +476,33 @@ Object.assign(lessonContent, {
         title: 'Structured Data and Schema Markup',
         body: `
             <h2>What Is Structured Data?</h2>
-            <p><strong>Structured data</strong> is code you add to your pages that helps search engines understand the content in a machine-readable way. While Google can read your text, structured data explicitly labels what things are — this is a recipe, that's a review rating, here's an event date. The most common format is <strong>JSON-LD</strong> (JavaScript Object Notation for Linked Data), which Google recommends.</p>
+            <p><strong>Structured data</strong> is code added to your pages that labels content in a machine-readable format, making it unambiguously clear to search engines what specific things are: this is a recipe, that figure is a review rating, this block of steps is a how-to guide. The most common and Google-recommended format is <strong>JSON-LD</strong> (JavaScript Object Notation for Linked Data), which sits in a <code>&lt;script&gt;</code> tag separate from your page HTML — making it easy to add and maintain without touching your content markup.</p>
 
             <h2>Why It Matters: Rich Results</h2>
-            <p>Structured data enables <strong>rich results</strong> — enhanced search listings with extra visual elements like star ratings, images, prices, FAQ dropdowns, and more. Rich results dramatically increase your click-through rate because they take up more visual space and provide immediately useful information.</p>
+            <p>Structured data enables <strong>rich results</strong> — enhanced search listings that include additional visual elements beyond the standard title, URL, and snippet. Star ratings, pricing, event dates, step-by-step instructions, and product availability can all appear directly in the SERP when appropriate schema is implemented correctly. Rich results take up more visual space and provide immediately useful information, which consistently improves click-through rate.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Structured data doesn't directly boost rankings, but it can significantly increase CTR through rich results. Higher CTR means more traffic from the same ranking position — effectively multiplying your SEO results.</p>
+                <p>Structured data does not directly improve your ranking position, but it can significantly improve your click-through rate from the same position. More clicks from the same ranking means more traffic without having to climb the results — effectively multiplying the value of a ranking you already have.</p>
             </div>
 
-            <h2>Common Schema Types</h2>
+            <h2>Schema Types Worth Implementing</h2>
             <ul>
-                <li><strong>FAQ Schema</strong> — Displays expandable questions and answers directly in search results. Great for informational pages.</li>
-                <li><strong>HowTo Schema</strong> — Shows step-by-step instructions with images. Ideal for tutorial content.</li>
-                <li><strong>Product Schema</strong> — Displays price, availability, and review ratings. Essential for e-commerce.</li>
-                <li><strong>Review/Rating Schema</strong> — Shows star ratings in search results. Works for products, services, and content.</li>
-                <li><strong>Article Schema</strong> — Helps Google understand blog posts and news articles, including author and publish date.</li>
-                <li><strong>LocalBusiness Schema</strong> — Displays business hours, address, and phone number. Critical for local SEO.</li>
+                <li><strong>HowTo Schema</strong> — Marks up step-by-step guides and can display numbered instructions with images directly in search results. One of the highest-value schema types for instructional content.</li>
+                <li><strong>Article Schema</strong> — Helps Google understand blog posts and editorial content, including author attribution, publication date, and publication name. Supports E-E-A-T signals through explicit author markup.</li>
+                <li><strong>Product Schema</strong> — Displays price, availability, and review ratings in search results. Essential for e-commerce product pages.</li>
+                <li><strong>Review and Rating Schema</strong> — Shows star ratings in results. Applicable to products, services, apps, and editorial reviews.</li>
+                <li><strong>LocalBusiness Schema</strong> — Displays address, phone number, and opening hours. Critical for businesses with a physical presence.</li>
+                <li><strong>BreadcrumbList Schema</strong> — Shows your site's navigation path in the SERP, improving click-through and helping users orient themselves before clicking.</li>
             </ul>
 
-            <div class="callout callout-tip">
-                <div class="callout-title">Pro Tip</div>
-                <p>Start with FAQ Schema — it's the easiest to implement, works on almost any page, and can significantly increase your SERP real estate. Add 3–5 genuine FAQs to your key pages with JSON-LD markup.</p>
+            <div class="callout callout-warning">
+                <div class="callout-title">Common Mistake</div>
+                <p>FAQ Schema was deprecated as a rich result feature by Google in May 2026. It no longer generates the expandable Q&amp;A display in search results that it once did. If you have FAQ Schema implemented purely for that rich result, it is no longer producing the SERP enhancement. Use HowTo Schema for instructional content and Article Schema for editorial pages instead — these remain active rich result types.</p>
             </div>
 
-            <h2>Testing and Validating</h2>
-            <p>Always validate your structured data before publishing. Use Google's <strong>Rich Results Test</strong> to check if your markup is eligible for rich results, and the <strong>Schema Markup Validator</strong> to check for syntax errors. Monitor the Enhancements reports in Google Search Console for ongoing issues.</p>
+            <h2>Testing and Validating Structured Data</h2>
+            <p>Before and after implementing schema markup, validate it using Google's <strong>Rich Results Test</strong> — this confirms whether your markup is eligible for rich results and flags any issues. Use the <strong>Schema Markup Validator</strong> at schema.org for syntax checking. Once live, monitor the Enhancements section of Google Search Console, which shows which pages have been detected with structured data, whether they are eligible for rich results, and any errors that need fixing.</p>
         `,
         quiz: {
             question: 'Which format does Google recommend for implementing structured data?',
@@ -505,38 +521,38 @@ Object.assign(lessonContent, {
         title: 'Crawl Budget and XML Sitemaps',
         body: `
             <h2>Understanding Crawl Budget</h2>
-            <p><strong>Crawl budget</strong> is the number of pages Googlebot will crawl on your site within a given time period. For small sites (under a few thousand pages), crawl budget is rarely a concern — Google will crawl everything. But for larger sites with tens of thousands of pages or more, managing crawl budget becomes critical.</p>
+            <p><strong>Crawl budget</strong> is the number of pages Googlebot will crawl on your site within a given timeframe. For small sites of a few hundred or a few thousand pages, crawl budget rarely presents a problem — Google will crawl everything. For larger sites with tens of thousands of URLs or more, managing crawl budget becomes essential: wasted crawls on low-value pages mean important pages get crawled less frequently.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Crawl budget is determined by two factors: <strong>crawl capacity</strong> (how fast Google can crawl without overloading your server) and <strong>crawl demand</strong> (how much Google wants to crawl based on popularity and freshness). You can influence both.</p>
+                <p>Crawl budget has two components: <strong>crawl capacity</strong> (the rate at which Googlebot can crawl your site without overwhelming your server) and <strong>crawl demand</strong> (how much Google wants to crawl based on page popularity and how frequently content changes). Both can be influenced — speed up server response to increase capacity; publish fresh, linked content to increase demand.</p>
             </div>
 
             <h2>Robots.txt</h2>
-            <p>The <strong>robots.txt</strong> file tells search engine crawlers which pages or sections of your site they should or shouldn't crawl. It sits at your site's root (example.com/robots.txt) and uses simple directives:</p>
+            <p>The <strong>robots.txt</strong> file sits at your domain root (yourdomain.com/robots.txt) and instructs search engine crawlers on which pages and directories to crawl or skip. It uses simple directives:</p>
             <ul>
-                <li><strong>Disallow</strong> — Block crawlers from specific URLs or directories</li>
-                <li><strong>Allow</strong> — Override a broader Disallow for specific pages</li>
-                <li><strong>Sitemap</strong> — Point crawlers to your XML sitemap location</li>
+                <li><strong>Disallow</strong> — Blocks the specified crawler from crawling those URLs or directories</li>
+                <li><strong>Allow</strong> — Overrides a Disallow for a specific URL within a blocked directory</li>
+                <li><strong>Sitemap</strong> — Points crawlers to the location of your XML sitemap</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Robots.txt blocks crawling, not indexing. If other sites link to a page you've blocked in robots.txt, Google may still index the URL (showing it in results without a snippet). To prevent indexing, use a <code>noindex</code> meta tag instead.</p>
+                <p>Robots.txt controls crawling — not indexing. A page blocked in robots.txt can still appear in Google's index if other sites link to it; Google will index the URL based on those links without ever crawling the page content (showing a result with no snippet). To prevent a page from appearing in the index, use a <code>noindex</code> meta tag — and make sure the page is actually crawlable so Googlebot can read that directive.</p>
             </div>
 
             <h2>XML Sitemaps</h2>
-            <p>An <strong>XML sitemap</strong> is a file that lists all the pages you want search engines to index. It helps crawlers discover pages they might miss through normal link-following. Best practices:</p>
+            <p>An <strong>XML sitemap</strong> lists the URLs on your site that you want search engines to index. It does not guarantee indexing, but it significantly improves the likelihood that Google will discover all your important pages, particularly those with few or no internal links pointing to them.</p>
+            <p>Best practices for XML sitemaps:</p>
             <ul>
-                <li>Include only pages you want indexed (no noindexed pages, no redirects)</li>
-                <li>Keep each sitemap under 50,000 URLs or 50MB</li>
-                <li>Use a sitemap index file if you need multiple sitemaps</li>
-                <li>Include the <code>lastmod</code> date — but only update it when content actually changes</li>
-                <li>Submit your sitemap in Google Search Console</li>
+                <li>Include only URLs you want indexed — no noindexed pages, no redirect chains, no soft 404s</li>
+                <li>Keep each sitemap under 50,000 URLs or 50MB; use a sitemap index file if you need multiple</li>
+                <li>Include <code>lastmod</code> dates — but only update them when content genuinely changes; inflated freshness signals are counterproductive</li>
+                <li>Submit your sitemap via Google Search Console and monitor the submitted-vs-indexed ratio in the Sitemaps report</li>
             </ul>
 
             <h2>Canonical Tags and Duplicate Content</h2>
-            <p>The <strong>canonical tag</strong> tells search engines which version of a page is the "official" one when duplicate or near-duplicate versions exist. This commonly happens with URL parameters, print versions, or HTTP/HTTPS variants. Always set a self-referencing canonical on every page, and point duplicate variations to the preferred URL.</p>
+            <p>The <strong>canonical tag</strong> (<code>&lt;link rel="canonical" href="..."&gt;</code>) tells Google which version of a page is the "official" one when duplicate or near-duplicate versions exist. This is common with URL parameters (tracking codes, session IDs, filters), HTTP vs HTTPS variations, and www vs non-www variants. Set a self-referencing canonical on every page as standard practice, and point any duplicate versions explicitly at the preferred URL to consolidate indexing signals and avoid splitting link equity across versions.</p>
         `,
         quiz: {
             question: 'What is the difference between robots.txt Disallow and a noindex tag?',
@@ -557,34 +573,34 @@ Object.assign(lessonContent, {
         title: 'How Backlinks Work and Why They Matter',
         body: `
             <h2>What Are Backlinks?</h2>
-            <p>A <strong>backlink</strong> (or inbound link) is a link from another website to yours. Backlinks have been a core ranking factor since Google's founding — the original PageRank algorithm was essentially a system for counting and weighting links between pages. Today, backlinks remain one of Google's top three ranking factors.</p>
+            <p>A <strong>backlink</strong> (or inbound link) is a hyperlink from another website pointing to a page on yours. Backlinks were the core of Google's original PageRank algorithm and remain one of Google's most significant ranking signals. The logic is intuitive: when a credible, relevant website links to your content, it signals that your content is worth referencing. The more credible the source, the stronger the signal.</p>
 
             <h2>How Google Evaluates Links</h2>
-            <p>Not all backlinks are equal. Google assesses link quality based on several signals:</p>
+            <p>Not all backlinks are equal. Google weighs each link based on several factors:</p>
             <ul>
-                <li><strong>Authority of the linking site</strong> — A link from a major news site carries far more weight than one from a brand-new blog</li>
-                <li><strong>Relevance</strong> — Links from sites in your industry or topic area are more valuable than unrelated ones</li>
-                <li><strong>Placement</strong> — Editorial links within content are worth more than links in footers or sidebars</li>
-                <li><strong>Anchor text</strong> — The clickable text signals what the linked page is about</li>
-                <li><strong>Uniqueness</strong> — Links from many different domains matter more than many links from one domain</li>
+                <li><strong>Authority of the linking site</strong> — A link from a national newspaper or an established industry publication carries far more weight than a link from a brand-new blog with no audience</li>
+                <li><strong>Topical relevance</strong> — A link from a site in your industry is more valuable than one from an unrelated domain. Relevance signals that the link is genuine editorial endorsement rather than incidental placement.</li>
+                <li><strong>Placement within the page</strong> — Editorial links within the body of an article carry more weight than links in footers, sidebars, or boilerplate sections</li>
+                <li><strong>Anchor text</strong> — The clickable text of a link provides context about what the linked page is about. Descriptive anchor text is more valuable than generic phrases.</li>
+                <li><strong>Link uniqueness</strong> — Links from a wide range of different domains build more authority than many links from a single source. Referring domain count is a stronger signal than raw backlink count.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Think of backlinks as votes of confidence. A link from a respected, relevant website is like a recommendation from an industry expert. Google uses these "votes" to determine which pages deserve to rank highest.</p>
+                <p>Think of backlinks as editorial endorsements. A link from a respected, relevant source is the digital equivalent of a recommendation from an industry authority. Google uses the collective weight of these endorsements to determine which pages are genuinely authoritative on a topic — not which pages have engineered the most links.</p>
             </div>
 
-            <h2>Dofollow vs Nofollow Links</h2>
-            <p><strong>Dofollow</strong> links (the default) pass ranking authority to the linked page. <strong>Nofollow</strong> links include a <code>rel="nofollow"</code> attribute that tells Google not to pass authority. Google also introduced <code>rel="sponsored"</code> for paid links and <code>rel="ugc"</code> for user-generated content like comments.</p>
-            <p>While nofollow links don't directly pass authority, Google now treats them as "hints" and they can still drive referral traffic and brand visibility.</p>
+            <h2>Dofollow, Nofollow, and Link Attributes</h2>
+            <p><strong>Dofollow</strong> links — the default for most links — pass ranking authority from the linking page to the destination. <strong>Nofollow</strong> links carry a <code>rel="nofollow"</code> attribute that instructs Google not to pass authority. Google also introduced <code>rel="sponsored"</code> for paid or affiliate links and <code>rel="ugc"</code> for user-generated content such as forum posts and blog comments.</p>
+            <p>Google now treats nofollow as a "hint" rather than an absolute directive, meaning it may still consider some nofollow links when assessing authority. Nofollow links can also drive referral traffic and brand visibility, which have indirect SEO value.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Buying links or participating in link schemes violates Google's guidelines and can result in a manual penalty that devastates your rankings. Focus on earning links through valuable content and genuine relationships.</p>
+                <p>Paying for links, participating in link exchange schemes, or using link networks violates Google's guidelines and can result in a manual penalty that causes severe, lasting damage to rankings. The only sustainable approach is earning links through content and relationships that make them genuinely worth giving. Volume-based outreach without genuine value to offer rarely works and increasingly risks creating a spam footprint that algorithmic filters catch.</p>
             </div>
 
-            <h2>Toxic Links and the Disavow Tool</h2>
-            <p>Low-quality or spammy backlinks pointing to your site can sometimes hurt your rankings. If you identify toxic links — from link farms, hacked sites, or irrelevant foreign-language spam — you can use Google's <strong>Disavow Tool</strong> to ask Google to ignore them. However, use this sparingly — Google is generally good at ignoring spammy links on its own.</p>
+            <h2>Understanding Toxic Links</h2>
+            <p>Low-quality or manipulative backlinks pointing to your site — from link farms, hacked websites, or irrelevant spam networks — are generally ignored rather than penalised by Google's algorithms today. However, if you have historically participated in link schemes and received a manual action, Google's Disavow Tool allows you to ask Google to ignore specific links or domains. Use the Disavow Tool conservatively; incorrect use can disavow legitimate links and do more harm than good.</p>
         `,
         quiz: {
             question: 'Which backlink would typically carry the MOST SEO value?',
@@ -602,42 +618,33 @@ Object.assign(lessonContent, {
     'seo-5-2': {
         title: 'Link Building Strategies That Actually Work',
         body: `
-            <h2>Effective Link Building Approaches</h2>
-            <p>Link building is the process of acquiring backlinks from other websites to your own. The best strategies focus on creating genuine value that makes other sites want to link to you. Here are the approaches that consistently deliver results.</p>
-
-            <h2>Guest Posting</h2>
-            <p>Writing articles for other websites in your industry is one of the most reliable link building methods. The key is targeting quality publications, not quantity:</p>
-            <ul>
-                <li>Identify reputable blogs and publications in your niche</li>
-                <li>Pitch unique, valuable topics — not thinly veiled promotional content</li>
-                <li>Include one natural contextual link back to your site</li>
-                <li>Focus on sites with engaged audiences that could become your readers or customers</li>
-            </ul>
-
-            <h2>Broken Link Building</h2>
-            <p>Find broken links on other websites that point to content similar to yours, then contact the site owner and suggest your content as a replacement. It works because you're helping them fix a problem while gaining a link.</p>
-
-            <div class="callout callout-tip">
-                <div class="callout-title">Pro Tip</div>
-                <p>Use a tool like Ahrefs or Check My Links (Chrome extension) to find broken outbound links on resource pages in your industry. Create content that matches the dead page's topic, then email the webmaster offering your replacement.</p>
-            </div>
+            <h2>What Makes a Link Building Strategy Effective in 2026</h2>
+            <p>Effective link building in 2026 is not about volume — it is about earning links from credible sources that genuinely find your content valuable enough to reference. Google's algorithms have become substantially better at distinguishing manufactured link profiles from ones built through real editorial relationships. The strategies that work focus on creating content worth linking to, then making the right people aware it exists.</p>
 
             <h2>Creating Linkable Assets</h2>
-            <p>The most sustainable link building strategy is creating content so useful that people link to it naturally:</p>
+            <p>The most durable link building strategy is producing content so useful, original, or compelling that other sites link to it unprompted. These are sometimes called linkable assets:</p>
             <ul>
-                <li><strong>Original research and data studies</strong> — Journalists and bloggers love citing original statistics</li>
-                <li><strong>Comprehensive guides</strong> — "The definitive guide to X" that becomes a go-to reference</li>
-                <li><strong>Free tools and calculators</strong> — Interactive tools attract links consistently over time</li>
-                <li><strong>Infographics and visual assets</strong> — Easy to share and embed with attribution links</li>
+                <li><strong>Original research and data studies</strong> — Survey your audience, analyse public datasets, or compile industry benchmarks. Content that contains unique data becomes a citable source. Journalists and bloggers actively look for statistics to reference in their coverage.</li>
+                <li><strong>Comprehensive reference guides</strong> — A genuinely thorough guide on a topic that becomes the go-to resource in your niche earns links over time from anyone writing about that topic.</li>
+                <li><strong>Free tools and calculators</strong> — Interactive tools with genuine utility attract consistent links over months and years. Once published, they earn passively.</li>
+                <li><strong>Visual assets</strong> — Charts, infographics, and diagrams are regularly embedded in other sites' content with attribution links. Make your visuals downloadable and clearly brand them.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>The best link building doesn't feel like link building. When you create genuinely exceptional content or tools, links come as a natural byproduct. Invest in being the best resource on your topic.</p>
+                <p>The skyscraper technique — finding the most-linked content on a topic, producing a significantly better version, and reaching out to sites that linked to the original — is a proven linkable asset strategy. The emphasis is on "significantly better": marginally improved content rarely moves sites to swap their links. The bar is higher in 2026 than it was when the technique was coined.</p>
             </div>
 
-            <h2>Outreach That Gets Responses</h2>
-            <p>Cold outreach for links works when you lead with value. Personalise every email, explain why your content benefits their audience, and keep it brief. Expect a 5–10% response rate from well-targeted outreach — volume and persistence matter.</p>
+            <h2>Broken Link Building</h2>
+            <p>Broken link building involves finding dead links on other websites that point to content similar to yours, then contacting the site owner to offer your page as a working replacement. It works because you are solving a problem — broken links are a liability on any site — while earning an editorial placement. The process requires a crawl tool (Ahrefs, Screaming Frog) to surface broken outbound links on relevant pages, plus content that genuinely matches the dead page's topic.</p>
+
+            <h2>Guest Content and Editorial Relationships</h2>
+            <p>Writing articles for reputable publications in your industry remains a legitimate link building approach — but the emphasis is on quality and genuine editorial value, not volume. Target publications with real audiences. Pitch genuinely useful topics that serve the publication's readers, not promotional content dressed as editorial. A single link from a respected industry publication is worth more than twenty links from low-quality blogs created primarily to accept guest posts.</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Common Mistake</div>
+                <p>Mass cold outreach — sending hundreds of templated emails asking for links with no genuine value offered in return — has an extremely low response rate and generates the kind of impersonal link profile that Google's spam filters increasingly identify. Build fewer, better relationships with people who have reason to engage with you, and offer something of genuine value when you reach out.</p>
+            </div>
         `,
         quiz: {
             question: 'What is broken link building?',
@@ -656,38 +663,38 @@ Object.assign(lessonContent, {
         title: 'Digital PR and Content-Led Link Building',
         body: `
             <h2>What Is Digital PR?</h2>
-            <p><strong>Digital PR</strong> combines traditional public relations with SEO, focusing on earning backlinks from news sites, magazines, and authoritative publications. Instead of just getting brand mentions, digital PR specifically targets linked coverage that boosts your site's search authority.</p>
+            <p><strong>Digital PR</strong> is the practice of earning backlinks and brand mentions from news sites, magazines, industry publications, and other authoritative sources by generating genuinely newsworthy content. Where traditional PR focuses on brand visibility, digital PR is explicitly oriented towards the links that visibility generates — links from the kinds of high-authority domains that cannot be acquired through any other method. A single link from a national publication can have more authority impact than dozens of links from smaller sites.</p>
 
-            <h2>Creating Newsworthy Content</h2>
-            <p>Journalists need stories. If you give them data, angles, and expert commentary, they'll link to you as the source. Content types that consistently earn press coverage:</p>
+            <h2>Creating Content That Earns Press Coverage</h2>
+            <p>Journalists need stories. If you give them original data and a clear angle, you become a citable source. The content types that consistently earn editorial links are:</p>
             <ul>
-                <li><strong>Original data studies</strong> — Survey your customers, analyse public data, or compile industry benchmarks. "We analysed 10,000 X and found Y" is a proven formula.</li>
-                <li><strong>Trend reports</strong> — Annual or quarterly reports on your industry with original insights</li>
-                <li><strong>Reactive commentary</strong> — Quick expert responses to breaking news or trending topics</li>
-                <li><strong>Index and ranking content</strong> — "The best cities for X" or "The most expensive Y by region"</li>
+                <li><strong>Original data studies</strong> — Surveys, proprietary analyses, or compilations from public datasets. The "we surveyed 2,000 people and found X" or "we analysed 10,000 results and discovered Y" formula works because it creates genuinely original statistics that journalists have no other source for.</li>
+                <li><strong>Annual and quarterly industry reports</strong> — Recurring reports build ongoing relationships with journalists who cover your sector. They return every cycle for the new data.</li>
+                <li><strong>Reactive expert commentary</strong> — Fast, authoritative responses to breaking news or emerging trends. Position subject-matter experts at your organisation to respond rapidly when stories break in your industry.</li>
+                <li><strong>Regional and ranking-based content</strong> — "The most expensive cities to rent in the UK" or "The best places to start a business by region" generates coverage in local and regional media, often with links back to the original data source.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>The best digital PR content has a "shareability factor" — it surprises, challenges assumptions, or gives people something to talk about. Data that confirms what everyone already knows rarely gets coverage. Look for counterintuitive findings.</p>
+                <p>The best digital PR content has a genuine "shareability factor": it surprises, challenges assumptions, confirms something people suspect but have no data for, or reveals something counterintuitive. Data that simply confirms existing wisdom rarely earns coverage. Editors and journalists choose stories that give their readers something they did not already know.</p>
             </div>
 
             <h2>Building Journalist Relationships</h2>
-            <p>Long-term relationships with journalists are your most valuable digital PR asset. Build them by:</p>
+            <p>Sustainable digital PR is built on genuine relationships with journalists and editors who cover your industry. One-off pitches to cold contacts have low success rates. Relationship-first approaches compound over time:</p>
             <ul>
-                <li>Following and engaging with journalists on social media</li>
-                <li>Responding to journalist requests on platforms like HARO, Qwoted, or ResponseSource</li>
-                <li>Providing helpful expert quotes — even when there's no link in it for you</li>
-                <li>Being a reliable, fast-responding source they can count on</li>
+                <li>Follow and engage thoughtfully with journalists covering your space on LinkedIn and X</li>
+                <li>Register as a source on journalist request services — Qwoted, ResponseSource, and HARO (now Connectively) — and respond promptly with genuinely useful expert commentary</li>
+                <li>Provide accurate, useful input even when there is no immediate link opportunity — trust builds over time and pays off in coverage later</li>
+                <li>Be a reliable, fast-responding source; on-deadline journalists choose whoever responds first with quality material</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Set up alerts for journalist request services and respond within the first hour. Journalists on deadline choose the first quality response they get. Speed is often more important than perfection.</p>
+                <p>Set up alerts on journalist request platforms and aim to respond within the first 30 to 60 minutes. Response speed is often the deciding factor — not the quality of the submission, when quality is broadly comparable. A good response an hour later loses to a slightly less polished response that arrived first.</p>
             </div>
 
-            <h2>Measuring Digital PR Success</h2>
-            <p>Track links earned (quantity and quality), referring domain growth, organic traffic increases to linked pages, and brand mention volume. A successful digital PR campaign should build links you could never get through manual outreach alone.</p>
+            <h2>Measuring Digital PR Performance</h2>
+            <p>Track: the number of links earned and their domain authority; month-on-month referring domain growth; organic traffic changes to pages that receive links; and brand mention volume over time. A successful digital PR campaign should generate the kinds of links that manual outreach campaigns could never produce — links from editors who chose to cite you, from publications that do not accept guest posts, and from domain authorities that move the needle on your site's overall authority profile.</p>
         `,
         quiz: {
             question: 'Which type of content is MOST likely to earn links from news publications?',
@@ -705,37 +712,37 @@ Object.assign(lessonContent, {
     'seo-5-4': {
         title: 'Measuring SEO Success',
         body: `
-            <h2>The Key SEO Metrics</h2>
-            <p>SEO success isn't just about rankings. A comprehensive measurement approach tracks multiple metrics that together tell the full story of your organic search performance.</p>
+            <h2>The Right Metrics for SEO in 2026</h2>
+            <p>SEO measurement has always required looking beyond rankings alone — but in 2026, it requires one more adjustment. With AI Overviews now appearing at the top of many search results, some searches are answered without a click to any organic result. This means organic traffic growth is a less complete picture of SEO performance than it once was. A site can be gaining visibility and influence in AI Overviews while its raw click numbers remain flat. Measurement frameworks need to account for both.</p>
 
             <h2>Primary SEO Metrics</h2>
             <ul>
-                <li><strong>Organic traffic</strong> — The number of visitors arriving from unpaid search results. This is your north star metric. Track it in Google Analytics under the Organic Search channel.</li>
-                <li><strong>Keyword rankings</strong> — Track positions for your target keywords. Focus on page-one visibility (positions 1–10) and movement trends rather than obsessing over individual positions.</li>
-                <li><strong>Click-through rate (CTR)</strong> — The percentage of impressions that result in clicks. Found in Google Search Console. Low CTR with high impressions means your titles and descriptions need improvement.</li>
-                <li><strong>Organic conversions</strong> — Traffic is meaningless without business outcomes. Track leads, sales, or sign-ups that come from organic search.</li>
+                <li><strong>Organic traffic</strong> — Visitors arriving from unpaid search results. Track this in Google Analytics (the Organic Search channel). It remains your most important downstream metric, but interpret it alongside impression data to account for AI Overview click deflection on informational queries.</li>
+                <li><strong>Impressions and click-through rate (CTR)</strong> — Found in Google Search Console's Performance report. Impressions tell you how often your pages appear in results (including AI Overview citations). CTR tells you what fraction of those impressions result in clicks. Declining CTR alongside stable impressions often signals AI Overview visibility without click capture — which may still have brand value worth tracking separately.</li>
+                <li><strong>Keyword rankings</strong> — Track positions for your target keywords using a rank tracker. Focus on page-one visibility (positions 1–10), movements over time, and changes to featured snippet or AI Overview appearances. Avoid obsessing over daily fluctuations; weekly or monthly trend data is what matters.</li>
+                <li><strong>Organic conversions</strong> — Leads, purchases, sign-ups, or enquiries attributed to organic search. This is the metric that justifies SEO investment to commercial stakeholders. Rankings and traffic without conversion data are incomplete reports.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Always tie SEO metrics to business outcomes. Ranking improvements, traffic growth, and CTR are leading indicators — but conversions and revenue from organic search are what justify the investment.</p>
+                <p>Always connect SEO metrics to business outcomes. Traffic and rankings are leading indicators — valuable for diagnosing performance — but organic revenue, leads, and conversions are what justify the investment. If you cannot draw a line from your SEO activity to business results, your reporting is incomplete.</p>
             </div>
 
             <h2>Supporting Metrics</h2>
             <ul>
-                <li><strong>Domain authority/rating</strong> — Third-party metrics (Ahrefs DR, Moz DA) that estimate your site's backlink strength. Useful for benchmarking against competitors.</li>
-                <li><strong>Indexed pages</strong> — How many of your pages Google has indexed. Check in Search Console's coverage report.</li>
-                <li><strong>Core Web Vitals</strong> — Page experience metrics that affect rankings and user satisfaction.</li>
-                <li><strong>Backlink growth</strong> — Track new referring domains monthly to measure link building momentum.</li>
+                <li><strong>Referring domains</strong> — Track the number of unique domains linking to your site monthly. This is a leading indicator of authority growth and the output metric of your link building work.</li>
+                <li><strong>Core Web Vitals</strong> — Monitor LCP, INP, and CLS across your key pages in Search Console. Poor Core Web Vitals are a ranking disadvantage that often goes unnoticed until a technical audit.</li>
+                <li><strong>Indexed pages</strong> — Check in Search Console's Index Coverage report that Google is indexing the pages you want indexed — and not indexing pages that should be excluded.</li>
+                <li><strong>Domain authority metrics</strong> — Third-party metrics like Ahrefs DR or Moz DA estimate your site's overall link strength relative to competitors. Useful for benchmarking and competitive analysis, but not official Google metrics.</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Checking rankings daily and reacting to small fluctuations wastes time and causes unnecessary stress. Rankings fluctuate naturally. Review keyword positions weekly or monthly and focus on trends over 3–6 months, not day-to-day changes.</p>
+                <p>Daily ranking checks cause unnecessary anxiety and rarely produce actionable insight. Rankings fluctuate naturally — Google runs thousands of experiments simultaneously and ranking positions shift as a result. Review keyword positions weekly at most, and evaluate performance over 30, 60, and 90-day windows rather than reacting to individual-day changes.</p>
             </div>
 
             <h2>SEO Reporting Cadence</h2>
-            <p>Set up a monthly SEO report covering: organic traffic trend, top-performing pages, keyword ranking changes, conversions from organic, new backlinks earned, and technical health status. Quarterly, do a deeper review including competitor benchmarking and strategy adjustments. SEO is a long game — expect meaningful results over 3–6 months, not days.</p>
+            <p>Set up a monthly report covering: organic traffic trend, CTR and impressions from Search Console, top-performing pages and any notable movers, keyword ranking changes for your core targets, new referring domains earned, Core Web Vitals status, and conversion data from organic. Quarterly, run a deeper review: competitor benchmarking, a crawl audit for technical issues, a content gap analysis against your topic clusters, and a strategic review of whether your keyword targets still reflect the right business priorities. SEO results compound over months, not days — set expectations accordingly.</p>
         `,
         quiz: {
             question: 'Which metric is considered the primary "north star" for measuring SEO success?',

@@ -365,54 +365,50 @@ const lessonContent = {
         title: 'What is SEO and Why It Matters',
         body: `
             <h2>What is Search Engine Optimisation?</h2>
-            <p>Search Engine Optimisation (SEO) is the practice of improving your website so it appears higher in search engine results when people search for topics related to your business. The goal is simple: get more of the right people to find your website through organic (non-paid) search.</p>
-
-            <p>When someone types a query into Google, the search engine evaluates hundreds of pages and decides which ones best answer that query. SEO is the process of making sure your pages are among those top results.</p>
+            <p>Search Engine Optimisation (SEO) is the practice of improving your website so it appears prominently in search results when people look for topics relevant to your business. Done well, it brings a steady flow of high-intent visitors without paying for every click.</p>
+            <p>In 2026, that definition comes with an important addendum: SEO is not just about ranking on page one. Google now serves many queries through AI Overviews — AI-generated summaries at the top of results — and through AI Mode, a conversational interface that synthesises answers from multiple sources. Strong SEO means earning a place in those AI-generated results too.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>SEO is not about tricking search engines. It's about genuinely being the best result for a given search query — and making sure search engines can understand that.</p>
+                <p>SEO is not about gaming algorithms. It is about genuinely being the best resource for a given search query — and making sure Google can recognise that. The two goals have always been the same; only the tactics for achieving them evolve.</p>
             </div>
 
             <h2>Why SEO Matters for Marketers</h2>
-            <p>Organic search is consistently one of the largest sources of website traffic for most businesses. Here's why it matters:</p>
+            <p>Organic search remains one of the highest-value traffic sources available to any business:</p>
             <ul>
-                <li><strong>Free traffic</strong> — Unlike paid ads, you don't pay per click. Once you rank, the traffic comes without ongoing ad spend.</li>
-                <li><strong>High intent</strong> — People searching on Google are actively looking for information, products, or services. This makes search traffic highly valuable.</li>
-                <li><strong>Compounding returns</strong> — A well-optimised page can generate traffic for months or years. Paid ads stop the moment you stop paying.</li>
-                <li><strong>Trust and credibility</strong> — Users tend to trust organic results more than ads.</li>
+                <li><strong>Compounding returns</strong> — A page that earns strong rankings can generate traffic for months or years without ongoing ad spend. Paid campaigns stop the moment you pause them.</li>
+                <li><strong>High intent</strong> — People searching on Google are actively looking for answers, products, or services. Intent-matched traffic converts better than most other channels.</li>
+                <li><strong>Trust and credibility</strong> — Organic results carry an implicit endorsement that paid slots do not. Users know the difference.</li>
+                <li><strong>AI Overviews visibility</strong> — Sites cited in AI-generated answers gain visibility even when a user does not click through to a result. Building the authority to be cited is now part of the SEO brief.</li>
             </ul>
 
             <h2>The Three Pillars of SEO</h2>
-            <p>All SEO work falls into three main categories:</p>
+            <p>All SEO activity falls into three interdependent areas:</p>
             <ol>
-                <li><strong>Technical SEO</strong> — Making sure search engines can crawl and index your site properly. This includes site speed, mobile friendliness, and site structure.</li>
-                <li><strong>On-Page SEO</strong> — Optimising the content and HTML of individual pages. This includes title tags, headers, content quality, and keyword usage.</li>
-                <li><strong>Off-Page SEO</strong> — Building your site's authority through external signals, primarily backlinks from other websites.</li>
+                <li><strong>Technical SEO</strong> — Ensuring search engines can crawl, index, and render your site correctly. This covers site speed, Core Web Vitals, mobile-first structure, and clean site architecture.</li>
+                <li><strong>On-Page SEO</strong> — Optimising individual pages through content quality, E-E-A-T signals, keyword relevance, and structured heading hierarchies.</li>
+                <li><strong>Off-Page SEO</strong> — Building your site's authority through genuine editorial backlinks, digital PR, and the credibility signals that come with being cited as a trusted source.</li>
             </ol>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>New to SEO? Don't try to master everything at once. Start with on-page SEO (writing great content for your audience), then layer in technical and off-page work as you grow.</p>
+                <p>If you are new to SEO, start with on-page fundamentals: write genuinely useful content for real people, structure it clearly, and demonstrate relevant expertise. Technical and off-page work compound on top of a strong content foundation — not the other way around.</p>
             </div>
 
-            <h2>SEO vs Paid Search</h2>
-            <p>Many marketers wonder whether to invest in SEO or paid search (Google Ads). The short answer: both have their place.</p>
+            <h2>E-E-A-T: The Standard Google Judges Content By</h2>
+            <p>Google evaluates content quality through a framework called <strong>E-E-A-T</strong>: Experience, Expertise, Authoritativeness, and Trustworthiness. These signals inform the quality rating guidelines used by Google's human evaluators, which in turn shape how algorithms are tuned.</p>
             <ul>
-                <li><strong>SEO</strong> is a long-term investment. It takes time to build but delivers compounding value.</li>
-                <li><strong>Paid search</strong> delivers immediate visibility but costs money for every click.</li>
-                <li>The best marketers use both — paid search for immediate results and testing, SEO for sustainable growth.</li>
+                <li><strong>Experience</strong> — Has the author actually done what they are writing about?</li>
+                <li><strong>Expertise</strong> — Do they have the knowledge and skill to be a credible source?</li>
+                <li><strong>Authoritativeness</strong> — Is the site recognised as a go-to source in its field?</li>
+                <li><strong>Trustworthiness</strong> — Is the site honest, accurate, and safe to use?</li>
             </ul>
+            <p>Google's March and May 2026 Core Updates confirmed the direction of travel: original, expert-attributed, people-first content is gaining visibility. Thin, assembled, or generic content continues to lose it.</p>
 
-            <h2>What You'll Learn in This Path</h2>
-            <p>By the end of this learning path, you'll understand:</p>
-            <ul>
-                <li>How search engines discover and rank content</li>
-                <li>How to research keywords your audience is actually searching for</li>
-                <li>How to optimise your pages to rank higher</li>
-                <li>How to build your site's authority through link building</li>
-                <li>How to measure and report on SEO performance</li>
-            </ul>
+            <div class="callout callout-info">
+                <div class="callout-title">Key Concept: GEO — Generative Engine Optimisation</div>
+                <p><strong>Generative Engine Optimisation (GEO)</strong> is the emerging practice of optimising content to be cited in AI-generated answers — Google's AI Overviews, AI Mode, and similar features. The principles overlap strongly with good SEO: be authoritative, be specific, answer questions directly. GEO adds a practical layer: structure your content so AI systems can extract a clear, accurate answer and attribute it to your source. Think concise definitions, direct answers near headings, and verifiable claims backed by data.</p>
+            </div>
         `,
         quiz: {
             question: 'Which of the following best describes why SEO delivers "compounding returns"?',
@@ -445,54 +441,44 @@ const lessonContent = {
         title: 'How Google Crawls, Indexes, and Ranks Pages',
         body: `
             <h2>The Three Stages of Search</h2>
-            <p>Before a page appears in search results, it goes through three stages: crawling, indexing, and ranking. Understanding this process is fundamental to doing SEO well.</p>
+            <p>Every page that appears in Google results has been through three stages: crawling, indexing, and ranking. Understanding this pipeline tells you exactly where to focus your SEO attention at any given time.</p>
 
             <h2>Stage 1: Crawling</h2>
-            <p>Google uses automated programs called "crawlers" (or "spiders") to discover web pages. The main crawler is called Googlebot.</p>
-            <p>Googlebot finds pages by:</p>
+            <p>Google uses automated software called Googlebot to discover web pages. Googlebot moves across the web by following links, reading XML sitemaps, and drawing on signals from other Google services. It visits pages and downloads their content to be processed.</p>
+            <p>Googlebot cannot crawl a page if:</p>
             <ul>
-                <li>Following links from pages it already knows about</li>
-                <li>Reading XML sitemaps submitted by website owners</li>
-                <li>Using data from various Google services</li>
+                <li>No links point to it — it is an orphan page with no discoverable path</li>
+                <li>It is blocked by your robots.txt file</li>
+                <li>The server is too slow or returns errors when Googlebot visits</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>If a page has no links pointing to it and isn't in a sitemap, Google may never discover it. This is why internal linking and sitemaps matter.</p>
+                <p>Crawling is the prerequisite to everything else. A page that is not crawled cannot be indexed; a page that is not indexed cannot rank. Technical SEO problems at the crawl stage prevent all downstream SEO work from having any effect.</p>
             </div>
 
             <h2>Stage 2: Indexing</h2>
-            <p>After crawling a page, Google tries to understand what it's about. This is called indexing. During indexing, Google:</p>
-            <ul>
-                <li>Analyses the text content, images, and videos on the page</li>
-                <li>Stores information about the page in its massive database (the "index")</li>
-                <li>Notes signals like the page title, headings, and key phrases</li>
-            </ul>
-            <p>Not all pages get indexed. Google may skip pages that are low quality, duplicate, or blocked by the site owner.</p>
+            <p>Once crawled, Google analyses the page and decides whether to add it to its index — the massive database of pages eligible to appear in search results. During indexing, Google reads the text, processes images and video, and notes structural signals like the title tag, headings, and schema markup.</p>
+            <p>Pages may be crawled but not indexed if Google judges them to be low quality, near-duplicates of other pages, or if the page includes a noindex directive. The Index Coverage report in Google Search Console shows which of your pages are indexed and which are excluded, along with the reason.</p>
 
             <h2>Stage 3: Ranking</h2>
-            <p>When someone searches, Google looks through its index to find the most relevant and useful pages. It then ranks them using hundreds of factors (called "ranking signals").</p>
-            <p>Key ranking factors include:</p>
+            <p>When a user runs a search, Google queries its index in real time and ranks pages using hundreds of signals. By 2026, the signals that carry most weight cluster around a few clear themes:</p>
             <ul>
-                <li><strong>Relevance</strong> — How well the page matches the search query</li>
-                <li><strong>Quality</strong> — The depth, accuracy, and usefulness of the content</li>
-                <li><strong>Authority</strong> — How many high-quality websites link to this page</li>
-                <li><strong>User experience</strong> — Page speed, mobile friendliness, and ease of use</li>
-                <li><strong>Freshness</strong> — How recently the content was updated (for time-sensitive topics)</li>
+                <li><strong>Relevance</strong> — How precisely does the page address the specific query and intent behind it?</li>
+                <li><strong>E-E-A-T</strong> — Does the content reflect real Experience, genuine Expertise, recognised Authoritativeness, and strong Trustworthiness? These signals have grown in influence through every major update since 2022.</li>
+                <li><strong>Information Gain</strong> — Does this page add something new to the existing body of content on this topic? Pages that simply restate what every other page already says earn less ranking reward than pages that contribute an original angle, data point, or perspective.</li>
+                <li><strong>Authority</strong> — How many high-quality, relevant sites link to this page and this domain overall?</li>
+                <li><strong>Page Experience</strong> — Core Web Vitals (LCP, INP, CLS), mobile usability, and safe browsing all factor in. INP — which measures how quickly the page responds to user interactions — replaced the older FID metric and is now a firm ranking consideration.</li>
+                <li><strong>Freshness</strong> — For time-sensitive topics, content that has been recently reviewed and updated holds an advantage.</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>You can check if your pages are indexed by searching <code>site:yourdomain.com</code> in Google. This shows all indexed pages from your site.</p>
+                <p>Search <code>site:yourdomain.com</code> in Google to see all indexed pages from your site. If the count is significantly lower than the number of pages you have published, you have an indexing problem worth investigating in Search Console.</p>
             </div>
 
-            <h2>What This Means for Your SEO Strategy</h2>
-            <p>Understanding this three-stage process tells you exactly what to focus on:</p>
-            <ol>
-                <li><strong>Make your site crawlable</strong> — Use clear navigation, internal links, and submit a sitemap</li>
-                <li><strong>Make your content indexable</strong> — Write unique, high-quality content that's easy for Google to understand</li>
-                <li><strong>Earn rankings</strong> — Create the most useful content for your target keywords and build authority through backlinks</li>
-            </ol>
+            <h2>How AI Overviews Fit In</h2>
+            <p>Since 2024, Google has placed AI-generated summaries — called AI Overviews — above the traditional organic results for many queries. The sources cited inside those summaries are drawn from Google's index. This means ranking well is still the foundation of appearing in AI Overviews: Google does not cite pages it has not indexed and does not trust. Strong E-E-A-T, clear structure, and authoritative content are the same signals that determine both organic rankings and AI Overview inclusion.</p>
         `,
         quiz: {
             question: 'What is the correct order of how Google processes a web page?',
@@ -525,66 +511,70 @@ const lessonContent = {
         title: 'Understanding Search Intent',
         body: `
             <h2>What is Search Intent?</h2>
-            <p>Search intent (also called "user intent") is the reason behind a search query — what the person actually wants when they type something into Google.</p>
-            <p>Understanding search intent is one of the most important skills in SEO. If your content doesn't match what the searcher wants, it won't rank — no matter how well it's optimised.</p>
+            <p>Search intent — sometimes called user intent — is the underlying reason a person runs a particular search. The words in a query are a surface signal; the intent behind them is what Google is really trying to satisfy. Matching your content to intent is one of the most decisive factors in whether a page ranks or not.</p>
+            <p>If Google's results for a query are all blog posts and you have built a product page, you will not rank — regardless of how well optimised the page is in every other respect. Intent alignment is the prerequisite that makes everything else work.</p>
 
             <h2>The Four Types of Search Intent</h2>
 
             <h3>1. Informational Intent</h3>
-            <p>The user wants to learn something.</p>
+            <p>The searcher wants to learn or understand something.</p>
             <ul>
-                <li>"what is SEO"</li>
-                <li>"how to bake sourdough bread"</li>
-                <li>"marketing funnel stages"</li>
+                <li>"what is a pillar page"</li>
+                <li>"how to set up Google Search Console"</li>
+                <li>"what does INP measure"</li>
             </ul>
-            <p><strong>Best content format:</strong> Blog posts, guides, tutorials, videos</p>
+            <p><strong>Best content format:</strong> In-depth guides, tutorials, explainer articles, how-to posts</p>
 
             <h3>2. Navigational Intent</h3>
-            <p>The user wants to reach a specific website or page.</p>
+            <p>The searcher wants to reach a specific website or page they already know about.</p>
             <ul>
-                <li>"HubSpot login"</li>
-                <li>"Google Analytics"</li>
-                <li>"Ahrefs blog"</li>
+                <li>"Ahrefs login"</li>
+                <li>"Google Search Console"</li>
+                <li>"Semrush keyword tool"</li>
             </ul>
-            <p><strong>Best content format:</strong> Your homepage or key landing pages</p>
+            <p><strong>Best content format:</strong> Your own brand pages — homepage, login page, key landing pages</p>
 
             <h3>3. Commercial Investigation</h3>
-            <p>The user is researching before making a decision.</p>
+            <p>The searcher is evaluating options before making a decision.</p>
             <ul>
-                <li>"best SEO tools"</li>
-                <li>"Semrush vs Ahrefs"</li>
-                <li>"email marketing platform reviews"</li>
+                <li>"best SEO audit tools"</li>
+                <li>"Ahrefs vs Semrush 2026"</li>
+                <li>"keyword research tool reviews"</li>
             </ul>
-            <p><strong>Best content format:</strong> Comparison guides, reviews, "best of" lists</p>
+            <p><strong>Best content format:</strong> Comparison guides, curated lists, product reviews, tool round-ups</p>
 
             <h3>4. Transactional Intent</h3>
-            <p>The user is ready to take action (buy, sign up, download).</p>
+            <p>The searcher is ready to take an action — buy, sign up, download, book.</p>
             <ul>
-                <li>"buy running shoes online"</li>
-                <li>"Ahrefs pricing"</li>
-                <li>"free SEO audit tool"</li>
+                <li>"buy Ahrefs subscription"</li>
+                <li>"free keyword rank tracker"</li>
+                <li>"SEO agency London"</li>
             </ul>
-            <p><strong>Best content format:</strong> Product pages, pricing pages, landing pages</p>
+            <p><strong>Best content format:</strong> Product pages, pricing pages, category pages, free trial landing pages</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Many marketers try to rank a product page for an informational query. For example, targeting "what is email marketing" with a pricing page. This rarely works because the intent doesn't match.</p>
+                <p>Pointing a product page at an informational query — or a blog post at a transactional one — is one of the most common and costly SEO errors. If your content format does not match what Google already ranks for a query, you are competing against the intent signal itself. Always check the SERP before writing a single word of content.</p>
             </div>
 
+            <h2>How AI Overviews Are Changing the SERP</h2>
+            <p>Since 2024, Google's AI Overviews have changed what the search results page looks like for many informational queries. An AI-generated summary now sits above organic listings, synthesising answers from multiple sources. For some queries, this pushes traditional blue links further down the page.</p>
+            <p>This does not change how intent alignment works — but it does affect strategy for informational content. Pages that are cited in AI Overviews tend to be authoritative, structured clearly, and written with direct answers near relevant headings. Informational content that earns AI Overview citations can generate brand visibility even without a direct click.</p>
+
             <h2>How to Determine Search Intent</h2>
-            <p>The simplest method: search the keyword yourself and look at what Google already ranks.</p>
+            <p>The simplest method — and the most reliable — is to search the keyword yourself in an incognito window and read what Google returns:</p>
             <ol>
-                <li>Search your target keyword in Google</li>
-                <li>Look at the top 5 results</li>
-                <li>Note the content type (blog, product page, video?)</li>
-                <li>Note the content format (guide, listicle, comparison?)</li>
-                <li>Note the angle (beginner-focused, budget-focused, specific year?)</li>
+                <li>Search your target keyword</li>
+                <li>Note whether an AI Overview appears and, if so, what it says</li>
+                <li>Look at the top five organic results — content type, format, and angle</li>
+                <li>Read the People Also Ask questions to surface sub-intents</li>
+                <li>Check the Related Searches section at the bottom of the page</li>
             </ol>
-            <p>The results Google already shows are your strongest signal. Google has tested what satisfies users for that query — match it.</p>
+            <p>The results Google shows are the result of testing at scale. If every top result is a how-to guide, a how-to guide is what users are asking for. Match it — then ask what more you can add that none of those results currently offer.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Always check search intent before writing content. Spending hours creating a detailed guide is wasted if Google shows product pages for that keyword.</p>
+                <p>Intent changes over time. A query that once showed product pages may now trigger an AI Overview or an informational result after a Google update. Re-check the SERP for your target keywords every six months — your content format may need to evolve with it.</p>
             </div>
         `,
         quiz: {
