@@ -854,64 +854,53 @@ const lessonContent = {
         title: 'The Social Advertising Landscape',
         body: `
             <h2>Why Social Media Advertising Matters</h2>
-            <p>Social media advertising is one of the fastest-growing areas of digital marketing. Unlike search advertising (where you target people based on what they're searching), social advertising targets people based on <strong>who they are</strong> — their demographics, interests, behaviours, and connections.</p>
+            <p>Social media advertising targets people based on <strong>who they are</strong> — their professional identity, interests, life stage, and behaviour — rather than what they happen to be searching for right now. This makes it the primary tool for demand generation: reaching people who do not yet know they need your product and building the awareness that makes future search and conversion campaigns work.</p>
 
             <h2>The Major Platforms</h2>
 
-            <h3>Meta (Facebook & Instagram)</h3>
-            <p>The largest social advertising platform. Nearly 3 billion monthly active users across Facebook and Instagram. Best for:</p>
+            <h3>Meta (Facebook, Instagram, and Threads)</h3>
+            <p>The largest social advertising ecosystem, with billions of monthly active users across Facebook, Instagram, and — now accessible through Ads Manager — <strong>Threads</strong>. Meta's AI-driven <strong>Advantage+</strong> campaign structure has become the primary way advertisers operate on the platform, shifting budget allocation and placement decisions to the algorithm. Best for:</p>
             <ul>
                 <li>B2C businesses of all sizes</li>
                 <li>Ecommerce and direct-to-consumer brands</li>
-                <li>Local businesses</li>
-                <li>Lead generation</li>
+                <li>Lead generation at scale</li>
+                <li>Retargeting across a broad inventory of placements</li>
             </ul>
 
             <h3>LinkedIn</h3>
-            <p>The professional network with 900+ million members. Best for:</p>
+            <p>The professional network with over 1 billion members. Unique in offering targeting by job title, seniority, company size, and industry — and now with native CRM integration that lets advertisers measure pipeline and revenue impact directly within Campaign Manager. Best for:</p>
             <ul>
                 <li>B2B marketing and lead generation</li>
-                <li>Recruiting and employer branding</li>
-                <li>Professional services marketing</li>
-                <li>Targeting by job title, company, and industry</li>
+                <li>Employer branding and professional services</li>
+                <li>Account-based marketing at scale</li>
+                <li>Thought leadership and executive brand building</li>
             </ul>
 
             <h3>TikTok</h3>
-            <p>The fastest-growing platform with over 1 billion monthly users. Best for:</p>
+            <p>A platform built around short-form video and creator-led content, with over 1 billion monthly users. Following the resolution of TikTok's US structural uncertainty in January 2026, it is now operating as a stable advertising channel. <strong>Smart+</strong> is TikTok's unified AI campaign type, offering module-level automation control across targeting, creative, budget, and placements. Best for:</p>
             <ul>
-                <li>Reaching younger demographics (18-34)</li>
-                <li>Brand awareness through creative content</li>
-                <li>Ecommerce (especially with TikTok Shop)</li>
-                <li>Viral and trend-driven campaigns</li>
+                <li>Reaching 18–34 demographics with entertainment-first content</li>
+                <li>Ecommerce through TikTok Shop</li>
+                <li>Creator-led and UGC-style campaigns that generate authentic engagement</li>
             </ul>
 
             <h3>Snapchat</h3>
-            <p>Strong with younger audiences, especially 13-24 year olds. Best for:</p>
-            <ul>
-                <li>Reaching Gen Z</li>
-                <li>AR (augmented reality) experiences</li>
-                <li>Local and event-based marketing</li>
-            </ul>
+            <p>Strong with younger audiences (primarily 13–34), with unique AR advertising capabilities. Best for brands targeting Gen Z with immersive, interactive experiences and local campaigns.</p>
 
             <h3>Pinterest</h3>
-            <p>A visual discovery platform where users actively plan purchases. Best for:</p>
-            <ul>
-                <li>Home decor, fashion, food, and lifestyle brands</li>
-                <li>Products with strong visual appeal</li>
-                <li>Reaching users in "planning mode"</li>
-            </ul>
+            <p>A visual discovery and planning platform. Users come with purchase intent — actively searching for ideas and products. Best for home, fashion, food, and lifestyle brands where purchase decisions begin with visual inspiration.</p>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Insight</div>
-                <p>Each platform has a different user mindset. Facebook users are socialising. LinkedIn users are in professional mode. TikTok users want entertainment. Pinterest users are planning. Your creative and messaging must match the platform mindset.</p>
+                <div class="callout-title">Key Concept</div>
+                <p>Each platform has a distinct user mindset. Facebook and Instagram users are socialising and scrolling. LinkedIn users are in professional mode. TikTok users want to be entertained. Pinterest users are planning future purchases. Your creative must match the mindset of the moment, not just the demographic of the user.</p>
             </div>
 
             <h2>Social Ads vs Search Ads</h2>
             <ul>
-                <li><strong>Search ads</strong> = demand capture (people are already searching for solutions)</li>
-                <li><strong>Social ads</strong> = demand generation (you're reaching people who might not be actively looking)</li>
+                <li><strong>Search ads</strong> — Demand capture: targeting people who are already searching for solutions</li>
+                <li><strong>Social ads</strong> — Demand generation: reaching people before they search, building the intent that search campaigns then capture</li>
             </ul>
-            <p>The best marketing strategies use both: social to create awareness and interest, search to capture people when they're ready to act.</p>
+            <p>The most effective strategies use both in sequence: social advertising builds awareness and consideration, search captures the demand it creates.</p>
         `,
         quiz: {
             question: 'What is the fundamental difference between social advertising and search advertising?',

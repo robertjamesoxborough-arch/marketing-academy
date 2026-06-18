@@ -1334,29 +1334,29 @@ Object.assign(lessonContent, {
     'sa-1-2': {
         title: 'Choosing the Right Platform for Your Audience',
         body: `
-            <h2>Platform Demographics Matter</h2>
-            <p>Not every social platform is right for every business. The most common advertising mistake is spreading budget across every platform instead of focusing on where your audience actually spends time. Each platform has a distinct user base and use case.</p>
+            <h2>Platform Selection Is a Strategic Decision</h2>
+            <p>Spreading budget across every platform produces mediocre results everywhere. The better approach is to identify where your audience is most active and most reachable, then build depth on one or two platforms before expanding. Each platform has a distinct user profile, mindset, and advertising model that determines where it earns a place in your media mix.</p>
 
             <h2>Platform Breakdown</h2>
             <ul>
-                <li><strong>Meta (Facebook & Instagram)</strong> — The broadest reach. Facebook skews 25–54, Instagram skews 18–40. Works for almost any B2C business and increasingly B2B. Best for: broad targeting, retargeting, e-commerce.</li>
-                <li><strong>LinkedIn</strong> — The B2B platform. Professional audience with targeting by job title, company size, industry, and seniority. Higher CPCs but unmatched B2B targeting. Best for: SaaS, professional services, enterprise sales.</li>
-                <li><strong>TikTok</strong> — Youngest audience (16–34 dominates). Creative-first platform where native, entertaining content wins. Best for: consumer brands, D2C, apps, reaching Gen Z and younger Millennials.</li>
-                <li><strong>Pinterest</strong> — Visual discovery engine. Predominantly female audience (60%+) with high purchase intent. Best for: home decor, fashion, food, weddings, visual products.</li>
-                <li><strong>Snapchat</strong> — Youngest audience alongside TikTok. Strong in AR advertising. Best for: brands targeting 13–25 year olds, local businesses, entertainment.</li>
+                <li><strong>Meta (Facebook, Instagram, and Threads)</strong> — The broadest social advertising ecosystem. Facebook skews 25–54; Instagram skews 18–40. Threads is now accessible as a placement through Ads Manager, extending Meta's reach further. Meta's Advantage+ campaign structure hands targeting and placement decisions to the algorithm — meaning your creative quality matters more than your audience segmentation choices. Best for: e-commerce, broad B2C, retargeting, lead generation.</li>
+                <li><strong>LinkedIn</strong> — The only platform with precise professional targeting: job title, seniority, company size, industry, and skills. CPCs are higher, but you are reaching verified decision-makers in a professional mindset. Native CRM integration now lets you track pipeline and revenue impact directly in Campaign Manager. Best for: B2B, SaaS, professional services, enterprise sales.</li>
+                <li><strong>TikTok</strong> — A creator-led, content-first platform where authenticity outperforms polish. The 18–34 demographic dominates. TikTok's US situation was resolved in January 2026 and it operates as a stable advertising channel. Smart+, TikTok's unified AI campaign type, manages targeting, creative, budget, and placements at module level. Best for: D2C brands, ecommerce, apps, UGC-driven campaigns.</li>
+                <li><strong>Pinterest</strong> — A visual discovery and planning platform with high commercial intent. Users come to Pinterest to research and plan purchases, making it particularly effective for home, fashion, food, and lifestyle brands. Content has an unusually long lifespan compared to other platforms.</li>
+                <li><strong>Snapchat</strong> — Strong reach with 13–34 year olds, with unique AR advertising formats that generate extended engagement. Best for brands targeting younger audiences with interactive experiences or local campaigns.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Match your platform to your buyer, not to what's trending. A B2B software company spending budget on TikTok because "it's hot right now" while ignoring LinkedIn is wasting money. Go where your customers are.</p>
+                <p>Match your platform to your buyer, not to what is trending. A B2B software company investing in TikTok while neglecting LinkedIn is optimising for cultural relevance rather than business results. Go where your customers are, in the mindset that makes them receptive to your category.</p>
             </div>
 
             <h2>B2B vs B2C Considerations</h2>
-            <p>B2C brands generally have more platform flexibility because consumers use multiple social platforms personally. B2B brands should prioritise LinkedIn and Meta, where professional decision-makers can be targeted by role and industry.</p>
+            <p>B2C brands have more platform flexibility — consumers use most platforms personally, so reach is possible almost everywhere. B2B brands should anchor on LinkedIn for targeting precision, with Meta as a secondary channel for retargeting and content distribution. On Meta, Advantage+ handles the audience selection; the key B2B input is ensuring your creative speaks clearly to the professional problem you solve.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Start with ONE platform, master it, then expand. A £2,000/month budget split across five platforms (£400 each) will underperform compared to £2,000 focused on the one platform where your audience is most active.</p>
+                <p>Start with one platform and build depth before expanding. A £2,000/month budget focused entirely on the platform where your audience is most active will outperform the same budget spread thinly across five. Build a strong creative system and conversion data on your primary platform first — then that learning transfers when you expand.</p>
             </div>
         `,
         quiz: {
@@ -1376,30 +1376,30 @@ Object.assign(lessonContent, {
         title: 'Campaign Objectives and the Marketing Funnel',
         body: `
             <h2>The Marketing Funnel on Social</h2>
-            <p>Social advertising platforms organise campaign objectives around the marketing funnel — <strong>Awareness</strong>, <strong>Consideration</strong>, and <strong>Conversion</strong>. The objective you choose tells the platform's algorithm what outcome to optimise for, which fundamentally changes who sees your ad.</p>
+            <p>Social advertising platforms organise campaign objectives around the marketing funnel — <strong>Awareness</strong>, <strong>Consideration</strong>, and <strong>Conversion</strong>. The objective you select tells the platform's algorithm what outcome to optimise for, which changes not only who sees your ad but how the AI interprets your creative performance and what signals it uses to find the next user to show it to.</p>
 
             <h2>Objective Types</h2>
             <ul>
-                <li><strong>Awareness objectives</strong> — Maximise reach and impressions. The platform shows your ad to as many people as possible. Use for brand building and top-of-funnel campaigns.</li>
-                <li><strong>Consideration objectives</strong> — Drive traffic, engagement, video views, or lead form submissions. The platform targets users likely to take these mid-funnel actions.</li>
-                <li><strong>Conversion objectives</strong> — Drive purchases, sign-ups, or other high-value actions. The platform targets users most likely to convert based on historical data.</li>
+                <li><strong>Awareness objectives</strong> — Maximise reach and impressions. The algorithm shows your ad to as many people as possible within your targeting. Use for brand building and top-of-funnel campaigns where the goal is recognition, not immediate action.</li>
+                <li><strong>Consideration objectives</strong> — Drive traffic, engagement, video views, or lead form completions. The algorithm targets users whose behaviour suggests they are likely to take mid-funnel actions. Useful for building an audience of engaged prospects for later retargeting.</li>
+                <li><strong>Conversion objectives</strong> — Drive purchases, sign-ups, or other high-value actions. The algorithm finds users most likely to complete the specific conversion event you have designated, drawing on historical conversion data from your Pixel, Conversions API, and any first-party signals you have connected.</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Choosing a Traffic objective when you actually want sales. The algorithm will find people who click on ads — many of whom bounce immediately and never buy. If you want purchases, choose a Conversion objective and let the algorithm find buyers, even if it means fewer total clicks.</p>
+                <p>Selecting a Traffic objective when the actual goal is sales. The algorithm finds people who are likely to click — many of whom will bounce without converting. If you want purchases, select a Conversion objective and let the algorithm find buyers. You will typically see fewer clicks and lower CTR, but significantly better conversion rates and ROAS.</p>
             </div>
 
             <h2>How Platform Algorithms Use Objectives</h2>
-            <p>When you select a Conversion objective, the platform analyses your past converters and finds new users with similar behaviour patterns. It will show your ad to fewer people overall but prioritise those most likely to take the desired action. This is why conversion data is so valuable — the more conversions you feed the algorithm, the smarter it gets.</p>
+            <p>When you select a Conversion objective, the platform analyses the shared characteristics of past converters and identifies new users with similar patterns. The algorithm is not just using your audience settings — it is continuously learning from conversion signals to refine who it shows your ads to. This is why measurement quality matters as much as targeting quality: poor conversion data means the algorithm is optimising blind.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Your objective choice is the most impactful campaign setting. An identical ad with identical targeting will deliver completely different results under an Awareness objective versus a Conversion objective. The algorithm optimises for exactly what you tell it to.</p>
+                <p>The objective is the most impactful setting in any campaign. The same ad, shown to the same audience, under an Awareness objective versus a Conversion objective will deliver entirely different results — because the algorithm's definition of a "good" user changes completely. On Meta specifically, where Advantage+ is increasingly making the audience decisions, the objective is often the primary lever you control.</p>
             </div>
 
-            <h2>Matching Objectives to Your Goals</h2>
-            <p>New brands with no pixel data should start with Traffic or Engagement objectives to build data, then switch to Conversion once they have 50+ conversion events for the algorithm to learn from. Established brands should almost always use Conversion objectives for performance campaigns.</p>
+            <h2>Matching Objectives to Your Account Stage</h2>
+            <p>Brands without conversion data should build it first: use Traffic or Engagement objectives to populate your Custom Audiences and give your Pixel (and Conversions API) events to learn from. Once you have consistent conversion volume — typically 50+ events per week on the specific conversion you want to optimise — switch to a Conversion objective and let the algorithm use that data to find buyers more efficiently.</p>
         `,
         quiz: {
             question: 'Why is choosing a Traffic objective when you want sales a common mistake?',
@@ -1420,37 +1420,36 @@ Object.assign(lessonContent, {
         title: 'Meta Ads Manager: Structure and Setup',
         body: `
             <h2>The Three-Level Hierarchy</h2>
-            <p>Meta Ads Manager organises everything into three levels, each controlling different aspects of your advertising:</p>
+            <p>Meta Ads Manager organises campaigns into three levels, each controlling different aspects of your advertising:</p>
             <ul>
-                <li><strong>Campaign level</strong> — Where you set your objective (awareness, traffic, conversions, etc.) and optionally enable Campaign Budget Optimisation (CBO).</li>
-                <li><strong>Ad Set level</strong> — Where you define your audience targeting, placements, budget (if not using CBO), schedule, and optimisation event.</li>
-                <li><strong>Ad level</strong> — Where you build the actual creative — images, videos, headlines, descriptions, and calls to action.</li>
+                <li><strong>Campaign level</strong> — Where you set your objective (Awareness, Traffic, Engagement, Leads, Sales, etc.) and choose whether to use Advantage+ Shopping or a standard campaign structure. Campaign Budget Optimisation (CBO) is set here.</li>
+                <li><strong>Ad Set level</strong> — Where you define placements, budget (if not using CBO), schedule, and optimisation event. With Advantage+ Audience enabled, Meta handles most audience decisions automatically at this level.</li>
+                <li><strong>Ad level</strong> — Where you build creative: images, videos, headlines, descriptions, and calls to action. This is increasingly where your competitive edge lives, because creative quality is the primary signal Meta's algorithm uses to find the right users.</li>
             </ul>
 
-            <h2>Campaign Budget Optimisation (CBO)</h2>
-            <p><strong>CBO</strong> sets the budget at campaign level and lets Meta automatically distribute spend across ad sets based on performance. Instead of manually splitting budget, Meta's algorithm shifts more money to the best-performing ad sets in real time.</p>
+            <h2>Advantage+ as the Primary Campaign Structure</h2>
+            <p>Meta has moved decisively toward AI-driven campaign management through its <strong>Advantage+</strong> suite. Advantage+ Shopping Campaigns handle targeting, placement, and budget distribution automatically for e-commerce. Advantage+ Audience replaces manual interest targeting for other campaign types. The practical implication: the time you previously spent building and testing audience segments is better spent producing more diverse creative.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>CBO is generally recommended for campaigns with 3+ ad sets. It lets Meta's algorithm find the most efficient audience segments automatically. However, set minimum spend limits on ad sets if you need to ensure each audience gets tested fairly.</p>
+                <p>In a well-run Meta account in 2026, the algorithm is making most audience and placement decisions. Your role shifts from audience architect to creative director. The inputs that matter most are: your conversion data (via CAPI), your creative diversity (distinct messages and formats), and your objective alignment (telling the algorithm exactly what outcome you want).</p>
             </div>
 
             <h2>Naming Conventions</h2>
-            <p>A consistent naming convention saves you hours when reporting. A good format:</p>
+            <p>Consistent naming saves time when reporting and scaling. A reliable format:</p>
             <ul>
-                <li><strong>Campaign:</strong> [Objective] - [Product/Offer] - [Date]</li>
-                <li><strong>Ad Set:</strong> [Audience Type] - [Audience Details]</li>
-                <li><strong>Ad:</strong> [Format] - [Creative Concept] - [Variation]</li>
+                <li><strong>Campaign:</strong> [Objective] — [Product/Offer] — [Date]</li>
+                <li><strong>Ad Set:</strong> [Audience Type] — [Audience Details or "Advantage+"]</li>
+                <li><strong>Ad:</strong> [Format] — [Creative Concept] — [Variation]</li>
             </ul>
-            <p>Example: "CONV - Summer Sale - Jun24 / LAL - Purchasers 1% / VIDEO - Testimonial - V2"</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Use UTM parameters in every ad URL to track Meta traffic accurately in Google Analytics. Meta's reporting and GA4 will show different numbers due to attribution differences — having both gives you a more complete picture.</p>
+                <p>Use UTM parameters in every ad URL so you can track Meta traffic in GA4 as a cross-platform benchmark. Meta's native attribution and GA4 will show different numbers due to different attribution windows — both are useful, but neither alone gives the full picture. Set up your Conversions API before your first campaign goes live, not afterwards.</p>
             </div>
 
             <h2>Essential Account Settings</h2>
-            <p>Before launching campaigns, verify: your Meta Pixel is installed, your Conversions API is set up, your domain is verified, you've configured aggregated event measurement, and your payment method is active. Missing any of these can cause tracking gaps or campaign delivery issues.</p>
+            <p>Before launching any campaign, verify: your Meta Pixel is installed and firing correctly, your <strong>Conversions API (CAPI)</strong> is connected and sending server-side events, your domain is verified, aggregated event measurement is configured, and your payment method is active. Of these, CAPI setup is the most commonly skipped and the most consequential — browser-only tracking now misses a significant share of conversions.</p>
         `,
         quiz: {
             question: 'What does Campaign Budget Optimisation (CBO) do?',
@@ -1468,38 +1467,32 @@ Object.assign(lessonContent, {
     'sa-2-2': {
         title: 'Audience Targeting: Core, Custom, and Lookalike',
         body: `
-            <h2>Three Audience Types</h2>
-            <p>Meta offers three powerful audience targeting approaches, each suited to different campaign goals:</p>
+            <h2>How Meta Targeting Has Shifted</h2>
+            <p>Meta's audience targeting model has changed significantly. The platform's AI — powered by <strong>Meta Lattice</strong>, its unified ad ranking system — now makes most prospecting audience decisions automatically through <strong>Advantage+ Audience</strong>. Rather than the algorithm serving your ads to a manually defined segment, it starts with a broad pool and continuously narrows based on which users are actually engaging and converting. The practical implication is that granular interest targeting for prospecting is increasingly less effective than simply providing excellent creative and letting the algorithm find who responds to it.</p>
 
-            <h2>Core Audiences (Interest & Demographic Targeting)</h2>
-            <p>Core audiences use Meta's built-in targeting options:</p>
-            <ul>
-                <li><strong>Demographics</strong> — Age, gender, location, language, education, job title</li>
-                <li><strong>Interests</strong> — Based on pages liked, content engaged with, and activity patterns</li>
-                <li><strong>Behaviours</strong> — Purchase behaviour, device usage, travel patterns</li>
-            </ul>
-            <p>Core audiences are best for prospecting when you don't have enough customer data for Custom or Lookalike audiences.</p>
+            <h2>What Audience Controls Still Matter</h2>
+            <p>While prospecting audience decisions are increasingly automated, three audience types remain highly valuable:</p>
 
             <h2>Custom Audiences</h2>
-            <p>Custom Audiences let you target people who already have a relationship with your business:</p>
+            <p>Custom Audiences are built from people who already have a relationship with your business — and they remain the highest-ROAS audience type because you are reaching users who already know you:</p>
             <ul>
-                <li><strong>Website visitors</strong> — People who visited specific pages (requires Meta Pixel)</li>
-                <li><strong>Customer list</strong> — Upload email addresses or phone numbers to match with Meta users</li>
-                <li><strong>Engagement</strong> — People who interacted with your Meta content, watched videos, or engaged with your Instagram profile</li>
-                <li><strong>App activity</strong> — Users who took actions in your app</li>
+                <li><strong>Website visitors</strong> — Built from Pixel and CAPI event data. Segment by page visited, depth of visit, or time window (30/60/90 days).</li>
+                <li><strong>Customer list</strong> — Upload hashed email addresses or phone numbers. These match to Meta users and serve as both retargeting audiences and the source for Lookalike creation.</li>
+                <li><strong>Engagement</strong> — Users who interacted with your content, watched video, or engaged with your Instagram or Facebook profile.</li>
+                <li><strong>App activity</strong> — Users who took specific in-app actions.</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>Custom Audiences for retargeting typically deliver the highest ROAS because you're reaching people who already know your brand. Always create retargeting audiences for: website visitors (last 30/60/90 days), add-to-cart but no purchase, and past customers.</p>
+                <div class="callout-title">Key Concept: Creative Quality Is the New Targeting</div>
+                <p>In Meta's Advantage+ model, creative quality has become the primary audience targeting signal. Meta Lattice ranks ads across all placements using signals from how different users respond to specific creative — meaning a compelling ad effectively "self-selects" its audience. Investing in diverse, high-quality creative concepts produces better audience reach than manually restricting who sees your ads.</p>
             </div>
 
             <h2>Lookalike Audiences</h2>
-            <p>Lookalike Audiences find new people similar to your existing customers. You provide a source audience (e.g., your customer list or website converters), and Meta finds users with similar characteristics. Lookalike size ranges from 1% (most similar) to 10% (broader reach).</p>
+            <p>Lookalike Audiences find new users with similar characteristics to a source audience you define. They remain useful as a starting signal within Advantage+ Audience, even though Meta's AI may expand beyond the Lookalike if it finds better-performing users elsewhere. Build your Lookalike from high-value converters rather than all customers — the quality of the source determines the quality of the output.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Build your Lookalike from your best customers, not all customers. A Lookalike based on your top 20% highest-value buyers will outperform one based on all purchasers. Quality of the source audience matters more than size.</p>
+                <p>Build retargeting audiences for every stage of your funnel: all visitors, product page viewers, add-to-cart without purchase, and past buyers. Then tailor the creative to each stage — a user who abandoned checkout needs different messaging than a first-time visitor. Ensure your CAPI is passing these events accurately, not just your browser Pixel, so your Custom Audiences are complete.</p>
             </div>
         `,
         quiz: {
@@ -1520,32 +1513,29 @@ Object.assign(lessonContent, {
         body: `
             <h2>Meta Ad Formats</h2>
             <ul>
-                <li><strong>Single Image</strong> — The simplest format. Fast to produce and test. Works well for clear product shots or bold graphic messages.</li>
-                <li><strong>Video</strong> — Highest engagement format. Short videos (15–30 seconds) work best. Square (1:1) or vertical (9:16) for mobile feeds and Stories/Reels.</li>
-                <li><strong>Carousel</strong> — Multiple scrollable cards, each with its own image, headline, and link. Great for showcasing multiple products or telling a sequential story.</li>
-                <li><strong>Collection</strong> — A cover image or video with product thumbnails below. Opens an Instant Experience (full-screen mobile storefront). Best for e-commerce.</li>
+                <li><strong>Single Image</strong> — Fast to produce and test. Works well for clear product shots, bold graphic messages, or UGC-style still frames. The simplest format for rapid creative iteration.</li>
+                <li><strong>Video</strong> — The highest-engagement format. Short videos (15–30 seconds) work best for performance campaigns. Shoot in square (1:1) or vertical (9:16) for mobile feeds and Stories/Reels. Video in Reels placement is shown across Facebook, Instagram, and now Threads.</li>
+                <li><strong>Carousel</strong> — Multiple scrollable cards, each with its own image, headline, and link. Strong for showcasing multiple products, telling a sequential story, or demonstrating before-and-after results.</li>
+                <li><strong>Collection</strong> — A cover image or video with product thumbnails below, opening into an Instant Experience. The primary e-commerce format for high-intent discovery campaigns.</li>
             </ul>
 
-            <h2>Creative Principles That Work</h2>
-            <p>Social ads compete with friends' posts, memes, and news for attention. Your creative needs to stop the scroll in under 2 seconds:</p>
+            <h2>Creative Principles That Work in 2026</h2>
+            <p>Social ads compete with organic posts, Reels, and Stories for attention in the same feed. Your creative must earn attention in under two seconds:</p>
             <ul>
-                <li><strong>Hook immediately</strong> — Lead with your most compelling visual or statement. The first frame of video or the dominant element of an image must grab attention.</li>
-                <li><strong>Show the product in use</strong> — People connect with seeing real usage, not just product photography</li>
-                <li><strong>Use text overlays sparingly</strong> — Key message should be readable on mobile without squinting</li>
-                <li><strong>Match the platform's native feel</strong> — Ads that look like organic content outperform polished TV-style creative</li>
+                <li><strong>Hook immediately</strong> — The first frame of a video or the dominant element of an image must create immediate curiosity, tension, or recognition. Everything else follows from this.</li>
+                <li><strong>Show the product in real use</strong> — Real usage, real faces, and real environments outperform studio photography. Authenticity is not just a creative style — it is a performance driver.</li>
+                <li><strong>Match the platform's native feel</strong> — Ads that look like organic content get further before the brain registers them as advertising. This is why UGC-style creative consistently outperforms polished brand production on Meta.</li>
+                <li><strong>Produce distinct angles, not variations</strong> — Meta Lattice distributes ad delivery based on how different audiences respond to different creative signals. Three genuinely different creative concepts — testimonial, product demo, problem/solution — will outperform three slightly different versions of the same concept.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Creative is the biggest performance lever in social advertising. Better targeting gives you incremental gains, but a great creative can 2–5x your results. Invest more time in creative testing than audience testing.</p>
+                <p>In Meta's current ad model, creative quality is not just a performance factor — it is the primary targeting mechanism. Meta Lattice matches your creative to the users most likely to respond to it. This means creative diversity (distinct messages, formats, and angles) does more for reach efficiency than audience segmentation.</p>
             </div>
 
-            <h2>Video Hook Strategies</h2>
-            <p>For video ads, the first 3 seconds determine whether people watch or scroll past. Effective hooks include: asking a provocative question, showing a surprising result, leading with a bold claim, or starting with movement and colour contrast.</p>
-
-            <div class="callout callout-tip">
-                <div class="callout-title">Pro Tip</div>
-                <p>Create 3–5 different hooks for the same video and test them as separate ads. Often the same video body with a different opening will perform 2–3x better. The hook is where most creative tests should focus.</p>
+            <div class="callout callout-warning">
+                <div class="callout-title">Common Mistake: Missing AI Content Disclosure</div>
+                <p>If your ad creative is generated or substantially altered using AI — including AI-generated images, AI-edited video, or AI-synthesised voiceover — mandatory disclosure is now required globally across Meta's platforms. Failing to disclose AI-generated creative risks ad disapproval and account flags. Check Meta's current disclosure requirements before publishing any AI-assisted creative at scale.</p>
             </div>
         `,
         quiz: {
@@ -1564,36 +1554,35 @@ Object.assign(lessonContent, {
     'sa-2-4': {
         title: 'The Meta Pixel and Conversions API',
         body: `
-            <h2>What the Meta Pixel Does</h2>
-            <p>The <strong>Meta Pixel</strong> is a piece of JavaScript code placed on your website that tracks visitor actions. When someone clicks your Meta ad and then takes an action on your site (views a product, adds to cart, purchases), the Pixel fires an event that reports back to Meta. This data is essential for:</p>
-            <ul>
-                <li><strong>Conversion tracking</strong> — Measuring which ads drive results</li>
-                <li><strong>Optimisation</strong> — Feeding the algorithm data to find more converters</li>
-                <li><strong>Retargeting</strong> — Building Custom Audiences based on website behaviour</li>
-            </ul>
+            <h2>The Measurement Foundation</h2>
+            <p>Accurate conversion measurement is the foundation of everything else in Meta advertising — Smart Bidding only performs as well as the data it receives, and retargeting Custom Audiences are only as complete as the events that built them. Meta provides two complementary measurement tools: the browser-side Pixel and the server-side Conversions API.</p>
 
-            <h2>Standard Events</h2>
-            <p>Meta defines standard events for common actions. Using standard events (rather than custom names) lets Meta better optimise and report:</p>
+            <h2>The Meta Pixel</h2>
+            <p>The Meta Pixel is a JavaScript snippet that fires events from the user's browser when they take actions on your website. It populates standard events that Meta uses for both reporting and optimisation:</p>
             <ul>
                 <li><strong>PageView</strong> — Fires on every page load</li>
-                <li><strong>ViewContent</strong> — Product page views</li>
-                <li><strong>AddToCart</strong> — Items added to shopping cart</li>
-                <li><strong>InitiateCheckout</strong> — Checkout process started</li>
-                <li><strong>Purchase</strong> — Transaction completed (include value and currency)</li>
-                <li><strong>Lead</strong> — Form submission or sign-up</li>
+                <li><strong>ViewContent</strong> — Product or content page views</li>
+                <li><strong>AddToCart</strong> — Items added to a shopping basket</li>
+                <li><strong>InitiateCheckout</strong> — Checkout process begun</li>
+                <li><strong>Purchase</strong> — Transaction completed (always include value and currency)</li>
+                <li><strong>Lead</strong> — Form submission or sign-up completed</li>
             </ul>
+            <p>Using Meta's standard event names rather than custom event names allows the algorithm to apply its full optimisation capability — it has learned what these events mean across billions of user journeys.</p>
+
+            <h2>Conversions API (CAPI): The Primary Measurement Tool</h2>
+            <p>The <strong>Conversions API</strong> sends event data from your server directly to Meta, bypassing the browser entirely. Where the Pixel depends on the user's browser environment — which is affected by ad blockers, iOS App Tracking Transparency, cookie restrictions, and page load failures — CAPI is not. This makes CAPI the primary measurement layer for a complete Meta account, not a supplementary option.</p>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>The more conversion data your Pixel collects, the smarter Meta's algorithm becomes at finding your ideal customers. A Pixel with thousands of conversion events will dramatically outperform a fresh one. This data is your competitive moat.</p>
+                <div class="callout-title">Key Concept: CAPI Is Not Optional</div>
+                <p>Browser-only tracking now routinely misses 20–40% of conversions. Every event that does not reach Meta is a signal the algorithm cannot learn from. Running CAPI alongside your Pixel closes this gap — events deduplicated server-side, so there is no double-counting. The result is a more complete Custom Audience, a better-trained algorithm, and more accurate conversion reporting. Set CAPI up before your first campaign, not after performance starts dropping.</p>
             </div>
 
-            <h2>Conversions API (CAPI)</h2>
-            <p>The <strong>Conversions API</strong> sends event data from your server directly to Meta, bypassing the browser. This is critical because browser-side tracking is increasingly unreliable due to iOS privacy changes, ad blockers, and cookie restrictions. CAPI ensures Meta receives your conversion data even when the Pixel can't fire.</p>
+            <h2>The Direction of Travel: Meta's Generative Ad Model</h2>
+            <p>Meta is moving toward a <strong>Generative Ad Model (GEM)</strong> — a direction where the platform itself plays a greater role in generating and assembling ad creative from the inputs you provide (images, copy, product catalogues), matched to the user and context most likely to convert. In this model, the quality of your source assets and the completeness of your conversion signals become even more critical — they are the inputs that GEM builds from.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Running only the Pixel without CAPI in 2024+. Browser-only tracking misses 20–40% of conversions due to iOS App Tracking Transparency and browser privacy features. Set up both Pixel AND CAPI for complete data and better optimisation.</p>
+                <p>Setting up CAPI once and assuming it is working indefinitely. Server connections require maintenance — platform updates, website changes, and API version upgrades can all break CAPI silently. Monitor your Event Match Quality score in Events Manager regularly and investigate any sudden drop in matched events.</p>
             </div>
         `,
         quiz: {
@@ -1612,28 +1601,28 @@ Object.assign(lessonContent, {
     'sa-2-5': {
         title: 'Meta Advantage+ and Automation',
         body: `
-            <h2>Meta\'s Push Toward Automation</h2>
-            <p>Meta has been progressively automating more of the advertising process through its <strong>Advantage+</strong> suite. These tools use machine learning to handle targeting, creative optimisation, and placements that advertisers previously controlled manually.</p>
+            <h2>Advantage+ Is Now the Primary Campaign Structure</h2>
+            <p>Meta's <strong>Advantage+</strong> suite is no longer a supplementary option — it is the primary campaign structure for most advertisers. Treating it as an experiment alongside traditional manual campaigns misses the point. The platform's AI (powered by Meta Lattice) performs better with more creative diversity and less audience restriction. Resisting Advantage+ by maintaining heavy manual controls typically produces worse results, not better ones.</p>
 
-            <h2>Key Advantage+ Features</h2>
+            <h2>The Advantage+ Suite</h2>
             <ul>
-                <li><strong>Advantage+ Shopping Campaigns</strong> — Fully automated campaigns for e-commerce. You provide creative assets and a product catalogue, and Meta handles all targeting, placement, and budget allocation. Often outperforms manually targeted campaigns for e-commerce.</li>
-                <li><strong>Advantage+ Audience</strong> — Replaces detailed interest targeting with Meta's AI-driven audience finding. You can provide audience suggestions, but Meta will go beyond them if it finds better performers.</li>
-                <li><strong>Advantage+ Creative</strong> — Automatically adjusts your creative with enhancements like brightness adjustments, aspect ratio changes, text variations, and music for Reels.</li>
-                <li><strong>Advantage+ Placements</strong> — Distributes your ads across all Meta placements (Feed, Stories, Reels, Messenger, Audience Network) based on where they perform best.</li>
+                <li><strong>Advantage+ Shopping Campaigns</strong> — Fully automated campaigns for e-commerce. Provide creative assets and a product catalogue; Meta handles targeting, placement, and budget allocation across Facebook, Instagram, Messenger, and Threads. Consistently outperforms manually structured shopping campaigns for accounts with sufficient conversion data.</li>
+                <li><strong>Advantage+ Audience</strong> — Replaces manual interest and demographic targeting with AI-driven audience finding. You can provide audience suggestions as a starting signal, but Meta will expand beyond them when it identifies better-performing users. Manually restricting this expansion almost always reduces performance.</li>
+                <li><strong>Advantage+ Creative</strong> — Applies automated enhancements to your creative: aspect ratio adjustments for different placements, brightness and contrast improvements, text variations, and music for Reels. Review what it applies to ensure brand consistency.</li>
+                <li><strong>Advantage+ Placements</strong> — Distributes ads across all Meta placements — Feed, Stories, Reels, Messenger, Audience Network, and Threads — based on where conversions are found most efficiently. Always use Advantage+ Placements over manual placement selection; restricting placements typically raises your CPA without strategic justification.</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>Advantage+ works best when you give it more creative variety to work with. The AI needs options to test and optimise. Provide 5–10+ different creative concepts rather than slight variations of the same idea.</p>
+                <div class="callout-title">Key Concept: Creative Diversity Feeds the Algorithm</div>
+                <p>Meta Lattice ranks your ads by matching creative characteristics to users most likely to respond. The more distinct creative concepts you provide — different formats, hooks, angles, and messages — the more data the AI has to find high-value users across different segments. Five genuinely different creative approaches will outperform fifty slight variations of the same ad. Your job is creative production and quality; Meta's job is audience distribution.</p>
             </div>
 
-            <h2>When Automation Works vs Manual Control</h2>
-            <p>Automation excels when you have large budgets, lots of conversion data, and broad targeting goals. Manual control is still valuable for small budgets, niche audiences, strict brand guidelines, or when you need to test specific hypotheses.</p>
+            <h2>The Generative Ad Model: Where This Is Heading</h2>
+            <p>Meta has signalled a direction toward a <strong>Generative Ad Model (GEM)</strong>, where the platform generates and assembles creative from your source assets — images, copy, product data — matched dynamically to individual users. Advertisers who build strong asset libraries and clean conversion data now are best positioned as this capability matures.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Don't fight the algorithm — feed it. The winning strategy is to shift your effort from manual targeting tweaks to creative production. Create more diverse ads, let Advantage+ find the right audience for each one, and focus your optimisation on creative performance.</p>
+                <p>Stop optimising audiences. Start optimising creative. The winning Meta strategy in 2026 is: run Advantage+ campaigns with Advantage+ Audience and Advantage+ Placements, provide 8–12 genuinely different creative concepts per campaign, and use your CAPI conversion data to let the algorithm learn who converts. Review creative performance weekly and replace the bottom third with fresh angles — not variations of what already exists.</p>
             </div>
         `,
         quiz: {
@@ -1655,36 +1644,39 @@ Object.assign(lessonContent, {
         title: 'LinkedIn Ads for B2B Marketing',
         body: `
             <h2>Why LinkedIn for B2B</h2>
-            <p>LinkedIn is the only major ad platform where you can target people by their professional attributes — job title, company name, industry, seniority, company size, and skills. For B2B marketers trying to reach decision-makers, this targeting precision is unmatched.</p>
+            <p>LinkedIn is the only major ad platform where you can target users by verified professional identity — job title, seniority, company name, company size, and industry — and connect that targeting directly to revenue outcomes. For B2B marketers trying to reach buying committees and senior decision-makers, this precision is unmatched anywhere in digital advertising.</p>
 
-            <h2>Campaign Manager and Objectives</h2>
-            <p>LinkedIn Campaign Manager offers objectives across the funnel: Brand Awareness, Website Visits, Engagement, Video Views, Lead Generation, and Website Conversions. For most B2B campaigns, <strong>Lead Generation</strong> (using Lead Gen Forms) and <strong>Website Conversions</strong> deliver the best ROI.</p>
+            <h2>Campaign Manager: Updated Terminology</h2>
+            <p>LinkedIn has updated Campaign Manager's structural terminology. What was formerly called <strong>Campaign Groups</strong> is now <strong>Campaigns</strong>; what was called <strong>Campaigns</strong> is now <strong>Ad Sets</strong>. This aligns LinkedIn's hierarchy more closely with other platforms. If you are working from older tutorials or guides, be aware of this naming change — the functionality is unchanged, but the labels in the UI now differ.</p>
+            <p>Campaign Manager offers objectives across the funnel: Brand Awareness, Website Visits, Engagement, Video Views, Lead Generation, and Website Conversions. For most B2B performance campaigns, <strong>Lead Generation</strong> (using Lead Gen Forms) and <strong>Website Conversions</strong> deliver the strongest ROI.</p>
 
-            <h2>Targeting Options</h2>
+            <h2>B2B Targeting: LinkedIn's Core Differentiator</h2>
             <ul>
-                <li><strong>Job title</strong> — Target specific roles (e.g., "Marketing Director," "CFO")</li>
-                <li><strong>Company</strong> — Target employees of specific companies by name</li>
+                <li><strong>Job title</strong> — Reach specific roles (e.g., "Head of Procurement," "VP of Engineering")</li>
+                <li><strong>Seniority</strong> — Filter by level: Entry, Senior, Manager, Director, VP, C-Suite — essential for separating decision-makers from influencers</li>
+                <li><strong>Company name</strong> — Target employees at specific accounts, ideal for account-based marketing (ABM)</li>
+                <li><strong>Company size</strong> — Filter by employee count to target SME, mid-market, or enterprise organisations separately</li>
                 <li><strong>Industry</strong> — Reach professionals in specific sectors</li>
-                <li><strong>Seniority</strong> — Filter by level (Entry, Senior, Manager, Director, VP, C-Suite)</li>
-                <li><strong>Company size</strong> — Target by employee count ranges</li>
-                <li><strong>Skills and groups</strong> — Target members with specific listed skills or group memberships</li>
+                <li><strong>Skills and groups</strong> — Target members with specific listed skills or group memberships, useful for reaching practitioners in technical fields</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>LinkedIn CPCs are significantly higher than other platforms (£5–15+ per click is typical). This is because the audience is premium and targeting is precise. Evaluate LinkedIn on cost-per-qualified-lead, not cost-per-click — a £15 click that generates a £50,000 deal is excellent ROI.</p>
+                <div class="callout-title">Key Concept: Revenue Attribution, Not Just Leads</div>
+                <p>LinkedIn now offers native CRM integration in Campaign Manager, enabling pipeline and revenue attribution directly within the platform — not just lead volume. The <strong>Revenue Attribution Report</strong> uses <strong>Company Attribution</strong> to connect your campaigns to company-level pipeline and closed revenue. This is a significant capability shift: rather than reporting on cost-per-lead, you can demonstrate which campaigns influenced accounts that converted into customers.</p>
             </div>
 
-            <h2>Ad Formats</h2>
+            <h2>Ad Formats Worth Knowing in 2026</h2>
             <ul>
-                <li><strong>Sponsored Content</strong> — Native ads in the LinkedIn feed (single image, video, carousel)</li>
-                <li><strong>Message Ads (InMail)</strong> — Direct messages to users' LinkedIn inboxes</li>
-                <li><strong>Lead Gen Forms</strong> — Pre-filled forms that users can submit without leaving LinkedIn. Dramatically reduce friction and increase conversion rates.</li>
+                <li><strong>Sponsored Content</strong> — Native ads in the LinkedIn feed: single image, video, carousel, and document formats</li>
+                <li><strong>Thought Leader Ads</strong> — Boost organic posts from executives or employees as paid ads, retaining the authentic voice and social proof of an organic post. Particularly effective for authority-building in B2B, where buyers research the people behind a product, not just the product itself.</li>
+                <li><strong>BrandLink</strong> — A new in-stream video ad format that runs before publisher and creator content on LinkedIn. Effective for brand awareness campaigns targeting specific professional audiences.</li>
+                <li><strong>Lead Gen Forms</strong> — Pre-filled forms submitted without leaving LinkedIn, using the user's profile data. Conversion rates are typically 2–5x higher than equivalent external landing pages due to reduced friction.</li>
+                <li><strong>Message Ads (InMail)</strong> — Direct messages to users' LinkedIn inboxes. Best used sparingly with highly targeted audiences and a specific, valuable offer.</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Lead Gen Forms are LinkedIn's killer feature. Because the forms pre-fill with the user's LinkedIn profile data (name, email, job title, company), conversion rates are 2–5x higher than sending users to an external landing page.</p>
+                <p>Evaluate LinkedIn on cost-per-qualified-lead and pipeline influenced, not cost-per-click. LinkedIn CPCs (£5–15+) look expensive compared to other platforms, but the audience quality — verified decision-makers in specific roles at specific companies — changes the economics entirely. A £12 click from a CFO at a target account is a different asset from a £0.50 click from an unqualified visitor.</p>
             </div>
         `,
         quiz: {
@@ -1703,35 +1695,37 @@ Object.assign(lessonContent, {
     'sa-3-2': {
         title: 'TikTok Ads: Creative-First Advertising',
         body: `
-            <h2>TikTok\'s Unique Advertising Model</h2>
-            <p>TikTok is fundamentally different from other ad platforms because <strong>creative quality is the primary driver of performance</strong>. The algorithm surfaces content based on engagement signals, not just targeting — meaning a brilliant ad shown to a broad audience will outperform a mediocre ad shown to a precisely targeted one.</p>
+            <h2>TikTok's Advertising Model</h2>
+            <p>TikTok surfaces content — organic and paid — based on engagement signals from each viewer's behaviour, not primarily on demographic targeting. This makes <strong>creative quality the primary driver of performance</strong>: an authentic, entertaining ad shown to a broad audience will consistently outperform a polished corporate ad shown to a precisely targeted one. Following the resolution of TikTok's US structural situation in January 2026, the platform is operating as a stable advertising channel and is a legitimate long-term component of any social media mix targeting under-40 demographics.</p>
 
-            <h2>TikTok Ads Manager</h2>
-            <p>TikTok's ad platform follows a similar structure to Meta: Campaign → Ad Group → Ad. Key campaign objectives include Traffic, App Install, Conversions, and Lead Generation. The platform supports both automatic and manual bidding strategies.</p>
+            <h2>Smart+: TikTok's Unified AI Campaign Type</h2>
+            <p><strong>Smart+</strong> is TikTok's unified AI-driven campaign type, replacing the original Smart Performance Campaign. Unlike an all-or-nothing automation toggle, Smart+ offers <strong>module-level control</strong> — you can independently set each of the following to automatic or manual: targeting, creative, bidding, and placements. This makes Smart+ more flexible than its predecessor: you can automate creative selection while retaining manual control over targeting, or run fully automated for maximum reach efficiency. For most accounts, Smart+ with automated targeting and creative delivers the best results once you have sufficient conversion data.</p>
 
             <h2>Ad Formats</h2>
             <ul>
-                <li><strong>In-Feed Ads</strong> — Full-screen vertical videos that appear in the For You feed. The bread and butter of TikTok advertising.</li>
-                <li><strong>Spark Ads</strong> — Boost existing organic TikTok posts (yours or a creator's) as ads. These retain all organic engagement (likes, comments, shares) and feel more native.</li>
-                <li><strong>TopView</strong> — Premium placement: the first ad users see when opening TikTok. Expensive but high-impact for brand awareness.</li>
+                <li><strong>In-Feed Ads</strong> — Full-screen vertical videos appearing in the For You feed. The primary performance format for direct response.</li>
+                <li><strong>Spark Ads</strong> — Boost existing organic TikTok posts (yours or a creator's) as paid ads. Spark Ads retain all organic engagement (likes, comments, shares, saves), feel completely native, and consistently outperform standard video uploads. This is best practice for TikTok advertising, not an optional upgrade.</li>
+                <li><strong>TopView</strong> — Premium placement: the first full-screen ad seen when a user opens TikTok. High cost but maximum impact for brand awareness at scale.</li>
+                <li><strong>Search Hubs</strong> — Ads appearing within TikTok's growing search experience, reaching users at a moment of active intent. Worth testing for discovery-stage campaigns.</li>
+                <li><strong>TopReach</strong> — A placement format designed for maximum unique reach in awareness campaigns, useful for broad-market launches.</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>"Don't make ads. Make TikToks." This is TikTok's own advice to advertisers. Polished, corporate-looking ads get skipped. Content that feels native, entertaining, and authentic performs dramatically better.</p>
+                <div class="callout-title">Key Concept: UGC and Creator-Led Content Wins</div>
+                <p>TikTok's own guidance — "Don't make ads. Make TikToks." — reflects a measurable reality. UGC-style, creator-led content consistently outperforms polished branded production on the platform. Authenticity and a native feel are the primary performance drivers, not production quality. Work with creators who already have a natural voice on TikTok rather than briefing them to deliver a scripted brand message.</p>
             </div>
 
             <h2>Creative Best Practices</h2>
             <ul>
-                <li><strong>Hook in the first second</strong> — TikTok users scroll fast. Open with movement, a surprising statement, or a question.</li>
-                <li><strong>Shoot vertically (9:16)</strong> — Always full-screen vertical. Horizontal or square content looks out of place.</li>
-                <li><strong>Use trending sounds and formats</strong> — Browse the TikTok Creative Center for trending audio and ad patterns.</li>
-                <li><strong>Feature real people</strong> — User-generated-style content with real faces outperforms brand graphics.</li>
+                <li><strong>Hook in the first second</strong> — TikTok users scroll fast. Open with movement, a surprising statement, or an immediate visual payoff.</li>
+                <li><strong>Shoot vertically (9:16)</strong> — Always full-screen vertical. Any other aspect ratio looks out of place and signals "ad" immediately.</li>
+                <li><strong>Use trending sounds and formats</strong> — Browse the TikTok Creative Center for trending audio and high-performing ad patterns in your category.</li>
+                <li><strong>Feature real people</strong> — Faces, genuine reactions, and real environments outperform brand graphics and studio production every time.</li>
             </ul>
 
-            <div class="callout callout-tip">
-                <div class="callout-title">Pro Tip</div>
-                <p>Use TikTok's Creative Center (free) to research top-performing ads in your industry. Study what hooks, formats, and styles work, then adapt them to your brand. Refreshing creative every 7–14 days prevents fatigue.</p>
+            <div class="callout callout-warning">
+                <div class="callout-title">Common Mistake: Letting Creative Fatigue Build</div>
+                <p>Creative fatigue on TikTok arrives faster than on any other platform. The same ad seen repeatedly by the same user does not just decline in performance — it actively damages brand perception. Rotate creative every 2–4 weeks and maintain a library of distinct asset angles (not just variations of a single concept). If you cannot produce fresh content at that cadence, reduce your frequency targets rather than letting fatigued creative run.</p>
             </div>
         `,
         quiz: {
@@ -1750,36 +1744,36 @@ Object.assign(lessonContent, {
     'sa-3-3': {
         title: 'Snapchat Ads and AR Marketing',
         body: `
-            <h2>Snapchat\'s Advertising Platform</h2>
-            <p>Snapchat reaches a young, engaged audience — primarily 13–34 year olds — who spend an average of 30+ minutes daily on the app. While it has smaller overall reach than Meta or TikTok, Snapchat offers unique ad formats and typically lower CPMs for reaching younger demographics.</p>
+            <h2>Snapchat's Advertising Platform</h2>
+            <p>Snapchat reaches a young, highly engaged audience — primarily 13–34 year olds — who spend 30+ minutes daily on the platform. While its total reach is smaller than Meta or TikTok, Snapchat offers advertising formats that no other platform matches for interactive, immersive experiences. For brands targeting younger demographics with products that benefit from visual or experiential presentation, Snapchat belongs in the media plan.</p>
 
             <h2>Ad Formats</h2>
             <ul>
-                <li><strong>Snap Ads</strong> — Full-screen vertical video or image ads that appear between Stories or in the Discover feed. Can include swipe-up actions for websites, apps, or long-form video.</li>
-                <li><strong>Story Ads</strong> — Branded tiles in the Discover section that open into a collection of 3–20 Snaps.</li>
-                <li><strong>Collection Ads</strong> — Showcase multiple products with tappable tiles below a main image or video. Great for e-commerce.</li>
-                <li><strong>Commercials</strong> — Non-skippable 6-second video ads within premium content. Guaranteed viewership but premium pricing.</li>
+                <li><strong>Snap Ads</strong> — Full-screen vertical video or image ads appearing between Stories or in the Discover feed. The core format. Users can swipe up to visit a website, download an app, or watch long-form video.</li>
+                <li><strong>Story Ads</strong> — Branded tiles in the Discover section that open into a collection of 3–20 Snaps. Effective for sequential storytelling and product education.</li>
+                <li><strong>Collection Ads</strong> — A main image or video with tappable product tiles below. The standard Snapchat format for e-commerce, enabling direct product discovery without leaving the app.</li>
+                <li><strong>Commercials</strong> — Non-skippable 6-second ads within premium Snapchat content. Guaranteed viewership for brand awareness, but priced accordingly.</li>
             </ul>
 
-            <h2>AR Lenses: Snapchat\'s Unique Advantage</h2>
-            <p>Snapchat pioneered <strong>augmented reality (AR) advertising</strong> through sponsored Lenses. These let users interact with branded AR effects using their camera — trying on products virtually, playing branded games, or using themed face filters.</p>
+            <h2>AR Lenses: Snapchat's Unique Differentiator</h2>
+            <p>Snapchat pioneered augmented reality advertising through <strong>sponsored Lenses</strong>, and it remains the most advanced AR advertising platform available. Lenses let users interact with branded AR effects using their camera — trying on products virtually, playing branded games, or using themed face filters.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>AR Lenses generate an average of 15–20 seconds of active engagement per user — far longer than any traditional ad format. Users also share Lenses with friends, creating organic amplification beyond your paid reach.</p>
+                <p>AR Lenses generate an average of 15–20 seconds of active engagement per user — far longer than any passive ad format. Users also share Lenses with friends organically, extending your paid reach without additional cost. For product categories where virtual try-on is relevant (cosmetics, eyewear, fashion, footwear), AR Lenses can directly influence purchase decisions.</p>
             </div>
 
-            <h2>Best Use Cases for Snapchat Ads</h2>
+            <h2>Best Use Cases for Snapchat Advertising</h2>
             <ul>
-                <li>Reaching Gen Z audiences who are harder to find on Facebook</li>
-                <li>App install campaigns (Snapchat performs strongly for mobile apps)</li>
-                <li>Local business promotion (geofilters and location targeting)</li>
-                <li>Product try-on experiences via AR (cosmetics, eyewear, fashion)</li>
+                <li>Reaching 13–24 year olds who are increasingly absent from Facebook</li>
+                <li>App install campaigns — Snapchat's mobile-native audience and swipe-up mechanic makes it one of the stronger channels for app acquisition</li>
+                <li>Local business promotion using geofilters and proximity-based targeting</li>
+                <li>Product try-on and virtual experience campaigns for visually driven consumer categories</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Snapchat's CPMs are often 40–60% lower than Meta for the same young audience. If your target market is under 30, test Snapchat alongside TikTok and Instagram — you may find more efficient reach.</p>
+                <p>Snapchat CPMs are typically 40–60% lower than Meta for the same under-30 audience. If your core market is Gen Z or younger Millennials, test Snapchat alongside TikTok and Instagram Reels as part of a young-audience-first strategy — the efficiency gains on Snapchat can fund creative experimentation elsewhere. Always produce content in full-screen vertical format with the same authenticity-first approach that works on TikTok.</p>
             </div>
         `,
         quiz: {
@@ -1799,33 +1793,33 @@ Object.assign(lessonContent, {
         title: 'Pinterest Ads for Discovery Marketing',
         body: `
             <h2>Pinterest as a Visual Search Engine</h2>
-            <p>Pinterest isn't a social network in the traditional sense — it's a <strong>visual discovery and planning platform</strong>. Users come to Pinterest to find ideas, plan purchases, and discover new products. This makes Pinterest uniquely powerful for marketing because users have high commercial intent — they're actively looking for things to buy or try.</p>
+            <p>Pinterest is not a social network in the conventional sense — it is a <strong>visual discovery and planning platform</strong>. Users arrive with commercial intent: they are actively searching for ideas, products, and inspiration with a view to doing or buying something. This is what makes Pinterest structurally different from other social platforms, where users are primarily socialising or being entertained. On Pinterest, the user is already in planning mode when they encounter your ad.</p>
 
             <h2>Ad Formats</h2>
             <ul>
-                <li><strong>Standard Pins</strong> — Promoted static images that appear in search results and home feeds. The core ad format.</li>
-                <li><strong>Video Pins</strong> — Autoplay video content. Works well for tutorials, demos, and lifestyle content.</li>
-                <li><strong>Shopping Pins</strong> — Product pins with real-time pricing and availability pulled from your product catalogue. Users can purchase directly.</li>
-                <li><strong>Idea Pins</strong> — Multi-page, story-like content for inspiration and how-to content. Great for brand awareness and engagement.</li>
-                <li><strong>Carousel Pins</strong> — Multiple images users swipe through. Good for showcasing product collections or step-by-step processes.</li>
+                <li><strong>Standard Pins</strong> — Promoted static images appearing in search results and home feeds. The core performance format. Images should be tall (2:3 ratio), visually striking, and directly relevant to how users search on Pinterest.</li>
+                <li><strong>Video Pins</strong> — Autoplay video. Works well for tutorials, demos, step-by-step processes, and lifestyle content that shows a product in context.</li>
+                <li><strong>Shopping Pins</strong> — Product Pins with real-time pricing and availability from your product catalogue. Support direct purchase and are the primary format for e-commerce on Pinterest.</li>
+                <li><strong>Idea Pins</strong> — Multi-page, story-like content for inspiration and how-to content. Strong for top-of-funnel brand awareness and content that earns saves.</li>
+                <li><strong>Carousel Pins</strong> — Multiple swipeable images. Effective for showcasing product collections or sequential storytelling.</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>Pinterest content has an incredibly long lifespan. While a Facebook post dies in hours and a tweet in minutes, a Pin can drive traffic for months or years. This means your ad spend on Pinterest can generate compounding returns long after the campaign ends.</p>
+                <div class="callout-title">Key Concept: Content Longevity</div>
+                <p>Pinterest content has a lifespan measured in months and years, not hours. A Facebook post is effectively dead within a day; a well-optimised Pin can continue appearing in search results and feeds long after your campaign ends. This compounding characteristic means your investment in Pinterest creative has a longer return window than on any other social platform. It also means optimising your Pin titles and descriptions for search matters — Pinterest's algorithm treats keyword relevance seriously.</p>
             </div>
 
             <h2>Targeting on Pinterest</h2>
             <ul>
-                <li><strong>Keyword targeting</strong> — Target users searching for specific terms (like search advertising)</li>
-                <li><strong>Interest targeting</strong> — Reach users based on their pinning behaviour and interests</li>
-                <li><strong>Actalike audiences</strong> — Pinterest's version of lookalike audiences</li>
-                <li><strong>Shopping retargeting</strong> — Retarget users who viewed specific products</li>
+                <li><strong>Keyword targeting</strong> — Reach users searching for specific terms, similar in intent to search advertising. This is Pinterest's most valuable targeting layer for conversion campaigns.</li>
+                <li><strong>Interest targeting</strong> — Reach users based on their pinning behaviour and the content categories they engage with</li>
+                <li><strong>Actalike audiences</strong> — Pinterest's equivalent of lookalike audiences, finding new users similar to your existing converters</li>
+                <li><strong>Shopping retargeting</strong> — Retarget users who viewed specific products in your catalogue</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Plan Pinterest campaigns 2–3 months before seasonal events. Pinterest users plan ahead — they search for Christmas ideas in September and summer holiday inspiration in March. Start your seasonal campaigns earlier than on any other platform.</p>
+                <p>Launch Pinterest campaigns 2–3 months before seasonal peaks. Pinterest users plan significantly further ahead than on any other platform — searches for Christmas gift ideas peak in October, and summer travel inspiration begins in late winter. Being present early is a competitive advantage: the users who save your content in September will return to act on it in November.</p>
             </div>
         `,
         quiz: {
@@ -1847,38 +1841,35 @@ Object.assign(lessonContent, {
         title: 'Creative Testing Frameworks',
         body: `
             <h2>Why Structured Creative Testing Matters</h2>
-            <p>Random creative changes don't produce reliable insights. A <strong>structured testing framework</strong> ensures you learn something from every test, build on winning patterns, and continuously improve performance rather than guessing.</p>
+            <p>In a landscape where creative quality is the primary targeting signal on Meta and the primary performance driver on TikTok, systematic creative testing is no longer optional — it is the core of campaign management. Random creative changes produce unpredictable results and no reusable learning. A structured testing framework ensures that every test either confirms a winning pattern or rules out a hypothesis, building a body of knowledge you can apply across campaigns.</p>
 
             <h2>What to Test (In Priority Order)</h2>
             <ol>
-                <li><strong>Hook/opening</strong> — The first 1–3 seconds of video or the dominant visual element. This has the biggest impact on performance.</li>
-                <li><strong>Creative concept</strong> — The core idea or angle (testimonial vs demo vs problem/solution vs lifestyle)</li>
-                <li><strong>Format</strong> — Video vs image vs carousel</li>
-                <li><strong>Copy and CTA</strong> — Headlines, body text, and call-to-action variations</li>
-                <li><strong>Visual elements</strong> — Colours, fonts, layouts, product shots vs lifestyle images</li>
+                <li><strong>Concept and angle</strong> — The fundamental creative idea: testimonial, product demo, problem/solution, lifestyle, UGC-style, creator-led. This has the biggest impact on performance and should be the first variable you explore across genuinely distinct concepts.</li>
+                <li><strong>Hook/opening</strong> — The first 1–3 seconds of video or the dominant visual element. Once you have a winning concept, testing hooks is the fastest way to improve it further.</li>
+                <li><strong>Format</strong> — Video vs image vs carousel vs Spark Ad (TikTok). Different formats reach users in different modes of attention.</li>
+                <li><strong>Copy and CTA</strong> — Headlines, body text, and call-to-action phrasing. Test these after concept and hook.</li>
+                <li><strong>Visual elements</strong> — Colours, layouts, product shots versus lifestyle imagery. Fine-tuning once you have a winning creative direction.</li>
             </ol>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Test one variable at a time for clear learnings. If you change both the hook and the CTA simultaneously, you won't know which change caused the performance difference. Isolate variables to build reliable creative knowledge.</p>
+                <p>Test one variable at a time for reliable learnings. Changing both the hook and the CTA simultaneously means you cannot attribute the performance difference to either change. In Meta's Advantage+ environment, the algorithm is simultaneously testing creative combinations — so your testing framework should focus on concept-level differences, not minor executional variants that the AI will optimise between anyway.</p>
             </div>
 
             <h2>The Testing Process</h2>
             <ol>
-                <li><strong>Hypothesis</strong> — "Testimonial hooks will outperform product-first hooks because social proof drives trust"</li>
-                <li><strong>Create variations</strong> — Keep everything identical except the variable you're testing</li>
-                <li><strong>Run with equal budget</strong> — Give each variation the same spend to ensure fair comparison</li>
-                <li><strong>Wait for significance</strong> — Don't call a winner too early. Need enough data for reliable conclusions.</li>
-                <li><strong>Document and iterate</strong> — Record what you learned, then test the next variable on top of the winner</li>
+                <li><strong>Hypothesis</strong> — "Creator-led UGC hooks will outperform product-first hooks because authenticity drives trust with our audience"</li>
+                <li><strong>Create variations</strong> — Keep all other elements identical except the variable being tested</li>
+                <li><strong>Run with equal budget</strong> — Each variation needs equivalent spend for a fair comparison</li>
+                <li><strong>Wait for significance</strong> — Do not call a winner prematurely. You need enough conversion data, not just impressions.</li>
+                <li><strong>Document and iterate</strong> — Record the learning explicitly, then build the next test on top of the winner</li>
             </ol>
 
             <div class="callout callout-warning">
-                <div class="callout-title">Common Mistake</div>
-                <p>Calling a winner after just a few hundred impressions. You need statistically meaningful data — typically 1,000+ impressions per variant at minimum. Premature conclusions lead to false learnings that misdirect future creative decisions.</p>
+                <div class="callout-title">Common Mistake: Ignoring Creative Fatigue</div>
+                <p>Even the strongest creative fatigues — and on TikTok, this can happen within days. On Meta, watch for declining CTR, rising frequency (same users seeing the same ad too often), and increasing CPA. On TikTok, rotate creative every 2–4 weeks regardless of performance signals. The goal is to stay ahead of fatigue rather than react to it after performance has already dropped. Maintain a pipeline of new creative concepts that produces faster than existing ads tire.</p>
             </div>
-
-            <h2>Recognising Creative Fatigue</h2>
-            <p>Even winning creative eventually fatigues. Watch for: declining CTR over time, increasing CPA, rising frequency (same users seeing the ad too many times). When these signals appear, refresh creative with new hooks or concepts while maintaining winning elements.</p>
         `,
         quiz: {
             question: 'In creative testing priority, which element should you test FIRST?',
@@ -1897,10 +1888,10 @@ Object.assign(lessonContent, {
         title: 'Attribution and Cross-Platform Measurement',
         body: `
             <h2>The Attribution Challenge</h2>
-            <p>When a customer sees your ad on Instagram, clicks a Google ad a week later, and then converts through an email — who gets credit? <strong>Attribution</strong> is the process of assigning credit for conversions to the marketing touchpoints that influenced them. It's one of the hardest problems in digital marketing.</p>
+            <p>When a prospect sees your ad on Instagram, watches a TikTok creator mention your product three days later, clicks a Google search ad the following week, and then converts through an email link — how do you measure the contribution of each channel? <strong>Attribution</strong> is the process of assigning credit for conversions to the touchpoints that influenced them. It remains one of the most difficult problems in digital marketing, and the measurement landscape has become more complex as browser-based tracking has degraded.</p>
 
             <h2>Platform Attribution Windows</h2>
-            <p>Each ad platform has its own attribution settings that determine how it counts conversions:</p>
+            <p>Each platform uses its own attribution window — the period after an ad interaction during which it claims credit for a conversion:</p>
             <ul>
                 <li><strong>Meta</strong> — Default: 7-day click, 1-day view</li>
                 <li><strong>Google Ads</strong> — Default: 30-day click</li>
@@ -1910,21 +1901,18 @@ Object.assign(lessonContent, {
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Adding up conversions reported by each platform will always exceed your actual total conversions. Every platform takes credit for the same conversion if the user interacted with multiple channels. This is called <strong>double counting</strong> and is inevitable with platform-reported attribution.</p>
+                <p>Adding up each platform's reported conversions will always exceed your actual total. Every platform independently claims the same conversion when a user interacted with multiple channels before purchasing — this is called <strong>double counting</strong> and is inherent to platform-reported attribution. Treat platform numbers as internal optimisation signals, not as the source of truth for cross-channel business decisions.</p>
             </div>
 
-            <h2>Click-Through vs View-Through</h2>
-            <ul>
-                <li><strong>Click-through attribution</strong> — Credits a conversion when someone clicked your ad and later converted. Generally reliable and widely accepted.</li>
-                <li><strong>View-through attribution</strong> — Credits a conversion when someone saw (but didn't click) your ad and later converted elsewhere. More controversial — the ad may or may not have influenced the purchase.</li>
-            </ul>
+            <h2>The Role of CAPI in Measurement</h2>
+            <p>As browser-side tracking has become less reliable — due to cookie restrictions, iOS privacy changes, and ad blockers — server-side event tracking via the <strong>Conversions API (CAPI)</strong> has become essential for accurate measurement on Meta. CAPI closes the gap between what the platform's ad system delivered and what your Pixel reported, giving you a more complete view of which campaigns are genuinely driving conversions and which audiences to retarget.</p>
 
-            <h2>UTM Tracking for Cross-Platform Measurement</h2>
-            <p>Use <strong>UTM parameters</strong> on all ad URLs to track performance in Google Analytics, giving you a single source of truth across platforms. This won't solve attribution perfectly, but it provides a consistent baseline for comparing channel performance.</p>
+            <h2>LinkedIn's Revenue Attribution Report</h2>
+            <p>LinkedIn now offers a <strong>Revenue Attribution Report</strong> with <strong>Company Attribution</strong>, connecting campaign exposure at the company level to pipeline and revenue outcomes in your CRM. Rather than reporting only on leads, this lets you ask: did the companies we reached with LinkedIn ads convert at a higher rate into pipeline and closed revenue? For B2B advertisers, this is a meaningful step toward demonstrating channel impact at a business level, not just a marketing metrics level.</p>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>No attribution model is perfect. Use platform-reported data for optimising within each platform, UTM-tracked data in GA4 for cross-platform comparison, and incrementality testing for the most accurate picture of true impact.</p>
+                <div class="callout-title">Key Concept: Triangulate, Don't Pick One Model</div>
+                <p>No attribution model is perfect. Use platform-reported data for optimising within each platform, UTM-tracked GA4 data for consistent cross-platform comparison, and incrementality testing (hold-out groups, geo-lift studies) for the most accurate read on true incremental impact. Meta is moving toward a Generative Ad Model (GEM) where measurement will increasingly require first-party data integration — CAPI and clean customer data are the foundation of measurement in this direction.</p>
             </div>
         `,
         quiz: {
@@ -1944,35 +1932,35 @@ Object.assign(lessonContent, {
         title: 'Retargeting and Remarketing Strategies',
         body: `
             <h2>Why Retargeting Works</h2>
-            <p><strong>Retargeting</strong> shows ads to people who have already interacted with your brand — visited your website, engaged with your content, or started but didn't complete a purchase. It works because these users are already familiar with you, making them far more likely to convert than cold audiences.</p>
+            <p><strong>Retargeting</strong> reaches people who have already interacted with your brand — visited your website, engaged with your content, started but not completed a purchase. These users already have brand familiarity, which makes them far more likely to convert than cold prospects. Retargeting typically delivers the highest ROAS of any campaign type, which is why maintaining complete, accurate Custom Audiences through CAPI is so important — every missed event is a potential retargeting impression lost.</p>
 
             <h2>Types of Retargeting</h2>
             <ul>
-                <li><strong>Website retargeting</strong> — Show ads to people who visited specific pages. Create segments: all visitors, product page viewers, cart abandoners, past purchasers.</li>
-                <li><strong>Engagement retargeting</strong> — Target people who engaged with your social content, watched your videos (e.g., 75% video viewers), or interacted with your profile.</li>
-                <li><strong>Customer list retargeting</strong> — Upload your email list to re-engage existing customers with upsells or win-back campaigns.</li>
+                <li><strong>Website retargeting</strong> — Reach users who visited specific pages. Build segments by depth of intent: all visitors, product page viewers, add-to-cart without purchase, checkout initiated without completing. Each segment deserves its own creative and message.</li>
+                <li><strong>Engagement retargeting</strong> — Target users who engaged with your organic or paid social content: video viewers (50%, 75%, 95% watch time), profile visitors, post engagers. These users have shown interest without yet visiting your site.</li>
+                <li><strong>Customer list retargeting</strong> — Upload your CRM email list to reach existing customers with upsell, cross-sell, or win-back campaigns. This first-party data is increasingly valuable as cookie-based website retargeting becomes less complete.</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>Funnel-based retargeting delivers the best results. Instead of showing the same ad to all past visitors, tailor your message to where they are in the funnel: product education for page viewers, urgency and offers for cart abandoners, complementary products for past buyers.</p>
+                <div class="callout-title">Key Concept: Match the Message to the Funnel Stage</div>
+                <p>Funnel-based retargeting outperforms blanket retargeting because the message is relevant to where the user is in their decision process. A product page viewer needs education. A cart abandoner needs urgency and potentially an incentive. A past buyer needs an upsell or complementary product recommendation. Showing the same ad to all three is a waste of the targeting precision you have earned through their behaviour.</p>
             </div>
 
             <h2>Sequential Messaging</h2>
-            <p>Rather than blasting the same ad repeatedly, use <strong>sequential messaging</strong> — a series of ads that tell a story over time:</p>
+            <p>Rather than repeating the same ad, use <strong>sequential messaging</strong> — a planned series that advances the relationship over time:</p>
             <ol>
-                <li>Day 1–3: Remind them of the product they viewed</li>
-                <li>Day 4–7: Show social proof (reviews, testimonials)</li>
-                <li>Day 8–14: Offer an incentive (discount, free shipping)</li>
-                <li>Day 15+: Final urgency message or alternative product suggestions</li>
+                <li>Days 1–3: Reminder of the product they showed interest in</li>
+                <li>Days 4–7: Social proof — reviews, testimonials, or creator endorsements</li>
+                <li>Days 8–14: An incentive — limited-time offer, free delivery, or a bundle</li>
+                <li>Day 15+: Final urgency message, or pivot to alternative product suggestions if the original remains unconverted</li>
             </ol>
 
             <h2>Frequency Capping and Exclusions</h2>
-            <p>Showing the same ad too many times annoys users and wastes budget. Set <strong>frequency caps</strong> (e.g., maximum 3 impressions per person per day) and always <strong>exclude converters</strong> — there's no point retargeting someone who already bought.</p>
+            <p>High frequency in retargeting campaigns damages brand perception as much as it inflates your CPA. Set frequency caps (no more than 3 impressions per user per day in most cases) and maintain audience exclusions religiously.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Not excluding recent purchasers from retargeting campaigns. Nothing frustrates customers more than seeing ads for a product they already bought. Always add a purchaser exclusion audience updated in real time.</p>
+                <p>Failing to exclude recent purchasers from retargeting. Seeing an ad for a product you bought yesterday is a poor brand experience. Always maintain a real-time purchaser exclusion audience and apply it to every retargeting ad set. In Meta's Advantage+ environment, ensure these exclusions are set at the campaign level so they apply across all ad sets automatically.</p>
             </div>
         `,
         quiz: {
@@ -1992,34 +1980,34 @@ Object.assign(lessonContent, {
         title: 'Scaling Social Ad Spend Profitably',
         body: `
             <h2>Horizontal vs Vertical Scaling</h2>
-            <p>There are two fundamental approaches to scaling social ad spend:</p>
+            <p>Scaling social advertising spend means growing volume without proportionally degrading ROAS or CPA. Two complementary approaches:</p>
             <ul>
-                <li><strong>Vertical scaling</strong> — Increasing budget on existing winning campaigns. Simple but hits diminishing returns as the algorithm exhausts the best opportunities in your current audience.</li>
-                <li><strong>Horizontal scaling</strong> — Creating new campaigns targeting new audiences, testing new creative concepts, or expanding to new platforms. More sustainable for long-term growth.</li>
+                <li><strong>Vertical scaling</strong> — Increasing budget on existing winning campaigns. Fast to execute but hits diminishing returns as the algorithm works through the most efficient audience opportunities within your current setup.</li>
+                <li><strong>Horizontal scaling</strong> — Launching new creative concepts, expanding to new platforms, or testing new audience configurations. More work upfront but opens genuinely new inventory rather than just buying more of the same.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Sustainable scaling combines both approaches: vertically scale proven winners (gradually) while horizontally expanding with new audiences and creative. When vertical scaling hits diminishing returns, horizontal expansion opens new growth opportunities.</p>
+                <p>The primary limiter of social ad scaling is not budget or audience size — it is creative. As frequency rises with increased spend, the same creative reaches the same users more often, and performance degrades. The advertisers who scale most effectively are those with a creative production system that generates new concepts faster than existing ads fatigue. Budget without fresh creative hits a ceiling quickly.</p>
             </div>
 
             <h2>Budget Increase Pacing</h2>
-            <p>On Meta, increase budgets by no more than <strong>20% every 3–4 days</strong>. Larger jumps reset the learning phase, causing temporary performance drops while the algorithm recalibrates. On other platforms, similar gradual increases are recommended.</p>
+            <p>On Meta, increase budgets by no more than <strong>20% every 3–4 days</strong>. Larger jumps push campaigns back into a learning phase, causing temporary performance instability while the algorithm recalibrates. In Advantage+ campaigns, budget increases are generally better tolerated than in manually structured campaigns — but the 20% guideline remains a sensible default.</p>
 
             <h2>Creative Refresh Cadence</h2>
-            <p>Creative fatigue is the primary limiter of scaling. As you spend more, your audience sees ads more frequently, and performance degrades. Plan for:</p>
+            <p>Creative fatigue is the primary ceiling on scaling. Plan for it systematically rather than reactively:</p>
             <ul>
-                <li>New creative concepts every 2–4 weeks</li>
-                <li>3–5 active ads per ad set at all times</li>
-                <li>A creative pipeline that produces faster than ads fatigue</li>
+                <li>New creative concepts (not just variations) every 2–4 weeks on Meta; more frequently on TikTok, where fatigue arrives faster</li>
+                <li>Maintain 5–10 active creative concepts per Advantage+ campaign at all times, giving the algorithm meaningful diversity to distribute</li>
+                <li>Track frequency as your leading indicator — when frequency exceeds 3–4 in a 7-day window for retargeting, or the creative has been running 3+ weeks for prospecting, act before performance drops rather than after</li>
             </ul>
 
             <h2>Audience Expansion</h2>
-            <p>When your core audiences are saturated, expand by: testing broader Lookalike percentages (from 1% to 3–5%), layering new interest combinations, using Advantage+ audience suggestions, or testing new geographic markets.</p>
+            <p>When core audiences are saturated, Advantage+ Audience already handles expansion automatically — it will reach beyond your stated audience signals when it identifies better-performing users. For manual campaigns, test broader Lookalike percentages (from 1% to 3–5%) and new geographic markets. On TikTok, Smart+ with fully automated targeting is the equivalent lever.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Expecting the same CPA at 5x the spend. Scaling inherently means reaching less qualified audiences. Set realistic CPA targets that account for diminishing returns — a 20–30% increase in CPA may be acceptable if total profit grows.</p>
+                <p>Expecting the same CPA at 5x the spend. Scaling inherently involves reaching progressively less optimal users at progressively higher costs. Plan for a 20–30% CPA increase as you scale, and define in advance the maximum CPA you can accept while remaining profitable. If total volume and profit grow even with a higher CPA, scaling is working — the goal is not to preserve the CPA of your most efficient starting point.</p>
             </div>
         `,
         quiz: {
@@ -2039,31 +2027,31 @@ Object.assign(lessonContent, {
         title: 'UGC and Influencer-Driven Ads',
         body: `
             <h2>What Is UGC in Advertising?</h2>
-            <p><strong>User-generated content (UGC)</strong> in the advertising context means creative that looks like it was made by a real customer rather than a brand. This includes customer testimonials filmed on phones, unboxing videos, genuine product reviews, and content created by hired UGC creators who produce authentic-looking content for brands to use as ads.</p>
+            <p><strong>User-generated content (UGC)</strong> in the advertising context means creative that looks and feels as if it was made by a real person — a customer, a creator, or a product user — rather than a brand. This covers genuine customer testimonials filmed on phones, unboxing videos, honest product reviews, and content produced by commissioned UGC creators who deliver authentic-style content to a brand brief. Across Meta, TikTok, and increasingly LinkedIn, UGC-style and creator-led content consistently outperforms polished branded production.</p>
 
             <h2>Why UGC Outperforms Polished Creative</h2>
-            <p>Studies consistently show UGC-style ads generate higher engagement and conversion rates than professionally produced brand creative. The reasons:</p>
             <ul>
-                <li><strong>Trust</strong> — People trust other people more than brands. A real person recommending a product feels like a friend's recommendation.</li>
-                <li><strong>Native feel</strong> — UGC looks like organic content, so users don't immediately recognise it as an ad and are less likely to scroll past.</li>
-                <li><strong>Relatability</strong> — Seeing someone like yourself using a product is more persuasive than a model in a studio.</li>
+                <li><strong>Trust</strong> — People trust other people more than they trust brands. A genuine recommendation from a real person carries social proof that no amount of production budget can replicate.</li>
+                <li><strong>Native feel</strong> — UGC looks like organic content in the feed. Users do not immediately pattern-match it as advertising and are less likely to scroll past before the message registers.</li>
+                <li><strong>Relatability</strong> — Seeing someone who resembles your target customer using and endorsing a product is more persuasive than a brand spokesman or studio model.</li>
+                <li><strong>Platform fit</strong> — On TikTok especially, creator-led content is the platform's native language. Polished ads read as foreign objects in the For You feed; UGC reads as content.</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>There's a difference between organic UGC (content customers create voluntarily) and commissioned UGC (content you pay creators to produce). Both work in ads, but commissioned UGC gives you control over messaging while maintaining an authentic aesthetic.</p>
+                <div class="callout-title">Key Concept: Spark Ads and Thought Leader Ads</div>
+                <p>Two platform-native formats make UGC and creator content directly operable as ads. <strong>Spark Ads</strong> (TikTok) boost existing organic TikTok posts — yours or a creator's — as paid ads, retaining all likes, comments, and shares. They feel completely native and consistently outperform standard video uploads. <strong>Thought Leader Ads</strong> (LinkedIn) do the same for executive or employee organic posts, allowing you to amplify an individual's authentic voice to a targeted professional audience — far more credible than a brand-published equivalent.</p>
             </div>
 
             <h2>Sourcing UGC</h2>
             <ul>
-                <li><strong>Customer content</strong> — Ask happy customers if you can use their reviews or photos in ads. Incentivise with discounts.</li>
-                <li><strong>UGC creators</strong> — Hire creators from platforms like Fiverr, Billo, or dedicated UGC marketplaces to produce content to your brief.</li>
-                <li><strong>Influencer whitelisting</strong> — Run ads through an influencer's account (with their permission), combining their credibility with your targeting and budget.</li>
+                <li><strong>Customer content</strong> — Ask satisfied customers if you can use their reviews, testimonials, or photos in paid ads. Incentivise with discounts or early access.</li>
+                <li><strong>Commissioned UGC creators</strong> — Hire creators from platforms such as Billo or dedicated UGC marketplaces to produce content to your brief. This gives you creative control and a consistent production pipeline.</li>
+                <li><strong>Influencer whitelisting</strong> — Run ads through an influencer's account with their permission, combining their audience credibility with your targeting precision and media budget.</li>
             </ul>
 
             <div class="callout callout-warning">
-                <div class="callout-title">Common Mistake</div>
-                <p>Using customer content in ads without written permission. Always get explicit consent before using someone's likeness, testimonial, or content in paid advertising. This protects you legally and maintains trust with your community.</p>
+                <div class="callout-title">Common Mistake: Missing AI Content Disclosure</div>
+                <p>If UGC-style creative is generated or substantially altered using AI — AI-generated faces, AI-synthesised voiceover, AI-edited footage presented as authentic customer content — mandatory disclosure is now required globally. This applies on Meta, TikTok, and LinkedIn. Beyond the platform compliance requirement, undisclosed AI-generated "customer" content that is later identified as synthetic can cause serious reputational damage. Always get explicit written permission before using any real customer's likeness or testimonial in paid advertising — and disclose AI involvement where it applies.</p>
             </div>
         `,
         quiz: {
@@ -2083,31 +2071,31 @@ Object.assign(lessonContent, {
         title: 'Building a Multi-Platform Social Strategy',
         body: `
             <h2>Why Multi-Platform Matters</h2>
-            <p>Relying on a single platform is risky — algorithm changes, policy updates, or account issues can devastate your business overnight. A multi-platform strategy diversifies risk and reaches audiences at different touchpoints throughout their day.</p>
+            <p>Concentrating all social advertising spend on a single platform creates structural risk — algorithm changes, policy updates, ad account restrictions, or shifts in user behaviour on one platform can all have immediate business impact. A multi-platform strategy distributes that risk and reaches audiences across the different contexts in which they exist throughout their day: professionally on LinkedIn, entertained on TikTok, socialising on Instagram, planning on Pinterest.</p>
 
             <h2>Channel Mix Planning</h2>
-            <p>Not every platform deserves equal investment. Allocate budget based on:</p>
+            <p>Allocate budget based on genuine strategic rationale, not channel familiarity:</p>
             <ul>
-                <li><strong>Audience presence</strong> — Where do your ideal customers spend the most time?</li>
-                <li><strong>Platform strengths</strong> — Match platform capabilities to your objectives (Meta for broad reach, LinkedIn for B2B, TikTok for awareness with younger audiences)</li>
-                <li><strong>Performance data</strong> — Shift budget toward platforms delivering the best cost-per-acquisition</li>
-                <li><strong>Funnel role</strong> — Different platforms may serve different funnel stages</li>
+                <li><strong>Audience presence</strong> — Which platforms does your target buyer actually use? Start there, not with what is trending.</li>
+                <li><strong>Platform capability match</strong> — Meta's Advantage+ for broad B2C reach and retargeting; LinkedIn for B2B targeting with CRM-connected revenue measurement; TikTok's Smart+ for creator-led, younger-audience campaigns; Pinterest for high-intent discovery in visual categories; Microsoft Advertising's Copilot placements for professional audiences in search contexts.</li>
+                <li><strong>Performance data</strong> — Shift budget incrementally toward platforms delivering the best cost-per-acquisition as evidence accumulates. Do not hold budget allocation static across platforms.</li>
+                <li><strong>Funnel role</strong> — Assign platforms to funnel stages where they are strongest: TikTok and Meta for upper-funnel demand generation, LinkedIn for mid-funnel B2B consideration, retargeting on all platforms for conversion.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>A common effective split: 60% of budget on your primary platform (where you have the most data and best results), 25% on your secondary platform, and 15% for testing new platforms. Adjust based on performance.</p>
+                <p>A practical starting split: 60% of budget on your primary platform (where you have the most conversion data and strongest results), 25% on your secondary platform, 15% for testing. The important principle is that allocation should follow performance evidence, not assumptions. Review and adjust at least monthly based on cost-per-acquisition by platform, not just by cost-per-click.</p>
             </div>
 
             <h2>Consistent Messaging, Platform-Native Creative</h2>
-            <p>Your core message and offer should be consistent across platforms, but the creative execution must be native to each platform. A polished Instagram carousel should not be copy-pasted to TikTok, where a raw, authentic video performs better. Adapt the format while keeping the message aligned.</p>
+            <p>Your core value proposition and offer must be consistent across platforms — but the creative execution must be native to each environment. A polished Instagram carousel repurposed as a TikTok video will underperform significantly against creator-led content built for TikTok's native feel. A LinkedIn Thought Leader Ad needs a different voice than a Meta video ad. Adapt the format, tone, and style to the platform while keeping the underlying message aligned.</p>
 
             <h2>Cross-Platform Reporting</h2>
-            <p>Build a unified dashboard that shows performance across all platforms side by side. Use consistent UTM conventions so Google Analytics can compare channels fairly. Track both platform-reported metrics and GA4-reported metrics to get the full picture.</p>
+            <p>Build a unified reporting view across all platforms. Use consistent UTM conventions on all ad URLs so GA4 provides a comparable baseline across channels. Combine platform-reported metrics (for within-platform optimisation) with GA4 data (for cross-channel comparison) and, where budget allows, incrementality testing (for true impact measurement). LinkedIn's Revenue Attribution Report adds pipeline and revenue data for B2B advertisers, providing a dimension that other platforms currently cannot match.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Use cross-platform retargeting sequences. Someone who watches your TikTok video (awareness) can be retargeted on Meta (consideration) and then Google Search (conversion). This funnel approach uses each platform's strength at the right moment.</p>
+                <p>Use cross-platform sequencing to guide prospects through the funnel: TikTok Spark Ads for top-of-funnel awareness with younger audiences; Meta Advantage+ for retargeting those who engaged; LinkedIn for B2B mid-funnel consideration; Google Search to capture the intent that social advertising has built. Each platform handles the moment it is strongest at, and the sequence uses them all in combination rather than in competition.</p>
             </div>
         `,
         quiz: {
