@@ -3749,30 +3749,30 @@ Object.assign(lessonContent, {
     'gr-1-2': {
         title: 'The Growth Framework: Acquisition, Activation, Retention',
         body: `
-            <h2>The Pirate Metrics Deep Dive</h2>
-            <p>The <strong>AARRR framework</strong> (Pirate Metrics) maps the complete customer lifecycle into five stages. Understanding each stage helps you identify where your biggest growth opportunities and bottlenecks are.</p>
+            <h2>Using AARRR as a Diagnostic Tool</h2>
+            <p>The <strong>AARRR framework</strong> maps the complete customer lifecycle into five measurable stages. Its purpose is not to run campaigns sequentially, stage by stage, but to reveal where the biggest drop-off is happening so you can direct resources there first. A team that identifies their leakiest stage and fixes it will almost always see a greater return than one that invests across all stages simultaneously without prioritising the constraint.</p>
             <ul>
-                <li><strong>Acquisition</strong> — How do users find you? (SEO, ads, referrals, social media)</li>
-                <li><strong>Activation</strong> — Do users have a great first experience? (sign-up completion, first value moment, onboarding success)</li>
-                <li><strong>Retention</strong> — Do users come back? (return visits, repeat purchases, continued engagement)</li>
-                <li><strong>Revenue</strong> — Do users pay or generate value? (conversions, purchases, upgrades)</li>
-                <li><strong>Referral</strong> — Do users tell others? (shares, referral invites, word-of-mouth)</li>
+                <li><strong>Acquisition</strong> — How do users find you? (SEO, paid, referrals, social media, product-led virality)</li>
+                <li><strong>Activation</strong> — Do users reach their first value moment? (sign-up completion, onboarding, initial success)</li>
+                <li><strong>Retention</strong> — Do users come back and keep finding value? (return visits, repeat purchases, sustained engagement)</li>
+                <li><strong>Revenue</strong> — Do users pay or generate economic value? (conversions, upgrades, expansion revenue)</li>
+                <li><strong>Referral</strong> — Do users bring others? (invites, shares, word-of-mouth, built-in viral loops)</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Most companies over-invest in Acquisition and under-invest in Activation and Retention. But improving retention from 5% to 10% doubles your recurring user base over time. Fixing a leaky bucket is more impactful than pouring more water into it.</p>
+                <p>Retention is the foundation of sustainable growth. Most teams over-invest in Acquisition and under-invest in Activation and Retention. A business improving monthly retention from 70% to 80% does not simply increase its user base by 10% — the compounding effect of keeping more users longer is exponential. Fixing retention first, before scaling acquisition, is always the correct sequencing. Pouring acquisition spend into a product that does not retain users is not growth — it is expensive churn disguised as progress.</p>
             </div>
 
-            <h2>The North Star Metric</h2>
-            <p>A <strong>North Star Metric</strong> is the single metric that best captures the core value your product delivers to customers. Examples: Airbnb = nights booked, Slack = messages sent, Spotify = time spent listening. It aligns the entire growth team around one measurable goal.</p>
+            <h2>The North Star Metric in Practice</h2>
+            <p>A North Star Metric defines exactly what "growth" means for your business. Without it, teams optimise different things — acquisition volume, engagement time, revenue, NPS — and pull in different directions. With it, every experiment and every cross-functional initiative has a shared measure of success. Define yours by asking: what is the single action a user takes that most predicts long-term retention and revenue? That action, measured at scale, is your North Star.</p>
 
             <h2>Growth Accounting</h2>
-            <p><strong>Growth accounting</strong> breaks down user growth into its components: new users + reactivated users − churned users = net growth. This reveals whether growth is coming from acquiring new users or retaining existing ones — crucial for deciding where to focus.</p>
+            <p><strong>Growth accounting</strong> decomposes net user growth into its components: new users + reactivated users − churned users = net growth. This is essential because headline growth numbers can conceal structural problems. A business adding 1,000 new users per month while churning 950 has a very different health profile than one adding 200 and churning 10. Growth accounting makes retention visible in the growth number, rather than hidden beneath it.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Map your AARRR funnel with real numbers. Calculate the conversion rate between each stage. The stage with the biggest drop-off is your highest-leverage growth opportunity. A 10% improvement at the biggest bottleneck will have more impact than a 50% improvement at a minor one.</p>
+                <p>Map your AARRR funnel with real conversion rates at every stage. The stage with the biggest percentage drop-off is your highest-leverage growth opportunity. A 10% improvement at the biggest bottleneck delivers more absolute users at the bottom of the funnel than a 50% improvement at a minor stage. Always work on the constraint, not the comfortable.</p>
             </div>
         `,
         quiz: {
@@ -3792,39 +3792,42 @@ Object.assign(lessonContent, {
         title: 'Finding Your Growth Levers',
         body: `
             <h2>Quantitative Funnel Analysis</h2>
-            <p>Finding growth levers starts with mapping your funnel with real data. For each stage of AARRR, calculate the conversion rate and the absolute number of users. This reveals where users drop off and where small improvements would have the biggest absolute impact.</p>
+            <p>Finding growth levers starts with mapping your funnel with real data. For each stage of AARRR, calculate both the conversion rate and the absolute number of users moving through. This reveals simultaneously where users drop off and where a small improvement would have the largest downstream impact.</p>
             <p>Example funnel:</p>
             <ul>
-                <li>10,000 visitors → 500 sign-ups (5% conversion)</li>
-                <li>500 sign-ups → 100 activated users (20% activation)</li>
+                <li>10,000 visitors → 500 sign-ups (5% acquisition conversion)</li>
+                <li>500 sign-ups → 100 activated users (20% activation rate)</li>
                 <li>100 activated → 40 retained at month 2 (40% retention)</li>
                 <li>40 retained → 15 paid conversions (37.5% monetisation)</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>In this example, improving activation from 20% to 30% adds 50 more activated users — more impactful than increasing traffic by 50% (which only adds 25 more activated users at the same 20% rate). Work on the biggest percentage drop-off first.</p>
+                <p>In this example, improving activation from 20% to 30% adds 50 more activated users per cycle — more impactful than increasing traffic by 50%, which at the same 20% activation rate only adds 25 more activated users. Retention is typically the highest-leverage lever of all: improving it improves every downstream metric (revenue, referral, LTV) without requiring more users at the top. Always work on the biggest constraint, not the most familiar one.</p>
             </div>
 
+            <h2>Product-Led Growth as a Lever</h2>
+            <p><strong>Product-led growth (PLG)</strong> is now a mainstream growth strategy, not an advanced one reserved for tech companies. PLG uses the product itself as the primary acquisition and retention mechanism. Freemium models, in-product viral loops, activation triggers, and usage-based upgrade prompts are all PLG levers. If your product delivers value quickly enough that users bring others to it — or refer it without incentive — you have the beginnings of a product-led loop. Common PLG levers include: free tier with usage limits that drive natural upgrade, collaboration features that spread the product within organisations, and in-product share mechanisms that generate external visibility without paid spend.</p>
+
             <h2>ICE Scoring for Opportunities</h2>
-            <p>Once you've identified potential growth levers, prioritise them using the <strong>ICE framework</strong>:</p>
+            <p>Once you have identified potential growth levers, prioritise them using the <strong>ICE framework</strong>:</p>
             <ul>
-                <li><strong>Impact</strong> — How much improvement will this drive? (1–10)</li>
-                <li><strong>Confidence</strong> — How sure are you it will work? (1–10)</li>
-                <li><strong>Ease</strong> — How easy is it to implement? (1–10)</li>
+                <li><strong>Impact</strong> — How much will this move the North Star Metric? (1–10)</li>
+                <li><strong>Confidence</strong> — How sure are you it will work, based on data or precedent? (1–10)</li>
+                <li><strong>Ease</strong> — How fast and easy is this to implement? (1–10)</li>
             </ul>
-            <p>Score = Impact × Confidence × Ease. Tackle the highest-scoring items first.</p>
+            <p>ICE Score = Impact × Confidence × Ease. Work from the highest score down. Re-score regularly as you learn from completed tests.</p>
 
             <h2>Quick Wins vs Strategic Bets</h2>
-            <p>A balanced growth strategy combines both:</p>
+            <p>A balanced growth portfolio combines both:</p>
             <ul>
-                <li><strong>Quick wins</strong> — High confidence, high ease, moderate impact. Ship fast, build momentum, and learn.</li>
-                <li><strong>Strategic bets</strong> — High impact, lower confidence, more effort. These can transform your growth trajectory but require patience and iteration.</li>
+                <li><strong>Quick wins</strong> — High confidence, high ease, moderate impact. Ship fast, build momentum, and generate learnings that inform bigger bets.</li>
+                <li><strong>Strategic bets</strong> — High impact, lower confidence, more effort. These can transform the growth trajectory but require patience and iteration. PLG features, referral systems, and major onboarding redesigns typically fall here.</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Always have 2–3 quick wins in progress alongside 1 strategic bet. Quick wins maintain team momentum and produce learnings, while strategic bets pursue step-change improvements. All quick wins and no big swings leads to local optimisation without breakthrough growth.</p>
+                <p>Maintain two or three quick wins running alongside one strategic bet at all times. Quick wins maintain team momentum and keep the learning velocity high; the strategic bet pursues the step-change improvement that quick wins alone cannot produce. All quick wins with no big swings leads to local optimisation without breakthrough growth. All strategic bets with no quick wins leads to months without learnings and teams that lose confidence in the process.</p>
             </div>
         `,
         quiz: {
@@ -3846,36 +3849,36 @@ Object.assign(lessonContent, {
         title: 'A/B Testing Fundamentals',
         body: `
             <h2>What Is A/B Testing?</h2>
-            <p>An <strong>A/B test</strong> (or split test) compares two versions of a page, email, or ad to determine which performs better. Half your audience sees Version A (the control), half sees Version B (the variant), and you measure which version achieves more conversions, clicks, or whatever metric you're optimising for.</p>
+            <p>An <strong>A/B test</strong> (or split test) compares two versions of a page, email, ad, or in-product flow to determine which performs better on a defined metric. Half the audience sees Version A (the control — what currently exists), half sees Version B (the variant — the change being tested). A/B testing is a tool used by both growth experiments and optimisation work — the difference is what is being tested and how much prior evidence exists that the change will move the needle. Understanding this distinction prevents teams from applying optimisation rigour to genuinely exploratory tests, or experimental chaos to known conversion levers.</p>
 
             <h2>The Testing Process</h2>
             <ol>
-                <li><strong>Form a hypothesis</strong> — "Changing the CTA from 'Learn More' to 'Start Free Trial' will increase sign-ups because it's more specific and action-oriented."</li>
-                <li><strong>Create the variant</strong> — Change only one element at a time so you know exactly what caused the difference.</li>
-                <li><strong>Determine sample size</strong> — Calculate how much traffic you need for a statistically valid result (use a sample size calculator).</li>
-                <li><strong>Run the test</strong> — Split traffic evenly and let it run until you reach statistical significance.</li>
-                <li><strong>Analyse and act</strong> — If there's a clear winner, implement it. Document the learning regardless of outcome.</li>
+                <li><strong>Form a hypothesis</strong> — "Changing the CTA from 'Learn More' to 'Start Free Trial' will increase sign-ups because it communicates specific action and implied low commitment." Every test should have a hypothesis that includes the mechanism — not just a prediction, but a reason.</li>
+                <li><strong>Create the variant</strong> — Change one element at a time so the result is attributable to a specific change.</li>
+                <li><strong>Determine sample size</strong> — Calculate the required sample before launching (use a sample size calculator). This determines how long the test runs — not the calendar.</li>
+                <li><strong>Run the test</strong> — Split traffic evenly and let it run to the pre-determined sample size without intervention.</li>
+                <li><strong>Analyse and decide</strong> — If there is a clear winner with practical significance (not just statistical significance), implement it. Document the learning in full regardless of outcome.</li>
             </ol>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Every test produces a learning, whether it wins, loses, or draws. A "failed" test that shows no difference tells you that element isn't a driver of user behaviour — which is valuable information that prevents future wasted effort.</p>
+                <p>AI tools embedded in testing platforms — Optimizely, VWO, and others — now generate test variations automatically, suggest hypotheses based on behavioural data, and segment results by audience without manual analysis. This accelerates experimentation velocity significantly. It does not, however, replace hypothesis-driven thinking. AI can generate a hundred variant combinations; it cannot tell you which underlying assumption about user behaviour is worth testing. The hypothesis — why you think this change will work — remains a human responsibility.</p>
             </div>
 
             <h2>Common Elements to Test</h2>
             <ul>
-                <li>Headlines and value propositions</li>
+                <li>Headlines and value propositions — the highest-impact single element on most pages</li>
                 <li>CTA button text, colour, and placement</li>
-                <li>Form length and fields</li>
+                <li>Form length and number of fields</li>
                 <li>Page layout and content order</li>
-                <li>Pricing presentation</li>
-                <li>Social proof placement and type</li>
-                <li>Images and hero sections</li>
+                <li>Pricing presentation and anchoring</li>
+                <li>Social proof type, placement, and specificity</li>
+                <li>Hero images and opening video</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Ending tests too early because one variant looks better after a day. Early results are often misleading due to small sample sizes and temporal effects (different types of users visit at different times). Always wait for your pre-determined sample size before calling a result.</p>
+                <p>Ending tests early because one variant looks better after a day or two. Early results are misleading due to small sample sizes and temporal effects — different types of users visit at different times of the week, creating apparent patterns that disappear once enough data accumulates. Set your required sample size before the test starts and commit to reaching it before calling a result. No exceptions for promising-looking early data.</p>
             </div>
         `,
         quiz: {
@@ -3895,33 +3898,34 @@ Object.assign(lessonContent, {
         title: 'Statistical Significance and Sample Size',
         body: `
             <h2>What Is Statistical Significance?</h2>
-            <p><strong>Statistical significance</strong> is the likelihood that the difference between your test variants is real and not due to random chance. The standard threshold is <strong>95% confidence</strong> — meaning there's only a 5% probability that the observed difference happened by chance.</p>
+            <p><strong>Statistical significance</strong> is the likelihood that the difference observed between test variants reflects a real effect rather than random variation. The standard threshold is <strong>95% confidence</strong> — meaning there is only a 5% probability that the observed difference arose by chance. Reaching this threshold tells you the result is probably real. It does not tell you the result is meaningful, large enough to act on, or worth the implementation cost. Those are separate questions.</p>
 
             <h2>Key Statistical Concepts</h2>
             <ul>
-                <li><strong>P-value</strong> — The probability that the observed result occurred by chance. A p-value below 0.05 (5%) is considered statistically significant at the 95% confidence level.</li>
-                <li><strong>Confidence interval</strong> — The range within which the true difference likely falls. Narrower intervals mean more precise results.</li>
-                <li><strong>Statistical power</strong> — The probability of detecting a real difference when one exists. Aim for 80% power minimum.</li>
+                <li><strong>P-value</strong> — The probability that the observed result arose by chance. A p-value below 0.05 meets the 95% confidence threshold.</li>
+                <li><strong>Confidence interval</strong> — The range within which the true effect likely falls. A wide interval (e.g., +2% to +18%) indicates imprecision; a narrow one (e.g., +8% to +12%) indicates a reliable estimate. Always review this alongside the p-value.</li>
+                <li><strong>Statistical power</strong> — The probability of detecting a real effect when one exists. Aim for 80% power minimum. Under-powered tests miss real effects and waste the traffic spent running them.</li>
+                <li><strong>Effect size</strong> — The magnitude of the difference between variants. A statistically significant improvement of 0.1% in conversion rate is real but inconsequential. Effect size answers whether the result matters, not just whether it exists.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Statistical significance doesn't mean the result is important — it means it's unlikely to be random. A statistically significant 0.1% improvement in conversion rate is real but may not be worth implementing. Always consider practical significance alongside statistical significance.</p>
+                <p>Statistical significance is not a stopping rule — it is one input into the decision. A result at 95% confidence with an effect size of 0.2% on a low-traffic page is technically real but practically irrelevant: the improvement is too small to justify implementation effort. Always evaluate three things together: Is the result statistically significant? Is the effect size large enough to matter in a business context? Is the result consistent across enough time and user segments to be trusted? All three questions must have satisfactory answers before calling a test and shipping the winner.</p>
             </div>
 
             <h2>Calculating Sample Size</h2>
-            <p>Before starting a test, calculate the minimum sample size needed. This depends on:</p>
+            <p>Before starting a test, calculate the minimum required sample size. This depends on:</p>
             <ul>
-                <li><strong>Baseline conversion rate</strong> — Your current conversion rate</li>
-                <li><strong>Minimum detectable effect</strong> — The smallest improvement you care about (e.g., 10% relative improvement)</li>
-                <li><strong>Significance level</strong> — Typically 95% (p < 0.05)</li>
-                <li><strong>Statistical power</strong> — Typically 80%</li>
+                <li><strong>Baseline conversion rate</strong> — Your current rate for the metric being tested</li>
+                <li><strong>Minimum detectable effect (MDE)</strong> — The smallest relative improvement that would be worth implementing (typically 10–20% relative lift)</li>
+                <li><strong>Significance level</strong> — 95% confidence (p &lt; 0.05) is standard</li>
+                <li><strong>Statistical power</strong> — 80% is the standard minimum</li>
             </ul>
-            <p>Use free online calculators (Evan Miller's, Optimizely's) to determine your required sample size. This tells you how long the test needs to run.</p>
+            <p>Use free sample size calculators (Evan Miller's, Optimizely's AB test calculator) to determine the required sample before launching. This tells you how long the test must run — and commits you to that duration before you see results.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>"Peeking" at results before reaching the required sample size and stopping the test when one variant looks better. This inflates your false positive rate dramatically. Set your sample size in advance and commit to running the test to completion.</p>
+                <p>Stopping a test at 95% statistical significance without checking effect size or practical significance. A team that sees p = 0.04 and immediately ships the variant has made a complete-but-misleading decision. If the conversion rate improvement is 0.3% on a page that generates 50 conversions per month, the business impact is near zero — regardless of the p-value. Always calculate the absolute business impact of the observed effect before deciding whether the result justifies shipping.</p>
             </div>
         `,
         quiz: {
@@ -3941,30 +3945,27 @@ Object.assign(lessonContent, {
         title: 'Building an Experimentation Culture',
         body: `
             <h2>Why Culture Matters More Than Tools</h2>
-            <p>The most sophisticated testing tools are worthless without a culture that values experimentation. An experimentation culture means the organisation makes decisions based on evidence rather than opinions, treats failures as learning opportunities, and continuously tests assumptions.</p>
+            <p>The most sophisticated testing infrastructure is worthless without a culture that values evidence over opinion. An experimentation culture means the organisation makes decisions based on what the data shows, treats failed tests as valuable learnings rather than embarrassments, and continuously tests assumptions rather than defending them. This is far harder to build than any tool or process — it requires changing how people relate to being wrong.</p>
 
             <h2>Getting Organisational Buy-In</h2>
             <ul>
-                <li><strong>Start with a visible win</strong> — Run one high-impact test, share the results widely, and quantify the revenue impact. Nothing sells experimentation like a proven result.</li>
-                <li><strong>Frame tests as risk reduction</strong> — "Instead of rebuilding the entire landing page based on a hunch, let's test the headline change first." Testing reduces the risk of expensive mistakes.</li>
-                <li><strong>Make results accessible</strong> — Share test results in a central place (wiki, dashboard, Slack channel). Transparency builds trust in the process.</li>
-                <li><strong>Celebrate learnings, not just wins</strong> — A test that disproves a hypothesis is as valuable as one that confirms it. Both advance your understanding.</li>
+                <li><strong>Start with a visible win</strong> — Run one high-impact test, share the results widely, and quantify the revenue or conversion impact. Nothing builds credibility for experimentation faster than a proven result that connects directly to a business outcome stakeholders care about.</li>
+                <li><strong>Frame tests as risk reduction</strong> — "Instead of rebuilding the entire page based on a hypothesis, let's test the headline change first and use what we learn to decide whether a bigger investment is justified." Testing limits the downside of being wrong.</li>
+                <li><strong>Make results accessible</strong> — Share test results in a central repository (wiki, Notion, Confluence, a shared dashboard). Transparency prevents the same test being run twice and builds institutional trust in the process over time.</li>
+                <li><strong>Celebrate learnings from failures</strong> — A test that disproves a hypothesis is as operationally valuable as one that confirms it. Both advance collective understanding of user behaviour. Teams that only celebrate wins create incentives for reporting bias.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>In a healthy experimentation culture, "I don't know — let's test it" is a badge of intellectual honesty, not a sign of incompetence. The best growth teams have the humility to admit they can't predict user behaviour and the discipline to test their assumptions.</p>
+                <p>In a healthy experimentation culture, "I don't know — let's test it" reflects intellectual honesty, not weakness. Growth teams that build this culture have the humility to admit they cannot reliably predict user behaviour and the discipline to generate evidence before committing resources. AI tools embedded in platforms like Optimizely and VWO now accelerate the mechanical parts of experimentation — generating variations, segmenting results automatically, flagging statistical thresholds. This raises experimentation velocity without requiring more human resource per test. What AI cannot do is generate the hypothesis: the informed belief about why a change will move behaviour. That still requires human understanding of the customer.</p>
             </div>
 
-            <h2>Experimentation Velocity</h2>
-            <p><strong>Experimentation velocity</strong> — the number of tests run per time period — is a leading indicator of growth. Top growth teams run 10–30+ experiments per month. Higher velocity means faster learning and faster compounding of improvements.</p>
-
-            <h2>Team Structure</h2>
-            <p>Dedicated experimentation requires: someone to generate hypotheses (product/growth), someone to implement tests (engineering/design), someone to analyse results (analytics), and someone to prioritise the backlog (growth lead). Small teams can cover this with 2–3 people wearing multiple hats.</p>
+            <h2>Experimentation Velocity and Cross-Functional Structure</h2>
+            <p><strong>Experimentation velocity</strong> — the number of meaningful tests run per month — is a leading indicator of growth. Top growth teams run 10–30+ experiments per month. This requires a cross-functional team structure: someone generating hypotheses (product/growth), someone implementing tests (engineering/design), someone analysing results (data), and someone owning prioritisation (growth lead). Growth experiments cannot sit in marketing alone — tests that require product changes, engineering work, or design resource need those functions at the table from the start.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Maintain a test archive documenting every experiment: hypothesis, variants, results, and learnings. This institutional knowledge prevents re-running failed tests and compounds insights over time. It's one of the most valuable assets a growth team can build.</p>
+                <p>Maintain a test archive documenting every experiment: the hypothesis, the variant, the result, and the learning — whether the test won or lost. This institutional knowledge prevents re-running failed tests, provides the evidence base for prioritising future experiments, and is one of the most durable assets a growth team can build. A team that has documented 200 tests knows things about its users that no competitor can buy.</p>
             </div>
         `,
         quiz: {
@@ -3984,38 +3985,38 @@ Object.assign(lessonContent, {
         title: 'Prioritisation Frameworks: ICE and RICE',
         body: `
             <h2>Why Prioritisation Matters</h2>
-            <p>Growth teams always have more ideas than capacity. Without a systematic way to prioritise, teams default to working on whatever the loudest stakeholder wants or whatever seems most exciting. Prioritisation frameworks bring objectivity to these decisions.</p>
+            <p>Growth teams always have more ideas than capacity. Without a systematic prioritisation process, teams default to working on whatever the loudest stakeholder advocates for, whatever seems most exciting, or whatever is easiest to ship — none of which reliably produces the highest return. Prioritisation frameworks bring structured objectivity to these decisions and ensure the team is consistently working on the highest-leverage opportunities relative to the North Star Metric, not the most comfortable ones.</p>
 
             <h2>ICE Framework</h2>
-            <p>Score each idea on three dimensions (1–10 scale):</p>
+            <p>Score each idea on three dimensions on a 1–10 scale:</p>
             <ul>
-                <li><strong>Impact</strong> — How much will this move the needle on our target metric?</li>
-                <li><strong>Confidence</strong> — How sure are we about the estimated impact? (Based on data, past results, or just a hunch?)</li>
-                <li><strong>Ease</strong> — How easy and fast is this to implement?</li>
+                <li><strong>Impact</strong> — How much will this move the North Star Metric or the specific stage metric it targets? The key word is move — directional scoring based on evidence, not optimism.</li>
+                <li><strong>Confidence</strong> — How certain are we about the estimated impact? Score based on quality of evidence: prior test data (high confidence), adjacent industry data (medium), gut instinct (low).</li>
+                <li><strong>Ease</strong> — How fast and easy is this to implement, accounting for engineering, design, and data requirements?</li>
             </ul>
-            <p><strong>ICE Score = Impact × Confidence × Ease</strong></p>
+            <p><strong>ICE Score = Impact × Confidence × Ease</strong>. Work from highest score down. The score is a forcing mechanism, not a verdict — the team still reviews the ranked list with judgement before committing.</p>
 
             <h2>RICE Framework</h2>
-            <p>RICE adds a Reach dimension, making it more suitable for product and feature decisions:</p>
+            <p>RICE adds a Reach dimension that makes it more suitable for product and feature decisions where you can estimate how many users will be affected:</p>
             <ul>
-                <li><strong>Reach</strong> — How many users/customers will this affect per quarter? (Use a real number, not a 1–10 scale)</li>
-                <li><strong>Impact</strong> — How much will it affect each person? (Scale: 3 = massive, 2 = high, 1 = medium, 0.5 = low, 0.25 = minimal)</li>
-                <li><strong>Confidence</strong> — How confident are you? (100% = high, 80% = medium, 50% = low)</li>
-                <li><strong>Effort</strong> — Person-months of work required</li>
+                <li><strong>Reach</strong> — How many users will this affect per quarter? Use a real number, not a 1–10 score.</li>
+                <li><strong>Impact</strong> — How much will it affect each person? (3 = massive, 2 = high, 1 = medium, 0.5 = low, 0.25 = minimal)</li>
+                <li><strong>Confidence</strong> — How confident are you in the impact estimate? (100% = high evidence, 80% = medium, 50% = low)</li>
+                <li><strong>Effort</strong> — Person-months of work required across all functions involved</li>
             </ul>
             <p><strong>RICE Score = (Reach × Impact × Confidence) ÷ Effort</strong></p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>ICE is simpler and better for quick prioritisation of experiments and growth ideas. RICE is more precise and better for product feature decisions where you can estimate reach accurately. Choose the framework that fits your team's needs and stick with it consistently.</p>
+                <p>ICE is faster and better for scoring experiments and growth ideas quickly. RICE is more precise and better for cross-functional product features where reach can be estimated with data. Pick one framework and apply it consistently — inconsistent scoring methodology is worse than no scoring at all because it creates the illusion of objectivity without the reality. Calibrate your framework over time by comparing scores given to ideas against the actual outcomes of those that were tested.</p>
             </div>
 
             <h2>Building a Prioritised Backlog</h2>
-            <p>Score every idea, rank by score, and work from the top. Review and re-score monthly as you learn from completed tests and market conditions change. The backlog should be a living document, not a static list.</p>
+            <p>Score every new idea before it enters the backlog. Rank by score. Work from the top. Review and re-score the full backlog monthly — scores change as you learn from completed tests, as market conditions evolve, and as your North Star Metric shifts focus. The backlog is a living document, not a static to-do list.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Scoring inflated by enthusiasm bias. Team members naturally score their own ideas higher. Combat this by having multiple people score each idea independently, then averaging the scores. Calibrate by reviewing past scores against actual outcomes.</p>
+                <p>Enthusiasm bias inflating scores. Team members score their own ideas higher than colleagues' ideas of equal merit. Combat this by having at least two people score each idea independently before comparing and averaging. Then calibrate: after six months, compare initial ICE scores with actual test outcomes. If high-scoring ideas consistently underperform, your scoring is systematically optimistic somewhere — usually in the Impact dimension. Recalibrate the scoring scale to match what your tests actually produce.</p>
             </div>
         `,
         quiz: {
@@ -4037,35 +4038,35 @@ Object.assign(lessonContent, {
         title: 'CRO Foundations: Where to Start',
         body: `
             <h2>What Is CRO?</h2>
-            <p><strong>Conversion Rate Optimisation (CRO)</strong> is the systematic process of increasing the percentage of website visitors who take a desired action — purchasing, signing up, filling out a form, or any other goal. CRO makes your existing traffic more valuable without needing to acquire more visitors.</p>
+            <p><strong>Conversion Rate Optimisation (CRO)</strong> is the systematic process of increasing the percentage of website visitors who take a desired action — purchasing, signing up, completing a form, or any other goal. CRO is fundamentally <strong>optimisation</strong> work — it refines what already exists based on clear signals about where users struggle. It is distinct from growth experimentation, which tests genuinely unknown territory. CRO works on known conversion paths: checkout flows, landing pages, sign-up forms, pricing pages. The goal is to remove friction and clarify value in journeys that are already receiving meaningful traffic.</p>
 
             <h2>The CRO Process</h2>
             <ol>
-                <li><strong>Research</strong> — Understand how users currently behave and where they struggle</li>
-                <li><strong>Hypothesise</strong> — Form data-backed hypotheses about what changes would improve conversion</li>
-                <li><strong>Test</strong> — Run A/B tests to validate or invalidate hypotheses</li>
-                <li><strong>Learn</strong> — Document results and apply learnings to the next round of hypotheses</li>
+                <li><strong>Research</strong> — Understand how users currently behave and where they abandon</li>
+                <li><strong>Hypothesise</strong> — Form data-backed hypotheses about what specific change would reduce a specific friction</li>
+                <li><strong>Test</strong> — Run an A/B test to validate or invalidate the hypothesis with statistical rigour</li>
+                <li><strong>Learn and apply</strong> — Document results, extract the behavioural insight, and inform the next round of hypotheses</li>
             </ol>
 
             <h2>Research Methods</h2>
             <ul>
-                <li><strong>Quantitative (what)</strong> — Analytics data showing where users drop off, which pages have high exit rates, and where conversion bottlenecks exist</li>
-                <li><strong>Qualitative (why)</strong> — User surveys, interviews, and feedback revealing why users don't convert</li>
-                <li><strong>Heatmaps</strong> — Visual representations of where users click, scroll, and hover on your pages</li>
-                <li><strong>Session recordings</strong> — Watch real user sessions to see exactly how they interact with your site</li>
+                <li><strong>Quantitative (what)</strong> — GA4 funnel explorations, landing page reports, and exit rate analysis showing where users drop off and which pages have the highest abandonment</li>
+                <li><strong>Qualitative (why)</strong> — User surveys, customer interviews, and on-site feedback revealing why users do not convert — the motivation behind the data</li>
+                <li><strong>Heatmaps</strong> — Visual representations of where users click, scroll, and focus on a page. Reveals whether users reach the CTA, what they interact with most, and what they ignore entirely.</li>
+                <li><strong>Session recordings</strong> — Watch real user sessions to observe exactly how people interact with your pages: where they hesitate, what they re-read, where they abandon</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Quantitative data tells you WHERE users drop off. Qualitative data tells you WHY. You need both. Analytics might show 70% of users abandon at the pricing page, but only user feedback reveals it's because they're confused by the tier structure.</p>
+                <p>Quantitative data tells you WHERE users drop off. Qualitative data tells you WHY. Both are required for effective CRO. Analytics might show 70% of users abandon at the pricing page — but only qualitative research reveals it is because the tier structure is confusing, not because the price itself is wrong. Without the why, you will optimise the wrong thing and wonder why conversion rates do not improve despite running tests.</p>
             </div>
 
             <h2>Where to Start</h2>
-            <p>Begin with your highest-traffic pages that have the worst conversion rates. These pages represent the biggest opportunity — many visitors are seeing them, but few are converting. A small improvement on a high-traffic page has a larger absolute impact than a big improvement on a low-traffic page.</p>
+            <p>Begin with your highest-traffic pages that have the worst conversion rates. This combination — high traffic, low conversion — represents the greatest recoverable value. A 2% improvement on a page that 10,000 people visit monthly is worth more in absolute conversions than a 20% improvement on a page with 500 monthly visitors. Always start where the volume is, because that is where the mathematics of CRO are most favourable.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Install a heatmap and session recording tool (like Hotjar or Microsoft Clarity — Clarity is free) on your top 5 pages. Watch 20–30 session recordings per page. You'll spot usability issues and confusion points that analytics alone would never reveal.</p>
+                <p>Install a heatmap and session recording tool (Hotjar or Microsoft Clarity — Clarity is free) on your five highest-traffic pages before forming any hypotheses. Watch 20–30 session recordings per page. You will spot usability issues, confusion points, and unexpected user behaviours that analytics data would never surface. Most CRO hypotheses should be validated against qualitative evidence before committing to a test — recordings and heatmaps are how you build that evidence efficiently.</p>
             </div>
         `,
         quiz: {
@@ -4085,34 +4086,34 @@ Object.assign(lessonContent, {
         title: 'Landing Page Optimisation',
         body: `
             <h2>Anatomy of a High-Converting Landing Page</h2>
-            <p>The best landing pages follow a proven structure that addresses visitor psychology step by step:</p>
+            <p>High-converting landing pages address visitor psychology in a deliberate sequence. The visitor arrives with a question — "Can this solve my problem?" — and leaves if the answer is not immediately convincing. Structure your page to answer that question as quickly and clearly as possible, then build the case for action progressively:</p>
             <ol>
-                <li><strong>Hero section</strong> — Clear headline stating the core benefit, supporting subheadline, and primary CTA. Visitors should understand your offer within 5 seconds.</li>
-                <li><strong>Problem agitation</strong> — Describe the pain point your audience faces. Show you understand their situation.</li>
-                <li><strong>Solution</strong> — Present your product/service as the answer. Highlight key benefits, not just features.</li>
-                <li><strong>Social proof</strong> — Testimonials, logos, case studies, review ratings, user counts. Reduce perceived risk.</li>
-                <li><strong>Objection handling</strong> — FAQ section addressing common concerns (pricing, commitment, alternatives).</li>
-                <li><strong>Final CTA</strong> — Repeat the primary call to action with urgency or a final persuasive point.</li>
+                <li><strong>Hero section</strong> — A clear headline stating the core benefit, a supporting subheadline, and a primary CTA. Visitors should understand what you offer and for whom within five seconds of arriving.</li>
+                <li><strong>Problem framing</strong> — Describe the situation your audience is in. Show that you understand their problem before offering the solution.</li>
+                <li><strong>Solution</strong> — Present your product or service as the answer. Lead with benefits — what the user gets — rather than features — what the product does.</li>
+                <li><strong>Social proof</strong> — Testimonials, client logos, case study results, review ratings, and user counts. Each element reduces the perceived risk of taking action.</li>
+                <li><strong>Objection handling</strong> — A FAQ section addressing the most common reasons people do not convert: pricing concerns, commitment level, comparison with alternatives, and implementation questions.</li>
+                <li><strong>Final CTA</strong> — Repeat the primary call to action with a final persuasive point or a reason to act now rather than later.</li>
             </ol>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Your headline is the single most important element — 80% of visitors read the headline but only 20% read the rest. If your headline doesn't clearly communicate the core benefit and grab attention, nothing else matters.</p>
+                <p>The headline is the single most important element on any landing page. Approximately 80% of visitors read the headline; only 20% read the rest. If your headline does not clearly communicate the core benefit in plain language — immediately, without needing to read further — a significant proportion of visitors will leave before the rest of your page has any chance to persuade them. The highest-value A/B tests on most landing pages are headline tests. Start there.</p>
             </div>
 
-            <h2>Headline Formulas</h2>
+            <h2>Headline Formulas That Work</h2>
             <ul>
-                <li><strong>Benefit-focused:</strong> "Get [Desired Outcome] Without [Pain Point]"</li>
-                <li><strong>Specific result:</strong> "Increase Your Conversion Rate by 30% in 14 Days"</li>
-                <li><strong>Question:</strong> "Tired of Wasting Money on Ads That Don't Convert?"</li>
+                <li><strong>Benefit-focused:</strong> "Get [Desired Outcome] Without [Pain Point]" — leads with value, acknowledges the cost</li>
+                <li><strong>Specific result:</strong> "Increase Your Conversion Rate by 30% in 14 Days" — specificity creates credibility</li>
+                <li><strong>Problem-led:</strong> "Tired of [Specific Frustration]?" — resonates immediately with the right audience</li>
             </ul>
 
             <h2>Above the Fold</h2>
-            <p>Everything visible without scrolling (above the fold) must communicate: what you offer, who it's for, what the primary benefit is, and what the visitor should do next. If any of these are unclear above the fold, you'll lose visitors before they scroll.</p>
+            <p>Everything visible before scrolling must answer four questions: what is this? Who is it for? What is the primary benefit? What should I do next? If any of these is unclear in the hero section, visitors will leave before engaging with the rest of the page. Test your page with people who have not seen it before — if they cannot answer all four questions after five seconds, the hero section needs work.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Run the 5-second test: show your landing page to someone for 5 seconds, then take it away. Ask them: "What does this company do? What's the main benefit? What should you do next?" If they can't answer all three, your page needs work.</p>
+                <p>Run the five-second test: show your landing page to someone unfamiliar with it for five seconds, then take it away. Ask: what does this company do, what is the main benefit, and what should you do next? If they cannot answer all three clearly, your hero section is not working hard enough. This test costs nothing and consistently surfaces the most important clarity problems on any page before you commit to an A/B test.</p>
             </div>
         `,
         quiz: {
@@ -4132,36 +4133,36 @@ Object.assign(lessonContent, {
         title: 'Form Optimisation and Friction Reduction',
         body: `
             <h2>Why Forms Are Conversion Killers</h2>
-            <p>Forms are where many conversions die. Users have decided to take action, but the form creates enough friction to make them abandon. Research shows that reducing form fields from 11 to 4 can increase conversions by up to 120%. Every unnecessary field is a barrier.</p>
+            <p>Forms are where many conversions die. A user has made the decision to take action — and then the form creates enough friction to make them abandon before completing it. Research consistently shows that reducing form fields dramatically increases completion rates. Every unnecessary field is not just useless; it is actively costing you conversions. The question to ask about every field is not "is this information useful?" but "is this information worth the conversions it costs us?"</p>
 
             <h2>Reducing Form Fields</h2>
             <ul>
-                <li><strong>Only ask for what you need now</strong> — You can collect additional information later through progressive profiling</li>
-                <li><strong>Remove optional fields</strong> — If it's optional, do you really need it?</li>
-                <li><strong>Combine fields where possible</strong> — "Full Name" instead of separate first and last name fields</li>
-                <li><strong>Use auto-detection</strong> — Detect country from IP, city from postcode, use smart address lookup</li>
+                <li><strong>Only ask for what you need now</strong> — Additional information can be collected later through progressive profiling once the user is in your system</li>
+                <li><strong>Remove optional fields entirely</strong> — If it is optional, you do not need it at this step. Move it to a later interaction or remove it completely.</li>
+                <li><strong>Combine fields where possible</strong> — "Full Name" instead of separate first and last name; single address field with smart lookup instead of five separate fields</li>
+                <li><strong>Use auto-detection for known data</strong> — Country detected from IP, city from postcode, phone format from country selection</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Each additional form field reduces conversions by roughly 5–10%. A 10-field form will convert at roughly half the rate of a 3-field form. The question isn't "is this information useful?" but "is this information worth the conversions it costs?"</p>
+                <p>Each additional form field reduces completion rates by approximately 5–10%. A ten-field form converts at roughly half the rate of a three-field form collecting the same essential data. The paradox is that the extra information the longer form collects is largely useless — because a large proportion of the users who would have converted do not. Less information about more customers beats more information about fewer customers in almost every commercial scenario.</p>
             </div>
 
             <h2>Multi-Step Forms</h2>
-            <p><strong>Multi-step forms</strong> break long forms into smaller, manageable steps. They typically outperform single-page long forms because: each step feels easy, users feel committed after completing early steps (sunk cost), and progress indicators create momentum.</p>
+            <p><strong>Multi-step forms</strong> break longer forms into smaller steps that each feel manageable. They typically outperform single-page long forms for three reasons: each individual step feels easy, users feel committed after completing early steps and are more likely to continue, and progress indicators create forward momentum that single-page forms cannot replicate. Lead with the easiest, lowest-friction fields in Step 1 — name, email — so users commit before reaching the fields with higher perceived cost.</p>
 
             <h2>Reducing Friction Points</h2>
             <ul>
-                <li><strong>Smart defaults</strong> — Pre-select the most common option. If 80% of users choose "monthly billing," make it the default.</li>
-                <li><strong>Inline validation</strong> — Show errors immediately as users fill fields, not after they submit. "Email format invalid" next to the field is far less frustrating than a red page of errors after clicking submit.</li>
-                <li><strong>Progress indicators</strong> — Show "Step 2 of 3" so users know how much is left.</li>
-                <li><strong>Mobile-optimised inputs</strong> — Use the correct input types (tel for phone, email for email) so mobile keyboards match the expected input.</li>
-                <li><strong>Micro-copy</strong> — Small helper text explaining why you need certain information or what will happen next. "We'll send your free guide to this email" reduces anxiety about sharing an email address.</li>
+                <li><strong>Smart defaults</strong> — Pre-select the most common option. If 80% of users choose monthly billing, make it the default. Changing a default requires active effort; defaults that reflect majority behaviour reduce friction for most users.</li>
+                <li><strong>Inline validation</strong> — Show field errors immediately as users type, not after they attempt to submit. A red page of errors after clicking submit is one of the most frustrating experiences in digital products.</li>
+                <li><strong>Progress indicators</strong> — "Step 2 of 3" tells users how much remains and prevents abandonment driven by uncertainty about the length of the process.</li>
+                <li><strong>Mobile-optimised inputs</strong> — Use the correct HTML input types (tel for phone numbers, email for email addresses) so mobile keyboards automatically display the right format.</li>
+                <li><strong>Micro-copy</strong> — Small helper text explaining why you need a field or what will happen next. "We will send your guide to this address" reduces anxiety about sharing contact information.</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Watch session recordings of users filling out your forms. You'll spot confusion, hesitation, and abandonment points that analytics data alone can't reveal. Common issues: confusing labels, unclear error messages, and unexpected required fields.</p>
+                <p>Watch session recordings of users filling out your forms before designing any test. Common problems that analytics alone cannot surface: confusing field labels, unclear error messages, unexpected required fields, and mobile keyboard mismatches that force users to switch manually. One hour of form recordings almost always produces three to five specific, testable hypotheses worth more than any generic "reduce fields" heuristic applied without evidence.</p>
             </div>
         `,
         quiz: {
@@ -4183,30 +4184,30 @@ Object.assign(lessonContent, {
         title: 'Growth Loops vs Funnels',
         body: `
             <h2>The Limitations of Funnel Thinking</h2>
-            <p>The traditional marketing funnel (awareness → consideration → conversion) is a useful mental model but has a fundamental flaw: it treats customers as an output. Once someone converts, they exit the funnel. This ignores the most powerful growth engine — existing customers driving new customers.</p>
+            <p>The traditional marketing funnel — awareness → consideration → conversion — is a useful planning tool but has a structural flaw: it treats converted customers as an endpoint. Once someone converts, they exit the model. This ignores the most powerful growth engine available: existing customers driving new customers. Funnel thinking also requires constant new input at the top to maintain output. Growth loops work differently.</p>
 
             <h2>What Are Growth Loops?</h2>
-            <p>A <strong>growth loop</strong> is a self-reinforcing system where the output of one cycle becomes the input of the next. Unlike funnels (which require constant new input at the top), loops compound — each cycle creates more fuel for the next.</p>
+            <p>A <strong>growth loop</strong> is a self-reinforcing system where the output of one cycle becomes the input of the next. Unlike funnels, loops compound — each cycle creates more fuel for the next cycle without requiring proportionally more input. The most durable businesses have at least one meaningful loop operating. Many have several overlapping loops that reinforce each other.</p>
 
             <h2>Types of Growth Loops</h2>
             <ul>
-                <li><strong>Content loop</strong> — Create content → content ranks in search → visitors arrive → some create content or share → more content → more visitors. Example: Wikipedia, Reddit, Quora.</li>
-                <li><strong>Viral loop</strong> — User joins → user invites others → new users join → they invite more. Example: WhatsApp, Dropbox, Calendly.</li>
-                <li><strong>Paid loop</strong> — Spend on ads → acquire customers → customers generate revenue → reinvest profit into more ads. Sustainable when LTV > CAC.</li>
-                <li><strong>UGC loop</strong> — Users create content → content attracts new users → new users create content. Example: YouTube, TikTok, Airbnb reviews.</li>
+                <li><strong>Product-led viral loop</strong> — User joins and uses the product → usage creates a natural sharing moment → new users join through the product → they create the same sharing moments. Examples: Calendly (every meeting link is an invitation), Figma (every shared design is a recruitment event), Dropbox (sharing files requires the recipient to engage with the product).</li>
+                <li><strong>Content loop</strong> — Create content → content ranks in search and earns AI citations → visitors arrive → some become users who generate further content, reviews, or shares → more content → more visitors. Wikipedia, Reddit, and Tripadvisor all run this loop.</li>
+                <li><strong>UGC loop</strong> — Users create content → content attracts new users → new users create content. YouTube, TikTok, and Airbnb reviews all operate this way.</li>
+                <li><strong>Paid loop</strong> — Spend on acquisition → customers generate revenue → reinvest profit in acquisition. This is only sustainable when LTV exceeds CAC with sufficient margin to fund the next cycle.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>The most durable businesses are powered by growth loops, not funnels. Funnels require constant spending to maintain. Loops, once spinning, generate their own momentum. The best companies have multiple overlapping loops.</p>
+                <p>Product-led growth (PLG) is now a mainstream growth strategy, not an advanced one. PLG uses the product itself as the primary acquisition mechanism — the product spreads through usage, not just marketing. Freemium models, collaboration features that spread products within organisations, usage-based triggers for upgrading, and in-product share mechanics are all PLG patterns. If your product delivers enough value quickly enough that users bring others to it without incentive, you have the foundation of a product-led loop. This is the most capital-efficient form of growth available because acquisition costs are embedded in product design rather than media spend.</p>
             </div>
 
             <h2>Designing Your Growth Loop</h2>
-            <p>Map your business's natural loop: What do users do after converting? How does their activity create value that attracts new users? Where can you reduce friction or add incentives to accelerate the loop? Even if your business isn't inherently viral, there's usually a loop to discover and optimise.</p>
+            <p>Map your business's natural loop by asking: what do users do after they convert? How does their ongoing usage create visibility or value that attracts new users? Where can you reduce friction or build an explicit sharing moment into the product or experience to accelerate the loop? Even businesses without inherent virality usually have a loop — often a content loop or referral loop — that can be designed and optimised.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Identify which loop your business naturally supports. Not every business can build a viral loop — and that's fine. A strong content loop or paid loop can be equally powerful. Choose the loop type that matches your business model and strengths.</p>
+                <p>Identify which loop your business can naturally support and build there first. Not every business has a viable viral loop — forcing one onto a product that does not have a natural sharing moment produces weak results and frustrated teams. A strong content loop or paid loop can be equally powerful and is far more sustainable if it fits the business model. Match the loop type to your economics and user behaviour, then invest in accelerating it. Retention is the foundation of every loop — a loop built on customers who churn quickly produces a slow cycle, not a compounding one.</p>
             </div>
         `,
         quiz: {
@@ -4226,31 +4227,31 @@ Object.assign(lessonContent, {
         title: 'Viral Loops and Referral Systems',
         body: `
             <h2>Understanding Viral Mechanics</h2>
-            <p>Virality isn't magic — it's a measurable system. The key metric is the <strong>viral coefficient (K-factor)</strong>: the average number of new users each existing user generates. If K > 1, you have true viral growth (each user brings more than one new user). If K < 1, virality amplifies other acquisition channels but doesn't sustain growth alone.</p>
+            <p>Virality is not magic — it is a measurable system with specific inputs that can be diagnosed and improved. The key metric is the <strong>viral coefficient (K-factor)</strong>: the average number of new users each existing user generates. If K is greater than 1, you have true viral growth — each user brings more than one new user, creating exponential expansion. If K is less than 1, virality amplifies other acquisition channels without sustaining growth independently. Both are valuable; only one compounds without other inputs.</p>
 
             <h2>K-Factor Formula</h2>
-            <p><strong>K = Number of invites sent per user × Conversion rate of invitations</strong></p>
-            <p>If each user invites 5 friends and 20% accept, K = 5 × 0.2 = 1.0. To increase K, either increase the number of invitations or improve the invitation conversion rate.</p>
+            <p><strong>K = Number of invitations sent per user × Conversion rate of invitations</strong></p>
+            <p>If each user invites 5 people and 20% accept, K = 5 × 0.2 = 1.0. To improve K, you have two levers: increase the number of invitations sent per user (product design, triggers, incentives), or improve the conversion rate of those invitations (the quality of the invitation, the landing experience for the invited user, the perceived value of joining).</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Very few products achieve K > 1 sustainably. But even a K of 0.5 means your paid acquisition effectively gets you 50% more users for free (each 100 acquired users bring 50 more). Sub-viral loops are still extremely valuable.</p>
+                <p>Very few products achieve K above 1 sustainably. But even a K of 0.5 means your paid acquisition generates 50% more users for free — each 100 acquired users bring 50 more. Sub-viral loops are valuable and worth engineering deliberately. The most capital-efficient businesses combine a sub-viral referral loop with a strong retention foundation: retained users refer over longer periods, which multiplies the effective K compared to a high-churn product where most users leave before referring anyone.</p>
             </div>
 
             <h2>Designing Referral Programmes</h2>
             <ul>
-                <li><strong>Two-sided incentives</strong> — Reward both the referrer AND the new user. Dropbox's "Get 500MB for you AND your friend" was more effective than rewarding only one side.</li>
-                <li><strong>Make referring effortless</strong> — One-click sharing, pre-written messages, unique referral links. Every friction point reduces invitations sent.</li>
-                <li><strong>Time the ask right</strong> — Ask for referrals after the user has experienced value (their "aha moment"), not during sign-up before they understand the product.</li>
-                <li><strong>Choose the right incentive</strong> — Product-related rewards (free months, credits, features) outperform cash for most products because they reinforce product engagement.</li>
+                <li><strong>Two-sided incentives</strong> — Reward both the referrer and the new user. Dropbox's model gave storage to both sides, aligning the incentive with the product's core value proposition.</li>
+                <li><strong>Make referring effortless</strong> — One-click sharing, pre-written messages, unique referral links, and in-product triggers at natural sharing moments. Every additional step reduces invitations sent.</li>
+                <li><strong>Time the ask correctly</strong> — Ask for referrals after the user has experienced genuine value — their first meaningful success with the product — not during sign-up before they understand what they have. Asking too early produces low-quality referrals from users who have not yet been activated.</li>
+                <li><strong>Match the incentive to the product</strong> — Product-related rewards (free months, credits, additional features, storage) consistently outperform cash for most products because they reinforce product engagement rather than treating referral as a transaction.</li>
             </ul>
 
             <h2>Network Effects</h2>
-            <p>The most powerful form of viral growth comes from <strong>network effects</strong> — when a product becomes more valuable as more people use it. Social networks, communication tools, and marketplaces have inherent network effects. If your product becomes more useful with each new user, you have a powerful natural growth loop.</p>
+            <p>The most structurally powerful form of viral growth comes from <strong>network effects</strong> — when the product becomes more valuable as more people use it. Social networks, communication tools, marketplaces, and productivity tools with collaboration features have inherent network effects. If your product becomes genuinely more useful to existing users as new users join, you have a compounding advantage that no amount of marketing spend can replicate. Product-led growth at its strongest is a network effect embedded in the product design itself.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Track your referral programme with the same rigour as paid advertising. Measure: referral rate (% of users who refer), invitations per referrer, invitation conversion rate, and LTV of referred users vs non-referred. Referred users typically have 16–25% higher LTV.</p>
+                <p>Track your referral programme with the same analytical rigour as paid acquisition. Measure: referral rate (percentage of users who refer at least once), invitations per referrer, invitation conversion rate, and LTV of referred users compared to non-referred. Referred users typically have 16–25% higher LTV than acquisition-sourced users, because they arrive with social proof and are entering a context where someone they know already values the product. This LTV premium is the business case for investing in referral as a serious acquisition channel, not an afterthought.</p>
             </div>
         `,
         quiz: {
@@ -4270,33 +4271,31 @@ Object.assign(lessonContent, {
         title: 'Building Scalable Growth Systems',
         body: `
             <h2>From Tactics to Systems</h2>
-            <p>Individual growth tactics (a new ad campaign, a referral programme, a landing page optimisation) produce one-time improvements. <strong>Growth systems</strong> are repeatable processes that produce compounding results over time. The difference between a growth tactic and a growth system is the difference between catching a fish and building a fishing operation.</p>
+            <p>Individual growth tactics — a new ad campaign, a referral programme, a landing page test — produce one-time improvements. <strong>Growth systems</strong> are repeatable processes that produce compounding results over time. The difference is whether the improvement requires the team to do the work again to get the next increment of benefit, or whether the system continues generating improvements after the initial build. Sustainable growth comes from systems, not from stacking tactics.</p>
 
             <h2>Systematising Growth Processes</h2>
             <ul>
-                <li><strong>Experiment pipeline</strong> — A constant flow of hypotheses being generated, prioritised, tested, and documented. This should never stop.</li>
-                <li><strong>Content engine</strong> — A repeatable process for producing, distributing, and optimising content that drives organic growth.</li>
-                <li><strong>Paid acquisition machine</strong> — Systematic creative testing, audience expansion, and budget scaling with clear rules and triggers.</li>
-                <li><strong>Referral system</strong> — An always-on programme that generates new users from existing ones.</li>
+                <li><strong>Experiment pipeline</strong> — A constant, structured flow of hypotheses being generated, scored with ICE/RICE, tested, and documented with learnings. This process should never stop and never go empty.</li>
+                <li><strong>Content engine</strong> — A repeatable process for creating, repurposing, distributing, and auditing content that drives organic acquisition. Video-first production with one-piece-many-formats repurposing is the most efficient current structure.</li>
+                <li><strong>Paid acquisition system</strong> — Systematic creative testing, audience expansion, and budget scaling governed by explicit rules: at what ROAS does budget scale, at what frequency does creative rotate, which signals trigger campaign changes.</li>
+                <li><strong>Retention system</strong> — Onboarding flows, engagement triggers, and re-activation sequences that systematically improve the percentage of users who reach and maintain their first value moment. Retention is the foundation — without it, every other system runs backwards.</li>
+                <li><strong>Referral programme</strong> — An always-on mechanism that generates new users from existing ones, with K-factor tracking and regular optimisation of invitation triggers and incentives.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>The best growth systems compound. Your experiment pipeline produces learnings that improve your content engine, which feeds data into your paid acquisition machine, which grows the user base that powers your referral system. Each system makes the others stronger.</p>
+                <p>Growth systems compound and reinforce each other. The experiment pipeline generates learnings that improve the content engine; better content grows the user base; a larger user base produces more data for experimentation; better experiments improve activation and retention; improved retention powers the referral system. Each system strengthens every other. This is why growth teams that invest in building systems over time consistently outperform teams that optimise individual campaigns — the compounding structure multiplies every marginal improvement.</p>
             </div>
 
-            <h2>Growth Team Structure</h2>
-            <p>A growth team typically includes: a growth lead (strategy and prioritisation), a product/UX person (design and user experience), an engineer (implementation), a data analyst (measurement and insights), and a marketer (channels and creative). Small companies start with 1–2 people covering multiple roles.</p>
+            <h2>Cross-Functional Growth Team Structure</h2>
+            <p>A scalable growth system requires a cross-functional team, not a marketing silo. The core roles are: a growth lead who owns strategy, prioritisation, and the North Star Metric; a product or UX person who handles experience design and in-product changes; an engineer who implements test variants and system infrastructure; a data analyst who ensures measurement quality and extracts insights; and a marketer who manages acquisition channels and creative. In smaller companies, two or three people cover multiple roles — but the functions must all be represented in growth decisions, even if the org chart does not reflect it.</p>
 
-            <h2>Growth Models</h2>
-            <p>Build a <strong>growth model</strong> — a spreadsheet or tool that maps the relationships between your key metrics. If you improve activation by 10%, how does that cascade through retention, revenue, and referral? A growth model lets you simulate scenarios and focus on the highest-leverage improvements.</p>
-
-            <h2>Compounding Growth</h2>
-            <p>Growth compounds when each improvement builds on previous ones. A 5% monthly improvement in conversion rate doesn't just add up — it multiplies. After 12 months, that's a 79% total improvement, not 60%. This is why consistent, systematic optimisation beats sporadic big bets.</p>
+            <h2>The Growth Model</h2>
+            <p>Build a <strong>growth model</strong> — a spreadsheet or tool that maps the quantitative relationships between your key metrics, anchored to the North Star Metric. If you improve activation by 10%, how does that cascade through retention, revenue, and referral? If you increase your viral coefficient from 0.3 to 0.4, what is the compounding effect on user growth over 12 months? A growth model lets you simulate scenarios before running experiments, prioritise the highest-leverage interventions, and make the case for investment in specific system improvements with credible projections rather than intuition.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Track "experiments per month" as a team metric. The number of experiments you run correlates more strongly with growth results than any individual experiment's outcome. Velocity of learning is the meta-skill that drives everything else.</p>
+                <p>Track experiments per month as a team metric alongside the North Star Metric. The number of well-structured experiments run correlates more strongly with growth results than any individual experiment's outcome. The team that learns fastest wins — not because every test succeeds, but because the cumulative understanding of user behaviour that comes from a high-velocity experiment programme compounds into structural advantages that cannot be bought or copied quickly. Velocity of learning is the meta-skill that drives everything else.</p>
             </div>
         `,
         quiz: {

@@ -1028,60 +1028,35 @@ const lessonContent = {
         title: 'What is Growth Marketing?',
         body: `
             <h2>Growth Marketing Defined</h2>
-            <p>Growth marketing is a data-driven, experiment-led approach to marketing that focuses on the entire customer lifecycle — not just acquisition. While traditional marketing often focuses on getting people through the door, growth marketing optimises every stage: acquisition, activation, retention, revenue, and referral.</p>
+            <p>Growth marketing is a data-driven, experiment-led approach that optimises the entire customer lifecycle — not just acquisition. Rather than focusing on driving awareness and hoping the rest follows, growth marketing treats every stage of the customer journey as a lever: getting people in, giving them a great first experience, keeping them, generating revenue, and turning them into advocates. The defining characteristic is that every decision is grounded in evidence, and every assumption is a candidate for a test.</p>
 
-            <h2>Growth Marketing vs Traditional Marketing</h2>
-            <ul>
-                <li><strong>Traditional marketing</strong> focuses primarily on awareness and acquisition</li>
-                <li><strong>Growth marketing</strong> optimises the full funnel from first touch to loyal customer</li>
-                <li><strong>Traditional marketing</strong> relies on best practices and intuition</li>
-                <li><strong>Growth marketing</strong> relies on experiments and data</li>
-            </ul>
+            <h2>The North Star Metric</h2>
+            <p>Every effective growth team organises around a <strong>North Star Metric</strong> — the single measure that best captures the core value the product delivers to customers. Examples: Airbnb's North Star is nights booked; Slack's is messages sent; Spotify's is time spent listening. The North Star Metric matters because it prevents teams from optimising vanity metrics — things that look like growth (sign-ups, traffic, app downloads) without actually being growth (genuine customer value delivered). Every experiment and every resource allocation decision should connect back to moving the North Star.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Growth marketing was pioneered by companies like Dropbox, Airbnb, and Facebook, who couldn't afford massive ad budgets. Instead, they built growth into their products and used systematic experimentation to find scalable channels.</p>
+                <p>Three things are often conflated in growth and should be kept distinct. <strong>Growth experiments</strong> test genuinely unproven territory — they carry real risk and potential for outsized reward. <strong>Optimisation</strong> refines what already works based on clear signals — lower risk, more predictable outcomes. <strong>A/B testing</strong> is a tool used by both. Conflating them leads to invalid conclusions: calling something an optimisation when the baseline is unclear inflates confidence in weak results; running an experiment on a channel you barely understand produces noise, not insight.</p>
             </div>
 
-            <h2>The AARRR Framework (Pirate Metrics)</h2>
-            <p>Growth marketers typically think about the customer lifecycle using this framework:</p>
+            <h2>Retention Is the Foundation</h2>
+            <p>The most important principle in growth that is most frequently ignored: <strong>retention is the foundation of all sustainable growth</strong>. Improving retention compounds faster than improving acquisition. A business losing 30% of users every month cannot be fixed by acquiring 30% more — it must fix retention first. Every growth initiative should begin with the question: do we retain the users we already have? If the answer is no, acquisition investment is being poured into a leaky bucket.</p>
+
+            <h2>The AARRR Framework as a Diagnostic Tool</h2>
+            <p>Growth marketers use the AARRR framework — Acquisition, Activation, Retention, Revenue, Referral — as a <strong>diagnostic tool</strong>, not a sequential campaign plan. The purpose is to identify the leakiest stage in your funnel, then direct resources toward fixing it. Map each stage with real conversion rates; the stage with the biggest drop-off is where to focus first.</p>
             <ol>
-                <li><strong>Acquisition</strong> — How do people find you? (SEO, ads, social, referrals)</li>
+                <li><strong>Acquisition</strong> — How do people find you? (SEO, paid, social, referrals)</li>
                 <li><strong>Activation</strong> — Do they have a great first experience? (onboarding, first value moment)</li>
-                <li><strong>Retention</strong> — Do they come back? (email, product, community)</li>
-                <li><strong>Revenue</strong> — Do they pay you? (pricing, upsells, expansion)</li>
-                <li><strong>Referral</strong> — Do they tell others? (referral programmes, word of mouth)</li>
+                <li><strong>Retention</strong> — Do they come back? (product engagement, email, community)</li>
+                <li><strong>Revenue</strong> — Do they pay or expand? (pricing, upsells, conversion)</li>
+                <li><strong>Referral</strong> — Do they bring others? (referral programmes, word of mouth)</li>
             </ol>
 
-            <h2>The Experimentation Mindset</h2>
-            <p>At its core, growth marketing is about running experiments. The process looks like this:</p>
-            <ol>
-                <li><strong>Observe</strong> — Look at your data and identify opportunities</li>
-                <li><strong>Hypothesise</strong> — "If we change X, we expect Y to happen because Z"</li>
-                <li><strong>Test</strong> — Run a controlled experiment</li>
-                <li><strong>Measure</strong> — Did the hypothesis hold true?</li>
-                <li><strong>Learn</strong> — Document the insight whether the test won or lost</li>
-                <li><strong>Iterate</strong> — Apply what you learned and test the next idea</li>
-            </ol>
-
-            <div class="callout callout-warning">
-                <div class="callout-title">Important</div>
-                <p>Growth marketing is not about "hacks" or shortcuts. It's a disciplined, systematic approach to finding what works and scaling it. The companies that grow fastest are the ones that run the most experiments per unit of time.</p>
-            </div>
-
-            <h2>Skills of a Growth Marketer</h2>
-            <ul>
-                <li>Data analysis and analytics</li>
-                <li>A/B testing and experimentation</li>
-                <li>Channel expertise (SEO, paid, email, etc.)</li>
-                <li>Copywriting and conversion optimisation</li>
-                <li>Basic understanding of product and engineering</li>
-                <li>Comfort with ambiguity and failure (most experiments fail)</li>
-            </ul>
+            <h2>Growth Is Cross-Functional</h2>
+            <p>Growth experiments require collaboration across marketing, product, data, and UX — they do not sit exclusively in any one department. A test requiring a product change needs engineering; one needing new creative needs design; one requiring data interpretation needs analysis. Growth teams that operate only within marketing are structurally limited in what they can test and what they can ship.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Before learning advanced growth tactics, master the fundamentals: analytics, one acquisition channel, and copywriting. Growth marketing amplifies good fundamentals — it can't fix broken basics.</p>
+                <p>Before running any growth experiment, ask two questions: Does this connect to our North Star Metric? And do we already retain the users we are trying to get more of? If the answer to either is no, the experiment is pointed in the wrong direction or will compound a retention problem rather than solve it. Growth that ignores retention is expensive churn.</p>
             </div>
         `,
         quiz: {
