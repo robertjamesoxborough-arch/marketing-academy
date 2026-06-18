@@ -4321,3 +4321,276 @@ Object.assign(lessonContent, {
     }
 
 });
+
+// ==================== SEO INTERACTIVE CONTENT ====================
+// Setup guides, tasks, and reflections for all SEO lessons (modules 2–5)
+
+Object.assign(lessonContent['seo-2-1'], {
+    setupGuide: [
+        { step: 1, title: 'Use Google Autocomplete to find keyword ideas', description: 'Open Google in an incognito window and start typing your core topic. Note every suggestion that appears. Try different variations — with a question word, with a location, with a modifier like "best" or "how to". Each suggestion is a real search people make.' },
+        { step: 2, title: 'Expand People Also Ask for sub-intent keywords', description: 'Search your core topic and click on each People Also Ask question to expand it. Each expansion triggers more questions. Spend 10 minutes expanding these — you will find dozens of specific keyword ideas you would never have thought to target.' },
+        { step: 3, title: 'Check Related Searches at the bottom of results', description: 'Scroll to the bottom of the Google results page and note the eight Related Searches suggestions. These are variations and adjacent queries that reveal different angles and intents around your topic.' },
+        { step: 4, title: 'Open Google Keyword Planner with your seed keywords', description: 'Go to ads.google.com, create a free account if needed, and open Keyword Planner under Tools. Click "Discover new keywords" and enter your 3-5 seed terms. Download the results to a spreadsheet — you now have estimated search volumes alongside hundreds of keyword ideas.' },
+        { step: 5, title: 'Analyse a competitor domain with Ubersuggest', description: 'Go to app.neilpatel.com/en/ubersuggest (free tier available) and enter a direct competitor domain. Click "Top SEO Pages" to see which pages drive the most traffic and which keywords they rank for. Note any keywords with decent volume that you do not currently target.' },
+    ],
+    tasks: [
+        'Use Google Autocomplete to generate at least 20 keyword ideas from 5 different seed terms',
+        'Identify 5 keywords a direct competitor ranks for that you do not — use Ubersuggest or Semrush free tier',
+        'Open Google Keyword Planner and export keyword ideas for your 3 core seed keywords',
+        'Find 3 questions from People Also Ask in your niche that reveal informational intent you could target with content',
+        'Build a raw keyword list of at least 30 terms across different intents and note what content type each one demands',
+    ],
+    reflection: 'Which keyword discovery method surfaced ideas you would never have found on your own — and which keywords surprised you most?',
+});
+
+Object.assign(lessonContent['seo-2-2'], {
+    setupGuide: [
+        { step: 1, title: 'Pull keyword metrics in Ahrefs or Semrush', description: 'Sign up for a free trial of Ahrefs or Semrush if you do not have access. Enter your top 10-15 keywords into the Keyword Explorer (Ahrefs) or Keyword Magic Tool (Semrush). For each keyword, note the monthly search volume, keyword difficulty score, and CPC as a proxy for commercial value.' },
+        { step: 2, title: 'Filter for low-difficulty keyword opportunities', description: 'In Ahrefs, set the Keyword Difficulty filter to under 30. In Semrush, filter for KD% under 40. These are the keywords where you have the most realistic chance of ranking without a high domain authority. Look for keywords with at least 100-500 monthly searches in this range.' },
+        { step: 3, title: 'Check your own domain authority as a benchmark', description: 'Go to ahrefs.com/website-authority-checker or moz.com/domain-analysis and enter your domain. Note your Domain Rating (Ahrefs) or Domain Authority (Moz). This score tells you roughly what keyword difficulty range is realistic for your site right now.' },
+        { step: 4, title: 'Analyse the SERP for your priority keyword', description: 'In Ahrefs Keyword Explorer, click on your top priority keyword and scroll to the SERP overview. Look at the DR scores of the pages currently ranking in positions 1-10. If every result is DR 70+ and yours is DR 20, that keyword is currently out of reach without significant link building.' },
+        { step: 5, title: 'Build a keyword scoring spreadsheet', description: 'Create a spreadsheet with columns: Keyword, Monthly Volume, Difficulty, Your DR, Opportunity Score (Volume divided by Difficulty), Intent, and Priority. Sort by Opportunity Score. The keywords at the top are your best starting points for content creation.' },
+    ],
+    tasks: [
+        'Pull search volume and keyword difficulty scores for your 20 target keywords using any free or trial tool',
+        'Identify your top 3 keywords that have reasonable volume (100+ monthly searches) and low-to-medium difficulty (under 40)',
+        'Find 5 long-tail variations of your priority keywords that have lower difficulty scores than the head term',
+        'Check the SERP for your top priority keyword — note the domain authority of the top 5 ranking pages',
+        'Build a prioritised keyword list of your top 10 targets ranked by opportunity score (volume divided by difficulty)',
+    ],
+    reflection: 'After comparing keyword difficulty against your domain authority, which 3 keywords represent your most realistic ranking opportunities right now?',
+});
+
+Object.assign(lessonContent['seo-2-3'], {
+    setupGuide: [
+        { step: 1, title: 'Use Answer the Public to find long-tail question keywords', description: 'Go to answerthepublic.com and enter your core topic. The free tier gives you a limited number of daily searches. Download the results and review the question-based keywords (Who, What, When, Where, Why, How). These are high-intent long-tail opportunities with low competition.' },
+        { step: 2, title: 'Find long-tail keywords in Search Console', description: 'Open Google Search Console > Performance > Search results. Click "Average position" to show position data. Filter the Queries tab to show queries in positions 8-20 — these are keywords you almost rank for. Targeting these with light on-page optimisation can move them to page one quickly.' },
+        { step: 3, title: 'Group your keywords into topic clusters', description: 'Take your full keyword list and group related keywords together. Each group should have one "pillar" keyword (highest volume, broadest) and several "cluster" keywords (more specific, lower volume). A pillar page covers the broad topic; cluster pages cover specific subtopics and link back to the pillar.' },
+        { step: 4, title: 'Map clusters to existing and planned pages', description: 'For each topic cluster, check whether you already have a page that covers the pillar topic. If yes, review whether it is comprehensive enough to rank. If no, add it to your content plan. Each cluster keyword should map to a specific page — never try to rank one page for two separate intents.' },
+        { step: 5, title: 'Identify your highest-priority content gap', description: 'Look at your clusters and find the one where you have the most keywords but the weakest existing content. This is your biggest opportunity. A competitor likely ranks well here already — check their pillar page to understand the content depth and format you need to match or exceed.' },
+    ],
+    tasks: [
+        'Use Answer the Public to generate at least 30 question-based keyword ideas from your core topic',
+        'Group your full keyword list into at least 3 topic clusters, each with one pillar keyword and 5+ supporting keywords',
+        'Identify which pages on your current site could serve as pillar pages for each cluster',
+        'Find 5 keywords in Search Console (positions 8-20) that you could push to page one with light optimisation',
+        'Sketch a topic cluster map for your most important cluster, showing the pillar page and at least 5 supporting content pieces',
+    ],
+    reflection: 'Looking at your topic clusters, which one represents the biggest content gap — where you have keywords but no strong pages to rank them?',
+});
+
+Object.assign(lessonContent['seo-3-1'], {
+    setupGuide: [
+        { step: 1, title: 'Crawl your site with Screaming Frog SEO Spider', description: 'Download Screaming Frog SEO Spider (free for up to 500 URLs at screamingfrog.co.uk). Enter your domain and run a crawl. When complete, go to the Page Titles tab to see all your title tags, their lengths, and any duplicates or missing tags.' },
+        { step: 2, title: 'Export and audit your title tags', description: 'In Screaming Frog, filter the Page Titles report for "Too Long" (over 60 characters) and "Missing". Export these to a spreadsheet. Also look for any title tags that do not include the page\'s target keyword or that are duplicated across multiple pages.' },
+        { step: 3, title: 'Check meta descriptions in bulk', description: 'In Screaming Frog, click the Meta Description tab. Filter for "Missing", "Too Long" (over 160 characters), and "Duplicate". Missing meta descriptions mean Google will auto-generate one — which is rarely as compelling as a well-written one.' },
+        { step: 4, title: 'Audit H1 tags across key pages', description: 'In Screaming Frog, click the H1 tab. Filter for "Missing" and "Multiple". Every key page should have exactly one H1 that matches (or is close to) the title tag and contains the primary keyword. Pages with no H1 or multiple H1s are a quick win to fix.' },
+        { step: 5, title: 'Find low-CTR pages in Search Console', description: 'Open Search Console > Performance > Search results. Click the "CTR" column to sort ascending. Pages with high impressions but low CTR (under 2%) are candidates for title tag and meta description rewrites. The keyword is already reaching people — the snippet just is not compelling enough to earn the click.' },
+    ],
+    tasks: [
+        'Audit title tags for your 10 most important pages — note which ones include the target keyword and fall within 60 characters',
+        'Rewrite 3 title tags to include the primary keyword naturally and add a clear value proposition or unique angle',
+        'Check that every key page has a unique meta description under 160 characters that includes a call to action',
+        'Audit H1 tags on your top 10 pages and flag any that are missing, duplicated, or do not match the page topic',
+        'Identify your 3 highest-impression, lowest-CTR pages in Search Console and draft improved title tag versions',
+    ],
+    reflection: 'After auditing your title tags and meta descriptions, which single rewrite do you think would have the biggest impact on click-through rate — and why?',
+});
+
+Object.assign(lessonContent['seo-3-2'], {
+    setupGuide: [
+        { step: 1, title: 'Analyse the top 3 ranking pages for your target keyword', description: 'Search your target keyword in incognito mode. Open the top 3 results. For each page, note the word count, number of headings (H2/H3), topics covered, and any formats used (tables, lists, images, FAQs). This is the content benchmark you need to match or exceed.' },
+        { step: 2, title: 'Run a content gap analysis', description: 'Read through the top-ranking competitor pages and list every H2 heading they include. Compare this to your existing page. Any heading topic your page is missing is a content gap. These gaps are often the primary reason you are not ranking — you are not covering the topic fully enough.' },
+        { step: 3, title: 'Check keyword placement in your content', description: 'Open your target page and verify: does the primary keyword appear in the first 100 words? Is it in the H1? Does it appear in at least 2-3 H2 headings or naturally in the text? Use Ctrl+F to search for the keyword. It should appear naturally but not be stuffed.' },
+        { step: 4, title: 'Check readability with a Flesch Reading Score tool', description: 'Copy a section of your content and paste it into a free readability tool such as readable.com or hemingwayapp.com. Aim for a Flesch Reading Ease score above 60 (plain English) for most marketing content. Dense, academic-style writing loses readers quickly.' },
+        { step: 5, title: 'Find and add semantically related terms', description: 'Search your keyword in Google and scroll down to Related Searches. Also look at the bold phrases in competitor snippets. These related terms (LSI keywords) signal to Google that your content comprehensively covers the topic. Add them naturally where they fit.' },
+    ],
+    tasks: [
+        'Run a content gap analysis by comparing your target page against the top 3 competitors — list every subtopic they cover that you do not',
+        'Rewrite the opening 100 words of your target page to include the primary keyword in the first sentence',
+        'Add at least 2 new H2 sections to your page covering subtopics the top competitors address',
+        'Check your page word count against the average word count of the top 3 results — plan to match or exceed it',
+        'Find 5 semantically related terms from Related Searches and add them naturally into your page content',
+    ],
+    reflection: 'What were the biggest content gaps between your page and the top-ranking results — and which gap do you think is most directly causing you to rank lower?',
+});
+
+Object.assign(lessonContent['seo-3-3'], {
+    setupGuide: [
+        { step: 1, title: 'Export all internal links with Screaming Frog', description: 'Crawl your site with Screaming Frog. Go to the Bulk Export menu > Response Codes > Internal > All. This gives you a complete list of every internal link on your site — from which page it originates and to which page it points. This is your raw audit data.' },
+        { step: 2, title: 'Check internal link counts for your priority pages', description: 'In Screaming Frog, click the Inlinks tab (select a URL first) or use the Bulk Export > All Inlinks report. For each of your most important pages, count how many internal links point to it. Your most important pages should have the most internal links.' },
+        { step: 3, title: 'Check Search Console for internal link counts', description: 'Open Google Search Console > Links > Internal links. This shows which pages have the most internal links according to Google. Compare this to your actual most important pages — if your priority pages are not near the top, you need to add more internal links pointing to them.' },
+        { step: 4, title: 'Find orphan pages with no internal links', description: 'In Screaming Frog, use the Inlinks column to filter for pages with 0 inlinks. These are orphan pages — Google can only find them through your sitemap, not by following links. Any page you want indexed should have at least one internal link pointing to it from a relevant page.' },
+        { step: 5, title: 'Audit anchor text for keyword relevance', description: 'In the Screaming Frog Inlinks report, review the anchor text column for links pointing to your priority pages. Anchor text should be descriptive and include relevant keywords rather than generic phrases like "click here" or "read more". Varied but relevant anchor text sends strong topical signals.' },
+    ],
+    tasks: [
+        'List your 5 most important pages and count how many internal links each one currently receives',
+        'Find 3 existing pages on your site that are topically related to your top priority page but do not currently link to it — add those links',
+        'Check your main navigation — does it link directly to your most important pages?',
+        'Identify any orphan pages (pages with zero internal links) and plan which pages would be the most natural place to add a link',
+        'Review the anchor text of 10 internal links — flag any that use generic text and rewrite them with descriptive, keyword-relevant phrases',
+    ],
+    reflection: 'Which of your most important pages had the fewest internal links pointing to it — and where on your site are the most natural places to add links pointing there?',
+});
+
+Object.assign(lessonContent['seo-3-4'], {
+    setupGuide: [
+        { step: 1, title: 'Export the missing alt text report from Screaming Frog', description: 'Crawl your site with Screaming Frog and click the Images tab. Filter for "Missing Alt Text". Export the report to see every image on your site without an alt attribute. This list is your immediate action list — every image here is both an SEO and accessibility issue.' },
+        { step: 2, title: 'Check image file sizes with browser DevTools', description: 'Open your most important page in Chrome, press F12 to open DevTools, go to the Network tab, and reload the page. Filter by "Img". You can now see the file size of every image that loads. Any image over 200KB on a standard content page is worth compressing.' },
+        { step: 3, title: 'Run PageSpeed Insights and review image recommendations', description: 'Go to pagespeed.web.dev and enter your homepage URL. In the Opportunities section, look for "Properly size images", "Serve images in next-gen formats (WebP)", and "Defer offscreen images". These three recommendations together typically save the most bytes.' },
+        { step: 4, title: 'Compress and convert images with Squoosh', description: 'Go to squoosh.app in your browser. Drag and drop one of your largest images. In the right-hand panel, select WebP as the output format and adjust the quality slider to find the right balance between quality and file size. Compare the before and after file sizes at the bottom.' },
+        { step: 5, title: 'Check image filenames for SEO value', description: 'Browse your site images via Screaming Frog Images tab or just inspect image source URLs. Look for any images with auto-generated filenames like IMG_001.jpg, DSC_0047.jpg, or screenshot-2024.png. Descriptive filenames like seo-keyword-research-spreadsheet.webp give Google an additional relevance signal.' },
+    ],
+    tasks: [
+        'Audit alt text for images on your 5 most important pages — flag any images with missing or generic alt text like "image1"',
+        'Rewrite the alt text for at least 10 images using descriptive, keyword-relevant descriptions that explain what the image shows',
+        'Identify your 5 largest images using PageSpeed Insights or DevTools and compress them with Squoosh',
+        'Convert at least 3 images to WebP format and note the percentage file size saving',
+        'Review image filenames on your homepage and rename any auto-generated filenames to descriptive, keyword-relevant ones',
+    ],
+    reflection: 'How much total file size were you able to save by compressing and converting your images — and what did that do to your PageSpeed performance score?',
+});
+
+Object.assign(lessonContent['seo-4-1'], {
+    setupGuide: [
+        { step: 1, title: 'Run your site through PageSpeed Insights', description: 'Go to pagespeed.web.dev and enter your homepage URL. Run the test for both Mobile and Desktop. Record your performance score for each — this is your baseline. Scores below 50 on mobile are common and represent significant ranking and user experience issues.' },
+        { step: 2, title: 'Check Core Web Vitals in Search Console', description: 'Open Google Search Console > Experience > Core Web Vitals. This report shows your real-world CWV scores based on actual user data collected by Chrome. Look for pages classified as "Poor" (red) — these are pages where Google has already measured a bad user experience.' },
+        { step: 3, title: 'Run a WebPageTest for detailed performance data', description: 'Go to webpagetest.org and run a test from a London server using a Chrome browser. Look at the filmstrip view to see exactly when your page starts rendering. Note your Time to First Byte (TTFB), Largest Contentful Paint (LCP), and Total Blocking Time (TBT).' },
+        { step: 4, title: 'Check your Largest Contentful Paint element', description: 'In PageSpeed Insights, click "Show more" under LCP. This tells you exactly which element on the page is your LCP — often a hero image or a large heading. If your LCP is an image, preloading it or switching to a faster image format will directly improve your score.' },
+        { step: 5, title: 'Run a Lighthouse audit in Chrome DevTools', description: 'Open Chrome, press F12, click the "Lighthouse" tab, select Performance, and click Analyse page load. The report gives you a detailed breakdown of every performance issue, diagnostics, and passed audits. Focus on the Opportunities section — these are the highest-impact improvements.' },
+    ],
+    tasks: [
+        'Record your current PageSpeed scores for both mobile and desktop — this is your starting baseline',
+        'Identify and write down your top 3 performance issues from the PageSpeed Insights Opportunities section',
+        'Check whether your key images are lazy-loaded — view page source and search for loading="lazy" on img tags',
+        'Test your hosting response time (TTFB) — a score over 600ms indicates a slow server that may need upgrading or a CDN',
+        'Check whether your site uses a CDN — if not, investigate whether your hosting provider offers one and what the estimated speed improvement would be',
+    ],
+    reflection: 'After running PageSpeed Insights, what was your mobile performance score — and which single recommendation would have the biggest impact if you fixed it today?',
+});
+
+Object.assign(lessonContent['seo-4-2'], {
+    setupGuide: [
+        { step: 1, title: 'Check Mobile Usability in Search Console', description: 'Open Google Search Console > Experience > Mobile Usability. The report lists any pages with mobile usability errors, such as touch elements too close together, content wider than screen, or text too small to read. Click through to see which pages are affected.' },
+        { step: 2, title: 'Run the Google Mobile-Friendly Test', description: 'Go to search.google.com/test/mobile-friendly and enter the URL of each of your 5 most important pages. The test shows you a screenshot of how Googlebot renders the page on mobile and flags any issues it detects. A page that fails this test is at a serious ranking disadvantage.' },
+        { step: 3, title: 'Use Chrome DevTools to test multiple screen sizes', description: 'Open Chrome DevTools (F12) and click the device toolbar icon (or press Ctrl+Shift+M). Test your site at the iPhone SE (375px), iPhone 14 Pro (393px), and Samsung Galaxy S20 (360px) presets. Look for any layout breaks, overlapping text, or horizontal scrolling.' },
+        { step: 4, title: 'Test on a real mobile device', description: 'Open your site on your own smartphone or ask someone with a different device to test it. Attempt to complete your main user journey — find a product, read a blog post, fill in a contact form. Note any friction points that you cannot spot in DevTools emulation.' },
+        { step: 5, title: 'Check tap target sizes', description: 'In Chrome DevTools, right-click any button or link and select Inspect. In the Styles panel, check the rendered width and height. All interactive elements should be at least 48x48 pixels on mobile. The Lighthouse audit (under DevTools > Lighthouse) will automatically flag tap targets that are too small.' },
+    ],
+    tasks: [
+        'Run the Google Mobile-Friendly Test on your 5 most important pages and note any failures or warnings',
+        'Check Search Console Mobile Usability report for current errors and record how many pages are affected',
+        'Test your site on a real mobile device and attempt to complete your primary user journey — document any friction you encounter',
+        'Check that all buttons and links on your key pages are at least 48x48 pixels on mobile screens',
+        'Run PageSpeed Insights on mobile for your homepage and compare the mobile score to your desktop score',
+    ],
+    reflection: 'When you tested your site on a real mobile device and tried to complete your main user journey, what usability issues did you find that you had not noticed before?',
+});
+
+Object.assign(lessonContent['seo-4-3'], {
+    setupGuide: [
+        { step: 1, title: 'Test your current schema with the Rich Results Test', description: 'Go to search.google.com/test/rich-results and enter the URL of your homepage, a product page, and a blog post. The tool shows any existing schema markup and whether it is valid. Note which pages already have schema and which schema types are detected.' },
+        { step: 2, title: 'Choose the right schema type for your content', description: 'Go to schema.org and browse the type hierarchy. The most commonly implemented types are Article, Product, FAQPage, LocalBusiness, BreadcrumbList, Event, and Review. For each key page type on your site, identify which schema type is most appropriate and note the required and recommended properties.' },
+        { step: 3, title: 'Use the Structured Data Markup Helper', description: 'Go to search.google.com/structured-data/helper and select your schema type. Paste in or enter the URL of your page. Use the highlighting tool to tag elements on the page to the correct schema properties. When done, click Create HTML to generate the JSON-LD snippet you can add to your page.' },
+        { step: 4, title: 'Generate FAQ schema for a page with questions', description: 'Find a page on your site that includes at least 3 questions and answers (a FAQ section or blog post with a Q&A format). Use the Structured Data Markup Helper or write JSON-LD manually. FAQPage schema is one of the easiest types to add and can generate additional SERP real estate immediately.' },
+        { step: 5, title: 'Validate your schema and check Search Console Enhancements', description: 'After adding schema, paste the updated HTML into the Rich Results Test and confirm there are no errors. Then check Google Search Console > Enhancements — Google will populate this section once it has crawled and detected your schema markup, typically within a few days.' },
+    ],
+    tasks: [
+        'Run the Rich Results Test on your homepage, a product or service page, and a blog post — note what schema currently exists on each',
+        'Choose one schema type most relevant to your site and look up the required properties on Schema.org',
+        'Generate a valid FAQPage schema block for one page that already has at least 3 questions and answers',
+        'Add BreadcrumbList schema to one key page and validate it passes the Rich Results Test with no errors',
+        'Check Search Console > Enhancements after implementation to confirm Google has detected your new structured data',
+    ],
+    reflection: 'After testing your pages with the Rich Results Test, which schema type would have the biggest impact on your search appearance — and which page is the easiest place to start?',
+});
+
+Object.assign(lessonContent['seo-4-4'], {
+    setupGuide: [
+        { step: 1, title: 'Open and review your sitemap.xml', description: 'Go to yourdomain.com/sitemap.xml in your browser. You should see a list of URLs. Check that your most important pages are included. Look for any pages that should not be there — admin pages, login pages, filtered URLs with query parameters, or paginated archive pages with thin content.' },
+        { step: 2, title: 'Check your sitemap status in Search Console', description: 'Open Google Search Console > Indexing > Sitemaps. Confirm your sitemap is listed with a "Success" status. Compare "Submitted URLs" to "Indexed URLs" — a significant gap means Google is not indexing pages from your sitemap, which warrants further investigation via the Coverage report.' },
+        { step: 3, title: 'Review your robots.txt for unintended blocks', description: 'Go to yourdomain.com/robots.txt. Review every Disallow directive. Common mistakes include accidentally blocking the whole site (Disallow: /), blocking CSS and JavaScript files that Google needs to render pages, or blocking a section that was meant to be private but should now be indexed.' },
+        { step: 4, title: 'Check the Coverage report for excluded pages', description: 'Open Search Console > Indexing > Pages. Click on "Not indexed" to see the breakdown. Focus on "Crawled — currently not indexed" (pages Google visited but chose not to index — usually thin content) and "Discovered — currently not indexed" (pages Google knows about but has not yet crawled, suggesting a crawl budget issue).' },
+        { step: 5, title: 'Check for duplicate URL issues', description: 'Use Screaming Frog to crawl your site and look at the URL list. Check whether your CMS generates multiple versions of the same page — for example, pages with and without trailing slashes, pages with UTM parameters, or pagination variants. These duplicate URLs waste crawl budget and dilute link equity.' },
+    ],
+    tasks: [
+        'Open your sitemap.xml and verify that all important pages are included and no admin, login, or thin-content pages are listed',
+        'Check robots.txt and confirm no important directories or pages are accidentally blocked from crawling',
+        'Identify at least 5 pages that should not be in your sitemap and note how you would remove them',
+        'Open Search Console Coverage report and list the top 3 reasons pages are being excluded from the index',
+        'Check for duplicate URLs on your site caused by URL parameters or trailing slash inconsistencies and note how you would canonicalise them',
+    ],
+    reflection: 'After reviewing your sitemap and Coverage report, what changes would you make to ensure Google focuses its crawl budget on your most valuable pages?',
+});
+
+Object.assign(lessonContent['seo-5-1'], {
+    setupGuide: [
+        { step: 1, title: 'Check your backlink profile in Ahrefs free tools', description: 'Go to ahrefs.com/backlink-checker and enter your domain. The free version shows your top 100 backlinks, Domain Rating, and referring domains count. Note your DR score — this is your baseline authority metric. Check whether your best links come from relevant, quality sites.' },
+        { step: 2, title: 'Check your domain authority in Moz Link Explorer', description: 'Go to moz.com/link-explorer and enter your domain. The free version shows your Domain Authority, Page Authority for your homepage, and a sample of linking domains. Note whether your DA has changed over the past few months — a rising DA reflects successful link building.' },
+        { step: 3, title: 'Check your most-linked pages in Search Console', description: 'Open Google Search Console > Links > Top linked pages. This shows which pages on your site have the most external links pointing to them. Compare this list to your most important pages — ideally, your link profile should match your content priorities.' },
+        { step: 4, title: 'Analyse a top competitor backlink profile', description: 'Enter a direct competitor domain into Ahrefs Backlink Checker or Semrush free tier. Note their Domain Rating, number of referring domains, and their top linked pages. Understanding the gap between your authority and theirs tells you how much link building you need to compete for the same keywords.' },
+        { step: 5, title: 'Identify any low-quality backlinks', description: 'In Ahrefs Backlink Checker, scroll through your top 100 backlinks and look for any that are from irrelevant, foreign-language, or obviously spammy sites. Note the domain and anchor text. While a small number of poor links rarely causes harm, a large number of spammy links can trigger a Google manual penalty.' },
+    ],
+    tasks: [
+        'Check your Domain Rating in Ahrefs and Domain Authority in Moz — record both scores as your baseline',
+        'Identify your top 5 competitor domains and compare their domain authority scores to yours',
+        'Find the three most-linked-to pages on a top competitor using any backlink tool — note why you think those pages earn links',
+        'Check which pages on your own site have the most backlinks — do they align with your most strategically important pages?',
+        'Identify any obviously spammy or irrelevant backlinks in your profile and note how you would disavow them if needed',
+    ],
+    reflection: 'Looking at your backlink profile compared to your top competitors, what is the authority gap — and what type of content on your site is currently attracting the most links?',
+});
+
+Object.assign(lessonContent['seo-5-2'], {
+    setupGuide: [
+        { step: 1, title: 'Find the most-linked content in your niche', description: 'Go to ahrefs.com/content-explorer (free search available) and search for your core topic. Sort by Referring Domains. The top results are the pieces of content in your niche that have attracted the most links. Study them — why do people link to them? What makes them link-worthy? This is the benchmark for your linkable asset strategy.' },
+        { step: 2, title: 'Find broken link opportunities using Ahrefs', description: 'In Ahrefs Site Explorer, enter a top competitor domain and go to Best by Links > filter for 404 errors. You can see which of their pages are broken but still have backlinks pointing to them. These are outreach opportunities — contact the sites linking to the broken page and suggest your relevant content as a replacement.' },
+        { step: 3, title: 'Search for resource pages to target', description: 'In Google, search for: [your topic] + intitle:resources OR [your topic] + "useful links" OR [your topic] + "recommended resources". Make a list of 10-20 resource pages that curate links to content like yours. These pages exist specifically to link out — getting listed is a realistic goal with a simple outreach email.' },
+        { step: 4, title: 'Find contact emails with Hunter.io', description: 'Go to hunter.io (free for 25 searches per month) and enter the domain of a site you want to reach. Hunter.io finds email addresses associated with that domain and shows their confidence score. This is your fastest route to finding the right person to contact for a guest post or link request.' },
+        { step: 5, title: 'Set up a link building tracking spreadsheet', description: 'Create a spreadsheet with columns: Target Site, Domain Rating, Contact Email, Outreach Angle, Date Contacted, Follow-up Date, and Status (Not contacted / Emailed / Replied / Link live / Declined). Tracking your outreach is essential for following up and measuring your link building ROI.' },
+    ],
+    tasks: [
+        'Use Ahrefs Content Explorer or Semrush to find the 5 most-linked pieces of content in your niche — note why they attract links',
+        'Identify at least 10 broken links on competitor or niche sites that you have relevant existing content to replace',
+        'Find 5 resource pages in your niche where you could request inclusion — save the URLs and contact details',
+        'Write one guest post pitch email targeting a niche site with a Domain Rating above 40',
+        'Set up a link building outreach tracking spreadsheet with your first 10 prospects filled in',
+    ],
+    reflection: 'Which link building strategy feels most achievable for your site right now — and what is the one piece of content you already have that is most likely to earn links?',
+});
+
+Object.assign(lessonContent['seo-5-3'], {
+    setupGuide: [
+        { step: 1, title: 'Research data sources for an original study', description: 'Review your own business data for insights you could publish — customer survey results, aggregated usage data, trend analysis from your CRM. Also consider publicly available sources: ONS.gov.uk, statista.com, Google Trends, or gov.uk datasets. Original data that reveals something new or counterintuitive is the foundation of content that earns press coverage and links.' },
+        { step: 2, title: 'Sign up for HARO (Help a Reporter Out)', description: 'Go to helpareporter.com and sign up as a source. You will receive daily email digests of journalist queries. Respond to queries in your area of expertise with a concise, quotable answer. A single HARO response that gets published in a national publication can earn a high-authority link and significant brand visibility.' },
+        { step: 3, title: 'Find journalists covering your niche with BuzzSumo', description: 'Go to buzzsumo.com (free trial available) and search for your core topic. Click the Authors tab to see which journalists and bloggers have published the most-shared content on this topic. These are the people most likely to cover a story in your niche. Note their names, publications, and the topics they cover.' },
+        { step: 4, title: 'Set up Google Alerts for reactive PR opportunities', description: 'Go to google.com/alerts and set up alerts for your core topics (e.g. "digital marketing trends", "SEO study", "content marketing statistics"). When a relevant story breaks, you have a window to reach out to journalists covering it with your expert perspective or data. Speed matters — reactive PR responses within 24 hours get far more coverage.' },
+        { step: 5, title: 'Draft a media pitch document', description: 'Write a one-page media pitch for your link building idea. Include: the headline (what is the story?), why it is newsworthy now, the key data point or finding, three bullet points of supporting evidence, and your proposed spokesperson. This document is what you send to journalists alongside your press release.' },
+    ],
+    tasks: [
+        'Identify one original data angle from your business that could become a linkable asset — a survey, study, trend analysis, or data visualisation',
+        'Research and list 5 publications in your industry that regularly cover data-driven or original research stories',
+        'Sign up to HARO and respond to at least 3 journalist queries relevant to your expertise',
+        'Write a one-page media pitch document for one content-led link building idea',
+        'Find one competitor piece of content that earned significant links from media coverage — analyse why it worked and what you would do differently',
+    ],
+    reflection: 'What original data, insights, or perspectives does your business hold that journalists in your niche would find genuinely interesting — and how could you package it as a story rather than a sales pitch?',
+});
+
+Object.assign(lessonContent['seo-5-4'], {
+    setupGuide: [
+        { step: 1, title: 'Set your baseline in Search Console Performance', description: 'Open Google Search Console > Performance > Search results. Set the date range to the last 90 days. Record your total clicks, total impressions, average CTR, and average position. Export this data to a spreadsheet — this is your SEO baseline that all future measurement will be compared against.' },
+        { step: 2, title: 'Connect Search Console to Google Analytics 4', description: 'In Google Analytics 4, go to Admin > Property Settings > Product Links > Search Console Links. Connect your Search Console property. This allows you to see organic search data (queries, landing pages, clicks) directly inside GA4 alongside your conversion and engagement data.' },
+        { step: 3, title: 'Set up rank tracking for your priority keywords', description: 'Sign up for a free trial of Semrush (Position Tracking tool) or Ahrefs (Rank Tracker). Add your top 10 priority keywords and set your target location (UK, US, etc.). The tool will track your daily rankings and show you how your position changes over time. Weekly rank tracking is sufficient for most sites.' },
+        { step: 4, title: 'Identify your top organic landing pages in GA4', description: 'In Google Analytics 4, go to Reports > Acquisition > Traffic Acquisition. Add "Landing page" as a secondary dimension and filter by "Organic Search" as the session default channel group. You can now see which pages drive the most organic sessions and, critically, whether those sessions are converting.' },
+        { step: 5, title: 'Build a monthly SEO report in Google Looker Studio', description: 'Go to lookerstudio.google.com and create a new report. Connect Search Console and GA4 as data sources. Add scorecards for: Total Organic Clicks (this month vs last month), Average Position, Organic Sessions, Goal Completions from Organic. Save this as a template — it takes 30 minutes to build but saves hours every month.' },
+    ],
+    tasks: [
+        'Document your baseline SEO metrics: total organic clicks, impressions, average CTR, and average position for the last 90 days',
+        'Set up rank tracking for your top 10 target keywords and record their current positions',
+        'Identify your top 5 landing pages for organic traffic and check whether each one is converting at an expected rate',
+        'Calculate your overall organic CTR (clicks divided by impressions) and find your 3 lowest-CTR pages with over 500 monthly impressions',
+        'Create a monthly SEO report template with at least 6 key metrics you will review each month to track progress',
+    ],
+    reflection: 'Looking at your organic performance data, where is the gap between impressions and clicks biggest — and what does that pattern tell you about where to focus your effort next?',
+});

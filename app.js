@@ -28,6 +28,8 @@ const learningPaths = {
                 title: 'Keyword Research',
                 badge: 'Beginner',
                 badgeClass: 'badge-beginner',
+                projectTitle: 'Target Keyword List',
+                projectDescription: 'Using the tools and methods from this module, build a keyword list of at least 20 target keywords for your site or a client site. For each keyword, record the estimated search volume, difficulty score, and intent type. Group them into topic clusters and highlight your top five priority keywords — the ones you will create or optimise content around first.',
                 lessons: [
                     { id: 'seo-2-1', title: 'How to Find Keywords People Actually Search For', duration: '30 min', xp: 75 },
                     { id: 'seo-2-2', title: 'Keyword Difficulty and Search Volume', duration: '25 min', xp: 60 },
@@ -38,6 +40,8 @@ const learningPaths = {
                 title: 'On-Page SEO',
                 badge: 'Intermediate',
                 badgeClass: 'badge-intermediate',
+                projectTitle: 'On-Page SEO Audit and Rewrite',
+                projectDescription: 'Pick three pages on your website and conduct a full on-page SEO audit of each. Rewrite the title tags, meta descriptions, and H1s using your target keywords. Check internal linking and image alt text. Document what you changed and why, and note which improvements you expect to have the most impact on rankings and click-through rate.',
                 lessons: [
                     { id: 'seo-3-1', title: 'Title Tags, Meta Descriptions, and Headers', duration: '25 min', xp: 60 },
                     { id: 'seo-3-2', title: 'Content Optimisation for Search', duration: '35 min', xp: 80 },
@@ -49,6 +53,8 @@ const learningPaths = {
                 title: 'Technical SEO',
                 badge: 'Intermediate',
                 badgeClass: 'badge-intermediate',
+                projectTitle: 'Technical SEO Fixes List',
+                projectDescription: 'Run your site through Google PageSpeed Insights and the Mobile-Friendly Test. Check your robots.txt and sitemap.xml for issues. Audit for structured data opportunities. Produce a prioritised list of at least five technical issues you found, how you would fix each one, and an estimate of the SEO impact. Aim to actually fix at least two of them before moving to the next module.',
                 lessons: [
                     { id: 'seo-4-1', title: 'Site Speed and Core Web Vitals', duration: '30 min', xp: 75 },
                     { id: 'seo-4-2', title: 'Mobile-First Indexing', duration: '20 min', xp: 50 },
@@ -60,6 +66,8 @@ const learningPaths = {
                 title: 'Link Building and Authority',
                 badge: 'Advanced',
                 badgeClass: 'badge-advanced',
+                projectTitle: 'Link Building Outreach Plan',
+                projectDescription: 'Research ten websites in your niche that would be realistic targets for a backlink. For each one, document the site URL, domain authority score, the type of content they link to, and your proposed outreach angle (guest post, resource page inclusion, digital PR, broken link replacement, etc.). Write one outreach email template you could send to at least five of these targets immediately.',
                 lessons: [
                     { id: 'seo-5-1', title: 'How Backlinks Work and Why They Matter', duration: '25 min', xp: 60 },
                     { id: 'seo-5-2', title: 'Link Building Strategies That Actually Work', duration: '40 min', xp: 100 },
@@ -496,7 +504,22 @@ const lessonContent = {
             ],
             correct: 2,
             explanation: 'Google first discovers (crawls) a page, then processes and stores it (indexes), and finally determines where it should appear in search results (ranks).'
-        }
+        },
+        setupGuide: [
+            { step: 1, title: 'Check your robots.txt file', description: 'Go to yourdomain.com/robots.txt in your browser. This file tells crawlers which pages and directories to skip. Look for any Disallow rules that could be blocking important pages from being crawled.' },
+            { step: 2, title: 'Use the URL Inspection tool in Search Console', description: 'Open Google Search Console, click URL Inspection in the left menu, and enter your homepage URL. Click "Request indexing" if the page is not indexed. The tool shows you exactly how Googlebot sees that page and when it was last crawled.' },
+            { step: 3, title: 'Check your sitemap status in Search Console', description: 'Go to Index > Sitemaps in Search Console. You should see your sitemap URL listed with a status of "Success" and a count of submitted versus indexed URLs. A large gap between submitted and indexed pages signals a problem.' },
+            { step: 4, title: 'Review the Coverage report', description: 'Go to Index > Coverage in Search Console. Review the Error, Valid with warnings, and Excluded categories. Click into each issue type to see which pages are affected and read the recommended fix.' },
+            { step: 5, title: 'Check for noindex tags on important pages', description: 'On any key page (homepage, a product page, a blog post), right-click and select View Page Source. Press Ctrl+F and search for "noindex". If you find a noindex meta tag on a page you want indexed, that is the cause of your indexing issue.' },
+        ],
+        tasks: [
+            'Open yourdomain.com/robots.txt and note whether any important directories or pages are being blocked',
+            'Use Search Console URL Inspection to check the crawl status and last crawl date for your homepage',
+            'Identify one page on your site that you expect to be indexed but which may not appear in a site: search',
+            'Open the Coverage report in Search Console and record how many pages are in each status category',
+            'Check three key pages for noindex meta tags by viewing the page source',
+        ],
+        reflection: 'After checking your robots.txt and the Coverage report, what crawl or indexing issues did you find — and which one would have the biggest impact to fix?',
     },
     'seo-1-3': {
         title: 'Understanding Search Intent',
@@ -574,7 +597,22 @@ const lessonContent = {
             ],
             correct: 2,
             explanation: '"Best [product] [year]" queries are classic commercial investigation intent. The searcher is comparing options and hasn\'t decided yet. The best content format would be a comparison or "best of" list.'
-        }
+        },
+        setupGuide: [
+            { step: 1, title: 'Pick one target keyword and search it in Google', description: 'Choose a keyword you want your site to rank for. Open an incognito browser window (to avoid personalisation) and search for it. Note the types of content on the first page — are they blog posts, product pages, how-to guides, or comparison articles?' },
+            { step: 2, title: 'Analyse the top 5 results in detail', description: 'Open each of the top 5 results and note the content type (article, landing page, video), content format (listicle, guide, definition, comparison), and content angle (beginner-focused, local, review-based, date-specific). This tells you what Google has decided satisfies this intent.' },
+            { step: 3, title: 'Expand the People Also Ask section', description: 'Back on the search results page, click each People Also Ask question to expand it. These questions reveal the sub-intents and follow-up questions searchers have around your keyword. They are also excellent content ideas and FAQ material.' },
+            { step: 4, title: 'Scroll to Related Searches at the bottom of the page', description: 'The Related Searches section at the bottom of Google results shows semantically related queries people search after your keyword. These reveal intent variations — some may be more specific (transactional) and some more general (informational).' },
+            { step: 5, title: 'Map your existing page against the dominant intent', description: 'Open the page you currently have (or plan to create) for this keyword. Compare its format and angle to what Google is ranking on page one. If you have a product page but Google shows blog posts, you have an intent mismatch that will prevent ranking.' },
+        ],
+        tasks: [
+            'Pick 5 keywords you want to rank for and classify each as informational, navigational, commercial investigation, or transactional',
+            'Search each keyword in an incognito window and note the dominant content type Google returns for each',
+            'Identify one page on your site where the content format does not match the search intent of its target keyword',
+            'Find two People Also Ask questions from your niche that you could create content specifically to answer',
+            'Review one top-ranking competitor page for your main keyword — list three intent signals it includes that your current page lacks',
+        ],
+        reflection: 'Which of your existing pages has the biggest mismatch between its content format and the likely search intent of the people finding it — and what would you change?',
     },
 
     // ==================== PAID SEARCH LESSONS ====================
