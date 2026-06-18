@@ -1524,3 +1524,113 @@ ul { list-style: none; }
         display: none;
     }
 }
+
+/* ==================== NEXT LESSON PANEL ==================== */
+.next-lesson-panel {
+    position: fixed;
+    bottom: 0;
+    background: white;
+    border-top: 2px solid var(--primary);
+    border-radius: var(--radius) var(--radius) 0 0;
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.12);
+    z-index: 200;
+    padding: 16px 24px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.next-lesson-panel.nlp-visible {
+    transform: translateY(0);
+}
+
+.nlp-next,
+.nlp-complete {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nlp-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.nlp-label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary);
+    margin-bottom: 2px;
+}
+
+.nlp-path-name {
+    font-size: 0.8rem;
+    color: var(--text-lighter);
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nlp-lesson-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nlp-complete-heading {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 2px;
+}
+
+.nlp-emoji {
+    font-size: 1.1rem;
+}
+
+.nlp-complete-btns {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.nlp-btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .next-lesson-panel {
+        left: 0 !important;
+        width: 100% !important;
+        border-radius: 0;
+        padding: 16px;
+    }
+
+    .nlp-next,
+    .nlp-complete {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .nlp-lesson-title,
+    .nlp-path-name {
+        white-space: normal;
+    }
+
+    .nlp-complete-btns {
+        width: 100%;
+    }
+
+    .nlp-btn {
+        flex: 1;
+        text-align: center;
+    }
+}

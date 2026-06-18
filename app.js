@@ -1189,6 +1189,7 @@ function resetProgress() {
 
 // ==================== NAVIGATION ====================
 function showPage(pageId) {
+    hideNextLessonPanel();
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.getElementById('page-' + pageId).classList.add('active');
     document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
@@ -1203,6 +1204,7 @@ function showPage(pageId) {
 }
 
 function showPath(pathId) {
+    hideNextLessonPanel();
     const path = learningPaths[pathId];
     if (!path) return;
     renderPathDetail(path);
@@ -1441,6 +1443,7 @@ function renderPathDetail(path) {
 
 // ==================== LESSON VIEW ====================
 function openLesson(pathId, lessonId) {
+    hideNextLessonPanel();
     const path = learningPaths[pathId];
     if (!path) return;
 
@@ -1478,7 +1481,7 @@ function openLesson(pathId, lessonId) {
                     <p class="quiz-question">${content.quiz.question}</p>
                     <div class="quiz-options">
                         ${content.quiz.options.map((opt, i) => `
-                            <div class="quiz-option" onclick="checkLessonQuiz(${i}, ${content.quiz.correct}, '${lessonId}')">${opt}</div>
+                            <div class="quiz-option" onclick="checkLessonQuiz(${i}, ${content.quiz.correct}, '${lessonId}', '${pathId}')">${opt}</div>
                         `).join('')}
                     </div>
                     <div class="quiz-feedback" id="quizFeedback"></div>
@@ -1523,7 +1526,7 @@ function openLesson(pathId, lessonId) {
     window.scrollTo(0, 0);
 }
 
-function checkLessonQuiz(selected, correct, lessonId) {
+function checkLessonQuiz(selected, correct, lessonId, pathId) {
     const feedback = document.getElementById('quizFeedback');
     const options = document.querySelectorAll('#lessonQuiz .quiz-option');
 
@@ -1548,6 +1551,8 @@ function checkLessonQuiz(selected, correct, lessonId) {
             userProgress.xp += 25;
             saveProgress();
         }
+        const pathName = pathId && learningPaths[pathId] ? learningPaths[pathId].title : '';
+        showNextLessonPanel(getNextLesson(lessonId), pathName);
     } else {
         feedback.className = 'quiz-feedback incorrect';
         feedback.innerHTML = `<strong>Not quite.</strong> ${content.quiz.explanation}`;
@@ -1582,6 +1587,70 @@ function completeLesson(pathId, lessonId, xp) {
         saveProgress();
     }
     openLesson(pathId, lessonId);
+    showNextLessonPanel(getNextLesson(lessonId), learningPaths[pathId].title);
+}
+
+// ==================== NEXT LESSON PANEL ====================
+function getNextLesson(currentLessonId) {
+    for (const [pathKey, path] of Object.entries(learningPaths)) {
+        for (let mIdx = 0; mIdx < path.modules.length; mIdx++) {
+            const module = path.modules[mIdx];
+            for (let lIdx = 0; lIdx < module.lessons.length; lIdx++) {
+                if (module.lessons[lIdx].id !== currentLessonId) continue;
+                if (lIdx + 1 < module.lessons.length) {
+                    const next = module.lessons[lIdx + 1];
+                    return { id: next.id, title: next.title, pathId: pathKey, pathName: path.title, moduleIndex: mIdx, lessonIndex: lIdx + 1 };
+                }
+                if (mIdx + 1 < path.modules.length) {
+                    const next = path.modules[mIdx + 1].lessons[0];
+                    return { id: next.id, title: next.title, pathId: pathKey, pathName: path.title, moduleIndex: mIdx + 1, lessonIndex: 0 };
+                }
+                return null;
+            }
+        }
+    }
+    return null;
+}
+
+function positionNextLessonPanel() {
+    const panel = document.getElementById('nextLessonPanel');
+    const lessonMain = document.getElementById('lessonMain');
+    if (!panel || !lessonMain) return;
+    if (window.innerWidth > 768) {
+        const rect = lessonMain.getBoundingClientRect();
+        panel.style.left = rect.left + 'px';
+        panel.style.width = rect.width + 'px';
+    }
+}
+
+function showNextLessonPanel(nextLesson, pathName) {
+    const panel = document.getElementById('nextLessonPanel');
+    if (!panel) return;
+    const nlpNext = panel.querySelector('.nlp-next');
+    const nlpComplete = panel.querySelector('.nlp-complete');
+
+    if (nextLesson) {
+        document.getElementById('nlpPathName').textContent = nextLesson.pathName;
+        document.getElementById('nlpLessonTitle').textContent = nextLesson.title;
+        document.getElementById('nlpStartBtn').onclick = function () { openLesson(nextLesson.pathId, nextLesson.id); };
+        nlpNext.style.display = 'flex';
+        nlpComplete.style.display = 'none';
+    } else {
+        document.getElementById('nlpCompletedPath').textContent = pathName || '';
+        nlpNext.style.display = 'none';
+        nlpComplete.style.display = 'flex';
+    }
+
+    positionNextLessonPanel();
+    panel.style.display = 'block';
+    requestAnimationFrame(() => panel.classList.add('nlp-visible'));
+}
+
+function hideNextLessonPanel() {
+    const panel = document.getElementById('nextLessonPanel');
+    if (!panel) return;
+    panel.classList.remove('nlp-visible');
+    panel.style.display = 'none';
 }
 
 // ==================== RESOURCES PAGE ====================
@@ -1663,6 +1732,11 @@ function updateUI() {
 }
 
 // ==================== SCROLL EFFECTS ====================
+window.addEventListener('resize', () => {
+    const panel = document.getElementById('nextLessonPanel');
+    if (panel && panel.classList.contains('nlp-visible')) positionNextLessonPanel();
+});
+
 window.addEventListener('scroll', () => {
     const navbar = document.getElementById('navbar');
     navbar.classList.toggle('scrolled', window.scrollY > 10);

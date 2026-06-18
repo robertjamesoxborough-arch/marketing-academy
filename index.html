@@ -361,6 +361,28 @@
                 </div>
             </div>
         </section>
+
+        <!-- Next Lesson Panel -->
+        <div class="next-lesson-panel" id="nextLessonPanel" style="display:none">
+            <div class="nlp-next" style="display:none">
+                <div class="nlp-info">
+                    <span class="nlp-label">UP NEXT</span>
+                    <div class="nlp-path-name" id="nlpPathName"></div>
+                    <div class="nlp-lesson-title" id="nlpLessonTitle"></div>
+                </div>
+                <button class="btn btn-primary nlp-btn" id="nlpStartBtn">Start Lesson →</button>
+            </div>
+            <div class="nlp-complete" style="display:none">
+                <div class="nlp-info">
+                    <div class="nlp-complete-heading"><span class="nlp-emoji">🎉</span> Path Complete</div>
+                    <div class="nlp-path-name" id="nlpCompletedPath"></div>
+                </div>
+                <div class="nlp-complete-btns">
+                    <button class="btn btn-primary nlp-btn" onclick="showPage('progress')">View My Progress</button>
+                    <button class="btn btn-outline nlp-btn" onclick="showPage('learning-paths')">Browse More Paths</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- ==================== RESOURCES PAGE ==================== -->
