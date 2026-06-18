@@ -113,7 +113,10 @@ Push to `main` branch → Vercel auto-deploys within ~30 seconds.
 ## Conventions
 
 - **No frameworks** — Pure vanilla JS, HTML, CSS only. Do not introduce React, Vue, bundlers, or npm.
-- **No backend** — Everything must work as a static file. Use LocalStorage for persistence.
+- **No backend** — Everything must work as a static file. Use LocalStorage for persistence (Supabase migration planned).
 - **British English** — All content uses British English spelling (optimisation, colour, etc.)
-- **Lesson format** — Every lesson must have: `title`, `body` (HTML string with h2 sections and callout boxes), and `quiz` (question, 4 options array, correct index, explanation string)
+- **Lesson format** — Every lesson must have: `title`, `body` (HTML string with h2 sections and callout boxes), `quiz` (question, 4 options array, correct index, explanation string), `setupGuide` (array of 5 step objects with step, title, description), `tasks` (array of 5 strings), `reflection` (string prompt)
+- **Module format** — Every module in `learningPaths` should have `projectTitle` and `projectDescription`
 - **Branch** — Always develop on `claude/marketing-academy-website-Zwaz0`, not main
+- **Git** — Claude Code must always git add, commit, and push at the end of every session without waiting to be asked
+- **No content dumps in Claude Chat** — All content generation and file writing is done by Claude Code. Claude Chat produces prompts and briefs only.
