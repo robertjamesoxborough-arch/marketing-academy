@@ -3090,42 +3090,37 @@ Object.assign(lessonContent, {
     'an-1-2': {
         title: 'Google Analytics 4: Setup and Interface',
         body: `
-            <h2>GA4 vs Universal Analytics</h2>
-            <p><strong>Google Analytics 4 (GA4)</strong> replaced Universal Analytics in 2023 as Google's standard analytics platform. GA4 is fundamentally different — it's built on an <strong>event-based model</strong> where every user interaction is tracked as an event, rather than the session-based pageview model of Universal Analytics.</p>
-            <p>Key differences:</p>
-            <ul>
-                <li><strong>Event-based tracking</strong> — Everything is an event: page views, scrolls, clicks, purchases</li>
-                <li><strong>Cross-platform</strong> — Tracks users across websites and apps in one property</li>
-                <li><strong>Privacy-first</strong> — Designed to work with or without cookies, using machine learning to fill gaps</li>
-                <li><strong>Engagement metrics</strong> — Replaces bounce rate with engagement rate, a more useful metric</li>
-            </ul>
+            <h2>GA4 as the Standard</h2>
+            <p><strong>Google Analytics 4 (GA4)</strong> is Google's analytics platform. It is built on an <strong>event-based model</strong> where every user interaction is tracked as an event — page views, scrolls, clicks, video plays, purchases — rather than the session-based pageview model it replaced. This architecture makes GA4 fundamentally more flexible and powerful for cross-channel analysis. It also positions GA4 as more than a reporting tool: Google is evolving it into a planning and decision platform, with cross-channel budget modelling now available in beta for eligible properties.</p>
 
-            <h2>Setting Up GA4</h2>
+            <h2>Setting Up GA4 Correctly</h2>
+            <p>A complete GA4 setup in 2026 requires more than installing a tag. These steps are all mandatory:</p>
             <ol>
-                <li>Create a GA4 property in your Google Analytics account</li>
-                <li>Set up a <strong>data stream</strong> — this connects your website or app to GA4</li>
-                <li>Install the GA4 tag via Google Tag Manager or directly in your site's HTML</li>
+                <li>Create a GA4 property and set up a <strong>data stream</strong> connecting your website or app</li>
+                <li>Install the GA4 tag via Google Tag Manager — GTM is strongly preferred over direct tag installation for flexibility</li>
+                <li>Enable <strong>Consent Mode V2</strong> — This is required by Google, not optional. It signals user consent status to GA4 and Google Ads, allowing modelling to fill gaps for users who decline tracking. Without it, your measurement is incomplete and non-compliant.</li>
                 <li>Enable <strong>enhanced measurement</strong> to automatically track scrolls, outbound clicks, site search, video engagement, and file downloads</li>
-                <li>Set up your key conversion events</li>
+                <li>Configure your key conversion events with appropriate attribution settings</li>
+                <li>Connect GA4 to Looker Studio for your primary reporting output</li>
             </ol>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>GA4 uses <strong>data streams</strong> instead of views. A data stream is the flow of data from your website or app to Analytics. For most sites, you'll have one web data stream. If you have an app, you'll add iOS and/or Android streams to the same property.</p>
+                <p>GA4 uses <strong>data streams</strong> rather than views. A data stream is the flow of data from your website or app into GA4. Most sites have one web data stream; apps add iOS and/or Android streams to the same property. Unlike Universal Analytics views, data streams do not filter data — filtering and segmentation happen at the report level using GA4's Explore tools and Looker Studio.</p>
             </div>
 
             <h2>Navigating the GA4 Interface</h2>
             <ul>
-                <li><strong>Home</strong> — Overview dashboard with key metrics and trends</li>
-                <li><strong>Reports</strong> — Pre-built reports for acquisition, engagement, monetisation, and retention</li>
-                <li><strong>Explore</strong> — Build custom reports with drag-and-drop dimensions and metrics</li>
-                <li><strong>Advertising</strong> — Attribution and conversion path analysis</li>
-                <li><strong>Admin</strong> — Property settings, data streams, events, and conversions configuration</li>
+                <li><strong>Home</strong> — Overview dashboard with key metrics and recent trends</li>
+                <li><strong>Reports</strong> — Pre-built reports covering acquisition, engagement, monetisation, and retention</li>
+                <li><strong>Explore</strong> — Custom analysis hub: funnels, path analysis, cohort reports, segment overlaps — this is where real investigation happens</li>
+                <li><strong>Advertising</strong> — Attribution analysis, conversion paths, and the Conversion Attribution Analysis report (showing Assisted Conversions and funnel stage breakdown)</li>
+                <li><strong>Admin</strong> — Property settings, data streams, events, conversions, and attribution configuration per conversion</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>The Explore section is GA4's most powerful feature. Use it to build custom funnels, path analyses, and cohort reports that the standard reports don't cover. Invest time learning Explorations — it's where the real insights are.</p>
+                <p>The Explore section is GA4's most powerful feature for analysis; Looker Studio is the tool for sharing those insights. Use Explore to investigate questions and build understanding, then build Looker Studio dashboards connected to GA4 for the reports you share with stakeholders regularly. The two tools serve different purposes — both are essential to a complete analytics setup.</p>
             </div>
         `,
         quiz: {
@@ -3146,34 +3141,34 @@ Object.assign(lessonContent, {
         body: `
             <h2>Traffic Metrics</h2>
             <ul>
-                <li><strong>Users</strong> — The number of unique visitors to your site. GA4 differentiates between "total users" and "active users" (those who had an engaged session).</li>
-                <li><strong>Sessions</strong> — A group of user interactions within a given time frame. One user can have multiple sessions.</li>
-                <li><strong>Pageviews</strong> — The total number of pages viewed. Includes repeated views of the same page.</li>
+                <li><strong>Users</strong> — The number of unique visitors. GA4 differentiates between "total users" and "active users" — those who had an engaged session. Active users is the more meaningful number for most analyses.</li>
+                <li><strong>Sessions</strong> — A group of user interactions within a defined time frame. One user can have multiple sessions across the same day.</li>
+                <li><strong>Traffic source / medium / campaign</strong> — Where visitors arrive from. This data depends heavily on consistent UTM tagging and, for paid channels, Consent Mode V2 being properly implemented so modelled data fills gaps where users decline tracking.</li>
             </ul>
 
             <h2>Engagement Metrics</h2>
             <ul>
-                <li><strong>Engagement rate</strong> — The percentage of sessions that were "engaged" (lasted 10+ seconds, had 2+ pageviews, or had a conversion event). This replaced bounce rate in GA4 and is far more useful.</li>
-                <li><strong>Average engagement time</strong> — How long users actively engage with your content (only counts time when the page is in the foreground).</li>
-                <li><strong>Pages per session</strong> — How many pages a user views per visit. Higher numbers suggest engaging content and good internal linking.</li>
+                <li><strong>Engagement rate</strong> — The percentage of sessions classified as "engaged": lasting 10+ seconds, viewing 2+ pages, or triggering a conversion event. This is GA4's replacement for bounce rate, and is a far more useful signal because it captures users who read a long article before leaving — a genuinely valuable visit that bounce rate would have penalised.</li>
+                <li><strong>Average engagement time</strong> — How long users are actively engaged with the page (foreground time only, not idle time). More accurate than session duration.</li>
+                <li><strong>Events per session</strong> — How many interactions users trigger per visit. A useful proxy for content depth and user interest.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Engagement rate is the inverse of bounce rate but more accurate. A bounce rate of 70% sounds bad, but if users spend 5 minutes reading your article before leaving, that's actually good behaviour. Engagement rate captures this nuance.</p>
+                <p>Metrics must be read within the three-tier measurement framework. GA4 traffic and engagement data is Tier 1 — cross-channel, directional, subject to modelling where consent is declined. Platform-reported metrics (Tier 2) are what each ad platform claims it drove. CRM data (Tier 3) is what your business actually received in revenue. These three numbers will rarely match exactly. The skill is understanding why they differ and which to trust for each decision.</p>
             </div>
 
             <h2>Conversion and Revenue Metrics</h2>
             <ul>
-                <li><strong>Conversion rate</strong> — The percentage of sessions (or users) that complete a desired action. Industry average is 2–5% for most websites.</li>
-                <li><strong>Cost per acquisition (CPA)</strong> — Total marketing cost divided by the number of conversions. Tells you how much you pay for each new customer or lead.</li>
-                <li><strong>Customer Lifetime Value (LTV)</strong> — The total revenue a customer generates over their entire relationship with your business. Critical for understanding how much you can afford to spend on acquisition.</li>
-                <li><strong>Return on Ad Spend (ROAS)</strong> — Revenue from ads divided by ad cost. A ROAS of 4:1 means £4 revenue per £1 spent.</li>
+                <li><strong>Conversion rate</strong> — The percentage of sessions (or users) completing a desired action. GA4 now assigns data-driven attribution by default, meaning conversion credit is distributed across touchpoints rather than given entirely to the last click.</li>
+                <li><strong>Cost per acquisition (CPA)</strong> — Total marketing spend divided by conversions. Always compare your GA4 CPA against platform-reported CPA — the difference tells you how much cross-channel credit is being contested.</li>
+                <li><strong>Customer Lifetime Value (LTV)</strong> — Total revenue per customer over their relationship with your business. The only metric that tells you how much you can sustainably spend on acquisition.</li>
+                <li><strong>Return on Ad Spend (ROAS)</strong> — Revenue from ads divided by ad cost. Platform-reported ROAS (Tier 2) is almost always higher than CRM-verified ROAS (Tier 3) — use Tier 3 for budget decisions.</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Focusing on vanity metrics (pageviews, followers) instead of business metrics (conversions, revenue, LTV). High traffic with no conversions is just expensive hosting. Always connect metrics to business outcomes.</p>
+                <p>Making budget decisions based solely on platform-reported metrics. Every ad platform attributes as much credit to itself as its model allows. Google Ads will show higher ROAS than GA4; Meta Ads Manager will show more conversions than your CRM records. Using CRM and revenue data as the final arbiter — not platform dashboards — is the discipline that separates rigorous measurement from comfortable reporting.</p>
             </div>
         `,
         quiz: {
@@ -3193,35 +3188,37 @@ Object.assign(lessonContent, {
         title: 'Setting Up Goals and Conversions',
         body: `
             <h2>Conversions in GA4</h2>
-            <p>In GA4, any event can be marked as a <strong>conversion</strong> (now called "key events"). When an event is marked as a key event, GA4 gives it special treatment in reports, attributing it to traffic sources and including it in conversion-focused analyses.</p>
+            <p>In GA4, any event can be marked as a <strong>key event</strong> (previously called a conversion). When marked, GA4 gives it special treatment in reports: attributing it to traffic sources, including it in attribution analysis, and making it available as a Smart Bidding signal in connected Google Ads campaigns. Conversion setup is one of the most consequential things you do in GA4 — poor configuration here undermines every downstream decision.</p>
 
             <h2>Types of Conversion Events</h2>
             <ul>
-                <li><strong>Automatically collected</strong> — first_visit, session_start (not typically useful as conversions)</li>
-                <li><strong>Enhanced measurement</strong> — page_view, scroll, click, file_download, video_start, video_complete</li>
-                <li><strong>Recommended events</strong> — Standard names Google recommends: purchase, sign_up, generate_lead, add_to_cart</li>
-                <li><strong>Custom events</strong> — Events you define for actions specific to your business</li>
+                <li><strong>Automatically collected</strong> — first_visit, session_start. Not typically marked as key events.</li>
+                <li><strong>Enhanced measurement</strong> — scroll, outbound click, file_download, video_start, video_complete. Toggle on in settings.</li>
+                <li><strong>Recommended events</strong> — Standard names Google recommends: purchase, sign_up, generate_lead, add_to_cart. Always use these where they apply.</li>
+                <li><strong>Custom events</strong> — Events you define for actions specific to your business. Use Google's naming where possible before creating custom events.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Use Google's recommended event names whenever possible. When you use standard names like "purchase" or "generate_lead," GA4 automatically populates specialised reports and integrations. Custom names won't get this treatment.</p>
+                <p>Data-driven attribution (DDA) is now the default model applied to new conversion events in GA4. Unlike last-click — which gives 100% of credit to the final touchpoint — DDA uses machine learning to distribute credit across all touchpoints that influenced the conversion. This is the correct starting point for all conversion measurement. Per-conversion attribution configuration is also available in GA4 Admin: a purchase event and a newsletter sign-up do not need the share the same attribution model. Configure high-value conversions with DDA; simpler micro-conversions can use a lighter model if preferred.</p>
             </div>
 
             <h2>Setting Up Key Events</h2>
             <ol>
-                <li><strong>Identify your key actions</strong> — What actions indicate a visitor is valuable? (purchase, form submission, demo request)</li>
-                <li><strong>Create or find the event</strong> — Use existing events, modify events with conditions, or create custom events via Google Tag Manager</li>
+                <li><strong>Confirm Consent Mode V2 is active</strong> — Without consent signals in place, GA4 cannot model behaviour for users who decline tracking, and your conversion data will have uncorrected gaps</li>
+                <li><strong>Identify your key actions</strong> — Which actions indicate genuine business value? (purchase, form submission, demo request, phone call)</li>
+                <li><strong>Create or find the event</strong> — Use existing events, conditionally modify them, or create custom events via Google Tag Manager</li>
                 <li><strong>Mark as a key event</strong> — In GA4 Admin → Events, toggle the "Mark as key event" switch</li>
-                <li><strong>Add value</strong> — For purchase events, include the transaction value. For leads, assign an estimated value based on your lead-to-customer conversion rate.</li>
+                <li><strong>Assign monetary value</strong> — For purchases, send the transaction value. For leads, assign an estimated value based on your lead-to-revenue conversion rate.</li>
+                <li><strong>Review attribution settings per conversion</strong> — In GA4 Admin → Attribution, confirm DDA is set as the default and adjust per-conversion models where appropriate</li>
             </ol>
 
             <h2>E-Commerce Tracking</h2>
-            <p>For online stores, implement the full e-commerce event series: view_item, add_to_cart, begin_checkout, add_payment_info, and purchase. This creates a complete purchase funnel in GA4 that shows where customers drop off.</p>
+            <p>For online stores, implement the full e-commerce event series: view_item, add_to_cart, begin_checkout, add_payment_info, and purchase. This builds a complete purchase funnel in GA4 showing exactly where customers abandon — and gives Smart Bidding the richest possible signal set for optimisation.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Assign monetary values to non-revenue conversions. If 10% of your leads become customers worth £1,000 each, a lead is worth £100. Adding this value to your lead event lets you calculate true ROI across all channels in GA4.</p>
+                <p>Assign monetary values to non-revenue conversions. If 10% of your leads become customers worth £1,000 each, a lead is worth £100. Adding this to your lead event lets GA4 compare the value delivered by each channel in a common currency — essential for multi-channel budget decisions. Without values, GA4 can only count conversions; with values, it can compare the revenue contribution of organic, paid, email, and referral side by side.</p>
             </div>
         `,
         quiz: {
@@ -3243,38 +3240,38 @@ Object.assign(lessonContent, {
         title: 'UTM Parameters and Campaign Tracking',
         body: `
             <h2>What Are UTM Parameters?</h2>
-            <p><strong>UTM parameters</strong> (Urchin Tracking Module) are tags added to the end of URLs that tell Google Analytics where traffic came from. When someone clicks a URL with UTM parameters, those tags are captured by GA4 and attributed to the appropriate campaign.</p>
+            <p><strong>UTM parameters</strong> (Urchin Tracking Module) are tags appended to URLs that tell GA4 where traffic came from. When someone clicks a UTM-tagged URL, those parameters are captured and attributed to the appropriate campaign in your reports. UTM parameters are the foundation of first-party campaign tracking — and in an environment where third-party cookies are restricted and cross-platform attribution is incomplete, clean UTM data is one of the most reliable signals you have.</p>
 
             <h2>The Five UTM Parameters</h2>
             <ul>
-                <li><strong>utm_source</strong> — Where the traffic comes from (e.g., "google," "facebook," "newsletter")</li>
-                <li><strong>utm_medium</strong> — The marketing medium (e.g., "cpc," "email," "social," "referral")</li>
-                <li><strong>utm_campaign</strong> — The specific campaign name (e.g., "summer_sale_2024," "product_launch")</li>
-                <li><strong>utm_term</strong> — Optional. Typically used for paid search keywords.</li>
-                <li><strong>utm_content</strong> — Optional. Differentiates similar content or links (e.g., "hero_banner" vs "sidebar_link")</li>
+                <li><strong>utm_source</strong> — Where the traffic originates (e.g., "google," "facebook," "newsletter," "linkedin")</li>
+                <li><strong>utm_medium</strong> — The marketing channel type (e.g., "cpc," "email," "organic_social," "referral")</li>
+                <li><strong>utm_campaign</strong> — The specific campaign name (e.g., "summer_sale_2026," "brand_awareness_q3")</li>
+                <li><strong>utm_term</strong> — Optional. Used for paid search keywords to identify which terms drove traffic.</li>
+                <li><strong>utm_content</strong> — Optional. Differentiates similar links or creatives in the same campaign (e.g., "hero_cta" vs "sidebar_link")</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Source, medium, and campaign are the three essential parameters. Always use all three. Term and content are optional but valuable for more granular analysis. Without UTMs, GA4 may misattribute traffic or lump it into "direct."</p>
+                <p>UTM parameters are Tier 1 measurement data — they populate GA4's acquisition reports and enable cross-channel comparison in a single place. Without consistent UTM tagging, GA4 misattributes traffic as "direct" or groups it incorrectly, which distorts every subsequent channel analysis. Source, medium, and campaign are always required. Without them, the three-tier measurement framework breaks down at Tier 1 — you cannot compare channels you cannot distinguish.</p>
             </div>
 
             <h2>Naming Conventions</h2>
-            <p>Consistency is everything. Establish and document naming rules:</p>
+            <p>Consistency is everything with UTM tagging. A shared naming convention is not optional — it is infrastructure. Establish and document these rules before running any campaign:</p>
             <ul>
-                <li>Use lowercase only ("Facebook" and "facebook" create separate entries)</li>
-                <li>Use underscores instead of spaces</li>
-                <li>Be specific but concise</li>
-                <li>Create a shared naming document your entire team follows</li>
+                <li>Lowercase only — "Facebook" and "facebook" create separate entries in GA4</li>
+                <li>Underscores instead of spaces — spaces break URLs and create inconsistent data</li>
+                <li>Specific but concise campaign names — vague names like "campaign_1" are useless at analysis time</li>
+                <li>A shared naming document that every team member and agency follows without exception</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Inconsistent UTM naming fragments your data. "facebook," "Facebook," "fb," and "FB" all appear as separate sources in GA4, making it impossible to see your total Facebook traffic in one place. Standardise naming from day one.</p>
+                <p>Inconsistent UTM naming fragments your data permanently. "facebook," "Facebook," "fb," and "FB" all appear as separate traffic sources in GA4. You cannot merge them after the fact. Six months of inconsistent tagging produces channel data that cannot be trusted — and decisions made from fragmented data are worse than no data at all because they feel credible but are not.</p>
             </div>
 
-            <h2>UTM Builder Tools</h2>
-            <p>Use Google's Campaign URL Builder or a spreadsheet template to generate UTM-tagged URLs. Some teams use URL shorteners (like Bitly) to make tagged URLs cleaner for sharing. Always test your tagged URLs to verify they land on the correct page and that GA4 captures the parameters correctly.</p>
+            <h2>UTM Builder Tools and Process</h2>
+            <p>Use Google's Campaign URL Builder or a team spreadsheet template to generate UTM-tagged URLs consistently. Always test a tagged URL before launching to confirm it loads correctly and GA4 captures the parameters. For email campaigns, most email platforms (Mailchimp, Klaviyo, HubSpot) offer auto-tagging — but audit the naming they apply to ensure it matches your conventions, rather than accepting their defaults unchecked.</p>
         `,
         quiz: {
             question: 'Why is inconsistent UTM naming problematic?',
@@ -3292,35 +3289,31 @@ Object.assign(lessonContent, {
     'an-2-2': {
         title: 'Event Tracking and Custom Dimensions',
         body: `
-            <h2>GA4\'s Event-Based Model</h2>
-            <p>In GA4, <strong>everything is an event</strong>. Page views, button clicks, form submissions, purchases, scroll depth — all tracked as events with optional parameters that provide additional context. Understanding this model is essential for getting the most out of GA4.</p>
+            <h2>GA4's Event-Based Model</h2>
+            <p>In GA4, <strong>everything is an event</strong>. Page views, button clicks, form submissions, purchases, scroll depth — all tracked as events with optional parameters providing additional context. This event-based architecture gives GA4 far greater flexibility than its predecessors and makes it genuinely cross-platform: the same property can track a website and a mobile app within a single data model, using the same event structure throughout.</p>
 
             <h2>Event Categories</h2>
             <ul>
-                <li><strong>Automatically collected events</strong> — Tracked without any setup: first_visit, session_start, page_view (with enhanced measurement), user_engagement</li>
-                <li><strong>Enhanced measurement events</strong> — Toggle on in settings: scroll, click (outbound), site_search, video_start, video_complete, file_download</li>
-                <li><strong>Recommended events</strong> — Events Google suggests for specific business types (login, sign_up, purchase, add_to_cart)</li>
-                <li><strong>Custom events</strong> — Events you create for tracking business-specific actions</li>
+                <li><strong>Automatically collected events</strong> — Tracked without setup: first_visit, session_start, page_view (with enhanced measurement enabled), user_engagement</li>
+                <li><strong>Enhanced measurement events</strong> — Toggle on in settings: scroll, outbound click, site_search, video_start, video_complete, file_download</li>
+                <li><strong>Recommended events</strong> — Standard event names for specific business types: login, sign_up, purchase, add_to_cart. Always use recommended names before creating custom ones.</li>
+                <li><strong>Custom events</strong> — Events you create for actions specific to your business that have no recommended equivalent</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Every event can carry <strong>event parameters</strong> — additional data points attached to the event. For example, a "purchase" event includes parameters like value, currency, transaction_id, and items. Parameters turn a basic event into rich, analysable data.</p>
+                <p>Every event can carry <strong>event parameters</strong> — additional data points attached to the event. A "purchase" event sends parameters including value, currency, transaction_id, and items. These parameters are what transform a basic event trigger into rich, analysable data. The quality of your event parameters determines how useful your GA4 data is — an event without parameters tells you something happened; parameters tell you what, where, and for how much.</p>
             </div>
 
+            <h2>Consent Mode V2 and Event Tracking</h2>
+            <p>Consent Mode V2 is not just a compliance requirement — it directly affects your event data. When a user declines tracking consent, GA4 does not receive their events directly. Instead, Consent Mode signals that decline to GA4 and Google Ads, which then use modelling to estimate the behaviour of non-consenting users. Without Consent Mode V2 properly implemented, GA4 receives no signal for those users at all — not even the modelled estimate. The practical result is systematically undercounted traffic and conversions, which distorts every channel comparison you make.</p>
+
             <h2>Custom Dimensions and Metrics</h2>
-            <p><strong>Custom dimensions</strong> let you collect and analyse data specific to your business that GA4 doesn't track by default. Examples:</p>
-            <ul>
-                <li>Logged-in status (member vs guest)</li>
-                <li>Subscription tier (free, premium, enterprise)</li>
-                <li>Content author or category</li>
-                <li>A/B test variant</li>
-            </ul>
-            <p>Register custom dimensions in GA4 Admin → Custom Definitions. You can have up to 50 event-scoped and 25 user-scoped custom dimensions.</p>
+            <p><strong>Custom dimensions</strong> allow you to collect and segment data that GA4 does not track by default. Common examples include logged-in status (member vs guest), subscription tier (free, premium, enterprise), content author or category, and A/B test variant. Register custom dimensions in GA4 Admin → Custom Definitions. There are up to 50 event-scoped and 25 user-scoped custom dimensions available per property.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Plan your event tracking before implementing. Create a measurement plan document listing every key action on your site, the event name you'll use, and what parameters you'll send. This prevents messy, ad-hoc tracking that's impossible to analyse later.</p>
+                <p>Write your measurement plan before implementing a single event. A measurement plan documents every key action on your site, the event name you will use, the parameters you will send, and whether the event will be marked as a key event. This takes a few hours upfront and prevents months of messy, ad-hoc tracking that cannot be analysed coherently. The most common GA4 problem is not missing data — it is data that exists but cannot be trusted because events were set up inconsistently over time.</p>
             </div>
         `,
         quiz: {
@@ -3340,25 +3333,25 @@ Object.assign(lessonContent, {
         title: 'Understanding User Behaviour Reports',
         body: `
             <h2>Pages and Screens Report</h2>
-            <p>The <strong>Pages and Screens</strong> report in GA4 shows which pages users visit, how long they engage, and what events they trigger. This is your go-to report for understanding what content resonates and where users spend their time. Sort by engagement time to find your most compelling content, or by views to find your highest-traffic pages.</p>
+            <p>The <strong>Pages and Screens</strong> report in GA4 shows which pages users visit, how long they engage, and what events they trigger. Sort by average engagement time to find content users actually read, or by views to find your highest-traffic pages. The most useful analysis combines both dimensions: high-traffic pages with low engagement time are your biggest optimisation opportunities — pages that attract audiences but fail to hold them.</p>
 
             <h2>Landing Pages Report</h2>
-            <p>The <strong>Landing Pages</strong> report shows the first page users see when they arrive. This is critical because your landing pages set the first impression. Look for pages with high traffic but low engagement — these represent opportunities for improvement that could significantly impact your overall conversion rate.</p>
+            <p>The <strong>Landing Pages</strong> report shows the first page users see when they arrive from any channel. Landing pages set the first impression and have the largest single-page impact on whether visitors stay and convert. Look for pages with high traffic but low engagement rate — these represent recoverable value. The combination of source data and landing page data is particularly powerful: a page may perform well for organic search visitors but poorly for visitors arriving from a paid campaign, indicating a mismatch between the ad's promise and what the page delivers.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Combine landing page data with acquisition data to answer: "Which pages attract visitors from which channels, and how well do those visitors convert?" A page might perform brilliantly for organic traffic but poorly for paid traffic, indicating a mismatch between ad messaging and page content.</p>
+                <p>Behaviour reports in GA4 are most valuable when cross-referenced with acquisition source. A page's overall engagement rate is interesting; the engagement rate by channel is actionable. The same landing page can have a 70% engagement rate for organic visitors and a 20% engagement rate for paid visitors — and that gap tells you exactly where the conversion path is broken. Build this cross-dimension view using GA4 Explore, or set it up as a standing Looker Studio report for regular review.</p>
             </div>
 
-            <h2>Identifying Drop-Off Points</h2>
-            <p>Use GA4's <strong>funnel exploration</strong> in the Explore section to visualise where users drop off in multi-step processes (checkout, sign-up, onboarding). Each step shows the completion rate and the percentage of users who abandon. Focus your optimisation efforts on the steps with the highest drop-off rates — these are your biggest opportunities.</p>
+            <h2>Identifying Drop-Off Points with Funnel Exploration</h2>
+            <p>Use GA4's <strong>funnel exploration</strong> in the Explore section to visualise where users abandon multi-step processes: checkout flows, sign-up sequences, onboarding journeys. Each step shows the completion rate and the percentage of users who leave at that point. Prioritise the step with the highest abandonment rate — improving it by even a few percentage points compounds through the remainder of the funnel and can have a larger impact than driving more traffic in the first place.</p>
 
             <h2>Content Grouping</h2>
-            <p><strong>Content groups</strong> let you categorise pages into logical sections (blog, product pages, help articles, landing pages) so you can analyse performance by content type rather than individual pages. This is especially valuable for large sites with hundreds of pages.</p>
+            <p><strong>Content groups</strong> let you categorise pages into logical sections — blog, product pages, help articles, landing pages, pricing — enabling performance analysis by content type rather than individual pages. This is essential for sites with more than a few dozen pages, where page-level reporting creates too much noise to act on. Set up content grouping via GA4's custom dimensions or directly in Google Tag Manager.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Create a weekly habit of checking: your top 10 landing pages by traffic, your top 5 pages by conversion rate, and your bottom 5 pages by engagement rate. The top pages tell you what's working. The bottom pages tell you where to improve or where to stop driving traffic.</p>
+                <p>Build a standing weekly review: your top 10 landing pages by traffic, your top 5 by conversion rate, and your bottom 5 by engagement rate. Feed this into a Looker Studio report so it updates automatically. The top pages tell you where to invest in promotion; the bottom pages tell you where to fix or redirect traffic spend. This 15-minute weekly review catches more genuine optimisation opportunities than monthly deep dives.</p>
             </div>
         `,
         quiz: {
@@ -3378,42 +3371,42 @@ Object.assign(lessonContent, {
         title: 'Building Marketing Dashboards',
         body: `
             <h2>Why Dashboards Matter</h2>
-            <p>A well-built dashboard transforms raw data into actionable insights at a glance. Instead of digging through multiple tools and reports, dashboards surface the metrics that matter most — enabling faster, better decisions.</p>
+            <p>A well-built dashboard transforms raw data from multiple sources into actionable insights at a glance. The goal is not to display everything you know — it is to surface the metrics that connect directly to decisions. A dashboard that requires a meeting to interpret is not a dashboard; it is a data dump. The standard for a useful dashboard is that the right person can open it, understand what is happening, and know what to do next — without explanation.</p>
 
-            <h2>Looker Studio (Google Data Studio)</h2>
-            <p><strong>Looker Studio</strong> is Google's free dashboard tool. It connects to GA4, Google Ads, Search Console, Google Sheets, and many other data sources. Key capabilities:</p>
+            <h2>Looker Studio as the Primary Reporting Layer</h2>
+            <p><strong>Looker Studio</strong> is Google's free dashboard and reporting tool and the primary recommended output layer for GA4 data. It connects natively to GA4, Google Ads, Search Console, BigQuery, Google Sheets, and dozens of partner connectors. Key capabilities:</p>
             <ul>
-                <li>Drag-and-drop report builder with charts, tables, and scorecards</li>
-                <li>Real-time data updates from connected sources</li>
-                <li>Shareable via link — no recipient login needed</li>
-                <li>Blending data from multiple sources in one dashboard</li>
+                <li>Drag-and-drop report builder with charts, tables, scorecards, and geo maps</li>
+                <li>Automatic data refresh — reports update without anyone having to export anything</li>
+                <li>Shareable via link — recipients do not need a Google Analytics login to view reports</li>
+                <li>Data blending — combine GA4 data with Google Ads, Search Console, and CRM data in a single view, enabling the three-tier measurement framework to be visible in one place</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>The best dashboards answer specific questions, not just display data. Before building, write down the 5–7 questions your stakeholders ask most frequently. Design every chart and metric to answer one of those questions.</p>
+                <p>Build dashboards around questions, not data sources. Before opening Looker Studio, write down the five to seven questions your stakeholders ask most frequently. Every chart and metric in the dashboard should answer one of those questions. The discipline of connecting every visual to a decision — rather than including data because it is available — is what separates dashboards that change behaviour from dashboards that get glanced at and closed.</p>
             </div>
 
             <h2>Key Dashboard Components</h2>
             <ul>
-                <li><strong>KPI scorecards</strong> — Top-level numbers with comparison to previous period (traffic, conversions, revenue)</li>
-                <li><strong>Trend charts</strong> — Time-series showing performance over weeks or months</li>
-                <li><strong>Channel breakdown</strong> — Pie or bar charts showing performance by traffic source</li>
-                <li><strong>Top content table</strong> — Your best-performing pages ranked by the relevant metric</li>
-                <li><strong>Campaign performance</strong> — Active campaign results vs targets</li>
+                <li><strong>KPI scorecards</strong> — Top-level numbers with comparison to previous period: sessions, conversions, revenue, ROAS</li>
+                <li><strong>Trend charts</strong> — Time-series across weeks or months showing whether things are improving or declining</li>
+                <li><strong>Channel breakdown</strong> — Performance by traffic source, enabling the Tier 1 (GA4) view of cross-channel contribution</li>
+                <li><strong>Platform vs GA4 comparison</strong> — Side-by-side Tier 1 and Tier 2 data to highlight where platform-reported numbers diverge from GA4</li>
+                <li><strong>Campaign performance table</strong> — Active campaigns ranked by conversions or revenue against target</li>
             </ul>
 
             <h2>Dashboard Design Principles</h2>
             <ul>
-                <li>Start with the big picture (KPIs at top), then drill into details below</li>
-                <li>Use consistent colours and formatting</li>
-                <li>Limit to one page if possible — scrolling dashboards get ignored</li>
-                <li>Add date range controls so users can explore different periods</li>
+                <li>Big picture at the top (KPIs), detail below — executives read the top; specialists scroll further</li>
+                <li>Date range controls so stakeholders can explore periods without asking for a new report</li>
+                <li>Consistent colour scheme — use colour to signal performance (red/amber/green), not decoration</li>
+                <li>One page where possible — scrolling dashboards are rarely fully read</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Build separate dashboards for different audiences. Executives want a one-page overview with KPIs and trends. Marketing managers want channel-level detail. Campaign managers want granular campaign metrics. One dashboard trying to serve everyone serves no one well.</p>
+                <p>Build separate dashboards for different audiences in Looker Studio. Executives need a single page with KPIs, trends, and one clear recommendation. Marketing managers need channel-level detail and campaign comparison. Campaign specialists need granular creative or keyword performance. Template each version, connect them to the same GA4 data source, and give each audience the view that matches how they make decisions — not a single dashboard trying to serve everyone and serving no one well.</p>
             </div>
         `,
         quiz: {
@@ -3435,29 +3428,26 @@ Object.assign(lessonContent, {
         title: 'Attribution Models Explained',
         body: `
             <h2>What Is Attribution?</h2>
-            <p><strong>Attribution</strong> is the process of assigning credit for a conversion to the marketing touchpoints that contributed to it. Most customers interact with multiple channels before converting — they might see a social ad, click a search result, read an email, and then convert. Attribution models determine how credit is distributed among those touchpoints.</p>
+            <p><strong>Attribution</strong> is the process of assigning credit for a conversion to the marketing touchpoints that contributed to it. Most customers interact with multiple channels before converting — they might encounter a social ad, read an organic article, click a paid search result, open an email, and then purchase. Attribution models determine how credit is distributed across those touchpoints. The model you use significantly changes which channels appear valuable and, therefore, which channels receive budget.</p>
 
-            <h2>Common Attribution Models</h2>
+            <h2>Attribution Models: From Last-Click to DDA</h2>
             <ul>
-                <li><strong>Last Click</strong> — 100% credit to the final touchpoint before conversion. Simple but ignores everything that came before.</li>
-                <li><strong>First Click</strong> — 100% credit to the first touchpoint. Values discovery but ignores the conversion journey.</li>
-                <li><strong>Linear</strong> — Equal credit to every touchpoint. Fair but doesn't reflect that some touches matter more than others.</li>
-                <li><strong>Time Decay</strong> — More credit to touchpoints closer to the conversion. Reflects the assumption that recent interactions are more influential.</li>
-                <li><strong>Position-Based</strong> — 40% to first touch, 40% to last touch, 20% spread among middle touches. Values both discovery and closing.</li>
-                <li><strong>Data-Driven</strong> — Uses machine learning to assign credit based on actual conversion probability. GA4's default and most accurate model.</li>
+                <li><strong>Last Click</strong> — 100% credit to the final touchpoint before conversion. This was the historical default in analytics. It systematically undervalues every channel except the one that captures the final click — typically branded search or direct — and remains useful only as a historical comparison point.</li>
+                <li><strong>First Click</strong> — 100% credit to the first touchpoint. Values discovery but ignores the entire conversion journey.</li>
+                <li><strong>Linear</strong> — Equal credit to every touchpoint. More balanced than single-touch models but does not reflect that different touches have different levels of influence.</li>
+                <li><strong>Time Decay</strong> — More credit to touchpoints closer to conversion. Appropriate where the final touchpoints genuinely drive the decision, less so for long consideration cycles where early awareness has lasting value.</li>
+                <li><strong>Position-Based</strong> — 40% to first touch, 40% to last touch, 20% among middle touches. Values both discovery and closing, but the fixed percentages are arbitrary rather than data-driven.</li>
+                <li><strong>Data-Driven Attribution (DDA)</strong> — Uses machine learning to assign credit based on each touchpoint's actual contribution to conversion probability, calculated from your own conversion data. This is the default model for all new conversion events in GA4 and the correct starting point for all businesses with sufficient conversion volume.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>No attribution model is "correct" — each tells a different story about which channels drive value. Data-driven attribution is the most sophisticated, but understanding all models helps you interpret results and communicate with stakeholders who may use different models.</p>
+                <p>DDA is the default, not just an advanced option. GA4 applies data-driven attribution to new conversion events automatically. The GA4 Conversion Attribution Analysis report (introduced in early 2026) extends this further — it shows Assisted Conversions for each channel and breaks conversion journeys into Early, Mid, and Late funnel stages, giving you a clear picture of where each channel contributes across the full customer journey, not just at the moment of conversion. Additionally, attribution settings are now configurable per conversion: a purchase event and a newsletter sign-up do not need to share the same model. Configure high-value conversions with DDA; simpler micro-conversions can use a lighter model where appropriate.</p>
             </div>
-
-            <h2>Choosing the Right Model</h2>
-            <p>For most businesses, <strong>data-driven attribution</strong> (GA4's default) is the best starting point because it uses your actual data to determine credit allocation. However, you need sufficient conversion volume for it to work well — at least 400 conversions per month with multiple touchpoint types.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Relying solely on last-click attribution. This systematically undervalues top-of-funnel channels (social, display, content) that introduce customers to your brand but don't typically generate the final click. This leads to over-investing in bottom-funnel channels.</p>
+                <p>Continuing to report or make budget decisions using last-click attribution. Last-click systematically undervalues every channel that contributes earlier in the customer journey — social, display, content, video — and over-rewards branded search and direct, which capture conversions that other channels generated. Teams using last-click as their primary model consistently over-invest in bottom-funnel channels and under-fund the top-of-funnel activity that feeds them. DDA corrects this by reflecting what the data actually shows about each channel's contribution.</p>
             </div>
         `,
         quiz: {
@@ -3477,30 +3467,30 @@ Object.assign(lessonContent, {
         title: 'Multi-Touch Attribution in Practice',
         body: `
             <h2>The Challenge of Multi-Touch</h2>
-            <p>In reality, customers rarely convert from a single touchpoint. A typical B2B buyer might have 8–15 marketing interactions before purchasing. <strong>Multi-touch attribution</strong> attempts to credit each of these interactions fairly, but it faces significant practical challenges.</p>
+            <p>Customers rarely convert from a single touchpoint. A typical B2B buyer may have 8–15 marketing interactions before purchasing; an e-commerce customer might encounter a brand across Instagram, organic search, and email before transacting. <strong>Multi-touch attribution</strong> attempts to credit each of these interactions fairly — but doing so accurately faces structural challenges that no single tool fully resolves. Understanding these challenges is what separates analysts who use attribution data wisely from those who over-trust it.</p>
 
             <h2>Practical Challenges</h2>
             <ul>
-                <li><strong>Cross-device tracking</strong> — The same person browsing on their phone, then purchasing on their laptop, appears as two different users unless they're logged in</li>
-                <li><strong>Walled gardens</strong> — Platforms like Meta and Google don't share user-level data with each other</li>
-                <li><strong>Offline touchpoints</strong> — TV ads, word-of-mouth, events, and phone calls are hard to attribute</li>
-                <li><strong>Privacy restrictions</strong> — Cookie limitations and privacy regulations reduce available tracking data</li>
+                <li><strong>Cross-device tracking</strong> — The same person browsing on their phone, then purchasing on their laptop, appears as two separate users unless they are logged in to an account. GA4 uses User-ID where available and modelling to fill gaps.</li>
+                <li><strong>Walled gardens</strong> — Meta and Google do not share user-level data with each other. Each platform's self-reported attribution (Tier 2) counts conversions differently, which is why platform totals always exceed GA4 totals.</li>
+                <li><strong>Offline touchpoints</strong> — Events, word-of-mouth, and phone calls are hard to attribute. Enhanced Conversions and offline conversion imports in Google Ads help partially, but offline attribution remains imprecise.</li>
+                <li><strong>Privacy restrictions</strong> — Apple's iOS consent changes and Consent Mode V2 compliance mean a growing portion of user journeys are modelled rather than directly observed. This is normal — the model is better than the gap, but it is not the same as direct tracking.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Multi-touch attribution gives you a directional picture, not an exact one. Accept that no model captures 100% of the journey. Use attribution data to make better decisions, not perfect ones. "Roughly right" beats "precisely wrong."</p>
+                <p>The GA4 Conversion Attribution Analysis report provides the clearest view of multi-touch contribution available within the platform. It shows Assisted Conversions — the number of conversions each channel contributed to without being the final touchpoint — and breaks customer journeys into Early, Mid, and Late funnel stages. A channel with a high Assisted Conversion count but low Last-Click conversions is doing important work earlier in the journey that last-click reporting would make invisible. This report is the practical tool for defending top-of-funnel budget in stakeholder conversations.</p>
             </div>
 
             <h2>Customer Journey Mapping</h2>
-            <p>Use GA4's <strong>conversion paths</strong> report (under Advertising) to see the actual sequences of channels users take before converting. This reveals common patterns — for example, you might discover that 40% of converters first arrive via organic search, then return via email. These paths inform budget allocation.</p>
+            <p>Use GA4's <strong>conversion paths</strong> report (under Advertising) to see the actual sequences of channels users move through before converting. This surfaces patterns — for example, 40% of converters might first arrive via organic search, return via email, and convert via paid search. Those paths inform how budgets should be structured across the full funnel, not just at the point of capture.</p>
 
             <h2>Incrementality Testing</h2>
-            <p>The most accurate way to measure a channel's true impact is <strong>incrementality testing</strong>: turn a channel off for a defined period and measure the difference in conversions. If you turn off Facebook ads and see 30% fewer total conversions, Facebook is driving 30% incremental lift. This bypasses all attribution modelling complexity.</p>
+            <p>The most accurate way to measure a channel's true contribution is <strong>incrementality testing</strong>: remove a channel for a defined period and measure the change in total conversions. If pausing Facebook ads results in 25% fewer total conversions, Facebook is driving approximately 25% incremental lift — lift that attribution models may not have fully captured. Incrementality testing is the most honest measurement available and bypasses all the structural limitations of attribution modelling.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Use a "triangulation" approach: compare platform-reported conversions, GA4 attributed conversions, and incrementality test results. Where all three agree, you have confidence. Where they diverge significantly, investigate further before making budget decisions.</p>
+                <p>Use a triangulation approach that combines all three tiers: GA4's DDA-attributed data (Tier 1), platform self-reported conversions (Tier 2), and CRM or revenue data (Tier 3). Where all three agree, you have genuine confidence. Where they diverge significantly, investigate before making budget changes — divergence is a signal worth understanding, not a problem to explain away. The gaps between tiers often contain the most important insights about measurement quality.</p>
             </div>
         `,
         quiz: {
@@ -3520,33 +3510,33 @@ Object.assign(lessonContent, {
         title: 'Cohort Analysis and Retention Metrics',
         body: `
             <h2>What Is Cohort Analysis?</h2>
-            <p>A <strong>cohort</strong> is a group of users who share a common characteristic within a defined time period. <strong>Cohort analysis</strong> tracks how these groups behave over time. The most common type is an <strong>acquisition cohort</strong> — grouping users by when they first visited, then measuring their activity in subsequent weeks or months.</p>
+            <p>A <strong>cohort</strong> is a group of users who share a characteristic within a defined time period. <strong>Cohort analysis</strong> tracks how those groups behave over time, revealing patterns that aggregate reporting conceals. It is one of the most valuable analytical techniques available because it separates the quality of marketing — how well new cohorts perform — from the volume of marketing, which can inflate or mask underlying trends in aggregate data.</p>
 
             <h2>Types of Cohorts</h2>
             <ul>
-                <li><strong>Acquisition cohorts</strong> — Users grouped by when they first arrived (e.g., "users acquired in January"). Track whether they return and convert over time.</li>
-                <li><strong>Behavioural cohorts</strong> — Users grouped by an action they took (e.g., "users who downloaded the ebook"). Compare their conversion rates to those who didn't.</li>
+                <li><strong>Acquisition cohorts</strong> — Users grouped by when they first arrived (e.g., all users who first visited in January). Track whether they return and convert in subsequent weeks and months. If January's cohort converts at 5% and March's converts at 8%, your funnel is genuinely improving — even if your overall blended conversion rate appears flat because the larger January cohort is still active.</li>
+                <li><strong>Behavioural cohorts</strong> — Users grouped by an action they took (e.g., users who started a free trial, downloaded a lead magnet, or attended a webinar). Compare their subsequent conversion rates to users who did not take that action. This reveals which behaviours predict conversion and which are genuinely high-intent signals worth optimising for.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Cohort analysis reveals whether your marketing is improving over time. If January's cohort has a 5% conversion rate and March's cohort has an 8% conversion rate, your overall funnel is improving — even if total conversion rate appears flat (because the larger January cohort is still in the mix).</p>
+                <p>Cohort analysis is the analytically honest way to measure marketing improvement over time. Aggregate conversion rate is affected by the mix of traffic — a cohort from a new channel with lower quality can mask improvement in existing cohorts. Tracking cohort-level performance separately from aggregate performance gives you the signal that tells you whether your marketing is actually getting better, independent of changes in volume or channel mix.</p>
             </div>
 
             <h2>Key Retention Metrics</h2>
             <ul>
-                <li><strong>Retention rate</strong> — The percentage of users who return after their first visit. Measured at intervals (Day 1, Week 1, Month 1).</li>
-                <li><strong>Churn rate</strong> — The percentage of customers who stop using your product or cancel within a period. The inverse of retention.</li>
-                <li><strong>Repeat purchase rate</strong> — The percentage of customers who buy more than once. Critical for e-commerce profitability.</li>
-                <li><strong>Customer Lifetime Value (LTV)</strong> — Average revenue per customer × average customer lifespan. The ultimate retention metric.</li>
+                <li><strong>Retention rate</strong> — The percentage of users who return after their first visit, measured at intervals (Day 1, Week 1, Month 1). The shape of the retention curve — how quickly it drops and where it flattens — tells you about product stickiness and content quality.</li>
+                <li><strong>Churn rate</strong> — The percentage of customers who cancel or stop engaging within a period. The inverse of retention. Even small reductions in churn compound significantly over time.</li>
+                <li><strong>Repeat purchase rate</strong> — The percentage of customers who buy more than once. The single most important indicator of e-commerce profitability, because second purchases are acquired at near-zero marginal cost.</li>
+                <li><strong>Customer Lifetime Value (LTV)</strong> — Average revenue per customer over their full relationship with the business. The metric that determines how much you can afford to spend acquiring each customer without loss.</li>
             </ul>
 
             <h2>Using Cohorts in GA4</h2>
-            <p>GA4 has a built-in <strong>cohort exploration</strong> in the Explore section. Set the cohort inclusion criteria, the return criteria, and the granularity (daily, weekly, monthly). This visualises how user engagement changes over time and helps identify when users typically drop off.</p>
+            <p>GA4 has a built-in <strong>cohort exploration</strong> in the Explore section. Set the cohort inclusion criteria (how a user enters the cohort), the return criteria (what action defines a return), and the time granularity (daily, weekly, monthly). The resulting grid shows how engagement evolves across cohort periods — this is where you see when users typically disengage, and which cohorts retained better than others.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Compare cohorts from different acquisition channels. You might find that users from organic search have much better retention than users from paid social. This insight should influence how you value and invest in each channel — a channel with better retention is worth a higher CPA.</p>
+                <p>Compare retention rates by acquisition channel. You may find that users who first arrived via organic search retain significantly better than those from paid social — and that a higher CPA for the organic channel is therefore justified when LTV is factored in. A channel that costs more to acquire from but generates customers who stay longer and buy more is worth more per acquisition than a cheaper channel with high churn. LTV-adjusted CPA is the metric that reveals this; cohort analysis by channel is how you build it.</p>
             </div>
         `,
         quiz: {
@@ -3566,33 +3556,33 @@ Object.assign(lessonContent, {
         title: 'Marketing Mix Modelling Overview',
         body: `
             <h2>What Is Marketing Mix Modelling?</h2>
-            <p><strong>Marketing Mix Modelling (MMM)</strong> is a statistical technique that analyses the impact of various marketing activities on business outcomes (usually revenue or sales). Unlike digital attribution, MMM uses aggregate data and regression analysis to estimate how much each marketing channel contributes to results.</p>
+            <p><strong>Marketing Mix Modelling (MMM)</strong> is a statistical technique that analyses the impact of various marketing activities on business outcomes — typically revenue or sales — using aggregate data over time. Unlike digital attribution, which tracks individual user journeys through clicks and cookies, MMM uses regression analysis to find statistical relationships between spending patterns and outcomes. Privacy restrictions have driven significant renewed interest in MMM, because it does not depend on user-level tracking — it works from aggregate data that remains available regardless of consent choices.</p>
 
             <h2>How MMM Differs From Attribution</h2>
             <ul>
-                <li><strong>Attribution</strong> tracks individual user journeys using cookies and clicks. It's digital-only and increasingly limited by privacy changes.</li>
-                <li><strong>MMM</strong> uses aggregate data (total spend per channel, total revenue per period) to find statistical relationships. It can include offline channels (TV, radio, out-of-home) and external factors (seasonality, weather, economic conditions).</li>
+                <li><strong>Attribution</strong> — Tracks individual user journeys using first-party events, cookies, and conversion APIs. Digital-only, increasingly limited by privacy changes, but granular and real-time.</li>
+                <li><strong>MMM</strong> — Uses aggregate spend and revenue data across time periods to estimate each channel's contribution. Can include offline channels (TV, radio, out-of-home), external factors (seasonality, weather, economic conditions), and is privacy-resilient by design.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>MMM answers "how much did each channel contribute to overall results?" while attribution answers "which touchpoints did this individual user interact with?" They're complementary, not competing approaches. Many sophisticated marketers use both.</p>
+                <p>MMM and attribution are complementary within the three-tier measurement framework. GA4 attribution (Tier 1) tells you which touchpoints individual users interacted with and how credit is distributed across channels. MMM tells you, at a macro level, how much each channel contributed to total revenue over time — including offline channels and external factors that attribution cannot capture. GA4 is also evolving in this direction: cross-channel budget modelling is now available in beta for eligible GA4 properties, allowing planners to model budget allocation scenarios directly within the platform. MMM and GA4 planning tools will increasingly complement each other as measurement matures.</p>
             </div>
 
             <h2>What MMM Needs</h2>
             <ul>
-                <li>At least 2–3 years of weekly or monthly data</li>
-                <li>Marketing spend by channel over time</li>
-                <li>Business outcome data (revenue, leads, units sold)</li>
-                <li>External variables (seasonality, promotions, competitor activity)</li>
+                <li>At least 2–3 years of weekly or monthly spend and revenue data — more data makes the model more reliable</li>
+                <li>Marketing spend broken down by channel for each period</li>
+                <li>Business outcome data: revenue, leads, units sold — matched to the same time periods</li>
+                <li>External variables: seasonality, promotional events, competitor activity, economic indicators</li>
             </ul>
 
-            <h2>When to Use MMM</h2>
-            <p>MMM is most valuable for businesses with significant offline marketing spend, large overall budgets, or where privacy restrictions limit digital tracking. It's traditionally been used by enterprise brands, but modern open-source tools (like Meta's Robyn and Google's Meridian) are making it accessible to smaller businesses.</p>
+            <h2>Accessibility Has Improved</h2>
+            <p>MMM was traditionally an enterprise-only technique requiring specialist data science teams and significant cost. That has changed. Meta's open-source Robyn library and Google's Meridian tool (also open-source) have made MMM accessible to smaller teams with in-house analytical capability. For any business with a meaningful offline component or significant media budgets, MMM is now a realistic part of the measurement toolkit.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Treating MMM results as definitive truth. MMM provides estimates based on statistical models, not exact measurements. Results depend on data quality, model assumptions, and the time period analysed. Use MMM insights directionally, validated against other data sources.</p>
+                <p>Treating MMM outputs as precise truth rather than informed estimates. MMM provides directional guidance based on statistical relationships — it is not a ledger. Results depend on data quality, model assumptions, and the time period used. A channel that appears high-contribution in the model may reflect correlation rather than causation. Use MMM insights directionally, cross-reference against incrementality test results, and update models as new data arrives rather than treating a single model run as definitive.</p>
             </div>
         `,
         quiz: {
@@ -3612,41 +3602,33 @@ Object.assign(lessonContent, {
         title: 'Privacy, Cookies, and the Future of Tracking',
         body: `
             <h2>The Privacy Landscape</h2>
-            <p>Marketing analytics is undergoing a fundamental shift driven by privacy regulations, browser restrictions, and changing consumer expectations. The era of tracking users across the web with third-party cookies is ending, and marketers need new strategies.</p>
+            <p>Marketing analytics is operating in a fundamentally different privacy environment. Third-party cross-site tracking — the mechanism that powered personalised advertising for two decades — has been largely dismantled by browser restrictions, platform policy changes, and regulation. First-party data and server-side measurement are no longer advanced topics for sophisticated teams; they are baseline requirements for any business that wants accurate data.</p>
 
             <h2>Key Privacy Changes</h2>
             <ul>
-                <li><strong>GDPR (EU/UK)</strong> — Requires explicit consent before tracking. Cookie banners and consent management platforms are mandatory. Significant fines for non-compliance.</li>
-                <li><strong>iOS App Tracking Transparency</strong> — Apple requires apps to ask permission before tracking. Roughly 75% of users opt out, dramatically reducing Meta and other platforms' tracking data.</li>
-                <li><strong>Third-party cookie restrictions</strong> — Safari and Firefox already block third-party cookies. Chrome has been moving toward restrictions as well.</li>
-                <li><strong>Browser privacy features</strong> — Increasing built-in protections against cross-site tracking</li>
+                <li><strong>Consent Mode V2 (Google)</strong> — Enforced by Google, not optional. Consent Mode V2 signals user consent status to GA4 and Google Ads, enabling modelled measurement for users who decline tracking. Without it, those users produce no data at all — not even an estimate. Any business running Google Ads or using GA4 is required to implement Consent Mode V2 to maintain measurement accuracy and comply with Google's policies.</li>
+                <li><strong>GDPR (EU/UK)</strong> — Requires explicit, informed consent before any tracking. Consent management platforms (CMPs) are mandatory. Enforcement has produced billions in fines since the regulation came into force.</li>
+                <li><strong>Apple iOS App Tracking Transparency</strong> — Requires explicit opt-in permission for cross-app tracking. Approximately 75% of users decline, dramatically reducing the user-level data available to ad platforms including Meta.</li>
+                <li><strong>Apple Mail Privacy Protection (MPP)</strong> — Pre-loads email tracking pixels for a large portion of Apple Mail users, making email open rate an unreliable signal — a consequence that extends beyond analytics into email marketing measurement.</li>
+                <li><strong>Third-party cookie restrictions</strong> — Safari and Firefox have blocked third-party cookies for years. Chrome's restrictions continue to evolve. Any measurement strategy that depends on third-party cookies is structurally fragile.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>The shift isn't "tracking is dead." It's "tracking based on following users across third-party sites is ending." First-party data (data you collect directly from your users with consent) becomes your most valuable asset.</p>
+                <p>First-party data and server-side tagging are now measurement fundamentals, not advanced options. First-party data is data collected directly from your users with their consent — email addresses, account data, purchase history, declared preferences. This is the data that remains reliable regardless of browser policy or platform changes. Server-side tagging routes tracking through your own server rather than the user's browser, bypassing ad blockers and browser restrictions that would prevent client-side tags from firing. Together, these two capabilities are the foundation of durable measurement in a privacy-first environment.</p>
             </div>
 
             <h2>First-Party Data Strategy</h2>
-            <p>Your first-party data strategy should focus on:</p>
             <ul>
-                <li>Building direct relationships where users share data voluntarily (email lists, accounts, loyalty programmes)</li>
-                <li>Using server-side tracking to maintain data quality</li>
-                <li>Implementing proper consent management</li>
-                <li>Using GA4's modelling features to fill gaps from consent-denied users</li>
-            </ul>
-
-            <h2>Cookieless Alternatives</h2>
-            <ul>
-                <li><strong>Server-side tracking</strong> — Moves tracking from the browser to your server, bypassing browser restrictions</li>
-                <li><strong>Conversion APIs</strong> — Direct server-to-server connections with ad platforms (Meta CAPI, Google Enhanced Conversions)</li>
-                <li><strong>Privacy Sandbox</strong> — Google's initiative for privacy-preserving ad targeting</li>
-                <li><strong>Contextual targeting</strong> — Showing ads based on page content, not user profiles</li>
+                <li>Build direct relationships where users share data voluntarily: email lists, accounts, loyalty programmes, preference centres</li>
+                <li>Implement Consent Mode V2 before any other tracking configuration — it is the prerequisite, not an add-on</li>
+                <li>Deploy server-side tracking to recover conversion data lost to browser restrictions</li>
+                <li>Use GA4's modelling features to estimate the behaviour of users who decline consent — not as a replacement for direct measurement, but as a complement to it</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Ignoring privacy compliance and hoping enforcement won't reach you. GDPR fines have exceeded €4 billion since 2018. Invest in proper consent management and privacy-compliant tracking now — it's both a legal obligation and a competitive advantage as users increasingly reward trustworthy brands.</p>
+                <p>Treating Consent Mode V2 as optional or as a project to do later. Google enforces it as a requirement for measurement in GA4 and for Smart Bidding in Google Ads. Running campaigns without Consent Mode V2 in place means your conversion data has uncorrected gaps, your Smart Bidding models are working from incomplete signals, and your attribution is systematically understating the impact of consent-compliant users. Implement it before launching campaigns, not after the data problem becomes apparent.</p>
             </div>
         `,
         quiz: {
@@ -3666,39 +3648,39 @@ Object.assign(lessonContent, {
         title: 'Data Storytelling: Presenting Insights',
         body: `
             <h2>From Data to Narrative</h2>
-            <p>Raw data doesn't drive decisions — stories do. <strong>Data storytelling</strong> is the skill of translating analytics into clear narratives that inspire action. The best marketers aren't just data literate; they can communicate findings so that stakeholders understand what happened, why it matters, and what to do next.</p>
+            <p>Raw data does not drive decisions — stories do. <strong>Data storytelling</strong> is the skill of translating analytics into clear narratives that lead to action. The most valuable analysts are not those who can extract the most data; they are those who can take complex, multi-source data — from GA4, platforms, and CRM — and communicate what it means and what should happen next in terms that any stakeholder can act on.</p>
 
             <h2>The Three Elements of Data Stories</h2>
             <ul>
-                <li><strong>Data</strong> — The accurate, relevant numbers that support your narrative</li>
-                <li><strong>Visuals</strong> — Charts and graphics that make patterns immediately obvious</li>
-                <li><strong>Narrative</strong> — The context, interpretation, and recommended actions that give the data meaning</li>
+                <li><strong>Data</strong> — The accurate, relevant numbers that support your narrative. Data without narrative is just noise; narrative without data is just opinion.</li>
+                <li><strong>Visuals</strong> — Charts and graphics that make patterns immediately obvious. The right visual makes a trend undeniable; the wrong one forces the audience to do mental work that the presenter should have done for them.</li>
+                <li><strong>Narrative</strong> — The context, interpretation, and recommended actions that give the data meaning. This is the hardest part to automate and the most valuable part of any analysis.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Lead with the insight, not the data. Instead of "organic traffic increased 23% MoM," say "Our SEO investment is paying off — organic traffic grew 23% this month, driving 40 additional leads worth an estimated £12,000." Connect numbers to business impact.</p>
+                <p>Lead with the insight, not the data. Instead of "organic traffic increased 23% month-on-month," say "Our SEO investment is compounding — organic traffic grew 23% this month and drove 40 additional leads worth an estimated £12,000 based on our average lead value." The first sentence is a data point; the second is an argument for continued investment. When presenting the three-tier measurement framework, be explicit about which tier each number comes from — GA4 attribution, platform self-reported data, or CRM revenue — and what that means for how much confidence to place in it.</p>
             </div>
 
             <h2>Chart Selection Guide</h2>
             <ul>
-                <li><strong>Line charts</strong> — Trends over time (traffic, revenue, rankings)</li>
-                <li><strong>Bar charts</strong> — Comparing categories (channel performance, campaign results)</li>
-                <li><strong>Pie charts</strong> — Composition/proportion (traffic source mix). Use sparingly — hard to read with many segments.</li>
-                <li><strong>Tables</strong> — Detailed data with multiple dimensions (campaign details, keyword performance)</li>
-                <li><strong>Scorecards</strong> — Single KPI with comparison to target or previous period</li>
+                <li><strong>Line charts</strong> — Trends over time: traffic growth, revenue trajectory, keyword rankings</li>
+                <li><strong>Bar charts</strong> — Comparing categories: channel performance, campaign results, cohort comparison</li>
+                <li><strong>Scorecards</strong> — Single KPIs with period comparison. The most common element in Looker Studio dashboards and the first thing executives see.</li>
+                <li><strong>Tables</strong> — Detailed data with multiple dimensions: campaign breakdown, keyword performance, page-level metrics</li>
+                <li><strong>Pie charts</strong> — Composition and proportion: traffic source mix, revenue split. Use sparingly — hard to read accurately when there are more than four or five segments.</li>
             </ul>
 
             <h2>Presenting to Different Audiences</h2>
             <ul>
-                <li><strong>Executives</strong> — Business outcomes first, 3–5 slides max, clear recommendations. They want "what should we do?" not "here's all the data."</li>
-                <li><strong>Marketing managers</strong> — Channel-level performance, trends, optimisation opportunities. Balance of overview and detail.</li>
-                <li><strong>Specialists</strong> — Granular data, specific metrics, detailed tactical recommendations.</li>
+                <li><strong>Executives</strong> — Business outcomes first: revenue, leads, cost per acquisition. Clear recommendations in plain language. Three to five slides maximum. They want to know what to do, not how the data was collected.</li>
+                <li><strong>Marketing managers</strong> — Channel-level performance, trend analysis, and optimisation opportunities. The balance of overview and detail that enables resource allocation decisions.</li>
+                <li><strong>Specialists</strong> — Granular campaign, keyword, or creative data. Specific metrics matched to the decisions they are actually making day-to-day.</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>End every report or presentation with a clear "So What?" section. List 3–5 specific actions you recommend based on the data. Reports without recommendations are just information — reports with recommendations drive business impact.</p>
+                <p>End every report or presentation with a specific "So What?" section containing three to five concrete recommended actions. Reports without recommendations are information delivery; reports with recommendations are decision support. The difference between an analyst who reports and one who influences is almost always in this final section. Build it into your template so it cannot be skipped — and build your Looker Studio dashboards with a recommendations text block that gets updated each period alongside the data.</p>
             </div>
         `,
         quiz: {
@@ -3717,36 +3699,36 @@ Object.assign(lessonContent, {
     'an-3-7': {
         title: 'Server-Side Tracking Fundamentals',
         body: `
-            <h2>Client-Side vs Server-Side Tracking</h2>
-            <p>Traditional <strong>client-side tracking</strong> uses JavaScript tags in the user's browser to send data to analytics and ad platforms. <strong>Server-side tracking</strong> moves this process to your server — the browser sends data to your server first, which then forwards it to analytics platforms. This seemingly simple change has profound implications for data quality.</p>
+            <h2>Why Server-Side Tracking Is Now a Measurement Fundamental</h2>
+            <p>Traditional <strong>client-side tracking</strong> sends data from the user's browser to analytics and ad platforms using JavaScript tags. This approach is increasingly unreliable: ad blockers prevent many tags from firing, browser restrictions including Apple's Intelligent Tracking Prevention (ITP) limit the lifespan and reach of cookies, and users who decline consent banners leave no trace at all without Consent Mode. <strong>Server-side tracking</strong> addresses these problems by routing data through your own server first, which then forwards it to analytics and ad platforms. This is not an advanced or optional capability — it is now a baseline measurement requirement for businesses where accurate conversion data influences budget decisions.</p>
 
             <h2>Why Server-Side Tracking Matters</h2>
             <ul>
-                <li><strong>Bypasses ad blockers</strong> — Ad blockers can't block requests to your own server domain</li>
-                <li><strong>Survives browser restrictions</strong> — Not affected by third-party cookie blocks or ITP (Intelligent Tracking Prevention)</li>
-                <li><strong>Better data quality</strong> — Typically captures 15–30% more conversion data than client-side alone</li>
-                <li><strong>More control</strong> — You decide what data is sent to which platform, enabling better privacy compliance</li>
-                <li><strong>Faster pages</strong> — Fewer third-party scripts loading in the browser improves page speed</li>
+                <li><strong>Bypasses ad blockers</strong> — Ad blockers cannot block requests to your own server domain, unlike third-party tags</li>
+                <li><strong>Survives browser restrictions</strong> — Not affected by ITP, third-party cookie blocks, or browser-level tracking prevention</li>
+                <li><strong>Better data quality</strong> — Typically captures 15–30% more conversion data than client-side tracking alone — data that would otherwise be lost entirely</li>
+                <li><strong>Privacy compliance control</strong> — You decide what data is sent to which platform and when, enabling proper Consent Mode V2 integration and GDPR compliance</li>
+                <li><strong>Faster pages</strong> — Moving tags from the browser to the server reduces the number of third-party scripts loading client-side, improving page speed scores</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Server-side tracking doesn't replace client-side tracking — it complements it. The best setup runs both: client-side for real-time user experience features (like personalisation) and server-side for reliable data collection and conversion tracking.</p>
+                <p>Server-side tracking complements client-side tracking — it does not replace it. The optimal setup runs both in parallel: client-side tags handle real-time personalisation and UX features that must happen in the browser; server-side handles reliable conversion tracking and data forwarding to ad platforms. Think of it as two lanes on the same road: one for speed and interactivity, one for accuracy and resilience. Together they give you the most complete and trustworthy measurement setup available.</p>
             </div>
 
             <h2>Implementation Approaches</h2>
             <ul>
-                <li><strong>Google Tag Manager Server-Side</strong> — Google's solution. Runs a server-side GTM container in Google Cloud. Processes tags on your server before forwarding to platforms.</li>
-                <li><strong>Meta Conversions API (CAPI)</strong> — Direct server-to-Meta connection for sending conversion data. Works alongside the Meta Pixel.</li>
-                <li><strong>Google Enhanced Conversions</strong> — Sends hashed first-party data to Google from your server to improve conversion measurement.</li>
+                <li><strong>Google Tag Manager Server-Side</strong> — A server-side GTM container hosted in Google Cloud. Processes tags on your server before forwarding data to GA4, Google Ads, and other connected platforms. The most comprehensive setup for teams already using GTM.</li>
+                <li><strong>Meta Conversions API (CAPI)</strong> — A direct server-to-Meta connection for sending conversion data. Works alongside the Meta Pixel to recover conversion signals lost to browser restrictions. Essential for any business running Meta advertising at meaningful scale.</li>
+                <li><strong>Google Enhanced Conversions</strong> — Sends hashed first-party data (email, phone number) from your server to Google Ads to improve conversion matching and measurement accuracy. Pairs with Consent Mode V2 to maximise measurement under privacy constraints.</li>
             </ul>
 
             <h2>Costs and Complexity</h2>
-            <p>Server-side tracking requires server infrastructure (Google Cloud, AWS, or similar), technical implementation knowledge, and ongoing maintenance. Monthly hosting costs typically range from £30–£200+ depending on traffic volume. The investment is justified for businesses where accurate conversion data directly impacts media spend decisions.</p>
+            <p>Server-side tracking requires server infrastructure (Google Cloud for GTM server-side, or your own hosting), technical implementation knowledge, and ongoing maintenance. Monthly costs typically range from £30 to £200 depending on traffic volume. The return — recovering 15–30% of conversion data and improving Smart Bidding signal quality — makes it justified for any business where media spend exceeds a few thousand pounds per month.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Start with Meta CAPI and Google Enhanced Conversions before building a full server-side GTM setup. These platform-specific solutions capture most of the data quality benefit with less complexity and cost than a comprehensive server-side implementation.</p>
+                <p>Start with Meta CAPI and Google Enhanced Conversions before investing in a full server-side GTM container. These platform-specific solutions recover the majority of lost conversion data with lower implementation cost and complexity than a comprehensive server-side setup. Once those are in place, evaluate whether the additional data quality improvements from full server-side GTM are justified by your traffic volume and media spend. Build the foundation first, then expand.</p>
             </div>
         `,
         quiz: {

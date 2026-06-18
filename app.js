@@ -969,60 +969,45 @@ const lessonContent = {
         title: 'Why Marketing Analytics Matters',
         body: `
             <h2>The Role of Analytics in Marketing</h2>
-            <p>Marketing analytics is the practice of measuring, managing, and analysing marketing performance data to maximise effectiveness and optimise return on investment.</p>
-            <p>Without analytics, you're guessing. With analytics, you're making decisions based on evidence.</p>
+            <p>Marketing analytics is the practice of measuring, managing, and analysing marketing performance data so that you can make better decisions. The word "decisions" matters here. Analytics is not a reporting function — it is a decision-support function. Every dashboard, every report, and every data point should ultimately connect to a choice: where to spend budget, which campaigns to scale, which audiences to prioritise, and where to stop wasting money.</p>
 
             <h2>What Analytics Answers</h2>
-            <p>Good marketing analytics answers critical questions:</p>
+            <p>Good marketing analytics answers practical business questions:</p>
             <ul>
-                <li><strong>Where is our traffic coming from?</strong> — Which channels drive visitors</li>
-                <li><strong>What are visitors doing on our site?</strong> — Which pages they visit, how long they stay</li>
-                <li><strong>What's converting?</strong> — Which campaigns and pages generate leads or sales</li>
-                <li><strong>What's our ROI?</strong> — Are we making more than we're spending</li>
-                <li><strong>Where are we losing people?</strong> — Where visitors drop off in the journey</li>
+                <li><strong>Which channels are genuinely driving revenue?</strong> — Not just clicks or traffic, but actual business outcomes</li>
+                <li><strong>Where in the journey are we losing people?</strong> — Where visitors drop off and why</li>
+                <li><strong>Is our marketing spend working?</strong> — Are we making more than we spend, and which channels deliver the best returns</li>
+                <li><strong>What should we do differently?</strong> — The question every piece of analysis should end with</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>"Half the money I spend on advertising is wasted; the trouble is I don't know which half." — John Wanamaker (1838-1922). Analytics exists to solve this exact problem.</p>
+                <p>The three-tier measurement framework is now standard thinking for professional marketers. Tier 1: GA4 for cross-channel analysis and full-funnel visibility. Tier 2: Platform self-reported data (Meta Ads Manager, Google Ads, LinkedIn Campaign Manager) for in-platform optimisation. Tier 3: CRM and revenue data for true ROI, connecting ad spend to actual customer value. These three sources tell different stories — understanding how they relate is what separates good analysts from data collectors.</p>
             </div>
 
             <h2>The Core Marketing Metrics</h2>
-            <p>Every marketer should understand these foundational metrics:</p>
-
-            <h3>Traffic Metrics</h3>
+            <p>Every marketer should understand these foundational metrics across traffic, engagement, and conversion:</p>
             <ul>
-                <li><strong>Sessions</strong> — Number of visits to your website</li>
-                <li><strong>Users</strong> — Number of unique visitors</li>
-                <li><strong>Traffic source</strong> — Where visitors come from (organic, paid, social, direct, referral)</li>
-            </ul>
-
-            <h3>Engagement Metrics</h3>
-            <ul>
-                <li><strong>Bounce rate</strong> — Percentage of visitors who leave after viewing one page</li>
-                <li><strong>Pages per session</strong> — How many pages visitors view on average</li>
-                <li><strong>Average session duration</strong> — How long visitors spend on your site</li>
-            </ul>
-
-            <h3>Conversion Metrics</h3>
-            <ul>
-                <li><strong>Conversion rate</strong> — Percentage of visitors who complete a desired action</li>
-                <li><strong>Cost per acquisition (CPA)</strong> — How much you spend to acquire one customer</li>
-                <li><strong>Return on ad spend (ROAS)</strong> — Revenue generated per pound spent on ads</li>
+                <li><strong>Sessions and users</strong> — Visits and unique visitors; GA4 distinguishes total users from active users (those with an engaged session)</li>
+                <li><strong>Engagement rate</strong> — The percentage of sessions lasting 10+ seconds, with 2+ page views, or including a conversion. More meaningful than bounce rate, which GA4 has replaced.</li>
+                <li><strong>Conversion rate</strong> — The percentage of sessions that complete a desired action. The metric that connects traffic to business value.</li>
+                <li><strong>Cost per acquisition (CPA)</strong> — Total marketing spend divided by conversions. The efficiency measure for any paid activity.</li>
+                <li><strong>Return on ad spend (ROAS)</strong> — Revenue generated per pound spent. Always cross-reference against CRM data for accuracy.</li>
+                <li><strong>Customer lifetime value (LTV)</strong> — Total revenue per customer over their lifetime. The metric that tells you how much you can afford to spend acquiring each one.</li>
             </ul>
 
             <h2>The Analytics Mindset</h2>
-            <p>Good analysts don't just report numbers. They:</p>
+            <p>Good analysts do not just report numbers — they make numbers mean something. That requires:</p>
             <ol>
-                <li><strong>Ask the right questions</strong> — Start with "what do we need to know?" not "what data do we have?"</li>
-                <li><strong>Look for patterns</strong> — Trends over time matter more than individual data points</li>
-                <li><strong>Connect data to decisions</strong> — Every insight should lead to an action</li>
-                <li><strong>Test assumptions</strong> — Use data to validate or disprove hypotheses</li>
+                <li><strong>Starting with the question, not the data</strong> — "What do we need to decide?" should come before opening any dashboard</li>
+                <li><strong>Looking for patterns across time</strong> — Trends matter more than individual data points</li>
+                <li><strong>Connecting data to decisions</strong> — Every piece of analysis should end with a recommendation</li>
+                <li><strong>Using all three measurement tiers</strong> — No single data source tells the full story</li>
             </ol>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Don't track everything — track what matters. Start with 3-5 key metrics that directly relate to your business goals. You can always add more later. Clarity beats comprehensiveness.</p>
+                <p>Do not track everything — track what connects to decisions. Start with the five metrics that most directly relate to your current business goals and build from there. A dashboard with three actionable metrics drives better decisions than one with thirty data points and no clear purpose.</p>
             </div>
         `,
         quiz: {
