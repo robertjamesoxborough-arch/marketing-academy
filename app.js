@@ -920,56 +920,35 @@ const lessonContent = {
         title: 'What is Content Marketing and Why It Works',
         body: `
             <h2>Defining Content Marketing</h2>
-            <p>Content marketing is the practice of creating and distributing valuable, relevant content to attract and retain a clearly defined audience — and ultimately drive profitable customer action.</p>
-            <p>Instead of directly pitching your product, you provide genuinely useful information that helps your audience solve problems. In return, they trust you, remember you, and eventually buy from you.</p>
+            <p>Content marketing is the practice of creating and distributing valuable, relevant content to attract and retain a clearly defined audience — and ultimately drive profitable customer action. Instead of interrupting people with promotional messages, you earn their attention by being genuinely useful. In return, they trust you, return to you, and eventually buy from you.</p>
 
-            <h2>Why Content Marketing Works</h2>
-            <p>Content marketing works because it aligns with how modern consumers make decisions:</p>
+            <h2>Why Content Marketing Works in 2026</h2>
+            <p>Content marketing aligns with how buyers actually make decisions — and those decisions now increasingly start with AI tools, not search engines:</p>
             <ol>
-                <li><strong>People research before buying</strong> — Most buyers consume 3-5 pieces of content before talking to sales</li>
-                <li><strong>Trust is earned, not demanded</strong> — Helpful content builds trust over time</li>
-                <li><strong>It compounds</strong> — A good blog post can drive traffic for years (unlike an ad that stops when you stop paying)</li>
-                <li><strong>It supports every channel</strong> — Content fuels SEO, social media, email, and paid campaigns</li>
+                <li><strong>Research happens before the first visit</strong> — Buyers research via ChatGPT, Perplexity, and Google's AI Overviews before they ever reach your website. Your content needs to be present in those answers, not just search results.</li>
+                <li><strong>60% of searches end without a click</strong> — AI-generated summaries answer questions directly in the search results. Content must be structured to be cited, not just ranked.</li>
+                <li><strong>Trust is earned through consistency</strong> — Helpful, original content builds credibility over time in a way that advertising cannot replicate.</li>
+                <li><strong>It compounds</strong> — A strong video, guide, or tool continues attracting attention long after it is published, unlike an ad that stops the moment you stop paying for it.</li>
+                <li><strong>It fuels every other channel</strong> — Good content powers SEO, email, social, paid, and sales enablement simultaneously.</li>
             </ol>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Content marketing is not about creating content for its own sake. It's about creating the right content for the right audience at the right stage of their journey.</p>
+                <p>Content marketing is not about creating content for its own sake. It is about creating the right content, in the right format, for the right audience, at the right stage of their journey — and structuring it so it can be found by both people and AI platforms alike.</p>
             </div>
 
             <h2>Content Marketing vs Traditional Advertising</h2>
             <ul>
-                <li><strong>Traditional advertising</strong> interrupts people and says "buy this"</li>
-                <li><strong>Content marketing</strong> attracts people by being genuinely helpful</li>
-            </ul>
-            <p>Think about it: would you rather read a helpful guide on "how to choose running shoes" or see a banner ad saying "Buy our shoes"? The guide builds trust. The ad just asks for money.</p>
-
-            <h2>Types of Content Marketing</h2>
-            <ul>
-                <li><strong>Blog posts and articles</strong> — The backbone of most content strategies</li>
-                <li><strong>Videos</strong> — Tutorials, explainers, behind-the-scenes</li>
-                <li><strong>Podcasts</strong> — Audio content for commuters and multitaskers</li>
-                <li><strong>Email newsletters</strong> — Direct relationship with your audience</li>
-                <li><strong>Social media content</strong> — Short-form content for engagement</li>
-                <li><strong>Ebooks and guides</strong> — In-depth content often used for lead generation</li>
-                <li><strong>Case studies</strong> — Proof that your approach works</li>
-                <li><strong>Infographics</strong> — Visual data and concepts</li>
+                <li><strong>Traditional advertising</strong> interrupts and says "buy this" — you pay for attention and it disappears when the budget stops</li>
+                <li><strong>Content marketing</strong> attracts by being genuinely useful — you invest in assets that grow in value over time</li>
             </ul>
 
-            <h2>The Content Marketing Flywheel</h2>
-            <p>The best content marketing creates a virtuous cycle:</p>
-            <ol>
-                <li>Create helpful content</li>
-                <li>People find it through search and social</li>
-                <li>They trust you and subscribe/follow</li>
-                <li>You nurture them with more relevant content</li>
-                <li>They become customers and advocates</li>
-                <li>Advocates share your content, bringing more people in</li>
-            </ol>
+            <h2>The Format Landscape Has Changed</h2>
+            <p>Short-form video is now the highest-ROI content format, not the blog post. This does not make blogging obsolete — written content remains essential for SEO depth and AI citations — but the starting point for audience building and engagement in 2026 is video. The most effective content systems treat one strong insight as raw material that becomes a short video, a blog post, an email, and a series of social posts simultaneously.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Start with one content format you can do consistently (usually blogging). Quality and consistency beat volume. One excellent post per week outperforms five mediocre ones.</p>
+                <p>Do not think in content types. Think in ideas. One insight from a customer conversation, a failed experiment, or an industry trend becomes a short-form video, a written article, an email, and three social posts. The system multiplies your effort — but the insight has to be genuinely yours, not recycled from what everyone else is saying.</p>
             </div>
         `,
         quiz: {

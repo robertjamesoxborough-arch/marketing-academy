@@ -2117,31 +2117,32 @@ Object.assign(lessonContent, {
         title: 'The Inbound Methodology: Attract, Engage, Delight',
         body: `
             <h2>Inbound vs Outbound Marketing</h2>
-            <p><strong>Outbound marketing</strong> pushes messages to audiences who haven't asked for them — cold calls, TV ads, direct mail, banner ads. <strong>Inbound marketing</strong> pulls people in by creating valuable content they're already searching for — blog posts, guides, videos, podcasts, and tools that solve their problems.</p>
+            <p><strong>Outbound marketing</strong> pushes messages to audiences who have not asked for them — cold calls, TV ads, banner ads, unsolicited email. <strong>Inbound marketing</strong> earns attention by being genuinely useful: producing content, tools, and experiences that help your audience solve real problems. The distinction matters more now than ever, because buyers in 2026 increasingly research through AI tools before they visit any website — which means the bar for being genuinely helpful has risen, and interruption-based tactics are even less effective by comparison.</p>
 
-            <h2>The Flywheel Model</h2>
-            <p>Modern inbound marketing uses a <strong>flywheel</strong> rather than a funnel. Instead of customers being an output at the bottom of a funnel, they become the force that drives growth through referrals and word-of-mouth. The flywheel has three stages:</p>
+            <h2>The Inbound Loop: The AI-Era Playbook</h2>
+            <p>The traditional flywheel framing still captures the right instinct — customers are growth drivers, not just outputs — but the execution model has changed. The current approach is better understood as a continuous loop with four stages:</p>
             <ul>
-                <li><strong>Attract</strong> — Draw in the right people with valuable content, SEO, and social media. Focus on helping, not selling.</li>
-                <li><strong>Engage</strong> — Build relationships through personalised communication, email nurturing, and solutions aligned to their needs and goals.</li>
-                <li><strong>Delight</strong> — Provide outstanding experiences that turn customers into promoters who drive referrals and repeat business.</li>
+                <li><strong>Express</strong> — Create original content that reflects a genuine point of view: your experience, your data, your perspective on the industry. In a world of AI-generated content, authentic human expression is the differentiator.</li>
+                <li><strong>Tailor</strong> — Adapt your content to the specific formats, channels, and contexts where your audience actually spends time. A core insight becomes a short video, a written article, an email, and a social post — the same value, delivered where and how it is most useful.</li>
+                <li><strong>Amplify</strong> — Distribute through owned channels (email, website), earned channels (shares, citations, PR), and paid amplification where appropriate. Critically, ensure your content is structured for AI platforms to extract and reference — this is now as important as search rankings.</li>
+                <li><strong>Evolve</strong> — Use performance data, audience feedback, and changing behaviour to continuously improve. The brands that compound fastest are those that treat every piece of content as a learning, not just a publication.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>The flywheel spins faster when you reduce friction (eliminating obstacles in the customer experience) and add force (investing in strategies that accelerate each stage). Happy customers become your best marketing channel.</p>
+                <p>The Attract, Engage, Delight principles remain valid — draw in the right people, build genuine relationships, and create experiences that turn customers into advocates. What has changed is the execution: buyers now often arrive at your content already informed from AI research, short-form video drives more top-of-funnel attention than blog posts, and being cited by AI platforms is becoming as important as being ranked by search engines.</p>
             </div>
 
             <h2>Inbound Tactics by Stage</h2>
             <ul>
-                <li><strong>Attract:</strong> Blog posts, SEO content, social media, podcasts, educational videos</li>
-                <li><strong>Engage:</strong> Email sequences, lead magnets, webinars, free trials, chatbots, personalised CTAs</li>
-                <li><strong>Delight:</strong> Exceptional support, loyalty programmes, customer communities, surprise perks, user feedback loops</li>
+                <li><strong>Attract:</strong> Short-form video, SEO content, answer-engine-optimised articles, podcasts, original research</li>
+                <li><strong>Engage:</strong> Email sequences, high-value lead magnets (tools, calculators, templates), webinars, personalised content flows</li>
+                <li><strong>Delight:</strong> Post-purchase email automation, community access, customer feedback loops, loyalty content</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>The fastest way to start with inbound marketing is to answer the questions your customers actually ask. Interview your sales and support teams — every customer question is a potential blog post, video, or guide that will attract more people with the same question.</p>
+                <p>The fastest way to start inbound marketing is to answer the specific questions your customers actually ask — recorded from your sales and support teams, not imagined. Every real customer question is potential content that will attract more people with the same question. In 2026, if your answer is good enough, it will also appear in AI-generated summaries, extending your reach beyond your own organic traffic.</p>
             </div>
         `,
         quiz: {
@@ -2161,32 +2162,32 @@ Object.assign(lessonContent, {
         title: 'Understanding Your Audience: Buyer Personas',
         body: `
             <h2>What Are Buyer Personas?</h2>
-            <p>A <strong>buyer persona</strong> is a semi-fictional representation of your ideal customer based on real data and educated assumptions. It goes beyond demographics to capture motivations, challenges, goals, and decision-making patterns. Good personas help you create content that resonates because you understand who you're writing for.</p>
+            <p>A <strong>buyer persona</strong> is a semi-fictional representation of your ideal customer built from real data and informed assumptions. Good personas go beyond demographics to capture motivations, real-world challenges, decision-making patterns, and — critically — how buyers research solutions. In 2026, that research journey often starts with AI tools like ChatGPT, Perplexity, or Google's AI Overviews rather than a search engine query. Your persona should reflect this reality: your buyer may arrive at your content already highly informed, having formed views before they ever visit your website.</p>
 
             <h2>Research Methods</h2>
-            <p>Build personas from real data, not guesswork:</p>
+            <p>Build personas from real data, not internal assumptions:</p>
             <ul>
-                <li><strong>Customer interviews</strong> — Talk to 10–15 current customers about their challenges, goals, and how they found you</li>
-                <li><strong>Sales team insights</strong> — Your salespeople know the real objections, questions, and motivations</li>
-                <li><strong>Analytics data</strong> — Demographics, behaviour patterns, and conversion paths from Google Analytics</li>
-                <li><strong>Survey data</strong> — Short surveys to your email list about their biggest challenges</li>
-                <li><strong>Social listening</strong> — What does your audience talk about, complain about, and ask for on social media and forums?</li>
+                <li><strong>Customer interviews</strong> — Talk to 10–15 current customers about their actual challenges, goals, how they found you, and what nearly stopped them from buying</li>
+                <li><strong>Sales and support team insights</strong> — The questions, objections, and language your sales and customer success teams encounter every day are your best persona data source</li>
+                <li><strong>Analytics data</strong> — Behaviour patterns, conversion paths, and content engagement from GA4</li>
+                <li><strong>Preference centre and survey responses</strong> — Direct questions to your email subscribers about their priorities and content preferences (zero-party data)</li>
+                <li><strong>Community and social listening</strong> — What does your audience ask about in communities, forums, and comments? These are real questions, not guesses.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>The best personas focus on <strong>Jobs to Be Done (JTBD)</strong> — what is the customer trying to accomplish? Understanding the job they're hiring your product to do is more actionable than demographic details alone.</p>
+                <p>The most actionable personas focus on <strong>Jobs to Be Done (JTBD)</strong> — what is the customer trying to accomplish, and what does success look like for them? This framework reveals the motivation behind purchase decisions, which is more useful for content planning than knowing someone's age or job title.</p>
             </div>
 
             <h2>Persona Template</h2>
-            <p>A practical persona includes: name and role, company details, goals and challenges, how they research solutions, common objections, preferred content formats, and the key message that would resonate with them. Keep it to one page — overly detailed personas gather dust.</p>
+            <p>A practical persona captures: role and context, primary goals and challenges, how they discover and research solutions (including which AI tools or platforms they use), common objections, preferred content formats, and the one message that would resonate most strongly. Keep it to one page — detailed personas that cover every conceivable attribute gather dust rather than drive decisions.</p>
 
             <h2>Using Personas in Content Planning</h2>
-            <p>Every piece of content should target a specific persona at a specific stage of their buyer journey. Before writing, ask: "Which persona is this for? What question are they trying to answer? What stage are they at?" This focus produces content that converts.</p>
+            <p>Before creating any piece of content, ask: which persona is this for? What question are they trying to answer? What stage are they at in their decision process — and how informed are they likely to be when they arrive? A buyer who has already asked AI tools about your category and read three competitor comparisons needs different content from someone discovering the category for the first time.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Creating too many personas. Most businesses need 2–4 personas maximum. Too many dilutes your focus and makes content planning overwhelming. Start with your primary buyer and expand only when the data demands it.</p>
+                <p>Creating too many personas. Most businesses need 2–4 maximum. More than that dilutes your focus and makes content planning decisions harder, not easier. Start with your primary buyer — the one who accounts for most of your revenue — and expand only when the data shows a genuinely distinct audience segment that needs different content.</p>
             </div>
         `,
         quiz: {
@@ -2205,33 +2206,34 @@ Object.assign(lessonContent, {
     'cm-1-4': {
         title: 'Content Formats: Blog, Video, Podcast, Social',
         body: `
-            <h2>Choosing Your Primary Content Format</h2>
-            <p>You don't need to be everywhere at once. The most successful content marketers pick one primary format, master it, then expand. Choose based on your audience's preferences, your team's strengths, and the competitive landscape.</p>
+            <h2>The Format Hierarchy Has Shifted</h2>
+            <p>The question "which format should I start with?" has a clearer answer in 2026 than it did a few years ago: <strong>short-form video</strong> is now the highest-ROI content format for audience building, engagement, and reach. TikTok, Instagram Reels, YouTube Shorts, and LinkedIn video have collectively made short video the primary discovery mechanism for content. This does not make other formats obsolete — it changes which format leads and which formats follow.</p>
 
-            <h2>Format Strengths</h2>
+            <h2>Format Roles in a Modern Content Strategy</h2>
             <ul>
-                <li><strong>Blog/written content</strong> — Best for SEO, evergreen value, and detailed explanations. Lower production barrier. Can be repurposed into every other format. The foundation of most content strategies.</li>
-                <li><strong>Video</strong> — Highest engagement rates. Best for demonstrations, tutorials, and personality-driven content. Requires more production effort but increasingly important across platforms.</li>
-                <li><strong>Podcasts</strong> — Build deep audience relationships through regular, long-form content. Excellent for thought leadership and reaching people during commutes and workouts. Growing medium with loyal listeners.</li>
-                <li><strong>Social media content</strong> — Best for reach, engagement, and community building. Short-form, frequent, and platform-specific. Drives awareness but typically not deep education.</li>
+                <li><strong>Short-form video (primary)</strong> — The highest-engagement, highest-discovery format. Works for demonstrations, opinions, tips, and personality-driven content. Produces organic reach that no other format currently matches. Platform: TikTok, Reels, Shorts, LinkedIn video.</li>
+                <li><strong>Blog/written content (secondary SEO and depth play)</strong> — Essential for search rankings, AI citations, and detailed explanations that video cannot accommodate. Written content is what AI tools extract and cite, making it critical for Answer Engine Optimisation. Written depth earns the trust that video creates awareness for.</li>
+                <li><strong>Podcasts</strong> — Build deep audience relationships through regular long-form content. Excellent for thought leadership and reaching audiences during commutes and downtime. Loyal listeners who consume 30–60 minutes per episode are a qualitatively different relationship than a 30-second video viewer.</li>
+                <li><strong>Email newsletters</strong> — Your highest-value owned channel. Converts audience into a list you control, independent of platform algorithms. The distribution endpoint for your best content across all other formats.</li>
+                <li><strong>Social media native content</strong> — Beyond short video, written posts on LinkedIn and X/Twitter build professional authority. Platform-specific frequency and format requirements mean this is a dedicated practice, not just link-sharing.</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>Start with the format that best suits SEO and discoverability — usually blog content. Then repurpose into other formats. One comprehensive blog post can become a video script, podcast talking points, an email newsletter, and 5–10 social posts.</p>
+                <div class="callout-title">Key Concept: One Insight, Many Formats</div>
+                <p>The most efficient content systems are built on a "one piece, many formats" principle. A single genuine insight — from a customer conversation, a failed experiment, or an original data point — becomes a short-form video, a written article, an email, and several social posts. This is not cutting corners: it is the correct strategic approach. Each format serves a different audience and distribution channel, and the core insight gains depth and reach with each adaptation.</p>
             </div>
 
-            <h2>Production Requirements</h2>
+            <h2>Production Reality</h2>
             <ul>
-                <li><strong>Blog:</strong> Writer + basic SEO knowledge. Lowest barrier to entry.</li>
-                <li><strong>Video:</strong> Camera/phone + basic editing. Quality expectations vary by platform (YouTube vs TikTok).</li>
-                <li><strong>Podcast:</strong> Microphone + hosting platform. Consistency matters more than production quality.</li>
-                <li><strong>Social:</strong> Design tools (Canva) + platform knowledge. High frequency required.</li>
+                <li><strong>Short-form video:</strong> Phone camera + natural light + a clear point. Authenticity outperforms production quality on most platforms.</li>
+                <li><strong>Blog:</strong> Writer + SEO knowledge + understanding of how to structure content for AI extraction.</li>
+                <li><strong>Podcast:</strong> USB microphone + hosting platform (Spotify for Podcasters, Buzzsprout). Consistency matters more than studio quality.</li>
+                <li><strong>Email:</strong> ESP (Mailchimp, ConvertKit, Klaviyo) + a list you have built legitimately. The hardest to start, the most valuable once established.</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Follow the "Create Once, Distribute Everywhere" principle. Record a video, extract the audio for a podcast, transcribe it for a blog post, and pull key quotes for social media. One creation session produces content for every channel.</p>
+                <p>Start with short-form video to build audience, and write the blog post version of every video to capture the SEO and AI citation value. These two formats in combination — video for reach, written content for depth and discoverability — form the most efficient content engine for most businesses. Add email once you have an audience worth sending to.</p>
             </div>
         `,
         quiz: {
@@ -2253,33 +2255,34 @@ Object.assign(lessonContent, {
         title: 'Building a Content Calendar',
         body: `
             <h2>Why You Need a Content Calendar</h2>
-            <p>A <strong>content calendar</strong> is a planning tool that maps out what content you'll create, when you'll publish it, and where it will be distributed. Without one, content marketing becomes reactive and inconsistent — the two biggest reasons content strategies fail.</p>
+            <p>A <strong>content calendar</strong> maps what you will create, when you will publish it, and where it will be distributed. Without one, content marketing becomes reactive — you publish when you have time rather than when your audience needs content — and inconsistency is the primary reason content strategies fail to compound. A calendar also forces format discipline: planning in advance reveals where you are relying too heavily on one format and neglecting others.</p>
 
             <h2>The Planning Process</h2>
             <ol>
-                <li><strong>Define your content pillars</strong> — 3–5 core topics that align with your expertise and audience needs</li>
-                <li><strong>Map to buyer journey stages</strong> — Ensure you're creating content for awareness, consideration, and decision stages</li>
-                <li><strong>Set publishing cadence</strong> — Be realistic. One high-quality post per week beats five mediocre ones.</li>
-                <li><strong>Plan seasonal content</strong> — Map industry events, holidays, and seasonal trends 2–3 months in advance</li>
-                <li><strong>Assign ownership</strong> — Every piece needs a responsible person and a deadline</li>
+                <li><strong>Define your content pillars</strong> — 3–5 core topics that align with your expertise, your audience's real questions, and what you can speak to with genuine authority</li>
+                <li><strong>Plan for format diversity</strong> — Your calendar should include short-form video (your primary format for reach), written content (for SEO depth and AI citations), and email (for owned distribution). Plan which format each insight will lead with.</li>
+                <li><strong>Map to buyer journey stages</strong> — Awareness, consideration, and decision-stage content all need representation. Most brands under-invest in consideration and decision content.</li>
+                <li><strong>Set a realistic publishing cadence</strong> — One strong short-form video per week and one written piece per fortnight will outperform a chaotic burst of ten things followed by three weeks of silence.</li>
+                <li><strong>Plan repurposing upfront</strong> — Before you produce anything, decide which other formats it will become. The blog post version of a video, the email summary, the social posts — plan these in the calendar before the primary piece is written.</li>
+                <li><strong>Assign ownership</strong> — Every piece needs a named person responsible and a deadline. Content without accountability does not ship.</li>
             </ol>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Use a simple spreadsheet to start — columns for publish date, title, format, target persona, funnel stage, target keyword, status, and owner. Fancy tools aren't needed until your team and volume grow. Consistency matters more than tools.</p>
+                <p>Add a column to your calendar for "AI answer relevance" — whether this topic is likely to be answered by AI tools and whether your content is structured to be cited in those answers. Topics where 60%+ of searches end without a click to any website are not wasted effort: they are opportunities to be the source AI cites, which builds brand authority in a new and growing channel.</p>
             </div>
 
             <h2>Content Mix</h2>
-            <p>A balanced calendar includes a variety of content types:</p>
+            <p>A balanced calendar includes:</p>
             <ul>
-                <li><strong>Evergreen content (60%)</strong> — Comprehensive guides, how-tos, and reference content that stays relevant for months or years</li>
-                <li><strong>Timely content (20%)</strong> — Industry news commentary, trend analysis, seasonal pieces</li>
-                <li><strong>Engagement content (20%)</strong> — Opinion pieces, case studies, behind-the-scenes, community-driven content</li>
+                <li><strong>Evergreen content (60%)</strong> — Comprehensive written guides, how-tos, and reference content that stays relevant for months or years. This is your SEO and AI citation foundation.</li>
+                <li><strong>Timely content (20%)</strong> — Commentary on industry developments, trend analysis, and reactive pieces that demonstrate current expertise</li>
+                <li><strong>Perspective and engagement content (20%)</strong> — Opinion pieces, original data, case studies, and behind-the-scenes content that builds authentic connection. This is the category where human differentiation is most visible.</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Planning too far ahead in too much detail. Plan specific topics 4–6 weeks out and keep a looser thematic plan for the quarter. The market changes — your calendar should be flexible enough to accommodate emerging topics and opportunities.</p>
+                <p>Planning too far ahead in too much specificity. Plan exact topics 4–6 weeks out; keep a thematic plan for the quarter. The content landscape — trending topics, algorithm changes, industry events — shifts faster than a rigid calendar can accommodate. Leave room for timely content that emerges from real-world events.</p>
             </div>
         `,
         quiz: {
@@ -2298,33 +2301,35 @@ Object.assign(lessonContent, {
     'cm-2-2': {
         title: 'Writing Content That Ranks and Converts',
         body: `
-            <h2>The Dual Goal: Rank and Convert</h2>
-            <p>Great content marketing serves two masters: it ranks in search engines to attract traffic, and it persuades readers to take action. Writing purely for SEO creates robotic content that doesn't convert. Writing purely for persuasion creates content nobody finds. The skill is combining both.</p>
+            <h2>Three Masters, Not Two</h2>
+            <p>Effective content writing in 2026 serves three audiences simultaneously: search engines (which surface your content to organic searchers), AI platforms (which extract and cite your content in generated answers), and human readers (who decide whether to trust and act on what you have written). Writing for any one of these at the expense of the others produces content that fails the overall goal. Writing that serves all three is content that truly compounds.</p>
 
-            <h2>SEO Writing Best Practices</h2>
+            <h2>SEO and Answer Engine Optimisation (AEO)</h2>
+            <p>Approximately 60% of searches now end without a click, because AI Overviews, featured snippets, and direct answers resolve the question in the search results page. This means ranking is no longer sufficient — your content must also be structured so that AI platforms can extract, understand, and cite it directly. This practice is called <strong>Answer Engine Optimisation (AEO)</strong>:</p>
             <ul>
-                <li><strong>Match search intent</strong> — Analyse the top-ranking pages for your keyword. If they're all how-to guides, write a how-to guide.</li>
+                <li><strong>Match search intent precisely</strong> — Analyse the top-ranking pages. If they are how-to guides, write a how-to guide. If they are comparisons, write a comparison.</li>
                 <li><strong>Use the target keyword in the title, H1, first paragraph, and 2–3 subheadings</strong></li>
-                <li><strong>Cover the topic comprehensively</strong> — Include subtopics that related articles cover. Tools like "People Also Ask" reveal what else searchers want to know.</li>
-                <li><strong>Structure with clear headings</strong> — Use H2 and H3 tags to create a scannable hierarchy</li>
-            </ul>
-
-            <h2>Writing for Conversion</h2>
-            <ul>
-                <li><strong>Open with the reader's problem</strong> — Show you understand their pain before presenting solutions</li>
-                <li><strong>Include CTAs naturally</strong> — Place relevant calls-to-action within the content, not just at the end. After demonstrating value, offer the next step.</li>
-                <li><strong>Use proof</strong> — Statistics, case studies, examples, and testimonials build credibility throughout the content</li>
-                <li><strong>Format for readability</strong> — Short paragraphs, bullet points, bold key terms. Most readers scan before they read.</li>
+                <li><strong>Write direct, extractable answers</strong> — Concise answers to the question in the first 2–3 sentences of each section. AI tools extract the first clear answer they encounter.</li>
+                <li><strong>Structure with clear H2 and H3 headings</strong> — Hierarchical structure makes content easier for both readers and AI to parse</li>
+                <li><strong>Include original data, examples, and experience</strong> — AI platforms prefer citing content with unique information that has not been synthesised from other sources</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>The best converting content educates genuinely first, then naturally leads to your product or service as the logical next step. Hard selling in educational content destroys trust. Helping builds it.</p>
+                <div class="callout-title">Key Concept: Authenticity Is the Differentiator</div>
+                <p>AI-generated content is now pervasive — every topic is saturated with AI-synthesised articles that say similar things in similar structures. The differentiators that earn trust, backlinks, AI citations, and human loyalty are: original data you collected yourself, personal experience that only you have, and a genuine point of view that takes a clear position. Generic, balanced coverage of a topic is exactly what AI already provides for free. Your competitive advantage is what only you can say.</p>
             </div>
+
+            <h2>Writing for Conversion</h2>
+            <ul>
+                <li><strong>Open with the reader's problem</strong> — Demonstrate you understand their situation before presenting solutions</li>
+                <li><strong>Place CTAs naturally within the content</strong> — After a section that demonstrates value, offer the next logical step. This feels helpful, not pushy.</li>
+                <li><strong>Use proof throughout</strong> — Your own data, client results, and direct experience carry more weight than generic statistics. The more specific, the more credible.</li>
+                <li><strong>Format for scanners</strong> — Short paragraphs, descriptive subheadings, bullet points for lists. Most readers scan before they commit to reading in full.</li>
+            </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Update your top-performing content every 6–12 months. Add new information, refresh statistics, improve formatting, and re-optimise for current search trends. Updated content often regains or surpasses its original ranking position.</p>
+                <p>Update your top-performing content every 6–12 months. Refresh statistics, add new examples, update anything that has become outdated, and ensure the structure still serves AEO principles. Updated content regularly regains or surpasses its original ranking position — and gives AI platforms fresh signals to work with.</p>
             </div>
         `,
         quiz: {
@@ -2344,30 +2349,31 @@ Object.assign(lessonContent, {
         title: 'Content Distribution Channels',
         body: `
             <h2>The Three Distribution Categories</h2>
-            <p>Creating great content is only half the job — distribution determines whether anyone sees it. Distribution channels fall into three categories:</p>
+            <p>Creating excellent content is only half the job — distribution determines whether anyone encounters it. Most content underperforms not because it is poor quality, but because it is not actively distributed after publication. Distribution channels fall into three categories:</p>
             <ul>
-                <li><strong>Owned channels</strong> — Platforms you control: your blog, email list, social profiles, podcast. You build these over time and they become increasingly valuable.</li>
-                <li><strong>Earned channels</strong> — Exposure you earn through quality: shares, backlinks, press coverage, mentions, guest post invitations. Most credible but least controllable.</li>
-                <li><strong>Paid channels</strong> — Paid promotion: social ads, search ads, sponsored content, native advertising. Immediate reach but requires ongoing budget.</li>
+                <li><strong>Owned channels</strong> — Platforms you control: your website, email list, podcast feed, social profiles. These compound over time and are the most resilient because no algorithm or platform policy can remove your access to them.</li>
+                <li><strong>Earned channels</strong> — Distribution you earn through quality: organic search rankings, AI platform citations, backlinks, press coverage, social shares, podcast guest appearances. The most credible and the least controllable.</li>
+                <li><strong>Paid channels</strong> — Paid promotion that extends reach immediately: social ads, search ads, sponsored content, newsletter placements. Effective for amplifying content that has already demonstrated organic traction.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Most content marketers spend 80% of their effort on creation and 20% on distribution. Flip this ratio. A good piece of content promoted effectively will outperform a great piece that nobody sees.</p>
+                <p>Most content marketers spend 80% of their effort on creation and 20% on distribution. The ratio should be closer to 50:50 at minimum. A well-promoted piece of good content will reach more people and produce more results than an excellent piece with no promotion. Distribution is not an afterthought — it is half of content marketing.</p>
             </div>
 
             <h2>Distribution Tactics</h2>
             <ul>
-                <li><strong>Email newsletter</strong> — Your most reliable distribution channel. Send new content to subscribers and build a habit of regular reading.</li>
-                <li><strong>Social media sharing</strong> — Share across all relevant platforms with platform-native formatting. Don't just post a link — pull out key insights as native content.</li>
-                <li><strong>Community posting</strong> — Share in relevant industry communities, forums, Slack groups, and Reddit (where appropriate and within community rules).</li>
-                <li><strong>Content syndication</strong> — Republish on platforms like Medium or LinkedIn Articles with a canonical link back to the original.</li>
-                <li><strong>Paid amplification</strong> — Boost top-performing organic content with a small ad budget to extend reach.</li>
+                <li><strong>Email newsletter</strong> — Your most reliable owned distribution channel. Send new content to subscribers who have already indicated they want to hear from you. This audience converts at far higher rates than cold traffic.</li>
+                <li><strong>Short-form video</strong> — Distribute the insight as a short video on TikTok, Reels, or LinkedIn video. This is now the highest-reach distribution channel for most content topics and should be a standard step, not an optional one.</li>
+                <li><strong>Native social content</strong> — Share insights as native posts rather than just links. Platform algorithms consistently reduce the reach of posts that send users off-platform. Write the insight directly in the post; link in the first comment or bio if needed.</li>
+                <li><strong>Community sharing</strong> — Share in relevant industry communities, Slack groups, Reddit, and Discord where the content genuinely adds value to the discussion</li>
+                <li><strong>AI platform presence</strong> — Ensure your written content is indexed, structured clearly, and uses language that answers questions directly. This is increasingly how content gets found — not via a search click, but via citation in an AI-generated answer.</li>
+                <li><strong>Paid amplification</strong> — Boost content that has already demonstrated organic engagement. Paying to amplify content that nobody engages with organically rarely improves its performance.</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Create a distribution checklist for every new piece of content. List every channel and action required (email send, social posts across 3 platforms, community shares, internal Slack share). Systematic distribution ensures no opportunity is missed.</p>
+                <p>Build a distribution checklist for every piece of content before it is published. List every channel and action required: email send date, short-form video recording, native social posts for three platforms, community shares. Systematic distribution ensures you treat every piece of content as a serious investment rather than a publication-and-forget exercise.</p>
             </div>
         `,
         quiz: {
@@ -2386,33 +2392,30 @@ Object.assign(lessonContent, {
     'cm-2-4': {
         title: 'Repurposing Content Across Platforms',
         body: `
-            <h2>Content Atomisation</h2>
-            <p><strong>Content atomisation</strong> is the practice of breaking one substantial piece of content into many smaller pieces across different formats and platforms. A single long-form blog post can generate weeks of content across your entire marketing ecosystem.</p>
+            <h2>Repurposing Is a Core Strategic Discipline</h2>
+            <p>Content repurposing — taking one strong insight and adapting it across multiple formats and channels — is not a shortcut or a sign of limited ideas. It is the correct strategic approach to content marketing in 2026. The world does not need more content; it needs better content in more places. Each format reaches a different part of your audience at a different moment, and the underlying insight gains depth and credibility with each new expression.</p>
 
-            <h2>The Repurposing Cascade</h2>
-            <p>Start with a "pillar" content piece, then cascade down:</p>
+            <h2>The "One Insight, Many Formats" System</h2>
+            <p>The modern content system starts with an insight — a genuine observation, a piece of original data, a lesson from experience — rather than a format. Once you have the insight, you produce it across formats in parallel rather than sequentially. A practical sequence:</p>
             <ol>
-                <li><strong>Long-form blog post or guide</strong> → The foundation</li>
-                <li><strong>Video version</strong> → Record yourself presenting the key points</li>
-                <li><strong>Podcast episode</strong> → Discuss the topic with added commentary</li>
-                <li><strong>Email newsletter</strong> → Summarise key takeaways with a link to the full piece</li>
-                <li><strong>Social media posts (5–10)</strong> → Pull individual statistics, quotes, tips, or sections</li>
-                <li><strong>Infographic</strong> → Visualise data or processes from the content</li>
-                <li><strong>Slide deck</strong> → Create a presentation version for LinkedIn or SlideShare</li>
-                <li><strong>Thread</strong> → Break key arguments into a Twitter/X thread</li>
+                <li><strong>Short-form video (60–90 seconds)</strong> → The insight delivered directly to camera. This is your primary distribution piece and the highest-reach format. Record this first while the thinking is fresh.</li>
+                <li><strong>Written article or blog post</strong> → The in-depth written version with full context, structure, and supporting evidence. This earns SEO rankings and AI citations. Transcript the video as a starting point, then expand.</li>
+                <li><strong>Email</strong> → A concise summary with your personal take and a link to the full article. Sent to subscribers as part of a regular newsletter cadence.</li>
+                <li><strong>Native social posts (3–5)</strong> → Pull the most quotable lines, counterintuitive points, or data from the article. Each becomes a standalone post written in that platform's native voice — not a link to the article.</li>
+                <li><strong>Podcast clip or episode</strong> → Discuss the topic with additional context, a guest perspective, or real examples. Or simply use the short video audio as a standalone clip.</li>
             </ol>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Repurposing isn't just copy-pasting the same text everywhere. Each platform has its own native format and audience expectations. Adapt the core message to fit each platform's style while maintaining consistent value and messaging.</p>
+                <p>Repurposing is not copy-pasting. Each platform has distinct format conventions and audience expectations: what works as a LinkedIn native post reads differently from a TikTok script, which reads differently from an email opening. The insight is consistent; the execution is platform-native. This requires genuine adaptation for each format, not just reformatting.</p>
             </div>
 
-            <h2>Efficiency Gains</h2>
-            <p>Repurposing can 5–10x your content output without proportionally increasing production time. Instead of creating 10 unique pieces from scratch, create one exceptional piece and transform it into 10 platform-specific versions.</p>
+            <h2>The Efficiency Case</h2>
+            <p>A single insight handled this way produces five distinct pieces of content that reach five different audiences in five different contexts — from a single production session. Instead of five separate research and creation processes, you invest deeply in one idea and extract its full value. This is how small content teams punch above their weight.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Plan for repurposing before you create. When writing a blog post, think about which sections would make good social posts, what data would work as an infographic, and what points would spark discussion on a podcast. Planning ahead makes repurposing smoother.</p>
+                <p>Plan for repurposing in the calendar before you create the primary piece. Decide which formats the insight will become before recording or writing anything. This shifts your mindset from "producing content" to "working an insight until it has reached everyone who would benefit from it."</p>
             </div>
         `,
         quiz: {
@@ -2432,32 +2435,32 @@ Object.assign(lessonContent, {
         title: 'Lead Magnets and Gated Content',
         body: `
             <h2>What Is a Lead Magnet?</h2>
-            <p>A <strong>lead magnet</strong> is a valuable resource offered for free in exchange for contact information (usually an email address). It's the bridge between anonymous website visitors and known leads you can nurture through email marketing.</p>
+            <p>A <strong>lead magnet</strong> is a resource offered in exchange for contact information — typically an email address. It is the bridge between an anonymous website visitor and a known lead you can nurture through email. The challenge in 2026 is that buyers are less willing to exchange their email address than they were five years ago: they have been burned by generic PDFs that delivered nothing, inbox bombardment, and irrelevant nurture sequences. The bar for what constitutes a genuinely valuable lead magnet has risen significantly.</p>
 
-            <h2>Types of Lead Magnets</h2>
+            <h2>What Works Now: High-Value, Specific Lead Magnets</h2>
+            <p>Generic ebooks and "ultimate guides" have declining conversion rates because buyers either have already found the information through AI research, or they no longer believe a free download will genuinely solve their problem. What converts now is specificity and immediate utility:</p>
             <ul>
-                <li><strong>Ebooks and guides</strong> — In-depth resources on a specific topic. Work well for complex subjects.</li>
-                <li><strong>Checklists and cheat sheets</strong> — Quick-reference tools. High conversion rates because they're immediately useful and quick to consume.</li>
-                <li><strong>Templates and swipe files</strong> — Ready-to-use resources the audience can adapt. Extremely popular because they save time.</li>
-                <li><strong>Webinars and video training</strong> — Live or recorded educational sessions. Great for building authority and demonstrating expertise.</li>
-                <li><strong>Free tools and calculators</strong> — Interactive tools that solve a specific problem. Highest perceived value.</li>
-                <li><strong>Quizzes and assessments</strong> — Interactive content that provides personalised results. Engaging and shareable.</li>
+                <li><strong>Calculators and diagnostic tools</strong> — A tool that produces a personalised output (e.g., "calculate your email deliverability risk score") delivers something the reader cannot get by Googling. Highest perceived value and most defensible against AI substitution.</li>
+                <li><strong>Templates and swipe files</strong> — Ready-to-use working documents that save real time. A specific email sequence template, a content calendar spreadsheet, or a brief framework — these are immediately practical.</li>
+                <li><strong>Mini-courses (3–5 lessons)</strong> — A short email-delivered course on a specific topic. Delivers value over time and builds a habit of opening your emails before the nurture sequence begins.</li>
+                <li><strong>Original data or research reports</strong> — If you have proprietary data, a research report is a genuinely valuable lead magnet because the information cannot be found elsewhere. Buyers are happy to exchange their email for something they genuinely cannot get any other way.</li>
+                <li><strong>Checklists and audit frameworks</strong> — High conversion rates because they are quick to consume and immediately actionable. The specificity of "15-point technical SEO audit for e-commerce sites" converts better than "the complete SEO checklist."</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>The best lead magnets solve a specific, immediate problem for a well-defined audience. "The Ultimate Marketing Guide" is too broad. "The 5-Minute Facebook Ad Audit Checklist" is specific, useful, and clearly valuable.</p>
+                <p>Specificity is the primary driver of lead magnet conversion. "The 5-Minute Facebook Ad Audit Checklist for SaaS Companies" will outperform "The Ultimate Marketing Guide" by a large margin — because it is clearly for a specific person with a specific problem, and delivers a specific outcome. The more precisely your lead magnet describes who it is for and what it will help them achieve, the higher the conversion rate.</p>
             </div>
 
-            <h2>Landing Page Best Practices</h2>
-            <p>Your lead magnet landing page should have: a clear headline stating the benefit, a short description of what's included, a visual preview (mockup of the ebook, screenshot of the template), social proof if available, and a simple form with minimal fields.</p>
+            <h2>The Non-Linear Buyer Journey</h2>
+            <p>Buyers no longer move predictably through a single linear funnel from awareness to consideration to decision. Many arrive at your website already highly informed — having researched the category through AI tools, read competitor comparisons, and formed views before you have had a single interaction with them. Your lead magnet needs to deliver value at this more informed entry point: a basic "introduction to X" is already in their rearview mirror.</p>
 
             <h2>When to Gate vs Ungate</h2>
-            <p>Not all content should be gated. <strong>Gate</strong> high-value resources that go beyond what's freely available. <strong>Ungate</strong> content designed for SEO and top-of-funnel awareness. A general rule: if the content primarily educates, keep it open. If it's a specific tool or resource, gate it.</p>
+            <p>Gate resources that provide unique, specific value beyond what is freely available — tools, templates, original research, and mini-courses. Ungate educational content designed for SEO and AI citations — those pieces need to be fully visible to be indexed, cited, and shared. A general principle: content that primarily educates stays open; content that primarily solves or produces gets gated.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Asking for too much information on the form. Every additional field reduces conversions by 5–10%. For a lead magnet download, name and email are usually sufficient. Collect additional information later through progressive profiling.</p>
+                <p>Asking for too many fields on the form. Every additional field beyond name and email reduces conversions by 5–10%. Collect only what you need to deliver the lead magnet and begin nurturing. Gather additional preference and segmentation data later through your email preference centre or a post-download survey — this is zero-party data collected at the right moment, not forced at the point of conversion.</p>
             </div>
         `,
         quiz: {
@@ -2479,32 +2482,31 @@ Object.assign(lessonContent, {
         title: 'Email Marketing Fundamentals',
         body: `
             <h2>Why Email Marketing Still Dominates</h2>
-            <p>Email marketing consistently delivers the highest ROI of any marketing channel — averaging £36 returned for every £1 spent. Unlike social media, you own your email list. Algorithm changes can't reduce your reach. It's a direct line to your audience.</p>
+            <p>Email marketing consistently delivers the highest ROI of any marketing channel — averaging £36 returned for every £1 spent. Unlike social media, you own your list: no algorithm change, platform policy update, or account suspension can remove your access to the people who have chosen to hear from you. That ownership is the reason email remains the most resilient marketing channel regardless of what happens in the broader digital landscape.</p>
 
             <h2>Email Service Providers (ESPs)</h2>
-            <p>An ESP is the platform you use to send marketing emails. Popular options include Mailchimp, ConvertKit, ActiveCampaign, Klaviyo (for e-commerce), and HubSpot. Choose based on your needs: list size, automation complexity, integration requirements, and budget.</p>
+            <p>An ESP is the platform you use to send, automate, and measure marketing emails. Choose based on your needs: list size, automation complexity, e-commerce integration requirements, and budget. Popular options include Mailchimp (beginners and small lists), Kit/ConvertKit (creators and solopreneurs), ActiveCampaign (complex automation), Klaviyo (e-commerce), and HubSpot (full inbound stack).</p>
 
-            <h2>Building Your First Campaign</h2>
-            <ol>
-                <li><strong>Define your goal</strong> — What action do you want recipients to take?</li>
-                <li><strong>Segment your audience</strong> — Don't send the same email to everyone</li>
-                <li><strong>Write a compelling subject line</strong> — This determines whether your email gets opened</li>
-                <li><strong>Design the email</strong> — Clean, mobile-friendly layout with a clear CTA</li>
-                <li><strong>Test before sending</strong> — Send test emails, check links, preview on multiple devices</li>
-                <li><strong>Analyse results</strong> — Track open rate, click rate, and conversions</li>
-            </ol>
+            <h2>The Metrics That Actually Matter</h2>
+            <p>Open rate has been the primary email KPI for decades, but it is now unreliable as a measurement tool. <strong>Apple's Mail Privacy Protection (MPP)</strong> pre-loads email content on Apple devices the moment an email is delivered — registering an "open" whether or not the recipient ever sees it. With Apple devices accounting for nearly 50% of all email opens, reported open rates are significantly inflated and cannot be used to compare performance over time. The metrics that remain meaningful:</p>
+            <ul>
+                <li><strong>Click rate</strong> — The percentage of sent emails that generate at least one click. Reflects genuine engagement.</li>
+                <li><strong>Conversion rate</strong> — The percentage that complete the desired action (purchase, sign-up, booking).</li>
+                <li><strong>Revenue per send</strong> — Total revenue generated divided by emails sent. The most business-relevant metric for commercial email.</li>
+                <li><strong>Unsubscribe rate</strong> — Rising unsubscribes signal irrelevant content or frequency problems. A healthy signal of list quality.</li>
+            </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>Email marketing success is built on permission and value. Only email people who've opted in, and every email should provide genuine value — not just promotional messages. The brands that treat email as a value channel, not a broadcast channel, win.</p>
+                <div class="callout-title">Key Concept: Automation Is the Engine</div>
+                <p>Broadcast campaigns — one email sent to the whole list — are one component of email marketing. But automated flows (welcome sequences, abandoned cart, post-purchase, win-back) generate approximately 41% of total email revenue from only 2% of total email send volume. Setting up these flows is the highest-leverage use of email marketing time and should be prioritised over crafting individual campaigns.</p>
             </div>
 
             <h2>Subject Lines and Preview Text</h2>
-            <p>Your <strong>subject line</strong> is the single biggest factor in open rates. Keep it under 50 characters, create curiosity or urgency, and be specific. The <strong>preview text</strong> (the snippet shown after the subject line) is your second chance to earn the open — use it to complement, not repeat, the subject line.</p>
+            <p>Subject lines still determine whether subscribers notice your email in a crowded inbox — they are the first and sometimes only impression you make. Keep them under 50 characters, create specific curiosity or urgency, and avoid spam trigger words. The <strong>preview text</strong> that appears after the subject line is a second opportunity to earn the open — use it to add context or intrigue, not to repeat the subject line verbatim.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Send emails at consistent times so subscribers develop a habit of expecting your content. Tuesday through Thursday mornings tend to perform best for B2B, while evenings and weekends can work well for B2C.</p>
+                <p>Send at consistent times so subscribers develop a habit of expecting your content. But do not make the mistake of optimising for open rate — since Apple MPP inflates it — when your actual goal is clicks and revenue. Measure the email by what it produces, not by how many people nominally "opened" it.</p>
             </div>
         `,
         quiz: {
@@ -2524,33 +2526,33 @@ Object.assign(lessonContent, {
         title: 'Building and Segmenting Email Lists',
         body: `
             <h2>Building Your List</h2>
-            <p>Your email list is one of your most valuable marketing assets. Build it through legitimate opt-in methods:</p>
+            <p>Your email list is one of your most durable marketing assets — it is owned, not rented, and grows in value as your relationship with subscribers deepens. Build it exclusively through legitimate opt-in methods:</p>
             <ul>
-                <li><strong>Lead magnets</strong> — Offer valuable resources in exchange for email addresses</li>
-                <li><strong>Website opt-in forms</strong> — Embed forms in your blog sidebar, footer, and within content</li>
-                <li><strong>Pop-ups and slide-ins</strong> — Exit-intent popups and timed slide-ins capture visitors before they leave</li>
-                <li><strong>Content upgrades</strong> — Bonus resources specific to the blog post being read (higher conversion than generic offers)</li>
-                <li><strong>Webinar registrations</strong> — Live events naturally collect email addresses</li>
-                <li><strong>Checkout opt-in</strong> — E-commerce customers can opt in during purchase</li>
+                <li><strong>Lead magnets</strong> — High-value, specific resources (calculators, templates, mini-courses) that justify the email exchange. Generic ebooks convert at increasingly low rates; specificity and utility are the key variables.</li>
+                <li><strong>Embedded opt-in forms</strong> — Within blog posts (content upgrades specific to the article), in your site footer, and at the end of high-traffic pages</li>
+                <li><strong>Exit-intent pop-ups</strong> — Triggered when a visitor shows signs of leaving. Convert well when the offer is relevant to the page they have been reading.</li>
+                <li><strong>Webinar and event registrations</strong> — Live events naturally collect email addresses from people with demonstrated interest in your topic</li>
+                <li><strong>Checkout and post-purchase opt-in</strong> — E-commerce customers opting in at the point of purchase are among your highest-value subscribers</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Never buy email lists. Purchased lists have terrible engagement rates, damage your sender reputation, and violate GDPR and CAN-SPAM regulations. A list of 1,000 engaged subscribers who opted in will outperform a purchased list of 50,000.</p>
+                <p>Buying email lists. Purchased lists produce terrible engagement rates, damage your sender reputation with inbox providers, and violate GDPR and CAN-SPAM regulations. A list of 1,000 people who genuinely opted in will outperform a purchased list of 50,000 on every meaningful metric — click rate, conversion rate, revenue per send — because the relationship is real.</p>
             </div>
 
-            <h2>Segmentation Strategies</h2>
-            <p><strong>Segmentation</strong> means dividing your list into groups based on shared characteristics so you can send more relevant messages. Segmented campaigns generate 14% higher open rates and 100% higher click rates than non-segmented ones.</p>
+            <h2>Segmentation: Zero-Party Data as the Foundation</h2>
+            <p>As third-party cookies continue to be phased out and first-party behavioural signals become less complete due to privacy changes, <strong>zero-party data</strong> — information subscribers voluntarily provide — is becoming the primary segmentation input. Zero-party data is more accurate than inferred behavioural data and more privacy-compliant than data collected without explicit awareness.</p>
+            <p>Collect zero-party data through:</p>
             <ul>
-                <li><strong>Behavioural</strong> — Based on actions: pages visited, products viewed, past purchases, email engagement</li>
-                <li><strong>Demographic</strong> — Age, location, job role, company size</li>
-                <li><strong>Engagement level</strong> — Active subscribers vs inactive (haven't opened in 90 days)</li>
-                <li><strong>Funnel stage</strong> — New subscriber, engaged lead, customer, repeat buyer</li>
+                <li><strong>Preference centres</strong> — Let subscribers choose their content interests, email frequency, and format preferences. This data improves relevance and reduces unsubscribes.</li>
+                <li><strong>Post-signup surveys</strong> — A short 2–3 question survey immediately after signup while engagement is highest</li>
+                <li><strong>Quizzes and assessments</strong> — Interactive experiences that produce a personalised result and reveal meaningful segmentation data in the process</li>
+                <li><strong>Behavioural signals (first-party)</strong> — Clicks, purchases, pages visited on your own site. Still highly valuable as a complement to zero-party data.</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>List hygiene is as important as list growth. Regularly remove bounced addresses and consider re-engaging or removing subscribers who haven't opened an email in 6+ months. A clean list improves deliverability for everyone on it.</p>
+                <div class="callout-title">Key Concept: List Hygiene Protects Deliverability</div>
+                <p>Segmented campaigns generate significantly higher click rates than non-segmented ones — in some studies, 100% higher — because relevance drives engagement. But the health of your list also determines whether emails reach the inbox at all. Remove hard bounces immediately, run re-engagement campaigns for subscribers inactive for 60–90 days, and remove those who do not respond. A smaller, engaged list delivers better results and better deliverability than a large, stale one.</p>
             </div>
         `,
         quiz: {
@@ -2569,40 +2571,37 @@ Object.assign(lessonContent, {
     'cm-3-3': {
         title: 'Writing Emails That Get Opened and Clicked',
         body: `
-            <h2>Subject Line Formulas That Work</h2>
-            <p>The subject line determines whether your email gets opened. Proven formulas include:</p>
+            <h2>Subject Lines Still Matter — But for Different Reasons</h2>
+            <p>Open rate is no longer a reliable metric (Apple Mail Privacy Protection pre-loads emails on Apple devices, inflating reported opens). But subject lines still matter: they determine whether a subscriber registers your email in a crowded inbox and decides to click in. The goal has shifted from maximising opens to earning genuine engagement from the subscribers most likely to act. Proven subject line structures:</p>
             <ul>
                 <li><strong>Curiosity gap</strong> — "The one metric most marketers ignore (it costs them thousands)"</li>
                 <li><strong>Specific benefit</strong> — "How to reduce your CPA by 30% in 2 weeks"</li>
-                <li><strong>Question</strong> — "Are you making this common SEO mistake?"</li>
-                <li><strong>List/number</strong> — "5 landing page tweaks that doubled our conversions"</li>
-                <li><strong>Urgency</strong> — "Last chance: workshop spots closing at midnight"</li>
+                <li><strong>Direct question</strong> — "Are you making this common deliverability mistake?"</li>
+                <li><strong>List/number</strong> — "5 subject line structures that consistently drive clicks"</li>
+                <li><strong>Genuine urgency</strong> — "Last chance: workshop spots closing at midnight"</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Clickbait subject lines that don't deliver. If your subject line promises "the secret to 10x growth" but the email is a generic product pitch, you'll get high opens but also high unsubscribes. Always deliver on what the subject line promises.</p>
+                <p>Writing subject lines that overpromise and underdeliver. A subject line claiming "the secret to 10x growth" that opens into a generic product pitch will generate unsubscribes and spam reports, which damage your sender reputation far more than a lower open rate does. The subject line is a promise — the email must fulfil it.</p>
             </div>
 
             <h2>Email Copywriting Principles</h2>
             <ul>
-                <li><strong>Write like a person, not a brand</strong> — Conversational, first-person emails outperform corporate ones</li>
-                <li><strong>One email, one goal</strong> — Don't try to accomplish five things in one email. Pick one CTA.</li>
-                <li><strong>Front-load value</strong> — Put the most important content and your CTA above the fold</li>
-                <li><strong>Use short paragraphs</strong> — 1–3 sentences per paragraph. Walls of text don't get read.</li>
-                <li><strong>Personalise beyond the name</strong> — Reference their behaviour, segment, or purchase history</li>
+                <li><strong>Write as a person, not a brand</strong> — Conversational, first-person emails consistently outperform polished corporate ones. Subscribers are more likely to read and click something that sounds like it came from a real human.</li>
+                <li><strong>One email, one goal</strong> — Every email should have a single primary CTA. Multiple competing goals reduce overall click rate.</li>
+                <li><strong>Front-load value</strong> — Put the most important content and your CTA above the fold. Many readers never scroll to the bottom.</li>
+                <li><strong>Short paragraphs</strong> — 1–3 sentences per paragraph. Walls of text signal effort and readers abandon them.</li>
+                <li><strong>Hyper-personalise beyond the first name</strong> — Reference the subscriber's behaviour, purchase history, or segment. Dynamic content blocks that change based on what the reader has previously bought or clicked deliver substantially higher engagement than first-name personalisation alone.</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>The goal of each line is to get the reader to read the next line. Subject line → first sentence → body → CTA. Every element should pull the reader forward toward the action you want them to take.</p>
+                <div class="callout-title">Key Concept: Dynamic Content Blocks</div>
+                <p>Hyper-personalisation means serving different email content to different subscribers within the same send, based on real-time signals: what they have purchased, which content they have clicked, their stated preferences, or their lifecycle stage. This is now the standard expectation in high-performing email programmes — not an advanced feature reserved for enterprise teams. Most modern ESPs support dynamic content blocks at no additional cost.</p>
             </div>
 
-            <h2>A/B Testing Emails</h2>
-            <p>Always test. Start by testing subject lines (biggest impact on opens), then sender names, send times, CTA copy, and email length. Test one variable at a time and send to a representative sample before rolling out to the full list.</p>
-
-            <h2>Mobile Optimisation</h2>
-            <p>Over 60% of emails are opened on mobile devices. Use a single-column layout, large readable fonts (16px minimum), tappable buttons (44px+ height), and preview your emails on mobile before sending.</p>
+            <h2>A/B Testing and Mobile Optimisation</h2>
+            <p>Test one variable per send: subject lines have the biggest impact on inbox behaviour, followed by sender name, CTA copy, email length, and send time. Measure tests by click rate and conversion rate, not open rate. For mobile: use a single-column layout, minimum 16px font size, and tappable button heights of at least 44px. Preview on mobile before every send — the majority of your subscribers will read your email on a phone.</p>
         `,
         quiz: {
             question: 'What is the most important principle of email copywriting?',
@@ -2620,32 +2619,26 @@ Object.assign(lessonContent, {
     'cm-3-4': {
         title: 'Email Automation and Sequences',
         body: `
-            <h2>What Is Email Automation?</h2>
-            <p><strong>Email automation</strong> sends pre-written emails triggered by specific actions or time intervals. Instead of manually sending emails, you set up sequences that run automatically — nurturing leads, onboarding customers, or recovering abandoned carts while you sleep.</p>
+            <h2>Automation Is the Engine of Email Performance</h2>
+            <p><strong>Email automation</strong> sends pre-written messages triggered by specific subscriber actions or time intervals — nurturing leads, onboarding new customers, recovering abandoned purchases, and winning back lapsed subscribers, all without manual intervention per send. The strategic importance of automation is not incremental: automated flows generate approximately <strong>41% of total email revenue from only 2% of total email send volume</strong>. Setting up the core automated sequences is the highest-leverage email investment available, and it should be prioritised over broadcast campaigns for most businesses.</p>
 
-            <h2>Essential Automated Sequences</h2>
+            <h2>The Essential Automated Flows</h2>
             <ul>
-                <li><strong>Welcome sequence</strong> — 3–5 emails sent to new subscribers. Introduce your brand, deliver the promised lead magnet, share your best content, and make a soft offer. This sets the tone for the entire relationship.</li>
-                <li><strong>Nurture sequence</strong> — Ongoing educational emails that build trust and move leads toward a purchase decision. Typically 5–10 emails spread over 2–4 weeks.</li>
-                <li><strong>Cart abandonment</strong> — 2–3 emails sent when someone adds to cart but doesn't purchase. These recover 5–15% of abandoned carts on average.</li>
-                <li><strong>Re-engagement</strong> — Target subscribers who haven't opened emails in 60–90 days. Offer them a reason to come back or clean them off your list.</li>
-                <li><strong>Post-purchase</strong> — Thank customers, ask for reviews, offer related products, and build loyalty after a sale.</li>
+                <li><strong>Welcome sequence</strong> — 3–5 emails sent to new subscribers in the first 7–10 days. Introduce your brand, deliver the promised lead magnet, share your best content, set expectations for what comes next, and make a relevant offer. New subscribers are most engaged in the first 48–72 hours — this is the highest-engagement window in the entire subscriber lifecycle.</li>
+                <li><strong>Abandoned cart</strong> — 2–3 emails triggered when a user adds to basket but does not complete checkout. Email 1 is a simple reminder (sent within 1 hour); Email 2 addresses potential objections (sent at 24 hours); Email 3 may include an incentive (sent at 48–72 hours). Well-structured sequences recover 5–15% of abandoned carts on average.</li>
+                <li><strong>Post-purchase</strong> — Confirm the order, set delivery expectations, provide product usage guidance, ask for a review at the right moment (after they have had time to use the product), and introduce complementary products. This is where loyalty is built, not just at the marketing stage.</li>
+                <li><strong>Win-back sequence</strong> — 2–3 emails targeting subscribers who have not clicked or engaged in 60–90 days. Offer a genuine reason to re-engage (new content, an exclusive offer, a direct question about their needs). Subscribers who do not respond should be removed — sending to unengaged addresses damages deliverability for everyone else on your list.</li>
+                <li><strong>Lead nurture sequence</strong> — Educational emails that build trust and move leads toward a purchase decision over 2–4 weeks. Triggered by a lead magnet download or content engagement event.</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>The welcome sequence is your highest-leverage automation. New subscribers are most engaged in the first 48 hours after signing up. A strong welcome sequence sets expectations, builds trust, and can generate immediate conversions.</p>
+                <div class="callout-title">Key Concept: Trigger-Based vs Drip</div>
+                <p>Drip campaigns send emails at set time intervals regardless of subscriber behaviour (Day 1, Day 3, Day 7). Trigger-based sequences send emails in response to specific actions — visiting the pricing page, downloading a resource, making a purchase. Trigger-based automation is more relevant and typically generates 2–3x higher click and conversion rates, because the message is sent at the exact moment the subscriber has demonstrated intent.</p>
             </div>
-
-            <h2>Drip Campaigns vs Trigger-Based Automation</h2>
-            <ul>
-                <li><strong>Drip campaigns</strong> — Time-based sequences where emails are sent at set intervals (Day 1, Day 3, Day 7, etc.) regardless of subscriber behaviour.</li>
-                <li><strong>Trigger-based</strong> — Emails sent in response to specific actions (visited pricing page, downloaded resource, made purchase). More relevant and typically higher performing.</li>
-            </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Start with just two automations: a welcome sequence for new subscribers and a cart abandonment sequence (if e-commerce). These two alone can transform your email ROI. Add more sequences as you learn what resonates.</p>
+                <p>If you are starting with email automation, build two flows first: a welcome sequence for all new subscribers, and a cart abandonment sequence if you sell products. These two flows alone account for the majority of automated email revenue for most businesses. Once they are running, build the post-purchase flow next. Add complexity as you learn what your audience responds to.</p>
             </div>
         `,
         quiz: {
@@ -2665,38 +2658,40 @@ Object.assign(lessonContent, {
         title: 'Deliverability and Compliance',
         body: `
             <h2>What Is Email Deliverability?</h2>
-            <p><strong>Deliverability</strong> is the ability of your emails to reach the inbox (not the spam folder or junk). You can write the perfect email, but if it lands in spam, no one will see it. Deliverability is influenced by your sender reputation, authentication setup, and sending practices.</p>
+            <p><strong>Deliverability</strong> is the ability of your emails to reach the inbox rather than spam or junk folders. You can write an excellent email with a strong offer, but if it does not reach the inbox, none of that effort matters. Deliverability is determined by three factors: your technical authentication setup, your sender reputation, and your sending practices.</p>
 
-            <h2>Email Authentication: SPF, DKIM, and DMARC</h2>
+            <h2>Email Authentication: SPF, DKIM, and DMARC Are Now Mandatory</h2>
+            <p>Google, Yahoo, and other major inbox providers now require proper email authentication for all senders. These are not optional configuration improvements — they are baseline requirements. Without them, your emails will be filtered or rejected outright by major providers:</p>
             <ul>
-                <li><strong>SPF (Sender Policy Framework)</strong> — A DNS record that specifies which mail servers are authorised to send emails on behalf of your domain.</li>
-                <li><strong>DKIM (DomainKeys Identified Mail)</strong> — Adds a digital signature to your emails proving they haven't been tampered with in transit.</li>
-                <li><strong>DMARC (Domain-based Message Authentication)</strong> — Tells receiving servers what to do if an email fails SPF or DKIM checks. Protects against email spoofing.</li>
+                <li><strong>SPF (Sender Policy Framework)</strong> — A DNS record that specifies which mail servers are authorised to send email on behalf of your domain. Prevents spoofing and authenticates your sending source.</li>
+                <li><strong>DKIM (DomainKeys Identified Mail)</strong> — Adds a cryptographic digital signature to each email, allowing the receiving server to verify it has not been altered in transit and was genuinely sent by your domain.</li>
+                <li><strong>DMARC (Domain-based Message Authentication, Reporting and Conformance)</strong> — Tells receiving servers what to do when an email fails SPF or DKIM checks (none, quarantine, or reject). Protects your domain from being spoofed in phishing attacks and signals to inbox providers that you are a responsible sender.</li>
             </ul>
 
             <div class="callout callout-info">
-                <div class="callout-title">Key Concept</div>
-                <p>All three authentication protocols (SPF, DKIM, DMARC) should be configured for your sending domain. Without them, email providers are more likely to send your messages to spam. Most ESPs provide setup guides for these.</p>
+                <div class="callout-title">Key Concept: Authentication Is the Foundation</div>
+                <p>SPF, DKIM, and DMARC must all be configured before you begin sending at scale. This is not a technical detail to defer — without authentication, Google and Yahoo will actively filter or block your emails. Most ESPs provide step-by-step guides for setting up these records in your domain's DNS. Complete this before launching any email campaign.</p>
             </div>
 
             <h2>Sender Reputation</h2>
-            <p>Your sender reputation is a score assigned by email providers based on your sending behaviour. It's damaged by high bounce rates, spam complaints, and low engagement. Protect it by:</p>
+            <p>Beyond authentication, inbox providers assign your sending domain a reputation score based on your historical sending behaviour. A high reputation means your emails reach the inbox; a low reputation means they go to spam or are rejected. Protect your reputation by:</p>
             <ul>
-                <li>Only emailing opted-in subscribers</li>
-                <li>Removing bounced addresses immediately</li>
-                <li>Keeping spam complaint rate below 0.1%</li>
-                <li>Maintaining consistent sending volumes (don't go from 100 to 10,000 overnight)</li>
+                <li>Only emailing people who have explicitly opted in</li>
+                <li>Removing hard-bounced addresses immediately after they occur</li>
+                <li>Keeping your spam complaint rate below 0.1% (Google's formal threshold is 0.08% before filtering begins)</li>
+                <li>Warming up new sending domains gradually — going from 100 to 10,000 sends overnight triggers spam filters</li>
+                <li>Maintaining list hygiene: remove or re-engage subscribers who have not clicked in 90+ days</li>
             </ul>
 
             <h2>Legal Compliance</h2>
             <ul>
-                <li><strong>GDPR (EU/UK)</strong> — Requires explicit consent before sending marketing emails. Must provide easy unsubscribe. Must document consent.</li>
-                <li><strong>CAN-SPAM (US)</strong> — Requires accurate header information, honest subject lines, physical address, and clear unsubscribe mechanism within 10 business days.</li>
+                <li><strong>GDPR (EU/UK)</strong> — Requires explicit, documented consent before sending marketing emails. Must provide an easy, one-click unsubscribe mechanism. Must honour opt-out requests promptly.</li>
+                <li><strong>CAN-SPAM (US)</strong> — Requires accurate sender information, honest subject lines, a physical address, and a clear unsubscribe mechanism honoured within 10 business days.</li>
             </ul>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Making the unsubscribe link tiny, hidden, or requiring a login. This violates regulations and frustrates users who will mark you as spam instead — which damages your sender reputation far more than an unsubscribe does.</p>
+                <p>Hiding or complicating the unsubscribe link. This violates GDPR and CAN-SPAM and backfires immediately: frustrated subscribers mark you as spam instead of unsubscribing, which damages your sender reputation far more severely than a clean unsubscribe would. Make the unsubscribe link prominent and the process instant — one click, no login required.</p>
             </div>
         `,
         quiz: {
@@ -2718,27 +2713,28 @@ Object.assign(lessonContent, {
         title: 'Content-Led Growth: Building a Content Moat',
         body: `
             <h2>Content as a Competitive Advantage</h2>
-            <p>A <strong>content moat</strong> is a body of content so comprehensive and authoritative that competitors cannot easily replicate it. Like a castle's moat, it protects your market position. Businesses with strong content moats generate sustainable organic traffic that compounds over time without proportional increases in cost.</p>
+            <p>A <strong>content moat</strong> is a body of content so genuinely authoritative and distinct that competitors cannot quickly replicate it. Businesses with strong content moats generate sustainable organic traffic that compounds over time — and in 2026, that moat must now function across two discovery channels simultaneously: traditional search engines and AI platforms like ChatGPT, Perplexity, and Google's AI Overviews. A content strategy that earns rankings but is never cited in AI answers is only capturing half the available territory.</p>
 
             <h2>Building Defensible Content Assets</h2>
             <ul>
-                <li><strong>Original research</strong> — Data and insights that no one else has. Surveys, proprietary data analysis, industry benchmarks. This is the hardest to copy.</li>
-                <li><strong>Comprehensive topic coverage</strong> — Own an entire topic area with pillar pages and dozens of supporting articles. Depth builds authority that newcomers can't match quickly.</li>
-                <li><strong>Community-generated content</strong> — User reviews, forum discussions, and community contributions create unique content that scales organically.</li>
-                <li><strong>Free tools</strong> — Calculators, generators, and interactive tools that attract links and usage naturally.</li>
+                <li><strong>Original research</strong> — Proprietary data, surveys, and industry benchmarks that no one else has. This is the hardest category to copy and the one most likely to earn both backlinks and AI citations. If AI tools are asked a question and your research is the only available answer, you will be cited.</li>
+                <li><strong>Human perspective and personal experience</strong> — With AI-generated content flooding every topic, content based on lived experience, genuine failure, and specific outcomes is increasingly distinctive. This cannot be synthesised from existing information — it can only come from you.</li>
+                <li><strong>Comprehensive topic coverage</strong> — Owning an entire topic area through pillar pages and clusters of supporting content. Depth builds topical authority that newer entrants cannot match quickly.</li>
+                <li><strong>Free tools and calculators</strong> — Interactive tools that solve specific problems attract natural links, repeat usage, and the kind of brand recall that generic articles cannot generate.</li>
+                <li><strong>Community-generated content</strong> — User reviews, forum discussions, and community contributions produce unique content at scale that reflects genuine experience with your product or category.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>A content moat compounds. Each piece of content strengthens the whole through internal linking, topical authority signals, and accumulated backlinks. The longer you invest, the wider the moat becomes and the harder it is for competitors to catch up.</p>
+                <p>A content moat compounds because each piece reinforces the whole: internal linking signals topical depth, backlinks signal authority, AI citations signal credibility as a source. The longer you invest consistently, the harder it becomes for competitors to close the gap. The brands that start now with original, human-authored content built around genuine expertise will hold a structural advantage as AI-generated content continues to commoditise generic coverage.</p>
             </div>
 
-            <h2>Programmatic Content at Scale</h2>
-            <p><strong>Programmatic content</strong> uses templates and data to create thousands of pages automatically. Think Zillow creating a page for every property, or TripAdvisor having a page for every hotel. If your business has structured data (locations, products, comparisons), programmatic content can massively expand your organic footprint.</p>
+            <h2>Answer Engine Optimisation (AEO) as a Moat Strategy</h2>
+            <p>Approximately 60% of searches end without a click to any website. This does not mean those searches are worthless — it means the opportunity is to be the source that AI cites when it answers those questions. Structuring your content with clear, extractable answers, using direct language, and publishing original data gives AI platforms the material they need to cite you. Being cited in AI answers is now part of what it means to have a content moat.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Start building your content moat in areas where you have unique expertise or data. A small company can't outproduce a large one on generic topics, but it can absolutely dominate a niche where it has genuine authority.</p>
+                <p>Build your moat where you have unique knowledge or data. A smaller business cannot outproduce a large one on generic topics — but it can absolutely own a specific niche where it has genuine experience and proprietary insight. Dominate the narrow territory where your expertise is real before trying to expand into broader topics.</p>
             </div>
         `,
         quiz: {
@@ -2758,34 +2754,34 @@ Object.assign(lessonContent, {
         title: 'Marketing Funnels and Conversion Paths',
         body: `
             <h2>The Content Funnel: TOFU, MOFU, BOFU</h2>
-            <p>Content should match where the reader is in their buying journey:</p>
+            <p>Content should match where the reader is in their decision-making process. The traditional funnel model — awareness, consideration, decision — remains a useful planning framework, but buyer behaviour in 2026 has made the path far less predictable. Buyers now research via ChatGPT, Perplexity, and Google's AI Overviews before they ever reach your website. They may arrive at MOFU or BOFU already informed, having consumed multiple AI-generated summaries and third-party comparisons. Your content must serve every stage, because you cannot assume the order in which people will arrive.</p>
             <ul>
-                <li><strong>TOFU (Top of Funnel)</strong> — Awareness stage. The reader has a problem but doesn't know solutions exist. Content: blog posts, videos, social content, infographics that educate broadly.</li>
-                <li><strong>MOFU (Middle of Funnel)</strong> — Consideration stage. The reader knows solutions exist and is evaluating options. Content: comparison guides, case studies, webinars, detailed how-tos.</li>
-                <li><strong>BOFU (Bottom of Funnel)</strong> — Decision stage. The reader is ready to buy and choosing a provider. Content: product demos, free trials, testimonials, pricing pages, ROI calculators.</li>
+                <li><strong>TOFU (Top of Funnel)</strong> — Awareness stage. The prospect has a problem but is not yet evaluating solutions. Content: short-form video, explainers, social posts, opinion pieces, and search-optimised articles that frame the problem and introduce your perspective.</li>
+                <li><strong>MOFU (Middle of Funnel)</strong> — Consideration stage. The prospect is comparing approaches and providers. Content: comparison guides, case studies, webinars, in-depth how-tos, and email nurture sequences that differentiate your approach.</li>
+                <li><strong>BOFU (Bottom of Funnel)</strong> — Decision stage. The prospect is ready to act and choosing between options. Content: product demos, testimonials, ROI calculators, pricing pages, and free trials that reduce friction and build final confidence.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Most content marketing fails because it only creates TOFU content. Educational blog posts attract visitors, but without MOFU and BOFU content to move them toward a purchase, that traffic never converts. Build content for every funnel stage.</p>
+                <p>The funnel model is a production framework, not a customer journey map. Real buyers jump between stages, revisit earlier content, and often arrive already deep into their research having used AI tools to shortlist options before they find you. Build content for every stage — but also structure each piece so it stands alone for a reader arriving at any point in their journey, not only those who started at the top.</p>
             </div>
 
             <h2>Designing Conversion Paths</h2>
-            <p>A <strong>conversion path</strong> is the journey a visitor takes from first touch to conversion. A well-designed path includes:</p>
+            <p>A <strong>conversion path</strong> is the deliberate sequence from first encounter to a measurable action. Because buyers arrive through many different entry points — organic search, AI citations, social media, email, word of mouth — each key piece of content needs its own clear next step built into it, rather than relying on readers to navigate to conversion independently.</p>
             <ol>
-                <li><strong>Entry point</strong> — Blog post, social ad, or search result</li>
-                <li><strong>Engagement</strong> — CTA within content offering a lead magnet or next-step resource</li>
-                <li><strong>Capture</strong> — Landing page with form to collect contact information</li>
-                <li><strong>Nurture</strong> — Email sequence delivering value and building trust</li>
-                <li><strong>Convert</strong> — Sales page, demo booking, or direct purchase</li>
+                <li><strong>Entry point</strong> — Blog post, short-form video, social post, AI citation, or paid ad</li>
+                <li><strong>Engagement</strong> — A CTA within the content that offers something specific: a calculator, a checklist, a mini-course, a relevant case study</li>
+                <li><strong>Capture</strong> — A focused landing page that collects contact details and delivers the promised asset</li>
+                <li><strong>Nurture</strong> — An automated email sequence that continues to deliver value and moves the prospect toward a decision</li>
+                <li><strong>Convert</strong> — A direct offer: demo booking, free trial, purchase, or consultation</li>
             </ol>
 
             <h2>Micro-Conversions</h2>
-            <p>Not every conversion is a sale. <strong>Micro-conversions</strong> are smaller actions that indicate progress: newsletter sign-ups, resource downloads, webinar registrations, or pricing page visits. Track these to understand how well your funnel moves people forward.</p>
+            <p>Not every conversion is a sale. <strong>Micro-conversions</strong> — newsletter sign-ups, tool usage, resource downloads, pricing page visits — signal forward momentum through the funnel. Tracking them tells you where prospects are engaged and where they stall. A high-traffic article that generates no micro-conversions is either attracting the wrong audience or failing to give readers a compelling next step.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Map your top 5 blog posts and check: does each one have a clear next step for the reader? If someone reads your best content and the only option is to leave, you're leaking potential customers. Every high-traffic page needs a conversion path.</p>
+                <p>Audit your five highest-traffic pieces of content: does each one have a clear, relevant next step built in? If the only option for a reader finishing your best article is to leave the page, you are losing the audience you worked hardest to attract. Every high-traffic page needs a conversion path — and the CTA should match the stage, not push immediately to a sale.</p>
             </div>
         `,
         quiz: {
@@ -2805,36 +2801,37 @@ Object.assign(lessonContent, {
         title: 'Content Performance Measurement',
         body: `
             <h2>Content KPIs by Funnel Stage</h2>
-            <p>Different content serves different purposes, so it should be measured differently:</p>
+            <p>Content serves different purposes at different stages of the buying journey, so it must be measured differently. There is no single metric that tells you how content is performing across the board — what matters for a TOFU awareness video is entirely different from what matters for a BOFU case study.</p>
             <ul>
-                <li><strong>TOFU metrics:</strong> Organic traffic, impressions, social shares, new users, backlinks earned</li>
-                <li><strong>MOFU metrics:</strong> Email sign-ups, lead magnet downloads, time on page, pages per session, return visits</li>
-                <li><strong>BOFU metrics:</strong> Demo requests, free trial starts, purchases, revenue attributed to content</li>
+                <li><strong>TOFU metrics:</strong> Organic traffic, impressions, video views, social reach, new users, backlinks earned, AI citation presence</li>
+                <li><strong>MOFU metrics:</strong> Email sign-ups, lead magnet downloads, engagement rate, pages per session, return visits, webinar attendance</li>
+                <li><strong>BOFU metrics:</strong> Demo requests, free trial starts, purchases, revenue attributed to content, time from first content touch to conversion</li>
             </ul>
 
-            <h2>Essential Content Metrics</h2>
+            <h2>Updated Email Content Metrics</h2>
+            <p>Email performance measurement has shifted significantly. Since Apple's Mail Privacy Protection pre-loads tracking pixels for a large portion of recipients, open rate is no longer a reliable signal — it can appear inflated by 30–40% or more. The metrics that actually reflect engagement are:</p>
             <ul>
-                <li><strong>Organic traffic per post</strong> — Which content attracts the most search visitors?</li>
-                <li><strong>Engagement rate</strong> — Are people actually reading or bouncing immediately?</li>
-                <li><strong>Conversion rate</strong> — What percentage of readers take the desired action?</li>
-                <li><strong>Content ROI</strong> — Revenue generated vs production cost</li>
+                <li><strong>Click rate</strong> — The percentage of recipients who clicked a link. This indicates genuine interest and intent.</li>
+                <li><strong>Conversion rate</strong> — How many clicks resulted in the desired action (purchase, sign-up, download).</li>
+                <li><strong>Revenue per send</strong> — Total revenue generated divided by emails sent. The clearest ROI signal for commercial email.</li>
+                <li><strong>Unsubscribe rate</strong> — A rising rate signals content–audience mismatch or frequency issues. Act on it promptly.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Content ROI formula: <strong>(Revenue attributed to content − Content production cost) ÷ Production cost × 100</strong>. This requires proper attribution tracking but is the ultimate measure of content marketing effectiveness.</p>
+                <p>Remove open rate from your primary email reporting dashboard. It is not a useless metric — it remains a rough directional signal — but building strategy around it leads to optimising for a number that no longer reflects reality. Click rate, conversion rate, revenue per send, and unsubscribe rate are the four metrics that connect email performance to actual business outcomes.</p>
             </div>
 
+            <h2>Video Content Metrics</h2>
+            <p>Short-form video requires its own measurement framework. The key metrics are: watch-through rate (what percentage of viewers watched past the midpoint), save and share rate (indicating the content was valuable enough to revisit or recommend), and profile visits following the video (indicating audience-building impact). Raw view counts are a vanity metric — a video with 10,000 views and a 20% watch-through rate is underperforming a video with 2,000 views and an 80% watch-through rate.</p>
+
             <h2>Content Audits</h2>
-            <p>Conduct a <strong>content audit</strong> quarterly or biannually. Categorise every piece of content as: performing well (keep and promote), needs updating (refresh with new data and optimisation), underperforming (improve or consolidate), or irrelevant (redirect or remove). This prevents content decay and keeps your library current.</p>
+            <p>Conduct a <strong>content audit</strong> quarterly or biannually. Categorise every piece as: performing well (maintain and promote), needs refreshing (update data, expand depth, improve AEO structure), underperforming (diagnose whether the topic, format, or promotion is the issue), or irrelevant (redirect or consolidate). Pruning weak content and concentrating authority on fewer, stronger pieces consistently outperforms endlessly adding new content without reviewing what exists.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Build a content scorecard that combines traffic, engagement, and conversion data into a single score per piece. This makes it easy to identify your top performers (double down), average content (optimise), and underperformers (fix or remove).</p>
+                <p>Build a simple content scorecard that scores each piece on traffic, engagement rate, conversion contribution, and backlinks earned. Score it quarterly. Your top performers should receive active promotion; your underperformers should be diagnosed and fixed before you commission new content on similar topics. You almost certainly have existing content that would outperform anything new you could create — if you optimised it properly.</p>
             </div>
-
-            <h2>Reporting Frameworks</h2>
-            <p>Monthly content reports should answer: How much traffic did content drive? Which pieces performed best? How many leads/conversions came from content? What should we create next based on performance data? Keep reports focused on insights and actions, not just raw numbers.</p>
         `,
         quiz: {
             question: 'How often should you conduct a content audit?',
@@ -2853,38 +2850,40 @@ Object.assign(lessonContent, {
         title: 'Building a Content Team and Process',
         body: `
             <h2>Content Team Roles</h2>
-            <p>As your content operation grows, you'll need specialised roles:</p>
+            <p>In 2026, a content team must produce across more formats than ever before — short-form video, long-form articles, email, social posts, and audio — while maintaining consistent quality and a recognisable human voice. The roles required have expanded as a result. Even small teams need to account for video production, not just writing.</p>
             <ul>
-                <li><strong>Content strategist</strong> — Plans the content calendar, defines topics and priorities, ensures alignment with business goals</li>
-                <li><strong>Writers/creators</strong> — Produce the actual content (articles, videos, podcasts)</li>
-                <li><strong>Editor</strong> — Reviews for quality, consistency, and brand voice. The gatekeeper of standards.</li>
-                <li><strong>SEO specialist</strong> — Handles keyword research, optimisation, and technical SEO for content</li>
-                <li><strong>Designer</strong> — Creates visuals, infographics, and social graphics</li>
-                <li><strong>Distribution manager</strong> — Handles promotion, social sharing, and email distribution</li>
+                <li><strong>Content strategist</strong> — Plans the content calendar, defines topics and formats, sets priorities, and ensures output aligns with business goals and AEO best practices</li>
+                <li><strong>Writers and creators</strong> — Produce content across formats. In a video-first environment, a creator who can write, film, and edit short-form video is increasingly more valuable than a writer who works in text alone.</li>
+                <li><strong>Editor</strong> — Reviews for quality, accuracy, brand voice, and originality. In a world of AI-generated content, the editor's role as the defender of genuine human perspective has become more important, not less.</li>
+                <li><strong>SEO and AEO specialist</strong> — Handles keyword research, technical SEO, and structures content for AI platform discoverability alongside traditional search</li>
+                <li><strong>Designer / video editor</strong> — Creates visuals, graphics, and edits short-form video for social distribution</li>
+                <li><strong>Distribution manager</strong> — Handles promotion, email scheduling, and social publishing so that production effort reaches the right audiences</li>
             </ul>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Small teams can start with one person wearing multiple hats. The first hire should be a strong writer who understands SEO. The second should be someone focused on distribution and promotion. Build from there as content volume and revenue grow.</p>
+                <p>Small teams should prioritise hiring someone who can produce short-form video natively — someone who can film, edit, and publish without elaborate production infrastructure. This single capability unlocks the highest-ROI content format available. A strong writer who understands SEO is still valuable, but the first content hire in 2026 should be video-capable or have a credible plan to develop that skill.</p>
             </div>
 
+            <h2>The One Piece, Many Formats Workflow</h2>
+            <p>The most efficient content operations in 2026 do not produce each format independently — they build a system where one core idea generates multiple assets. A single customer interview, internal experiment, or data insight becomes: a short-form video (the hook and key finding), a written article (depth and searchability), an email (direct to the list), three social posts (platform-native versions), and a podcast clip (if applicable). This approach multiplies output without multiplying effort.</p>
+
             <h2>Editorial Workflows</h2>
-            <p>A clear workflow prevents bottlenecks and ensures consistent quality:</p>
             <ol>
-                <li><strong>Brief</strong> — Content strategist creates a brief with target keyword, audience, outline, and key points</li>
-                <li><strong>Draft</strong> — Writer produces the first draft following the brief</li>
-                <li><strong>Review</strong> — Editor reviews for quality, accuracy, and brand voice</li>
-                <li><strong>SEO optimisation</strong> — Final keyword and meta data optimisation</li>
-                <li><strong>Publish and distribute</strong> — Go live and execute distribution checklist</li>
+                <li><strong>Brief</strong> — Strategist creates a brief: the core idea, target audience, search intent or AEO angle, formats to produce, and the CTA for each</li>
+                <li><strong>Core creation</strong> — Creator produces the primary format (usually short-form video or pillar article first)</li>
+                <li><strong>Repurpose</strong> — Secondary formats are derived from the primary piece — not created from scratch</li>
+                <li><strong>Review</strong> — Editor checks quality, factual accuracy, brand voice, and that the human perspective is present and clear</li>
+                <li><strong>Publish and distribute</strong> — All formats go live on their respective channels; distribution checklist executed</li>
             </ol>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>A content brief is the most underrated tool in content marketing. A detailed brief takes 20 minutes to write but saves hours of revision. Include: target keyword, search intent, audience persona, key points to cover, word count target, CTA, and competitive references.</p>
+                <p>AI tools have transformed content production speed — drafts, transcriptions, repurposing, and research all move faster. But AI cannot supply original data, lived experience, or a genuine point of view. The team's job is no longer primarily production — it is editorial judgement: deciding what ideas are worth publishing, what perspective is genuinely useful, and what a human author can add that AI cannot generate from existing sources.</p>
             </div>
 
             <h2>Working With Freelancers</h2>
-            <p>Many content teams use freelance writers for scale. Keys to success: create detailed briefs, provide a style guide, start with a paid test piece, give constructive feedback, and build long-term relationships with writers who understand your niche.</p>
+            <p>Freelance writers and video creators remain valuable for scaling output beyond what an in-house team can produce. Detailed briefs, a clear brand voice guide, and a paid test piece before a longer engagement are essential. For video specifically, brief freelance creators on the angle and hook — not just the topic — to avoid generic coverage that could have been generated by any tool.</p>
         `,
         quiz: {
             question: 'What is the most underrated tool for improving content quality and efficiency?',
@@ -2903,31 +2902,30 @@ Object.assign(lessonContent, {
         title: 'Thought Leadership and Brand Publishing',
         body: `
             <h2>What Is Thought Leadership?</h2>
-            <p><strong>Thought leadership</strong> is content that establishes your brand or executives as authoritative voices in your industry. It goes beyond educational content to share unique perspectives, challenge conventional thinking, and shape industry conversation. Done well, it builds trust, attracts partnerships, and generates inbound leads.</p>
+            <p><strong>Thought leadership</strong> is content that establishes your brand or individual executives as genuine authorities in your industry. It goes beyond educational content to share original perspectives, challenge received wisdom, and contribute something to the conversation that was not already out there. In 2026, this distinction matters more than ever: AI can generate comprehensive educational content on any topic in seconds. The content that cannot be generated — because it requires lived experience, proprietary data, or a specific human perspective — is thought leadership.</p>
 
-            <h2>Developing a Unique Point of View</h2>
-            <p>Effective thought leadership requires a distinct perspective. To develop yours:</p>
+            <h2>What Genuine Thought Leadership Requires</h2>
             <ul>
-                <li><strong>Identify industry assumptions you disagree with</strong> — Contrarian views that are backed by evidence spark conversation</li>
-                <li><strong>Share lessons from experience</strong> — What have you learned from failures and successes that others haven't shared?</li>
-                <li><strong>Make predictions</strong> — Where is the industry heading? Take a stance and explain why.</li>
-                <li><strong>Connect dots others miss</strong> — Draw insights from adjacent industries or unexpected data</li>
+                <li><strong>A real point of view</strong> — Not "here are five perspectives on this issue." A stake in the ground, a position you would defend in a conversation, backed by your experience or data.</li>
+                <li><strong>Original insight from experience</strong> — Lessons from genuine failures, experiments that did not work, or outcomes that surprised you. These cannot be synthesised from existing content.</li>
+                <li><strong>Contrarian positions with evidence</strong> — Where does your experience or data disagree with the conventional industry view? These pieces generate the most conversation and the most credible attention.</li>
+                <li><strong>Predictions with reasoning</strong> — Where is the industry heading and why? Taking a specific position and explaining the logic is far more valuable than surveying what might happen.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Thought leadership is not self-promotion dressed up as content. If every piece ultimately says "and that's why you should buy our product," it's not thought leadership — it's marketing collateral. Genuine thought leadership earns trust by sharing valuable ideas regardless of whether they drive immediate sales.</p>
+                <p>Thought leadership is not self-promotion dressed as content. If every piece ultimately concludes that you should buy the product, it is marketing collateral. Genuine thought leadership earns trust by contributing ideas that are useful regardless of whether they drive immediate commercial outcomes. In a landscape where AI-generated content has commoditised generic educational material, only content anchored in real experience and honest perspective stands out — and AI citation by search platforms increasingly reflects this distinction.</p>
             </div>
 
-            <h2>Executive Content</h2>
-            <p>Putting your CEO, founders, or senior leaders in front of audiences builds brand credibility. Formats include LinkedIn posts, speaking engagements, podcast appearances, op-eds, and industry panel participation. Many executives have valuable insights but need content support to package and distribute them effectively.</p>
+            <h2>Executive Content and AEO for Thought Leaders</h2>
+            <p>Putting founders, CEOs, and senior practitioners in front of audiences builds brand credibility in ways that brand-level content cannot. LinkedIn posts, podcast appearances, speaking engagements, and op-eds all create the personal authority signals that make a brand trusted. For AEO purposes, thought leaders who publish structured, opinionated, original content with clear authorship and consistent topical focus are far more likely to be cited by AI platforms than anonymous brand accounts publishing generic material.</p>
 
-            <h2>Original Research as Thought Leadership</h2>
-            <p>Publishing original research — annual reports, survey results, data analyses — is the highest-impact form of thought leadership. It positions your brand as a source of truth and generates backlinks, press coverage, and social shares that no opinion piece can match.</p>
+            <h2>Original Research as the Highest-Value Asset</h2>
+            <p>Publishing original research — annual benchmark reports, survey results, proprietary data analyses — is the single highest-impact form of thought leadership available. It gives AI platforms, journalists, and other content creators a source they cannot generate themselves. Original research earns backlinks, press coverage, and AI citations that no opinion piece alone can match. If you have access to proprietary data — even from a small sample — publish it. Data is the scarcest resource in a world drowning in generated content.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Start with one thought leadership format and one consistent channel. A weekly LinkedIn post from your CEO sharing industry insights is more effective than sporadic content across five channels. Consistency builds audience expectation and loyalty.</p>
+                <p>Start with one format and one channel, then execute it consistently. A weekly LinkedIn post from your CEO sharing a genuine take on an industry issue — backed by a specific experience or data point — is more effective than a sporadic presence across five channels. Consistency builds audience expectation; the specific perspective builds trust. Pick the channel where your audience already is, publish at a frequency you can sustain, and prioritise depth over volume.</p>
             </div>
         `,
         quiz: {
@@ -2946,35 +2944,37 @@ Object.assign(lessonContent, {
     'cm-4-6': {
         title: 'AI in Content Marketing: What Works',
         body: `
-            <h2>Where AI Adds Real Value</h2>
-            <p>AI tools have transformed parts of the content creation process. Here's where they genuinely help:</p>
+            <h2>The Reality of AI-Generated Content in 2026</h2>
+            <p>AI content generation tools are now pervasive. Every competitor has access to the same technology, and the result is that generic, AI-generated content — written without original research, experience, or a clear point of view — has flooded almost every topic and category. Simultaneously, consumer trust in AI-generated content has declined. Studies consistently show that audiences value authenticity, personal experience, and human perspective more than they did before AI tools became mainstream. The opportunity is not to produce more content faster. The opportunity is to produce content that AI cannot generate.</p>
+
+            <h2>Where AI Genuinely Helps</h2>
             <ul>
-                <li><strong>Research and ideation</strong> — Brainstorming topic ideas, generating outlines, identifying subtopics to cover</li>
-                <li><strong>First drafts</strong> — Creating rough drafts that a human editor refines, saving significant writing time</li>
-                <li><strong>Repurposing</strong> — Converting blog posts into social media copy, email summaries, or video scripts</li>
-                <li><strong>SEO optimisation</strong> — Suggesting keyword placements, meta descriptions, and title tag variations</li>
-                <li><strong>Editing and proofreading</strong> — Catching grammar issues, improving readability, and suggesting clearer phrasing</li>
+                <li><strong>Research and ideation</strong> — Rapidly mapping what exists on a topic, identifying gaps, and generating initial outlines to react to</li>
+                <li><strong>First drafts as structure</strong> — Creating a rough draft that provides a scaffold for a human writer to rebuild with specific examples, original data, and genuine perspective</li>
+                <li><strong>Repurposing</strong> — Converting a long-form article into email copy, social posts, and video scripts — tasks where the core idea is already established and the work is adaptation</li>
+                <li><strong>Editing and formatting</strong> — Improving readability, catching errors, restructuring paragraphs for clarity</li>
+                <li><strong>Meta data and titles</strong> — Generating keyword-aligned title and description variants at speed</li>
             </ul>
 
-            <h2>Where AI Falls Short</h2>
+            <h2>What AI Cannot Provide</h2>
             <ul>
-                <li><strong>Original insights</strong> — AI synthesises existing information; it doesn't generate novel perspectives from experience</li>
-                <li><strong>Brand voice consistency</strong> — AI output tends toward generic, safe language without careful prompting and editing</li>
-                <li><strong>Factual accuracy</strong> — AI can confidently present incorrect information. Every claim needs human verification.</li>
-                <li><strong>Emotional depth</strong> — Personal stories, nuanced opinions, and genuine empathy remain distinctly human strengths</li>
+                <li><strong>Original data and research</strong> — AI synthesises existing information. It cannot run a study, conduct customer interviews, or analyse your proprietary data.</li>
+                <li><strong>Lived experience and specific outcomes</strong> — What happened when you tried this? What was the result? What would you do differently? These require a human who was there.</li>
+                <li><strong>Genuine opinion</strong> — AI produces balanced, non-committal perspectives by default. A strong, reasoned point of view requires a human willing to take a position.</li>
+                <li><strong>Factual accuracy</strong> — AI confidently presents incorrect information. Every claim needs human verification before publication.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>The winning formula is AI-assisted, human-led. Use AI to accelerate the process, but maintain human oversight for strategy, quality, accuracy, and brand voice. The best content combines AI efficiency with human creativity and judgement.</p>
+                <p>Volume is not the answer. Marketers who respond to the AI content flood by producing more AI content are competing in a race to the bottom on a metric — quantity — that no longer differentiates. The brands winning in 2026 are publishing less frequently but with genuine originality: first-hand data, specific outcomes, honest perspective, and a voice that could only come from a human who has actually done the work. Less content with more substance consistently outperforms more content with less.</p>
             </div>
 
-            <h2>Quality Standards</h2>
-            <p>AI-generated content that's published without significant human editing typically underperforms. Google's guidelines state that AI content is acceptable as long as it's helpful, original, and demonstrates expertise. The bar is quality and usefulness, not how it was produced.</p>
+            <h2>The Right Role for AI in Your Workflow</h2>
+            <p>AI works best as an acceleration layer, not a replacement layer. A strong content workflow in 2026 looks like this: a human identifies a genuinely interesting idea from experience or data → AI helps structure and draft the scaffolding → a human rewrites it with specific details, original perspective, and factual accuracy → AI assists with repurposing into other formats. The human is in the loop at every substantive stage. The AI handles the mechanical production work in between.</p>
 
             <div class="callout callout-warning">
                 <div class="callout-title">Common Mistake</div>
-                <p>Publishing AI-generated content at volume without quality control. Flooding your blog with mediocre AI content damages your brand reputation and can hurt SEO. Less content with higher quality always wins over more content with lower quality.</p>
+                <p>Publishing AI-generated content at scale without editorial judgement. The content produced is generic by definition — it is trained on what already exists, so it will always reflect the average of what has already been said. Publishing it uncritically does not build authority; it adds to the noise. Every piece needs a human to ask: what is genuinely new here? What specific experience or data makes this worth reading? If the answer is nothing, the piece is not ready to publish.</p>
             </div>
         `,
         quiz: {
@@ -2993,35 +2993,32 @@ Object.assign(lessonContent, {
     'cm-4-7': {
         title: 'Social Media Organic Strategy',
         body: `
-            <h2>The Reality of Organic Reach</h2>
-            <p>Organic reach on social media has declined dramatically. Facebook pages reach approximately 2–5% of followers per post. Instagram is slightly better. LinkedIn and TikTok currently offer the best organic reach. Despite this, organic social remains valuable for brand building, community engagement, and credibility — it's just not a reliable traffic driver alone.</p>
+            <h2>The Reality of Organic Social in 2026</h2>
+            <p>Organic reach on most social platforms has continued to contract. Facebook pages reach a small fraction of followers per post. Instagram and LinkedIn offer better organic distribution but reward specific behaviours — primarily native, high-quality content that keeps users on the platform. TikTok remains the most meritocratic organic channel, where reach is driven by content quality rather than follower count. The practical reality of organic social in 2026 is this: it is not a reliable traffic driver, but it is an irreplaceable credibility and community channel. Potential customers will check your social presence before making a decision — what they find either builds or undermines trust, regardless of whether any particular post reached them directly.</p>
 
-            <h2>Understanding Platform Algorithms</h2>
-            <p>Every platform's algorithm prioritises content that keeps users on the platform. To succeed organically:</p>
-            <ul>
-                <li><strong>Create native content</strong> — Don't just post links. Write the insight directly in the post. Algorithms penalise posts that send users off-platform.</li>
-                <li><strong>Drive engagement early</strong> — Posts that get likes, comments, and shares in the first hour get boosted to wider audiences</li>
-                <li><strong>Post consistently</strong> — Algorithms reward accounts that post regularly</li>
-                <li><strong>Use platform-specific formats</strong> — Reels on Instagram, carousels on LinkedIn, duets on TikTok</li>
-            </ul>
+            <h2>Short-Form Video Is the Highest-ROI Organic Format</h2>
+            <p>Across every major platform — TikTok, Instagram Reels, LinkedIn Video, YouTube Shorts — short-form video consistently outperforms text and static image posts for organic reach and engagement. The algorithm reward for native video is significant. More importantly, video allows audiences to develop genuine familiarity with the people behind the brand — a level of trust that static posts cannot replicate. For organic social specifically, short-form video is not one format among many; it is the primary format around which other content types are organised.</p>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>Content pillars keep your social strategy focused. Define 3–5 recurring themes (e.g., industry insights, how-tos, behind-the-scenes, customer stories, thought leadership) and rotate between them. This provides variety while maintaining a coherent brand presence.</p>
+                <p>Build your organic social strategy around the "one piece, many formats" principle. One piece of original insight — a genuine observation, a specific result, an unexpected finding — becomes a short-form video (the primary format), a text post with the written version, a carousel distilling the key points, and an email excerpt. This is not about spreading yourself thin across channels; it is about extracting maximum reach from each idea you generate, in the formats each platform rewards natively.</p>
             </div>
 
-            <h2>Engagement Strategies</h2>
-            <p>Social media is social — one-way broadcasting doesn't work. Engage actively:</p>
+            <h2>Platform Algorithm Principles</h2>
+            <p>Every platform's algorithm prioritises content that generates engagement and keeps users on the platform. The principles that apply across all of them:</p>
             <ul>
-                <li>Reply to every comment within the first hour</li>
-                <li>Ask questions in your posts to spark discussion</li>
-                <li>Comment meaningfully on other people's content in your industry</li>
-                <li>Share and celebrate your community's content</li>
+                <li><strong>Native content performs better than link posts</strong> — Write the insight directly in the post rather than asking people to click away. Algorithms actively reduce distribution for posts that send users off-platform.</li>
+                <li><strong>Early engagement signals matter</strong> — Comments, saves, and shares in the first hour amplify distribution to wider audiences</li>
+                <li><strong>Consistency beats volume</strong> — Publishing three strong pieces per week consistently outperforms ten mediocre posts followed by two weeks of silence</li>
+                <li><strong>Platform-native formats get rewarded</strong> — Reels on Instagram, native video on LinkedIn, Spark Ads content aesthetic on TikTok, carousels for knowledge-sharing</li>
             </ul>
+
+            <h2>The Zero-Click Context for Organic Social</h2>
+            <p>With approximately 60% of searches now ending without a click to any website, the goal of organic social is shifting. Traffic generation was always unreliable from social; the 2026 goal is <strong>presence and authority</strong> — being visible in the feeds of your target audience consistently enough that your brand is recalled when a need arises, even if no individual post ever drove a direct click. Measure organic social by follower growth, engagement rate, direct messages, and brand recall signals — not website traffic alone.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Spend as much time engaging with others' content as you do creating your own. Being an active, valuable community member often drives more growth than posting alone. This is especially true on LinkedIn and Twitter/X.</p>
+                <p>Spend as much time engaging with others' content as you do creating your own. Commenting substantively on relevant posts in your industry — not generic agreement, but a specific addition or a genuine challenge — builds visibility and credibility with exactly the audience you want to reach. This is especially true on LinkedIn, where meaningful comments often reach more of the right people than your own posts do. Presence is not just about what you publish; it is about who you show up for.</p>
             </div>
         `,
         quiz: {
@@ -3040,37 +3037,39 @@ Object.assign(lessonContent, {
     'cm-4-8': {
         title: 'Community Building as a Marketing Channel',
         body: `
-            <h2>Why Community Matters</h2>
-            <p>A <strong>brand community</strong> is a group of customers and enthusiasts who gather around a shared interest related to your brand. Communities drive marketing through word-of-mouth, user-generated content, product feedback, and customer retention. The brands with the strongest communities have the lowest customer acquisition costs.</p>
+            <h2>Why Community Has Become a Strategic Priority</h2>
+            <p>A <strong>brand community</strong> is a group of customers and enthusiasts who gather around a shared interest or mission connected to your brand. In 2026, community has become a strategic priority for a specific reason: as AI-generated content floods every digital channel and makes it harder for brands to stand out through publishing alone, the one thing that AI cannot replicate is genuine human connection. A community where people get real answers, share honest experiences, and build relationships with each other is irreplaceable. The brands with the strongest communities consistently have the lowest customer acquisition costs and the highest retention rates — because the community does work that no content programme or ad campaign can.</p>
 
             <h2>Community Platforms</h2>
             <ul>
-                <li><strong>Slack/Discord</strong> — Real-time chat communities. Best for professional and tech-savvy audiences. Require active moderation.</li>
-                <li><strong>Facebook Groups</strong> — Easy to set up, familiar to most users. Good for consumer brands.</li>
-                <li><strong>Circle, Mighty Networks, or custom platforms</strong> — Dedicated community platforms with more control and features.</li>
-                <li><strong>Forum/Reddit-style</strong> — Threaded discussions. Best for technical communities with searchable Q&A needs.</li>
+                <li><strong>Slack/Discord</strong> — Real-time chat communities. Best for professional, developer, and technical audiences. Require active moderation to stay valuable.</li>
+                <li><strong>Facebook Groups</strong> — Familiar to most users and easy to set up. Still effective for consumer and lifestyle brands where the audience is already on Facebook.</li>
+                <li><strong>Circle, Mighty Networks, or custom platforms</strong> — Dedicated community infrastructure with more control, better discovery features, and fewer algorithm interruptions than social platforms.</li>
+                <li><strong>Forum/Reddit-style</strong> — Threaded, searchable discussions. Best for technical communities where the value is in finding the right answer to a specific question.</li>
             </ul>
 
             <div class="callout callout-info">
                 <div class="callout-title">Key Concept</div>
-                <p>The best communities are built around a shared mission or challenge, not a product. A community for "people learning digital marketing" will thrive. A community for "users of our marketing tool" will struggle. Give people a reason to gather beyond your product.</p>
+                <p>The strongest communities are built around a shared mission or challenge — not a product. A community for people learning digital marketing will thrive because the shared goal creates genuine connection. A community for users of a specific marketing tool will struggle because the only thing members share is a vendor relationship. Give people a compelling reason to gather that would exist even if your product did not — then your product becomes the natural home for that community.</p>
             </div>
 
+            <h2>Community as a Zero-Party Data Source</h2>
+            <p>An active community is one of the richest sources of zero-party data available to a brand. Members share what they are working on, what they find difficult, what approaches they have tried, and what outcomes they are looking for — without being asked through a formal survey. This intelligence is invaluable for content strategy, product development, and segmentation. Marketers running a community who are not systematically listening to the conversations happening in it are missing one of the most valuable signals available to them.</p>
+
             <h2>Community-Led Growth</h2>
-            <p>Communities can drive growth through:</p>
             <ul>
-                <li><strong>Referrals</strong> — Active community members naturally recommend your brand</li>
-                <li><strong>Content</strong> — Community discussions generate content ideas and even user-created content</li>
-                <li><strong>Product development</strong> — Direct feedback loop for feature requests and improvements</li>
-                <li><strong>Support</strong> — Community members help each other, reducing support costs</li>
+                <li><strong>Referrals</strong> — Active community members naturally recommend your brand to people with the same challenge. These referrals carry the credibility of peer recommendation.</li>
+                <li><strong>Content</strong> — Community discussions generate the most relevant content ideas available: real questions from real people encountering real problems.</li>
+                <li><strong>Retention</strong> — Members with community ties churn at significantly lower rates than isolated customers. The community is often the stickiest part of the product.</li>
+                <li><strong>Product development</strong> — A direct feedback loop for feature requests, frustrations, and priorities — more honest than formal research because members are speaking to each other, not to you.</li>
             </ul>
 
             <h2>Measuring Community Value</h2>
-            <p>Track: active member count, engagement rate, NPS of community members vs non-members, referral rate from community, and retention rate of community members. The last two are the most telling — if community members refer more and stay longer, the community is driving business value.</p>
+            <p>The most meaningful metrics are: active member count (not total, but those participating in the last 30 days), engagement rate per post, referral rate from community members versus non-members, and retention rate comparison between community members and the general customer base. If community members refer more often and stay longer — which they almost always do — the community is generating compounding business value.</p>
 
             <div class="callout callout-tip">
                 <div class="callout-title">Pro Tip</div>
-                <p>Start small. A community of 50 highly engaged members is more valuable than 5,000 silent ones. Focus on cultivating genuine conversations and relationships before trying to scale. Quality of engagement beats size every time.</p>
+                <p>Start small and prioritise depth over scale. A community of 50 genuinely engaged members who talk to each other regularly is more valuable than 5,000 silent members who joined and never returned. Invest in the first 50 as if they are the entire strategy — because they are. Early members set the culture and the expectations for every member who joins after them. Get the culture right before trying to grow the numbers.</p>
             </div>
         `,
         quiz: {
